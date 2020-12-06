@@ -258,3 +258,4 @@ This means
 *** TODO Vue.js
 *** TODO Clojure
 ** TODO completions for all programming languages
+** TODO undo-redo like spacemacs
