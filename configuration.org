@@ -22,6 +22,29 @@ Download and install evil
 #+BEGIN_SRC emacs-lisp
 (unless (package-installed-p 'evil)
   (package-install 'evil))
+(setq evil-want-keybinding nil)  ;; this is apparently required for evil-collection keybindings.
 (require 'evil)
 (evil-mode 1)
 #+END_SRC
+
+Let's get as much evilified as humanly possible just to start, eh?
+
+#+BEGIN_SRC emacs-lisp
+(unless (package-installed-p 'evil-commentary)
+  (package-install 'evil-commentary))
+(require 'evil-commentary)
+(evil-commentary-mode)
+
+(unless (package-installed-p 'evil-collection)
+  (package-install 'evil-collection))
+(require 'evil-collection)
+(evil-collection-init)
+#+END_SRC
+
+I really need to learn how to define a function in elisp rather than retyping all that 
+package installation stuff again.  Although with that quoting stuff I fear a macro 
+may have to be involved.  Does elisp have macros?  Surely it does, it's a lisp...
+
+I should probably learn how to actually activate packages, also. No clue whether 
+those require statements are all necessary. LOL.
+
