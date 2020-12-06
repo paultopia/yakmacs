@@ -1,4 +1,15 @@
 
+* Wth?
+This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
+naked emacs. It's running on a raspberry pi, with the idea that after I make it sufficiently functional 
+(which could be, like, years), then
+
+This is also the configuration file itself, because I'm doing fancy org babel literate config stuff.
+
+So, that's cool.
+
+* Make MELPA run
+
 This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
 it comes from this place: 
 https://francopasut.medium.com/emacs-melpa-and-the-failed-to-download-gnu-archive-error-b834bbe4491e
@@ -16,6 +27,8 @@ The rest of the setup for melpa, as copied from evil installation instructions
 (package-initialize)
 (package-refresh-contents)
 #+END_SRC
+
+* Evilify everything because emacs keybindings are horrible
 
 Download and install evil 
 
