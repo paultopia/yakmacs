@@ -64,6 +64,18 @@ Let's get as much evilified as humanly possible just to start, eh?
 (use-package evil-collection
   :ensure t)
 (evil-collection-init)
+
+;; evil-org produces a bunch of warnings about functions not found.  grr.
+(use-package evil-org
+  :ensure t
+  :after org
+  :config
+  (add-hook 'org-mode-hook 'evil-org-mode)
+  (add-hook 'evil-org-mode-hook
+            (lambda ()
+              (evil-org-set-key-theme)))
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
 #+END_SRC
 
 
