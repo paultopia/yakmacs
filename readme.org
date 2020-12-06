@@ -11,6 +11,7 @@ This is also the configuration file itself, because I'm doing fancy org babel li
 
 So, that's cool.
 
+
 * Package management
 
 ** Make MELPA run
@@ -38,7 +39,7 @@ development.)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-(package-refresh-contents)
+;; (package-refresh-contents) Maybe things will still work if I comment this out, but with fewer calls?
 #+END_SRC
 
 ** Use-Package seems necessary
@@ -88,6 +89,7 @@ Let's get as much evilified as humanly possible just to start, eh?
   (require 'evil-org-agenda)
   (evil-org-agenda-set-keys))
 #+END_SRC
+
 
 * Keybinding to make delimiter for elisp blocks with @ 
 
@@ -139,6 +141,11 @@ and works in terminal, and another that says a specific color and works only in 
 at any rate, this is a lot nicer for now so I'll run with it, and maybe go see how it looks on my 
 computer in a bit.
 
+Well, even more oddly, the colors in iterm are a muted version of the colors on ipad.  That's a little wacky.  
+It's not horrible, so, once again, I'm not going to bother to fix it. But, lordy. 
+
+*** TODO fix parens highlighting in this theme.  It kind of sucks.
+
 ** I never even use the menu bar in GUI
 
 kill it with fire.
@@ -147,14 +154,46 @@ kill it with fire.
 (menu-bar-mode -1)
 #+END_SRC
 
+
 * TODO problems to fix
 ** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
-** TODO it dials out to MELPA on every start, even if there's no new packages to load.   
+
+it works when I use iterm over macos but not when I use blink over ios?!  WTF?? How is that even possible?
+
+** DONE it dials out to MELPA on every start, even if there's no new packages to load.   
+
 Maybe this has to do with package-refresh-contents? see: https://github.com/jwiegley/use-package/issues/494
 The answer here https://stackoverflow.com/questions/24280325/emacs-use-package-and-package-refresh-contents 
 might be the solution to sorting out when to call package-refresh-contents?
-** TODO I don't seem to have a meta key on the ipad keyboard?
+
+I'm starting by just commenting out the call to package-refresh-contents in the melpa setup. That works!  Yay! 
+
+** DONE I don't seem to have a meta key on the ipad keyboard?
 Something in here might be a fix. https://github.com/blinksh/blink/issues/198 
+
+It appears that turning on the software keyboard on blink fixes that.  but...
+
+** DONE I also don't have a meta key on the mac keyboard
+
+possible fixes?  https://www.emacswiki.org/emacs/MetaKeyProblems#toc1
+I want the fn key to be meta on the mac.  I have other uses for option
+
+For some bizarre reason, in iterm, the setting to remap an option key to meta at least isn't on the *keys* 
+tab it's on the *profile* tab, then under the keys subtab there, way at the bottom.  Wow iterm. Wow. 
+
+But maybe I can give it the right option key for meta now. 
+Meh, doesn't seem to work.  Apparently "esc-plus" is the thing to set it to. But that breaks evil, because 
+esc is how one gets to normal mode.  I guess I could figure out how to change that, and, dunno, 
+give it to caps lock or something.
+
+actually, the esc-plus setting seems to work on evil without breaking my normal escape.  I dunno how 
+it manages to overload escape, but whev. 
+
+** TODO some evil-org keybindings don't work.
+
+e.g. [[https://github.com/Somelauw/evil-org-mode][supposedly]] t is bound to the todo cycling keyword thing (org-todo), but it... doesn't do jack?
 
 * TODO enhancements to make
 ** Different cursor for normal vs insert or modeline or *something*
+   Apparently this is a thing that doesn't work in terminal out of the box but does work in GUI. 
+There is a [[https://github.com/7696122/evil-terminal-cursor-changer#change-log][package]] to force it. But it doesn't seem to work.  I at least want a damn modeline signal.
