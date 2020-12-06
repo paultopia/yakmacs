@@ -1,5 +1,5 @@
-#+STARTUP: showeverything 
 # -*- in-config-file: t -*-
+#+STARTUP: showeverything 
 
 * Wth?
 This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
@@ -18,9 +18,15 @@ This is an incantation that appears to be required to get MELPA to work. I've go
 it comes from this place: 
 https://francopasut.medium.com/emacs-melpa-and-the-failed-to-download-gnu-archive-error-b834bbe4491e
 
+May be platform specific, I should probably try getting rid of this when I move the whole config off 
+the raspberry pi where I'm putting this together and onto the mac. (call that production rather than 
+development.)
+
 #+BEGIN_SRC emacs-lisp
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 #+END_SRC
+
+** TODO figure out some way to label code blocks to consider removing in production
 
 The rest of the setup for melpa, as copied from evil installation instructions 
 
@@ -81,12 +87,17 @@ Let's get as much evilified as humanly possible just to start, eh?
 
 * I'm getting sick of typing all these code delimiters
 
-Currently this doesn't work.  The idea was to have the add-lisp-delimiters 
-function defined in my init.el, and then put the begin_src and end_src stuff in there
-which then gets attached to the @ keybinding here, and only invoked when the 
-in-config-file (set at the beginning of this org file) variable is true.
+This is slightly black-magic-ey.  add-lisp-delimiters is defined in init.el. 
+That function looks for a variable called in-config-file, and, if it's set 
+(as it is on the very first line of this file... and apparently it has to be the very 
+first line, the second line won't do), then it pastes in the BEGIN_SRC stuff. So I bind it to ampersand, 
+because I don't *think* anything else uses ampersand...?
 
-but I type @ in normal mode and nothing happens.  Hmm.
+The annoying price for this strategy is that it keeps yelling at me on startup about using 
+potentially unsafe file-local-variables.  I give it the exclamation mark, and then it accepts that... 
+for a while, but then seems to forget (maybe when I change this file?)
+
+This is something I may wish to remove in production too.
 
 #+BEGIN_SRC emacs-lisp
 
