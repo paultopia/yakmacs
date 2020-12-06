@@ -257,5 +257,9 @@ This means
 *** TODO HTML
 *** TODO Vue.js
 *** TODO Clojure
+*** TODO shell scripts
+*** TODO makefiles
+*** TODO JSON
+*** TODO YAML
 ** TODO completions for all programming languages
 ** TODO undo-redo like spacemacs
