@@ -1,17 +1,27 @@
+
+This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
+it comes from this place: 
+https://francopasut.medium.com/emacs-melpa-and-the-failed-to-download-gnu-archive-error-b834bbe4491e
+
 #+BEGIN_SRC emacs-lisp
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-;; Set up package.el to work with MELPA
+#+END_SRC
+
+The rest of the setup for melpa, as copied from evil installation instructions 
+
+#+BEGIN_SRC emacs-lisp
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 (package-refresh-contents)
+#+END_SRC
 
-;; Download Evil
+Download and install evil 
+
+#+BEGIN_SRC emacs-lisp
 (unless (package-installed-p 'evil)
   (package-install 'evil))
-
-;; Enable Evil
 (require 'evil)
 (evil-mode 1)
 #+END_SRC
