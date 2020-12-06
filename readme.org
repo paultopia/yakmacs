@@ -109,7 +109,9 @@ This is something I may wish to remove in production too.
 #+END_SRC
 
 
-* Now for some themes
+* Visual Fixes
+
+** Theme
 
 This could actually be a bit dicey. I'm working across blink in dark mode on my ipad and iterm with a semi-
 light mode on my mac, and I've got no clue if emacs themes will look the same across these different 
@@ -130,13 +132,29 @@ terminal on ipad.)
 #+END_SRC
 
 Well, that's interesting. It seems to load the theme, but it doesn't get the background right. 
-There's a light background, but it isn't blue like it is in the screenshot.  I wonder if it's blue 
-in GUI.  Is there some kind of pair of flags, one that says light or dark, and works in terminal, 
-and another that says a specific color and works only in GUI?  Well, at any rate, this is a lot nicer 
-for now so I'll run with it, and maybe go see how it looks on my computer in a bit.
+There's a light background, but it isn't blue like it is in the [[https://github.com/hlissner/emacs-doom-themes/tree/screenshots#doom-acario-light][screenshot]]. 
 
-While I'm at it, lemme kill the menu bar.
+I wonder if it's blue in GUI.  Is there some kind of pair of flags, one that says light or dark, 
+and works in terminal, and another that says a specific color and works only in GUI?  Well, 
+at any rate, this is a lot nicer for now so I'll run with it, and maybe go see how it looks on my 
+computer in a bit.
+
+** I never even use the menu bar in GUI
+
+kill it with fire.
 
 #+BEGIN_SRC emacs-lisp
 (menu-bar-mode -1)
 #+END_SRC
+
+* TODO problems to fix
+** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
+** TODO it dials out to MELPA on every start, even if there's no new packages to load.   
+Maybe this has to do with package-refresh-contents? see: https://github.com/jwiegley/use-package/issues/494
+The answer here https://stackoverflow.com/questions/24280325/emacs-use-package-and-package-refresh-contents 
+might be the solution to sorting out when to call package-refresh-contents?
+** TODO I don't seem to have a meta key on the ipad keyboard?
+Something in here might be a fix. https://github.com/blinksh/blink/issues/198 
+
+* TODO enhancements to make
+** Different cursor for normal vs insert or modeline or *something*
