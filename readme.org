@@ -1,6 +1,6 @@
 # -*- in-config-file: t -*-
 
-reminder to self: g<tab> unfolds headings, for when you open this file and forget the keybinding.
+reminder to self: shift-TAB or g<tab> unfolds headings, for when you open this file and forget the keybinding.
 
 * Wth?
 This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
@@ -108,3 +108,35 @@ This is something I may wish to remove in production too.
 
 #+END_SRC
 
+
+* Now for some themes
+
+This could actually be a bit dicey. I'm working across blink in dark mode on my ipad and iterm with a semi-
+light mode on my mac, and I've got no clue if emacs themes will look the same across these different 
+terminals and on a GUI interaction. I guess I could VNC into an X session to test this out, but 
+that seems like a hassle.  Yolo. 
+
+The doom themes look nice. Ultimately, I want to set a light, low-contrast, theme for writing prose 
+(i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
+writing code. But let's start by seeing if I can get a light theme to even show up on my dark 
+terminal on ipad.)
+
+#+BEGIN_SRC emacs-lisp
+(use-package doom-themes 
+  :ensure t
+  :config
+    (load-theme 'doom-acario-light t)) 
+
+#+END_SRC
+
+Well, that's interesting. It seems to load the theme, but it doesn't get the background right. 
+There's a light background, but it isn't blue like it is in the screenshot.  I wonder if it's blue 
+in GUI.  Is there some kind of pair of flags, one that says light or dark, and works in terminal, 
+and another that says a specific color and works only in GUI?  Well, at any rate, this is a lot nicer 
+for now so I'll run with it, and maybe go see how it looks on my computer in a bit.
+
+While I'm at it, lemme kill the menu bar.
+
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode -1)
+#+END_SRC
