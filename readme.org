@@ -51,6 +51,13 @@ development.)
 (require 'use-package)
 #+END_SRC
 
+*** and I'm sick of putting ensure t in everything
+
+#+BEGIN_SRC emacs-lisp
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
+#+END_SRC
+
 
 * Evilify everything because emacs keybindings are horrible
 
@@ -123,6 +130,9 @@ This is something I may wish to remove in production too.
 
 * Visual Fixes
 
+This is going to have to be minimal in dev. I'm using it over terminal, so stuff doesn't work right. 
+When I move to prod and GUI, will enhance.
+
 ** Theme
 
 This could actually be a bit dicey. I'm working across blink in dark mode on my ipad and iterm with a semi-
@@ -133,7 +143,7 @@ that seems like a hassle.  Yolo.
 The doom themes look nice. Ultimately, I want to set a light, low-contrast, theme for writing prose 
 (i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
 writing code. But let's start by seeing if I can get a light theme to even show up on my dark 
-terminal on ipad.)
+terminal on ipad.
 
 #+BEGIN_SRC emacs-lisp
 (use-package doom-themes 
@@ -154,7 +164,7 @@ computer in a bit.
 Well, even more oddly, the colors in iterm are a muted version of the colors on ipad.  That's a little wacky.  
 It's not horrible, so, once again, I'm not going to bother to fix it. But, lordy. 
 
-*** TODO fix parens highlighting in this theme.  It kind of sucks.
+*** DONE fix parens highlighting in this theme.  It kind of sucks.
 
 ** I never even use the menu bar in GUI
 
@@ -164,6 +174,16 @@ kill it with fire.
 (menu-bar-mode -1)
 #+END_SRC
 
+
+** Rainbow parens
+
+Can't even begin to edit elisp without this, I want it in this mode noooow.
+
+#+BEGIN_SRC emacs-lisp
+(use-package rainbow-delimiters)
+(add-hook 'org-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+#+END_SRC
 
 * TODO problems to fix
 ** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
