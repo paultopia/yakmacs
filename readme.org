@@ -232,3 +232,7 @@ For modeline [[https://www.emacswiki.org/emacs/Evil#toc19][here is some code wor
 (That works, but only colors the background of the single character. How to color the entire modeline, I wonder?)
 
 I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]]. 
+** Stuff to steal from spacemacs
+*** Leader key
+**** command browsing from leader key
+*** file browsing and completion in project
