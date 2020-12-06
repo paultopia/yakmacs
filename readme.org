@@ -1,4 +1,5 @@
 #+STARTUP: showeverything 
+# -*- in-config-file: t -*-
 
 * Wth?
 This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
@@ -61,11 +62,11 @@ Let's get as much evilified as humanly possible just to start, eh?
 (use-package evil-commentary
   :ensure t)
 (evil-commentary-mode)
+
 (use-package evil-collection
   :ensure t)
 (evil-collection-init)
 
-;; evil-org produces a bunch of warnings about functions not found.  grr.
 (use-package evil-org
   :ensure t
   :after org
@@ -78,4 +79,20 @@ Let's get as much evilified as humanly possible just to start, eh?
   (evil-org-agenda-set-keys))
 #+END_SRC
 
+* I'm getting sick of typing all these code delimiters
+
+Currently this doesn't work.  The idea was to have the add-lisp-delimiters 
+function defined in my init.el, and then put the begin_src and end_src stuff in there
+which then gets attached to the @ keybinding here, and only invoked when the 
+in-config-file (set at the beginning of this org file) variable is true.
+
+but I type @ in normal mode and nothing happens.  Hmm.
+
+#+BEGIN_SRC emacs-lisp
+
+(add-hook 'org-mode-hook 
+  (lambda () 
+    (evil-global-set-key 'normal (kbd "@") 'add-lisp-delimiters)))
+
+#+END_SRC
 

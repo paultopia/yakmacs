@@ -1,3 +1,13 @@
+(defvar in-config-file nil)
+
+(defun add-lisp-delimiters ()
+  (interactive)
+  (if in-config-file
+    (insert "#+BEGIN_SRC emacs-lisp
+
+#+END_SRC")
+    nil))
+
 (org-babel-load-file "~/.emacs.d/readme.org")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
