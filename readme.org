@@ -185,6 +185,16 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 #+END_SRC
 
+
+* Command browsing
+
+Which-key is apparently The Thing 
+
+#+BEGIN_SRC emacs-lisp
+(use-package which-key)
+(which-key-mode)
+#+END_SRC
+
 * TODO problems to fix
 ** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
 
