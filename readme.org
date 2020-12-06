@@ -90,6 +90,16 @@ Let's get as much evilified as humanly possible just to start, eh?
   (evil-org-agenda-set-keys))
 #+END_SRC
 
+** Modeline colors
+
+#+BEGIN_SRC emacs-lisp
+(setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
+      evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
+      evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
+      evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
+      evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
+      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
+#+END_SRC
 
 * Keybinding to make delimiter for elisp blocks with @ 
 
@@ -197,3 +207,6 @@ e.g. [[https://github.com/Somelauw/evil-org-mode][supposedly]] t is bound to the
 ** Different cursor for normal vs insert or modeline or *something*
    Apparently this is a thing that doesn't work in terminal out of the box but does work in GUI. 
 There is a [[https://github.com/7696122/evil-terminal-cursor-changer#change-log][package]] to force it. But it doesn't seem to work.  I at least want a damn modeline signal.
+
+For modeline [[https://www.emacswiki.org/emacs/Evil#toc19][here is some code worth trying]]. but [[https://github.com/emacs-evil/evil/issues/366#issuecomment-273751024][this code]] looks simpler.  I'll try the latter first.
+(That works, but only colors the background of the single character. How to color the entire modeline, I wonder?)
