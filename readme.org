@@ -236,3 +236,25 @@ I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]].
 *** Leader key
 **** command browsing from leader key
 *** file browsing and completion in project
+
+* TODO Checklist for moving to prod
+** TODO Language support
+   this is the list of languages that I must have functioning before I'm even going to consider moving off 
+   spacemacs.  Not the nice-to-have languages.
+   only languages with actual projects that I might want to edit in the near future (so no haskell, go, etc.)
+   and leaving off languages with perfectly good alternative editors (swift, r)
+*** TODO Markdown
+Not technically mandatory since I have lots of alternative editors, but since part of the point of this project
+is wanting to be able to use emacs for markdown and I hate spacemacs markdown layer, let's do it.
+**** TODO spell check
+*** TODO Python
+**** TODO indentations handled sensibly
+This means
+- MANDATORY: being able to open a file created in another editor without shitting all over the intentation
+- some kind of structural editing thing where I can paste a block in another block and have it be right?
+- keybinding for [[https://emacs.stackexchange.com/questions/45774/confusion-about-space-and-tab-characters-in-emacs#:~:text=To%20make%20tabs%20and%20spaces,with%20both%20tabs%20and%20spaces][whitespace mode]] so at a minimum I can see and fix by hand indentation fuckups
+*** TODO Javascript
+*** TODO HTML
+*** TODO Vue.js
+*** TODO Clojure
+** TODO completions for all programming languages
