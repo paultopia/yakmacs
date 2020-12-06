@@ -263,3 +263,6 @@ This means
 *** TODO YAML
 ** TODO completions for all programming languages
 ** TODO undo-redo like spacemacs
+** TODO window management
+      - leader-key-style keybindings to close and open new windows
+      - some kind of clone of spacemacs golden ratio mode
