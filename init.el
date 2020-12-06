@@ -1,3 +1,6 @@
+
+; all this stuff is to set up a keybinding for elisp delimiters in my org file
+
 (defvar in-config-file nil)
 
 (defun add-lisp-delimiters ()
@@ -7,6 +10,12 @@
 
 #+END_SRC")
     nil))
+
+; stop nagging me about making the variable safe 
+
+(put 'in-config-file 'safe-local-variable #'booleanp)
+
+; load all the rest of my config
 
 (org-babel-load-file "~/.emacs.d/readme.org")
 (custom-set-variables
