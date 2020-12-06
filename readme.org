@@ -1,3 +1,4 @@
+#+STARTUP: showeverything 
 
 * Wth?
 This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
@@ -8,7 +9,9 @@ This is also the configuration file itself, because I'm doing fancy org babel li
 
 So, that's cool.
 
-* Make MELPA run
+* Package management
+
+** Make MELPA run
 
 This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
 it comes from this place: 
@@ -28,16 +31,29 @@ The rest of the setup for melpa, as copied from evil installation instructions
 (package-refresh-contents)
 #+END_SRC
 
+** Use-Package seems necessary
+
+#+BEGIN_SRC emacs-lisp
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+#+END_SRC
+
+
 * Evilify everything because emacs keybindings are horrible
 
 Download and install evil 
 
 #+BEGIN_SRC emacs-lisp
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
-(setq evil-want-keybinding nil)  ;; this is apparently required for evil-collection keybindings.
-(require 'evil)
-(evil-mode 1)
+
+(use-package evil
+  :ensure t ;; install the evil package if not installed
+  :init 
+  (setq evil-want-keybinding nil)  ;; this is apparently required for evil-collection keybindings.
+)
+  (evil-mode)
+
 #+END_SRC
 
 Let's get as much evilified as humanly possible just to start, eh?
