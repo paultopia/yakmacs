@@ -21,6 +21,8 @@ So, that's cool.
    - I use the tag *key* for headlines that contain code with a keybinding in it.  This is for ease of later documentation.
        - At some point I want to create a personal usage manual.
 
+   - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
+
 * Package management
 
 ** Make MELPA run
@@ -195,7 +197,9 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 #+END_SRC
 
 
-* Command browsing
+* Browsing and Finding Things
+
+** Commands
 
 Which-key is apparently The Thing 
 
@@ -204,6 +208,14 @@ Which-key is apparently The Thing
 (which-key-mode)
 #+END_SRC
 
+** Files and such 
+
+Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
+
+#+BEGIN_SRC emacs-lisp
+  (use-package ivy)
+  (ivy-mode 1)
+#+END_SRC
 
 * Keybindings
 
@@ -231,7 +243,24 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 ** Global leader keybindings
 
-TBD
+GLOBAL KEYBINDINGS FROM LEADER KEY 
+
+| command | function  |
+| f f     | find file |
+|         |           |
+
+
+*** Files
+
+tryna swipe the binding I use most often in spacemacs
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"f" '(:ignore t :which-key "Files")
+"ff" 'counsel-find-file)
+
+#+END_SRC
 
 ** Mode-specific leader keybindings
 
@@ -304,9 +333,9 @@ For modeline [[https://www.emacswiki.org/emacs/Evil#toc19][here is some code wor
 
 I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]]. 
 ** Stuff to steal from spacemacs
-*** Leader key
-**** command browsing from leader key
-*** file browsing and completion in project
+*** DONE Leader key
+**** DONE command browsing from leader key
+*** DONE file browsing and completion in project
 
 ** minor keybinding tweaks
      - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
