@@ -143,26 +143,6 @@ Let's get as much evilified as humanly possible just to start, eh?
 #+END_SRC
 
 
-* Keybinding to make delimiter for elisp blocks with @    :dev:
-
-This is slightly black-magic-ey.  add-lisp-delimiters is defined in init.el. 
-That function looks for a variable called in-config-file, and, if it's set 
-(as it is on the very first line of this file... and apparently it has to be the very 
-first line, the second line won't do), then it pastes in the BEGIN_SRC stuff. So I bind it to ampersand, 
-because I don't *think* anything else uses @ ...?
-
-This is something I may wish to remove in production too.
-
-
-#+BEGIN_SRC emacs-lisp
-
-(add-hook 'org-mode-hook 
-  (lambda () 
-    (evil-global-set-key 'normal (kbd "@") 'add-lisp-delimiters)))
-
-#+END_SRC
-
-
 * Visual Fixes
 
 This is going to have to be minimal in dev. I'm using it over terminal, so stuff doesn't work right. 
@@ -271,6 +251,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY
 | w -     | new window below      |
 | w d     | delete current window |
 | w x     | delete other windows  |
+| w c     | cycle to next window  |
 |         |                       |
 
 
@@ -296,7 +277,8 @@ tryna swipe the binding I use most often in spacemacs
 "w/" 'split-window-right
 "w-" 'split-window-below
 "wd" 'delete-window
-"wx" 'delete-other-windows)
+"wx" 'delete-other-windows
+"wc" 'other-window)
 
 #+END_SRC
 
@@ -323,6 +305,30 @@ ORG MODE, NORMAL:
 "f" 'org-cycle )
 
 #+END_SRC
+
+
+
+* Development (of emacs config) conveniences   :dev: 
+
+
+** Keybinding to make delimiter for elisp blocks with @         
+
+This is slightly black-magic-ey.  add-lisp-delimiters is defined in init.el. 
+That function looks for a variable called in-config-file, and, if it's set 
+(as it is on the very first line of this file... and apparently it has to be the very 
+first line, the second line won't do), then it pastes in the BEGIN_SRC stuff. So I bind it to ampersand, 
+because I don't *think* anything else uses @ ...?
+
+
+
+#+BEGIN_SRC emacs-lisp
+
+(add-hook 'org-mode-hook 
+  (lambda () 
+    (evil-global-set-key 'normal (kbd "@") 'add-lisp-delimiters)))
+
+#+END_SRC
+
 
 
 * TODO problems to fix
