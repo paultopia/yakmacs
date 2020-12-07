@@ -1,22 +1,31 @@
 # -*- in-config-file: t -*-
 
-reminder to self: shift-TAB or g<tab> unfolds headings, for when you open this file and forget the keybinding.
+reminder to self: g<tab> unfolds headings, for when you open this file and forget the keybinding.
+
 
 * Wth?
 This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
 naked emacs. It's running on a raspberry pi, with the idea that after I make it sufficiently functional 
-(which could be, like, years), then
+(which could be, like, years), then I can just yank spacemacs out and drop this directly in the emacs.d on my mac.
 
 This is also the configuration file itself, because I'm doing fancy org babel literate config stuff.
 
 So, that's cool.
 
+** Conventions
+
+   - I use the tag *dev* for headlines that contain code that might need to be removed in production. 
+       - Platform-specific stuff (like the GNU TLS incantation below)
+       - Dev-specific stuff, like the snipped I bound to @ below.
+
+   - I use the tag *key* for headlines that contain code with a keybinding in it.  This is for ease of later documentation.
+       - At some point I want to create a personal usage manual.
 
 * Package management
 
 ** Make MELPA run
 
-*** Cargo-Cult Incantation
+*** Cargo-Cult Incantation  :dev:
 
 This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
 it comes from this place: 
@@ -24,13 +33,13 @@ https://francopasut.medium.com/emacs-melpa-and-the-failed-to-download-gnu-archiv
 
 May be platform specific, I should probably try getting rid of this when I move the whole config off 
 the raspberry pi where I'm putting this together and onto the mac. (call that production rather than 
-development.)
+development.)  (Or only set it for linux machines?  I saw some snippet somewhere where someone ran some code 
+differently depending on the machine they were on.)
 
 #+BEGIN_SRC emacs-lisp
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 #+END_SRC
 
-**** TODO figure out some way to label code blocks to consider removing in production
 
 ** The rest of the setup for melpa, as copied from evil installation instructions 
 
@@ -108,7 +117,7 @@ Let's get as much evilified as humanly possible just to start, eh?
       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 #+END_SRC
 
-* Keybinding to make delimiter for elisp blocks with @ 
+* Keybinding to make delimiter for elisp blocks with @    :dev:
 
 This is slightly black-magic-ey.  add-lisp-delimiters is defined in init.el. 
 That function looks for a variable called in-config-file, and, if it's set 
@@ -228,17 +237,26 @@ TBD
 
 *** Org mode
 
-**** Fix the todo cycle binding that doesn't work 
+**** Ergonomic header and todo cycling                                  :key:
 
-if this works I should be able to do comma then t to cycle todo
+ORG MODE, NORMAL: 
+
+| command | function     |
+|---------+--------------|
+| , t     | cycle todo   |
+| , f     | cycle header |
+|         |              |
+
 
 #+BEGIN_SRC emacs-lisp
 
 (mode-binding 
 :keymaps 'org-mode-map
-"t" 'org-todo)
+"t" 'org-todo
+"f" 'org-cycle )
 
 #+END_SRC
+
 
 * TODO problems to fix
 ** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
@@ -274,11 +292,7 @@ give it to caps lock or something.
 actually, the esc-plus setting seems to work on evil without breaking my normal escape.  I dunno how 
 it manages to overload escape, but whev. 
 
-** DONE some evil-org keybindings don't work.
 
-e.g. [[https://github.com/Somelauw/evil-org-mode][supposedly]] t is bound to the todo cycling keyword thing (org-todo), but it... doesn't do jack?
-
-fixed!  It's comma-t now.
 
 * TODO enhancements to make
 ** Different cursor for normal vs insert or modeline or *something*
