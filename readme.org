@@ -21,6 +21,8 @@ So, that's cool.
    - I use the tag *key* for headlines that contain code with a keybinding in it.  This is for ease of later documentation.
        - At some point I want to create a personal usage manual.
 
+   - I use the tag *breakable* for headlines that contain code that might be mysteriously broken when I move machines. Typically accompanied by a note.
+
    - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
 
 * Package management
@@ -208,7 +210,7 @@ Which-key is apparently The Thing
 (which-key-mode)
 #+END_SRC
 
-** Files and such 
+** Files and such  :breakable: 
 
 Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 
@@ -216,6 +218,14 @@ Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
   (use-package ivy)
   (ivy-mode 1)
 #+END_SRC
+
+*** WARNING 
+
+This might not work when transposed.  Judging from the conversation in [[https://github.com/abo-abo/swiper/issues/2748][this issue I filed on ivy/counsel/swiper]]. 
+
+It might be the case that the only reason I can call counsel-find-file in the keybindings below even though I'm just using use-package to install 
+ivy rather than counsel is because counsel got downloaded but not installed when I tried and failed to install it, and then using ivy somehow calls it in. 
+
 
 * Keybindings
 
@@ -241,7 +251,9 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 #+END_SRC
 
-** Global leader keybindings
+** Global leader keybindings  :breakable:
+
+(Breakable note: see note about ivy/counsel abuve under browsing and finding things)
 
 GLOBAL KEYBINDINGS FROM LEADER KEY 
 
