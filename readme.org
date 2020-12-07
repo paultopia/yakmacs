@@ -142,16 +142,6 @@ Let's get as much evilified as humanly possible just to start, eh?
   (evil-org-agenda-set-keys))
 #+END_SRC
 
-** Modeline colors
-
-#+BEGIN_SRC emacs-lisp
-(setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
-      evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
-      evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
-      evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
-      evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
-      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
-#+END_SRC
 
 * Keybinding to make delimiter for elisp blocks with @    :dev:
 
@@ -233,6 +223,16 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 #+END_SRC
 
 
+** Modeline colors
+
+#+BEGIN_SRC emacs-lisp
+(setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
+      evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
+      evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
+      evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
+      evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
+      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
+#+END_SRC
 
 
 
@@ -265,9 +265,13 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 GLOBAL KEYBINDINGS FROM LEADER KEY 
 
-| command | function  |
-| f f     | find file |
-|         |           |
+| command | function              |
+| f f     | find file             |
+| w /     | new window to right   |
+| w -     | new window below      |
+| w d     | delete current window |
+| w x     | delete other windows  |
+|         |                       |
 
 
 *** Files
@@ -279,6 +283,20 @@ tryna swipe the binding I use most often in spacemacs
 (leader-binding
 "f" '(:ignore t :which-key "Files")
 "ff" 'counsel-find-file)
+
+#+END_SRC
+
+*** Windows
+
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"w" '(:ignore t :which-key "Windows")
+"w/" 'split-window-right
+"w-" 'split-window-below
+"wd" 'delete-window
+"wx" 'delete-other-windows)
 
 #+END_SRC
 
