@@ -21,7 +21,10 @@ So, that's cool.
    - I use the tag *key* for headlines that contain code with a keybinding in it.  This is for ease of later documentation.
        - At some point I want to create a personal usage manual.
 
-   - I use the tag *breakable* for headlines that contain code that might be mysteriously broken when I move machines. Typically accompanied by a note.
+   - I use the tag *breakable* for headlines that contain code that might be mysteriously broken when I move machines. Typically accompanied by a note. 
+       - I would really prefer to not have anything with this tag when it's "done"
+
+   - I use the tag *fragile* for headlines containing code with non-obvious or even downright mysterious failure potential, where I made it work with pure guesswork.
 
    - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
 
@@ -29,7 +32,7 @@ So, that's cool.
 
 ** Make MELPA run
 
-*** Cargo-Cult Incantation  :dev:
+*** Cargo-Cult Incantation  :dev:fragile:
 
 This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
 it comes from this place: 
@@ -69,6 +72,35 @@ differently depending on the machine they were on.)
 #+BEGIN_SRC emacs-lisp
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
+#+END_SRC
+
+
+* Browsing and Finding Things 
+
+** Files and such  :fragile: 
+
+Note *IMPORTANT*: this needs to be invoked right after use-package.  When it's further down in the init, it seems to be clobbered 
+by some other package, and starts generating weird rgb errors.  I think it has something to do with doom-theme, but 
+I also just tried a bare init and then loaded doom theme and this and it's ok somehow.  So somehow 
+there might be a three-way conflict between doom-theme this and some other package?  Fuck if I know.  
+
+[[https://github.com/abo-abo/swiper/issues/2748][unholy details here]]
+
+Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
+
+#+BEGIN_SRC emacs-lisp
+  (use-package counsel)
+  (ivy-mode 1)
+#+END_SRC
+
+
+** Commands
+
+Which-key is apparently The Thing 
+
+#+BEGIN_SRC emacs-lisp
+(use-package which-key)
+(which-key-mode)
 #+END_SRC
 
 
@@ -159,10 +191,10 @@ writing code. But let's start by seeing if I can get a light theme to even show 
 terminal on ipad.
 
 #+BEGIN_SRC emacs-lisp
-;(use-package doom-themes 
-;  :ensure t
-;  :config
-;    (load-theme 'doom-acario-light t)) 
+(use-package doom-themes 
+  :ensure t
+  :config
+    (load-theme 'doom-acario-light t)) 
 
 #+END_SRC
 
@@ -201,32 +233,7 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 #+END_SRC
 
 
-* Browsing and Finding Things
 
-** Commands
-
-Which-key is apparently The Thing 
-
-#+BEGIN_SRC emacs-lisp
-(use-package which-key)
-(which-key-mode)
-#+END_SRC
-
-** Files and such  :breakable: 
-
-Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
-
-#+BEGIN_SRC emacs-lisp
-  (use-package counsel)
-  (ivy-mode 1)
-#+END_SRC
-
-*** WARNING 
-
-This might not work when transposed.  Judging from the conversation in [[https://github.com/abo-abo/swiper/issues/2748][this issue I filed on ivy/counsel/swiper]]. 
-
-It might be the case that the only reason I can call counsel-find-file in the keybindings below even though I'm just using use-package to install 
-ivy rather than counsel is because counsel got downloaded but not installed when I tried and failed to install it, and then using ivy somehow calls it in. 
 
 
 * Keybindings
@@ -253,9 +260,8 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 #+END_SRC
 
-** Global leader keybindings  :breakable:
+** Global leader keybindings 
 
-(Breakable note: see note about ivy/counsel abuve under browsing and finding things)
 
 GLOBAL KEYBINDINGS FROM LEADER KEY 
 
