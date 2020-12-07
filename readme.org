@@ -159,10 +159,10 @@ writing code. But let's start by seeing if I can get a light theme to even show 
 terminal on ipad.
 
 #+BEGIN_SRC emacs-lisp
-(use-package doom-themes 
-  :ensure t
-  :config
-    (load-theme 'doom-acario-light t)) 
+;(use-package doom-themes 
+;  :ensure t
+;  :config
+;    (load-theme 'doom-acario-light t)) 
 
 #+END_SRC
 
@@ -176,6 +176,8 @@ computer in a bit.
 
 Well, even more oddly, the colors in iterm are a muted version of the colors on ipad.  That's a little wacky.  
 It's not horrible, so, once again, I'm not going to bother to fix it. But, lordy. 
+
+UPDATE: apparently doom themes is clobbering counsel how.  who the fuck knows.
 
 *** DONE fix parens highlighting in this theme.  It kind of sucks.
 
@@ -215,7 +217,7 @@ Which-key is apparently The Thing
 Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 
 #+BEGIN_SRC emacs-lisp
-  (use-package ivy)
+  (use-package counsel)
   (ivy-mode 1)
 #+END_SRC
 
