@@ -195,6 +195,51 @@ Which-key is apparently The Thing
 (which-key-mode)
 #+END_SRC
 
+
+* Keybindings
+
+** Bust out General
+
+I think I pretty much just only want these keybindings in normal mode for now.
+
+#+BEGIN_SRC emacs-lisp
+(use-package general
+)
+
+(defconst leader "SPC")
+(defconst mode-leader ",")
+(general-create-definer leader-binding
+  :prefix leader
+  :states 'normal
+  :keymaps 'override) 
+
+(general-create-definer mode-binding
+  :prefix mode-leader
+  :states 'normal
+  :keymaps 'override)
+
+#+END_SRC
+
+** Global leader keybindings
+
+TBD
+
+** Mode-specific leader keybindings
+
+*** Org mode
+
+**** Fix the todo cycle binding that doesn't work 
+
+if this works I should be able to do comma then t to cycle todo
+
+#+BEGIN_SRC emacs-lisp
+
+(mode-binding 
+:keymaps 'org-mode-map
+"t" 'org-todo)
+
+#+END_SRC
+
 * TODO problems to fix
 ** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
 
@@ -229,9 +274,11 @@ give it to caps lock or something.
 actually, the esc-plus setting seems to work on evil without breaking my normal escape.  I dunno how 
 it manages to overload escape, but whev. 
 
-** TODO some evil-org keybindings don't work.
+** DONE some evil-org keybindings don't work.
 
 e.g. [[https://github.com/Somelauw/evil-org-mode][supposedly]] t is bound to the todo cycling keyword thing (org-todo), but it... doesn't do jack?
+
+fixed!  It's comma-t now.
 
 * TODO enhancements to make
 ** Different cursor for normal vs insert or modeline or *something*
@@ -247,6 +294,14 @@ I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]].
 **** command browsing from leader key
 *** file browsing and completion in project
 
+** minor keybinding tweaks
+     - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
+     - bind the arrow keys to paging in which-keys (so sue me, I like arrow keys)
+** editing tweaks
+   - word wraps --- I could just set (global-visual-line-mode 1) but I wonder if I want it mode specific?
+** some kind of non-utf-8 utility
+   actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
+   - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
 * TODO Checklist for moving to prod
 ** TODO Language support
    this is the list of languages that I must have functioning before I'm even going to consider moving off 
@@ -276,3 +331,8 @@ This means
 ** TODO window management
       - leader-key-style keybindings to close and open new windows
       - some kind of clone of spacemacs golden ratio mode
+
+* inspo
+
+[[https://sam217pa.github.io/2016/09/02/how-to-build-your-own-spacemacs/][this person]] [[https://sam217pa.github.io/2016/08/30/how-to-make-your-own-spacemacs/][also]].
+[[https://jamiecollinson.com/blog/my-emacs-config/#][this setup]]
