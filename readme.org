@@ -247,6 +247,8 @@ GLOBAL KEYBINDINGS FROM LEADER KEY
 
 | command | function              |
 | f f     | find file             |
+| f s     | save file             |
+| f n     | save to new name      |
 | w /     | new window to right   |
 | w -     | new window below      |
 | w d     | delete current window |
@@ -263,7 +265,9 @@ tryna swipe the binding I use most often in spacemacs
 
 (leader-binding
 "f" '(:ignore t :which-key "Files")
-"ff" 'counsel-find-file)
+"ff" 'counsel-find-file
+"fs" 'save-buffer
+"fn" 'write-file)
 
 #+END_SRC
 
