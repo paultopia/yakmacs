@@ -254,12 +254,13 @@ GLOBAL KEYBINDINGS FROM LEADER KEY
 | w d     | delete current window |
 | w x     | delete other windows  |
 | w c     | cycle to next window  |
-|         |                       |
+| b d     | kill buffer           |
+| b b     | buffer menu           |
 
 
 *** Files
 
-tryna swipe the binding I use most often in spacemacs
+tryna swipe the bindings I use most often in spacemacs
 
 #+BEGIN_SRC emacs-lisp
 
@@ -268,6 +269,18 @@ tryna swipe the binding I use most often in spacemacs
 "ff" 'counsel-find-file
 "fs" 'save-buffer
 "fn" 'write-file)
+
+#+END_SRC
+
+*** Buffers
+
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"b" '(:ignore t :which-key "Buffers")
+"bd" 'kill-this-buffer
+"bb" 'ivy-switch-buffer)
 
 #+END_SRC
 
