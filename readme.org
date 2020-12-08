@@ -86,13 +86,15 @@ there might be a three-way conflict between doom-theme this and some other packa
 
 [[https://github.com/abo-abo/swiper/issues/2748][unholy details here]]
 
+update: this may be fixed; I swapped in a new version of the swiper library and moved the installation of counsel 
+down to the bottom of the file, and it worked just fine. 
+
 Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 
 #+BEGIN_SRC emacs-lisp
   (use-package counsel)
   (ivy-mode 1)
 #+END_SRC
-
 
 ** Commands
 
@@ -345,6 +347,9 @@ because I don't *think* anything else uses @ ...?
     (evil-global-set-key 'normal (kbd "@") 'add-lisp-delimiters)))
 
 #+END_SRC
+
+
+
 
 
 

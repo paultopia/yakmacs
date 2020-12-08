@@ -4,8 +4,6 @@
 
 ;; Author: Oleh Krehel <ohwoeowho@gmail.com>
 ;; URL: https://github.com/abo-abo/swiper
-;; Package-Version: 20201002.1049
-;; Package-Commit: ab36ccb32322f2b500f947bbe10f62194a9ef6c8
 ;; Version: 0.13.0
 ;; Package-Requires: ((emacs "24.5") (ivy "0.13.0"))
 ;; Keywords: matching
@@ -44,47 +42,47 @@
   :prefix "swiper-")
 
 (defface swiper-match-face-1
-  '((t (:inherit lazy-highlight)))
+  '((t :inherit lazy-highlight))
   "The background face for `swiper' matches."
   :group 'ivy-faces)
 
 (defface swiper-match-face-2
-  '((t (:inherit isearch)))
+  '((t :inherit isearch))
   "Face for `swiper' matches modulo 1."
   :group 'ivy-faces)
 
 (defface swiper-match-face-3
-  '((t (:inherit match)))
+  '((t :inherit match))
   "Face for `swiper' matches modulo 2."
   :group 'ivy-faces)
 
 (defface swiper-match-face-4
-  '((t (:inherit isearch-fail)))
+  '((t :inherit isearch-fail))
   "Face for `swiper' matches modulo 3."
   :group 'ivy-faces)
 
 (defface swiper-background-match-face-1
-  '((t (:inherit swiper-match-face-1)))
+  '((t :inherit swiper-match-face-1))
   "The background face for non-current `swiper' matches."
   :group 'ivy-faces)
 
 (defface swiper-background-match-face-2
-  '((t (:inherit swiper-match-face-2)))
+  '((t :inherit swiper-match-face-2))
   "Face for non-current `swiper' matches modulo 1."
   :group 'ivy-faces)
 
 (defface swiper-background-match-face-3
-  '((t (:inherit swiper-match-face-3)))
+  '((t :inherit swiper-match-face-3))
   "Face for non-current `swiper' matches modulo 2."
   :group 'ivy-faces)
 
 (defface swiper-background-match-face-4
-  '((t (:inherit swiper-match-face-4)))
+  '((t :inherit swiper-match-face-4))
   "Face for non-current `swiper' matches modulo 3."
   :group 'ivy-faces)
 
 (defface swiper-line-face
-  '((t (:inherit highlight)))
+  '((t :inherit highlight))
   "Face for current `swiper' line."
   :group 'ivy-faces)
 
@@ -110,13 +108,12 @@
                  swiper-background-match-face-4))
         (colir-compose-method #'colir-compose-soft-light))
     (cl-mapc (lambda (f1 f2)
-               (let ((bg (face-background f1)))
+               (let* ((bg (face-background f1))
+                      ;; FIXME: (colir-color-parse "color-22") is nil.
+                      (bg (and bg (colir-color-parse bg))))
                  (when bg
-                   (set-face-background
-                    f2
-                    (colir-blend
-                     (colir-color-parse bg)
-                     (colir-color-parse "#ffffff"))))))
+                   (setq bg (colir-blend bg (colir-color-parse "#ffffff")))
+                   (set-face-background f2 bg))))
              swiper-faces
              faces)))
 (swiper--recompute-background-faces)
