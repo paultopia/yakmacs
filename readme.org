@@ -50,6 +50,15 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 
 
 
+* Make things involving the commandline work on mac.
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
+
+#+END_SRC
+
 * Browsing and Finding Things 
 
 ** Files and such  :fragile: 
@@ -416,6 +425,28 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 - keybindings for a shell?  maybe also after.  (and for sending commands to shell etc.)
 
 - test runner support?  
+
+
+** Markdown
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'markdown-mode)
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+(autoload 'gfm-mode "markdown-mode"
+   "Major mode for GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+
+(setq markdown-command
+      (concat
+       "/usr/local/bin/pandoc"
+       " --from=markdown --to=html"
+       " --standalone --mathjax --highlight-style=pygments"))
+
+#+END_SRC
 
 * Development (of emacs config) conveniences   :dev: 
 
