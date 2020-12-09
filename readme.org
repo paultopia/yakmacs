@@ -44,7 +44,7 @@ development.)  (Or only set it for linux machines?  I saw some snippet somewhere
 differently depending on the machine they were on.)
 
 #+BEGIN_SRC emacs-lisp
-(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+;(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 #+END_SRC
 
 
