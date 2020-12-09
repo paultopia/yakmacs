@@ -48,31 +48,27 @@ differently depending on the machine they were on.)
 #+END_SRC
 
 
-** The rest of the setup for melpa, as copied from evil installation instructions 
+(with the big switch to straight, I don't know if I need this anymore, but will perhaps remove it in a later commit and see what happens)
+
+** Straight: an actual package manager.
 
 #+BEGIN_SRC emacs-lisp
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-;; (package-refresh-contents) Maybe things will still work if I comment this out, but with fewer calls?
+
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
 #+END_SRC
 
-** Use-Package seems necessary
-
-#+BEGIN_SRC emacs-lisp
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(require 'use-package)
-#+END_SRC
-
-*** and I'm sick of putting ensure t in everything
-
-#+BEGIN_SRC emacs-lisp
-(require 'use-package-ensure)
-(setq use-package-always-ensure t)
-#+END_SRC
 
 
 * Browsing and Finding Things 
@@ -92,8 +88,8 @@ down to the bottom of the file, and it worked just fine.
 Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 
 #+BEGIN_SRC emacs-lisp
-  (use-package counsel)
-  (ivy-mode 1)
+(straight-use-package 'counsel)
+(ivy-mode 1)
 #+END_SRC
 
 ** Commands
@@ -101,7 +97,8 @@ Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 Which-key is apparently The Thing 
 
 #+BEGIN_SRC emacs-lisp
-(use-package which-key)
+(straight-use-package 'which-key)
+(require 'which-key)
 (which-key-mode)
 #+END_SRC
 
@@ -112,11 +109,10 @@ Which-key is apparently The Thing
 
 #+BEGIN_SRC emacs-lisp
 
-(use-package evil
-  :ensure t ;; install the evil package if not installed
-  :init 
-  (setq evil-want-keybinding nil))  ;; this is apparently required for evil-collection keybindings.
-  (evil-mode)
+(straight-use-package 'evil)
+(setq evil-want-keybinding nil)  ;; this is apparently required for evil-collection keybindings.
+(require 'evil)
+(evil-mode)
 
 #+END_SRC
 
@@ -124,24 +120,20 @@ Which-key is apparently The Thing
 Let's get as much evilified as humanly possible just to start, eh?
 
 #+BEGIN_SRC emacs-lisp
-(use-package evil-commentary
-  :ensure t)
+
+(straight-use-package 'evil-commentary)
+(require 'evil-commentary)
 (evil-commentary-mode)
 
-(use-package evil-collection
-  :ensure t)
-(evil-collection-init)
+(straight-use-package 'evil-collection)
 
-(use-package evil-org
-  :ensure t
-  :after org
-  :config
-  (add-hook 'org-mode-hook 'evil-org-mode)
-  (add-hook 'evil-org-mode-hook
-            (lambda ()
-              (evil-org-set-key-theme)))
-  (require 'evil-org-agenda)
-  (evil-org-agenda-set-keys))
+(straight-use-package 'evil-org)
+(require 'evil-org)
+(add-hook 'org-mode-hook 'evil-org-mode)
+(evil-org-set-key-theme '(navigation insert textobjects additional calendar))
+(require 'evil-org-agenda)
+(evil-org-agenda-set-keys)
+
 #+END_SRC
 
 
@@ -163,10 +155,9 @@ writing code. But let's start by seeing if I can get a light theme to even show 
 terminal on ipad.
 
 #+BEGIN_SRC emacs-lisp
-(use-package doom-themes 
-  :ensure t
-  :config
-    (load-theme 'doom-acario-light t)) 
+
+(straight-use-package 'doom-themes) 
+(load-theme 'doom-acario-light t)
 
 #+END_SRC
 
@@ -181,16 +172,16 @@ computer in a bit.
 Well, even more oddly, the colors in iterm are a muted version of the colors on ipad.  That's a little wacky.  
 It's not horrible, so, once again, I'm not going to bother to fix it. But, lordy. 
 
-UPDATE: apparently doom themes is clobbering counsel how.  who the fuck knows.
 
-*** DONE fix parens highlighting in this theme.  It kind of sucks.
 
 ** I never even use the menu bar in GUI
 
 kill it with fire.
 
 #+BEGIN_SRC emacs-lisp
+
 (menu-bar-mode -1)
+
 #+END_SRC
 
 
@@ -199,7 +190,7 @@ kill it with fire.
 Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 #+BEGIN_SRC emacs-lisp
-(use-package rainbow-delimiters)
+(straight-use-package 'rainbow-delimiters)
 (add-hook 'org-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 #+END_SRC
@@ -225,8 +216,7 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 I think I pretty much just only want these keybindings in normal mode for now.
 
 #+BEGIN_SRC emacs-lisp
-(use-package general
-)
+(straight-use-package 'general)
 
 (defconst leader "SPC")
 (defconst mode-leader ",")
@@ -260,7 +250,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY
 | b b     | buffer menu           |
 
 
-*** Files
+*** Files   :key:
 
 tryna swipe the bindings I use most often in spacemacs
 
@@ -274,7 +264,7 @@ tryna swipe the bindings I use most often in spacemacs
 
 #+END_SRC
 
-*** Buffers
+*** Buffers    :key:
 
 
 #+BEGIN_SRC emacs-lisp
@@ -286,7 +276,7 @@ tryna swipe the bindings I use most often in spacemacs
 
 #+END_SRC
 
-*** Windows
+*** Windows   :key: 
 
 
 #+BEGIN_SRC emacs-lisp
