@@ -223,23 +223,19 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 (straight-use-package 'telephone-line)
 
 (setq telephone-line-lhs
-      '((evil   . (telephone-line-evil-tag-segment))
-        (evil . (telephone-line-vc-segment
-                   telephone-line-process-segment))
-        (evil    . (telephone-line-buffer-segment))))
+      '((evil   . (telephone-line-airline-position-segment
+                   telephone-line-evil-tag-segment
+                   telephone-line-vc-segment
+                   telephone-line-process-segment
+                   telephone-line-buffer-segment
+                   telephone-line-buffer-modified-segment))
+))
 (setq telephone-line-rhs
-      '((evil    . (telephone-line-misc-info-segment))
-        (evil . (telephone-line-major-mode-segment))
-        (evil   . (telephone-line-airline-position-segment))))
+      '((evil    . (telephone-line-major-mode-segment))
+))
 
 (telephone-line-mode 1)
 
-  ;; (setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
-  ;;       evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
-  ;;       evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
-  ;;       evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
-  ;;       evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
-  ;;       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 #+END_SRC
 
 
@@ -451,9 +447,7 @@ because I don't *think* anything else uses @ ...?
 
 * TODO enhancements to make
 ** Fancier modeline with mode and git enhancements
-   - Doom modeline?
-   - Spacemacs modeline? 
-   - Just roll my own? [[https://occasionallycogent.com/custom_emacs_modeline/index.html][it may not be that hard]].
+   - I'm happy with [[https://github.com/dbordak/telephone-line/][telephone-line]] for now, except I'd like to be able to have three color chunks, one reflecting mode, 1 reflecting file save status, and 1 reflecting git status.
 ** minor keybinding tweaks
      - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
      - bind the arrow keys to paging in which-keys (so sue me, I like arrow keys)
