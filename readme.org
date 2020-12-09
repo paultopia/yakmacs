@@ -120,27 +120,68 @@ Let's get as much evilified as humanly possible just to start, eh?
 
 ** Theme
 
-The doom themes look nice. Ultimately, I want to set a light, low-contrast, theme for writing prose 
-(i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
-writing code. But a light theme is fine for now.
 
-light theme best candidate: doom-opera-light or doom-acario-light
-dark theme best candidate: doom-sourcerer (but doom-palenight and doom-moonlight are also good)
+Setup
 
-the advice on load-theme comes from [[https://emacs.stackexchange.com/a/3114/12604][this SO]] --- trying it to resolve weird sticky colored line after changing themes.
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'doom-themes) 
+#+END_SRC
+
+Convenience functions
 
 #+BEGIN_SRC emacs-lisp
 
-(straight-use-package 'doom-themes) 
-(defadvice load-theme (before theme-dont-propagate activate)
- (mapc #'disable-theme custom-enabled-themes))
+(defvar dark-theme 'doom-sourcerer)
+(defvar light-theme 'doom-opera-light)
 
-; (load-theme 'doom-acario-light t)
-(load-theme 'doom-opera-light t)
+(defun disable-all-themes ()
+  "disable all active themes."
+  (dolist (i custom-enabled-themes)
+    (disable-theme i)))
+
+(defun dark-mode ()
+(interactive)
+(disable-all-themes)
+(load-theme dark-theme t))
+
+
+(defun light-mode ()
+(interactive)
+(disable-all-themes)
+(load-theme light-theme t))
+
+
 #+END_SRC
 
 
-** Get rid of menubar, toolbar, scrollbar
+Dark mode for programming 
+
+I'm not going to use prog-mode-hook on this because it seems to fire it off on org?  but I want org to be light...
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'python-mode-hook 'dark-mode)
+#+END_SRC
+
+Light mode for writing
+
+gonna fire this up for markdown mode too.  Maybe it would make sense to define a writing mode hook encompassing org mode and markdown mode?
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'org-mode-hook 'light-mode)
+#+END_SRC
+
+This doesn't seem to work perfectly: if I start in an org buffer then open the python buffer, the hook fires and I go dark.  but then if I close the python buffer even though the 
+org mode buffer is back on the screen it doesn't go light again.  It does go light if I close the org buffer and reopen it though.  Hmm.  For now I think I'll just toss in a quick keybinding to fix it. 
+
+Start out in light mode
+
+#+BEGIN_SRC emacs-lisp
+(light-mode)
+#+END_SRC
+
+** GUI tweaks
+
+Get rid of menubar, toolbar, scrollbar
 
 
 #+BEGIN_SRC emacs-lisp
@@ -150,7 +191,7 @@ the advice on load-theme comes from [[https://emacs.stackexchange.com/a/3114/126
 (toggle-scroll-bar -1)
 #+END_SRC
 
-** Start full-sized
+Start full-sized
 
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
@@ -264,6 +305,14 @@ tryna swipe the bindings I use most often in spacemacs
 
 #+END_SRC
 
+*** Colors :key:
+
+#+BEGIN_SRC emacs-lisp
+;(leader-binding
+;"c" '(:ignore t :which-key "Colors")
+;"cl" 'light-mode
+;"ed" 'dark-mode)
+#+END_SRC
 
 *** Elisp :key:
 
@@ -271,11 +320,9 @@ I want keybindings to quickly evaluate some elisp so that I don't have to rememb
 
 
 #+BEGIN_SRC emacs-lisp
-
 (leader-binding
-"e" '(:ignore t :which-key "Buffers")
+"e" '(:ignore t :which-key "Elisp")
 "ee" 'eval-last-sexp)
-
 #+END_SRC
 
 ** Mode-specific leader keybindings
