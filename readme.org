@@ -144,11 +144,6 @@ When I move to prod and GUI, will enhance.
 
 ** Theme
 
-This could actually be a bit dicey. I'm working across blink in dark mode on my ipad and iterm with a semi-
-light mode on my mac, and I've got no clue if emacs themes will look the same across these different 
-terminals and on a GUI interaction. I guess I could VNC into an X session to test this out, but 
-that seems like a hassle.  Yolo. 
-
 The doom themes look nice. Ultimately, I want to set a light, low-contrast, theme for writing prose 
 (i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
 writing code. But let's start by seeing if I can get a light theme to even show up on my dark 
@@ -340,7 +335,6 @@ ORG MODE, NORMAL:
 This is marked fragile because it will depend on local python config. On the PI, I used an alias to get python3 to be python, 
 and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine, there'll have to be some kind of virtualenv thing happening. 
 
-I first tried elpy, but couldn't get it to see the python3 interpreter.  So, trying anaconda instead, because I don't have the patience for this nonsense.
 
 *** Anaconda
 
@@ -351,7 +345,17 @@ I first tried elpy, but couldn't get it to see the python3 interpreter.  So, try
 (add-hook 'python-mode-hook 'anaconda-mode)
 #+END_SRC
 
+*** PYTHON TODO 
 
+- add [[https://github.com/pythonic-emacs/blacken][blacken]]
+
+- add and set up [[https://www.flycheck.org/en/latest/user/installation.html][flycheck]] for syntax checking (probably for other languages too)
+
+- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]?  This may have to wait till real machine.
+
+- keybindings for a shell?  maybe also after.  (and for sending commands to shell etc.)
+
+- test runner support?  
 
 * Development (of emacs config) conveniences   :dev: 
 
@@ -384,13 +388,6 @@ because I don't *think* anything else uses @ ...?
 
 it works when I use iterm over macos but not when I use blink over ios?!  WTF?? How is that even possible?
 
-** DONE it dials out to MELPA on every start, even if there's no new packages to load.   
-
-Maybe this has to do with package-refresh-contents? see: https://github.com/jwiegley/use-package/issues/494
-The answer here https://stackoverflow.com/questions/24280325/emacs-use-package-and-package-refresh-contents 
-might be the solution to sorting out when to call package-refresh-contents?
-
-I'm starting by just commenting out the call to package-refresh-contents in the melpa setup. That works!  Yay! 
 
 ** DONE I don't seem to have a meta key on the ipad keyboard?
 Something in here might be a fix. https://github.com/blinksh/blink/issues/198 
@@ -437,6 +434,7 @@ I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]].
 ** some kind of non-utf-8 utility
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
    - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
+** swipe-scrolling on the touchpad like with vim
 * TODO Checklist for moving to prod
 ** TODO Language support
    this is the list of languages that I must have functioning before I'm even going to consider moving off 
