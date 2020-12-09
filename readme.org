@@ -3,6 +3,8 @@
 reminder to self: g<tab> unfolds headings, for when you open this file and forget the keybinding.
 
 
+
+
 * Wth?
 
 I'm now running this emacs config on my mac!  I've escaped spacemacs!  Even though 
@@ -24,6 +26,48 @@ that I didn't know how to escape, in init.el.)  So that's cool.
    - I use the tag *fragile* for headlines containing code with non-obvious or even downright mysterious failure potential, where I made it work with pure guesswork.
 
    - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
+
+* All the Keybindings I've defined, listed.
+
+All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
+
+GLOBAL KEYBINDINGS FROM LEADER KEY (space)
+
+
+| command | function               |
+| f f     | find file              |
+| f s     | save file              |
+| f n     | save to new name       |
+| w /     | new window to right    |
+| w -     | new window below       |
+| w d     | delete current window  |
+| w x     | delete other windows   |
+| w c     | cycle to next window   |
+| b d     | kill buffer            |
+| b b     | buffer menu            |
+| e e     | eval sexp before point |
+|         |                        |
+
+
+Mode leader is comma.
+
+ORG MODE 
+
+| command | function     |
+|---------+--------------|
+| , t     | cycle todo   |
+| , f     | cycle header |
+|         |              |
+
+
+MARKDOWN
+
+| command | function           |
+| , h     | hide markup        |
+| , f     | fold/unfold header |
+|         |                    |
+
+
 
 * Package management
 
@@ -275,23 +319,6 @@ I think I pretty much just only want these keybindings in normal mode for now.
 ** Global leader keybindings 
 
 
-GLOBAL KEYBINDINGS FROM LEADER KEY 
-
-| command | function               |
-| f f     | find file              |
-| f s     | save file              |
-| f n     | save to new name       |
-| w /     | new window to right    |
-| w -     | new window below       |
-| w d     | delete current window  |
-| w x     | delete other windows   |
-| w c     | cycle to next window   |
-| b d     | kill buffer            |
-| b b     | buffer menu            |
-| e e     | eval sexp before point |
-|         |                        |
-
-
 *** Files   :key:
 
 tryna swipe the bindings I use most often in spacemacs
@@ -356,14 +383,6 @@ I want keybindings to quickly evaluate some elisp so that I don't have to rememb
 ** Mode-specific leader keybindings
 
 *** Org mode
-
-ORG MODE, NORMAL: 
-
-| command | function     |
-|---------+--------------|
-| , t     | cycle todo   |
-| , f     | cycle header |
-|         |              |
 
 
 #+BEGIN_SRC emacs-lisp
@@ -456,12 +475,6 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 *** Keybindings for Markdown                                            :key:
 
 (Really need to reorg this.  Not sure that I can define keys before bringing in the mode tho...)
-
-| command | function           |
-| , h     | hide markup        |
-| , f     | fold/unfold header |
-|         |                    |
-
 #+BEGIN_SRC emacs-lisp
 
 (mode-binding 
