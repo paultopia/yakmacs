@@ -116,7 +116,7 @@ Let's get as much evilified as humanly possible just to start, eh?
 #+END_SRC
 
 
-* Visual Fixes
+* Visual 
 
 ** Theme
 
@@ -215,15 +215,31 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 #+END_SRC
 
 
-** Modeline colors
+** Modeline
+
 
 #+BEGIN_SRC emacs-lisp
-(setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
-      evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
-      evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
-      evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
-      evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
-      evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
+
+(straight-use-package 'telephone-line)
+
+(setq telephone-line-lhs
+      '((evil   . (telephone-line-evil-tag-segment))
+        (evil . (telephone-line-vc-segment
+                   telephone-line-process-segment))
+        (evil    . (telephone-line-buffer-segment))))
+(setq telephone-line-rhs
+      '((evil    . (telephone-line-misc-info-segment))
+        (evil . (telephone-line-major-mode-segment))
+        (evil   . (telephone-line-airline-position-segment))))
+
+(telephone-line-mode 1)
+
+  ;; (setq evil-normal-state-tag   (propertize "N" 'face '((:background "green" :foreground "black")))
+  ;;       evil-emacs-state-tag    (propertize "E" 'face '((:background "orange" :foreground "black")))
+  ;;       evil-insert-state-tag   (propertize "I" 'face '((:background "red")))
+  ;;       evil-motion-state-tag   (propertize "M" 'face '((:background "blue")))
+  ;;       evil-visual-state-tag   (propertize "V" 'face '((:background "grey80" :foreground "black")))
+  ;;       evil-operator-state-tag (propertize "O" 'face '((:background "purple"))))
 #+END_SRC
 
 
