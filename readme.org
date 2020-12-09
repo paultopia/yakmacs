@@ -4,25 +4,22 @@ reminder to self: g<tab> unfolds headings, for when you open this file and forge
 
 
 * Wth?
-This is the readme for the github repo where I attempt to make myself a functional emacs configuration from 
-naked emacs. It's running on a raspberry pi, with the idea that after I make it sufficiently functional 
-(which could be, like, years), then I can just yank spacemacs out and drop this directly in the emacs.d on my mac.
 
-This is also the configuration file itself, because I'm doing fancy org babel literate config stuff.
+I'm now running this emacs config on my mac!  I've escaped spacemacs!  Even though 
+it's not done yet, it's functional enough that I can use it, and I got sick of worrying about what kinds 
+of things would have to be changed after moving machines.
 
-So, that's cool.
+doing the literate org config, so this readme file is also my config file!  (Well, most of it.  I 
+defined a little bit of stuff that applies to this file itself, like a snippet to get elisp code blocks 
+that I didn't know how to escape, in init.el.)  So that's cool.
+
 
 ** Conventions
 
-   - I use the tag *dev* for headlines that contain code that might need to be removed in production. 
-       - Platform-specific stuff (like the GNU TLS incantation below)
-       - Dev-specific stuff, like the snipped I bound to @ below.
+   - I use the tag *dev* for headlines that contain code that might go away when I'm happy with this config, like the snippet I bound to @ below.
 
    - I use the tag *key* for headlines that contain code with a keybinding in it.  This is for ease of later documentation.
-       - At some point I want to create a personal usage manual.
-
-   - I use the tag *breakable* for headlines that contain code that might be mysteriously broken when I move machines. Typically accompanied by a note. 
-       - I would really prefer to not have anything with this tag when it's "done"
+     - At some point I want to create a personal usage manual.
 
    - I use the tag *fragile* for headlines containing code with non-obvious or even downright mysterious failure potential, where I made it work with pure guesswork.
 
@@ -30,27 +27,9 @@ So, that's cool.
 
 * Package management
 
-** Make MELPA run
+[[https://github.com/raxod502/straight.el][Straight]] appears to be an /actual package manager/ unlike stuff like use-package.  I can get a lockfile with commit hashes for every package I use with ~(straight-freeze-versions)~ . 
 
-*** Cargo-Cult Incantation  :dev:fragile:
-
-This is an incantation that appears to be required to get MELPA to work. I've got no idea why, but 
-it comes from this place: 
-https://francopasut.medium.com/emacs-melpa-and-the-failed-to-download-gnu-archive-error-b834bbe4491e
-
-May be platform specific, I should probably try getting rid of this when I move the whole config off 
-the raspberry pi where I'm putting this together and onto the mac. (call that production rather than 
-development.)  (Or only set it for linux machines?  I saw some snippet somewhere where someone ran some code 
-differently depending on the machine they were on.)
-
-#+BEGIN_SRC emacs-lisp
-;(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-#+END_SRC
-
-
-(with the big switch to straight, I don't know if I need this anymore, but will perhaps remove it in a later commit and see what happens)
-
-** Straight: an actual package manager.
+Given that emacs packages seem to just /love/ generating side effects, this seems like a thing that is absolutely mandatory. I've already had one nasty package conflict scare.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -139,15 +118,11 @@ Let's get as much evilified as humanly possible just to start, eh?
 
 * Visual Fixes
 
-This is going to have to be minimal in dev. I'm using it over terminal, so stuff doesn't work right. 
-When I move to prod and GUI, will enhance.
-
 ** Theme
 
 The doom themes look nice. Ultimately, I want to set a light, low-contrast, theme for writing prose 
 (i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
-writing code. But let's start by seeing if I can get a light theme to even show up on my dark 
-terminal on ipad.
+writing code. But a light theme is fine for now.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -159,26 +134,23 @@ terminal on ipad.
 Well, that's interesting. It seems to load the theme, but it doesn't get the background right. 
 There's a light background, but it isn't blue like it is in the [[https://github.com/hlissner/emacs-doom-themes/tree/screenshots#doom-acario-light][screenshot]]. 
 
-I wonder if it's blue in GUI.  Is there some kind of pair of flags, one that says light or dark, 
-and works in terminal, and another that says a specific color and works only in GUI?  Well, 
-at any rate, this is a lot nicer for now so I'll run with it, and maybe go see how it looks on my 
-computer in a bit.
+Whatever.  I'll work on this down the line.  
 
-Well, even more oddly, the colors in iterm are a muted version of the colors on ipad.  That's a little wacky.  
-It's not horrible, so, once again, I'm not going to bother to fix it. But, lordy. 
+** Get rid of menubar, toolbar, scrollbar
 
-
-
-** I never even use the menu bar in GUI
-
-kill it with fire.
 
 #+BEGIN_SRC emacs-lisp
 
 (menu-bar-mode -1)
-
+(tool-bar-mode -1)
+(toggle-scroll-bar -1)
 #+END_SRC
 
+** Start full-sized
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+#+END_SRC
 
 ** Rainbow parens
 
@@ -347,6 +319,8 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 
 *** PYTHON TODO 
 
+- make sure this works on real machine, haven't checked after moving to prod.
+
 - add [[https://github.com/pythonic-emacs/blacken][blacken]]
 
 - add and set up [[https://www.flycheck.org/en/latest/user/installation.html][flycheck]] for syntax checking (probably for other languages too)
@@ -383,49 +357,12 @@ because I don't *think* anything else uses @ ...?
 
 
 
-* TODO problems to fix
-** TODO typing "emacs readme.org" on the command line opens in a scratch buffer, not the file.
-
-it works when I use iterm over macos but not when I use blink over ios?!  WTF?? How is that even possible?
-
-
-** DONE I don't seem to have a meta key on the ipad keyboard?
-Something in here might be a fix. https://github.com/blinksh/blink/issues/198 
-
-It appears that turning on the software keyboard on blink fixes that.  but...
-
-** DONE I also don't have a meta key on the mac keyboard
-
-possible fixes?  https://www.emacswiki.org/emacs/MetaKeyProblems#toc1
-I want the fn key to be meta on the mac.  I have other uses for option
-
-For some bizarre reason, in iterm, the setting to remap an option key to meta at least isn't on the *keys* 
-tab it's on the *profile* tab, then under the keys subtab there, way at the bottom.  Wow iterm. Wow. 
-
-But maybe I can give it the right option key for meta now. 
-Meh, doesn't seem to work.  Apparently "esc-plus" is the thing to set it to. But that breaks evil, because 
-esc is how one gets to normal mode.  I guess I could figure out how to change that, and, dunno, 
-give it to caps lock or something.
-
-actually, the esc-plus setting seems to work on evil without breaking my normal escape.  I dunno how 
-it manages to overload escape, but whev. 
-
-
 
 * TODO enhancements to make
-** Different cursor for normal vs insert or modeline or *something*
-   Apparently this is a thing that doesn't work in terminal out of the box but does work in GUI. 
-There is a [[https://github.com/7696122/evil-terminal-cursor-changer#change-log][package]] to force it. But it doesn't seem to work.  I at least want a damn modeline signal.
-
-For modeline [[https://www.emacswiki.org/emacs/Evil#toc19][here is some code worth trying]]. but [[https://github.com/emacs-evil/evil/issues/366#issuecomment-273751024][this code]] looks simpler.  I'll try the latter first.
-(That works, but only colors the background of the single character. How to color the entire modeline, I wonder?)
-
-I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]]. 
-** Stuff to steal from spacemacs
-*** DONE Leader key
-**** DONE command browsing from leader key
-*** DONE file browsing and completion in project
-
+** Fancier modeline with mode and git enhancements
+   - Doom modeline?
+   - Spacemacs modeline? 
+   - Just roll my own? [[https://occasionallycogent.com/custom_emacs_modeline/index.html][it may not be that hard]].
 ** minor keybinding tweaks
      - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
      - bind the arrow keys to paging in which-keys (so sue me, I like arrow keys)
@@ -435,7 +372,6 @@ I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]].
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
    - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
 ** swipe-scrolling on the touchpad like with vim
-* TODO Checklist for moving to prod
 ** TODO Language support
    this is the list of languages that I must have functioning before I'm even going to consider moving off 
    spacemacs.  Not the nice-to-have languages.
@@ -445,12 +381,6 @@ I could also try [[https://github.com/seagle0128/doom-modeline][doom-modeline]].
 Not technically mandatory since I have lots of alternative editors, but since part of the point of this project
 is wanting to be able to use emacs for markdown and I hate spacemacs markdown layer, let's do it.
 **** TODO spell check
-*** TODO Python
-**** TODO indentations handled sensibly
-This means
-- MANDATORY: being able to open a file created in another editor without shitting all over the intentation
-- some kind of structural editing thing where I can paste a block in another block and have it be right?
-- keybinding for [[https://emacs.stackexchange.com/questions/45774/confusion-about-space-and-tab-characters-in-emacs#:~:text=To%20make%20tabs%20and%20spaces,with%20both%20tabs%20and%20spaces][whitespace mode]] so at a minimum I can see and fix by hand indentation fuckups
 *** TODO Javascript
 *** TODO HTML
 *** TODO Vue.js
@@ -459,12 +389,11 @@ This means
 *** TODO makefiles
 *** TODO JSON
 *** TODO YAML
-** TODO completions for all programming languages
-** TODO undo-redo like spacemacs
+** TODO better undo-redo 
 ** TODO window management
-      - leader-key-style keybindings to close and open new windows
       - some kind of clone of spacemacs golden ratio mode
 
+** TODO some kind of keybinding to bail out of partially typed commands.
 * inspo
 
 [[https://sam217pa.github.io/2016/09/02/how-to-build-your-own-spacemacs/][this person]] [[https://sam217pa.github.io/2016/08/30/how-to-make-your-own-spacemacs/][also]].
