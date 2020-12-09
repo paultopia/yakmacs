@@ -3,7 +3,7 @@
 
 "26.1"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-12-08 20:53:46" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-12-08 20:53:47" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-12-08 20:53:47" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-12-08 20:53:47" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-12-08 20:53:47" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "counsel" ("2020-12-08 20:53:47" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2020-12-08 20:53:47" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2020-12-08 20:53:47" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "which-key" ("2020-12-08 20:53:47" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "evil" ("2020-12-08 20:53:47" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2020-12-08 20:53:47" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2020-12-08 20:53:47" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2020-12-08 20:53:47" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2020-12-08 20:53:47" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2020-12-08 20:53:47" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "doom-themes" ("2020-12-08 20:53:47" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "doom-themes-pkg.el") :host github :repo "hlissner/emacs-doom-themes" :package "doom-themes" :local-repo "emacs-doom-themes")) "rainbow-delimiters" ("2020-12-08 20:53:47" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "general" ("2020-12-08 20:53:47" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-12-08 22:31:47" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-12-08 22:31:48" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-12-08 22:31:48" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-12-08 22:31:48" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-12-08 22:31:48" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "counsel" ("2020-12-08 22:31:48" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2020-12-08 22:31:48" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2020-12-08 22:31:48" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "which-key" ("2020-12-08 22:31:48" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "evil" ("2020-12-08 22:31:48" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2020-12-08 22:31:48" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2020-12-08 22:31:48" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2020-12-08 22:31:48" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2020-12-08 22:31:48" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2020-12-08 22:31:48" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "doom-themes" ("2020-12-08 22:31:48" ("emacs" "cl-lib") (:type git :flavor melpa :files (:defaults "themes/*.el" "doom-themes-pkg.el") :host github :repo "hlissner/emacs-doom-themes" :package "doom-themes" :local-repo "emacs-doom-themes")) "rainbow-delimiters" ("2020-12-08 22:31:48" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "general" ("2020-12-08 22:31:48" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "elpy" ("2020-12-08 22:08:34" ("company" "emacs" "highlight-indentation" "pyvenv" "yasnippet" "s") (:type git :flavor melpa :files ("*.el" "NEWS.rst" "snippets" "elpy" "elpy-pkg.el") :host github :repo "jorgenschaefer/elpy" :package "elpy" :local-repo "elpy")) "company" ("2020-12-08 22:31:48" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "highlight-indentation" ("2020-12-08 22:08:34" nil (:type git :flavor melpa :host github :repo "antonj/Highlight-Indentation-for-Emacs" :package "highlight-indentation" :local-repo "Highlight-Indentation-for-Emacs")) "pyvenv" ("2020-12-08 22:08:34" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "yasnippet" ("2020-12-08 22:08:34" ("cl-lib") (:type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet" :package "yasnippet" :local-repo "yasnippet")) "s" ("2020-12-08 22:31:48" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "anaconda-mode" ("2020-12-08 22:31:48" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2020-12-08 22:31:48" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "f" ("2020-12-08 22:31:48" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "dash" ("2020-12-08 22:31:48" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "company-quickhelp" ("2020-12-08 22:31:48" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2020-12-08 22:31:48" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-autoloads straight-x straight) (autoload (quote straight-get-recipe) "straight" "Interactively select a recipe from one of the recipe repositories.
 All recipe repositories in `straight-recipe-repositories' will
@@ -1300,10 +1300,238 @@ This creates global key definition functions for the evil states.
 Specifying SHORT-NAMES as non-nil will create non-prefixed function
 aliases such as `nmap' for `general-nmap'.
 
-(fn &optional SHORT-NAMES _)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "general" (quote ("general-")))) (provide (quote general-autoloads)))))
+(fn &optional SHORT-NAMES _)" nil nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "general" (quote ("general-")))) (provide (quote general-autoloads))) "company" ((company-nxml company-tng company company-etags company-autoloads company-files company-dabbrev company-clang company-keywords company-abbrev company-cmake company-oddmuse company-ispell company-elisp company-css company-template company-capf company-tempo company-yasnippet company-dabbrev-code company-bbdb company-semantic company-gtags) (autoload (quote company-mode) "company" "\"complete anything\"; is an in-buffer completion framework.
+Completion starts automatically, depending on the values
+`company-idle-delay' and `company-minimum-prefix-length'.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "counsel" nil "swiper" nil "ivy" nil "which-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "doom-themes" nil "rainbow-delimiters" nil "general" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "doom-themes-pkg.el") :host github :repo "hlissner/emacs-doom-themes") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil))))
+Completion can be controlled with the commands:
+`company-complete-common', `company-complete-selection', `company-complete',
+`company-select-next', `company-select-previous'.  If these commands are
+called before `company-idle-delay', completion will also start.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "counsel" "swiper" "ivy" "which-key" "evil" "goto-chg" "cl-lib" "evil-commentary" "evil-collection" "annalist" "evil-org" "doom-themes" "rainbow-delimiters" "general")
+Completions can be searched with `company-search-candidates' or
+`company-filter-candidates'.  These can be used while completion is
+inactive, as well.
+
+The completion data is retrieved using `company-backends' and displayed
+using `company-frontends'.  If you want to start a specific backend, call
+it interactively or use `company-begin-backend'.
+
+By default, the completions list is sorted alphabetically, unless the
+backend chooses otherwise, or `company-transformers' changes it later.
+
+regular keymap (`company-mode-map'):
+
+\\{company-mode-map}
+keymap during active completions (`company-active-map'):
+
+\\{company-active-map}
+
+(fn &optional ARG)" t nil) (defvar global-company-mode nil "Non-nil if Global Company mode is enabled.
+See the `global-company-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-company-mode'.") (custom-autoload (quote global-company-mode) "company" nil) (autoload (quote global-company-mode) "company" "Toggle Company mode in all buffers.
+With prefix ARG, enable Global Company mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Company mode is enabled in all buffers where
+`company-mode-on' would do it.
+See `company-mode' for more information on Company mode.
+
+(fn &optional ARG)" t nil) (autoload (quote company-manual-begin) "company" "
+
+(fn)" t nil) (autoload (quote company-complete) "company" "Insert the common part of all candidates or the current selection.
+The first time this is called, the common part is inserted, the second
+time, or when the selection has been changed, the selected candidate is
+inserted.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company" (quote ("company-")))) (autoload (quote company-abbrev) "company-abbrev" "`company-mode' completion backend for abbrev.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-abbrev" (quote ("company-abbrev-insert")))) (autoload (quote company-bbdb) "company-bbdb" "`company-mode' completion backend for BBDB.
+
+(fn COMMAND &optional ARG &rest IGNORE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-bbdb" (quote ("company-bbdb-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-capf" (quote ("company-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-clang" (quote ("company-clang")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-cmake" (quote ("company-cmake")))) (autoload (quote company-css) "company-css" "`company-mode' completion backend for `css-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-css" (quote ("company-css-")))) (autoload (quote company-dabbrev) "company-dabbrev" "dabbrev-like `company-mode' completion backend.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-dabbrev" (quote ("company-dabbrev-")))) (autoload (quote company-dabbrev-code) "company-dabbrev-code" "dabbrev-like `company-mode' backend for code.
+The backend looks for all symbols in the current buffer that aren't in
+comments or strings.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-dabbrev-code" (quote ("company-dabbrev-code-")))) (autoload (quote company-elisp) "company-elisp" "`company-mode' completion backend for Emacs Lisp.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-elisp" (quote ("company-elisp-")))) (autoload (quote company-etags) "company-etags" "`company-mode' completion backend for etags.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-etags" (quote ("company-etags-")))) (autoload (quote company-files) "company-files" "`company-mode' completion backend existing file names.
+Completions works for proper absolute and relative files paths.
+File paths with spaces are only supported inside strings.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-files" (quote ("company-file")))) (autoload (quote company-gtags) "company-gtags" "`company-mode' completion backend for GNU Global.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-gtags" (quote ("company-gtags-")))) (autoload (quote company-ispell) "company-ispell" "`company-mode' completion backend using Ispell.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-ispell" (quote ("company-ispell-")))) (autoload (quote company-keywords) "company-keywords" "`company-mode' backend for programming language keywords.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-keywords" (quote ("company-keywords-")))) (autoload (quote company-nxml) "company-nxml" "`company-mode' completion backend for `nxml-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-nxml" (quote ("company-nxml-")))) (autoload (quote company-oddmuse) "company-oddmuse" "`company-mode' completion backend for `oddmuse-mode'.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-oddmuse" (quote ("company-oddmuse-")))) (autoload (quote company-semantic) "company-semantic" "`company-mode' completion backend using CEDET Semantic.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-semantic" (quote ("company-semantic-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-template" (quote ("company-template-")))) (autoload (quote company-tempo) "company-tempo" "`company-mode' completion backend for tempo.
+
+(fn COMMAND &optional ARG &rest IGNORED)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-tempo" (quote ("company-tempo-")))) (autoload (quote company-tng-frontend) "company-tng" "When the user changes the selection at least once, this
+frontend will display the candidate in the buffer as if it's
+already there and any key outside of `company-active-map' will
+confirm the selection and finish the completion.
+
+(fn COMMAND)" nil nil) (define-obsolete-function-alias (quote company-tng-configure-default) (quote company-tng-mode) "0.9.14" "Applies the default configuration to enable company-tng.") (defvar company-tng-mode nil "Non-nil if Company-Tng mode is enabled.
+See the `company-tng-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `company-tng-mode'.") (custom-autoload (quote company-tng-mode) "company-tng" nil) (autoload (quote company-tng-mode) "company-tng" "This minor mode enables `company-tng-frontend'.
+
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-tng" (quote ("company-tng-")))) (autoload (quote company-yasnippet) "company-yasnippet" "`company-mode' backend for `yasnippet'.
+
+This backend should be used with care, because as long as there are
+snippets defined for the current major mode, this backend will always
+shadow backends that come after it.  Recommended usages:
+
+* In a buffer-local value of `company-backends', grouped with a backend or
+  several that provide actual text completions.
+
+  (add-hook 'js-mode-hook
+            (lambda ()
+              (set (make-local-variable 'company-backends)
+                   '((company-dabbrev-code company-yasnippet)))))
+
+* After keyword `:with', grouped with other backends.
+
+  (push '(company-semantic :with company-yasnippet) company-backends)
+
+* Not in `company-backends', just bound to a key.
+
+  (global-set-key (kbd \"C-c y\") 'company-yasnippet)
+
+(fn COMMAND &optional ARG &rest IGNORE)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-yasnippet" (quote ("company-yasnippet-")))) (provide (quote company-autoloads))) "highlight-indentation" ((highlight-indentation-autoloads highlight-indentation) (autoload (quote highlight-indentation-mode) "highlight-indentation" "Highlight indentation minor mode highlights indentation based on spaces
+
+(fn &optional ARG)" t nil) (autoload (quote highlight-indentation-set-offset) "highlight-indentation" "Set indentation offset localy in buffer, will prevent
+highlight-indentation from trying to guess indentation offset
+from major mode
+
+(fn OFFSET)" t nil) (autoload (quote highlight-indentation-current-column-mode) "highlight-indentation" "Hilight Indentation minor mode displays a vertical bar
+corresponding to the indentation of the current line
+
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "highlight-indentation" (quote ("highlight-indentation-")))) (provide (quote highlight-indentation-autoloads))) "pyvenv" ((pyvenv pyvenv-autoloads) (autoload (quote pyvenv-activate) "pyvenv" "Activate the virtual environment in DIRECTORY.
+
+(fn DIRECTORY)" t nil) (autoload (quote pyvenv-deactivate) "pyvenv" "Deactivate any current virtual environment.
+
+(fn)" t nil) (autoload (quote pyvenv-workon) "pyvenv" "Activate a virtual environment from $WORKON_HOME.
+
+If the virtual environment NAME is already active, this function
+does not try to reactivate the environment.
+
+(fn NAME)" t nil) (defvar pyvenv-mode nil "Non-nil if Pyvenv mode is enabled.
+See the `pyvenv-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `pyvenv-mode'.") (custom-autoload (quote pyvenv-mode) "pyvenv" nil) (autoload (quote pyvenv-mode) "pyvenv" "Global minor mode for pyvenv.
+
+Will show the current virtualenv in the mode line, and respect a
+`pyvenv-workon' setting in files.
+
+(fn &optional ARG)" t nil) (defvar pyvenv-tracking-mode nil "Non-nil if Pyvenv-Tracking mode is enabled.
+See the `pyvenv-tracking-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `pyvenv-tracking-mode'.") (custom-autoload (quote pyvenv-tracking-mode) "pyvenv" nil) (autoload (quote pyvenv-tracking-mode) "pyvenv" "Global minor mode to track the current virtualenv.
+
+When this mode is active, pyvenv will activate a buffer-specific
+virtualenv whenever the user switches to a buffer with a
+buffer-local `pyvenv-workon' or `pyvenv-activate' variable.
+
+(fn &optional ARG)" t nil) (autoload (quote pyvenv-restart-python) "pyvenv" "Restart Python inferior processes.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pyvenv" (quote ("pyvenv-")))) (provide (quote pyvenv-autoloads))) "yasnippet" ((yasnippet yasnippet-autoloads) (autoload (quote yas-minor-mode) "yasnippet" "Toggle YASnippet mode.
+
+When YASnippet mode is enabled, `yas-expand', normally bound to
+the TAB key, expands snippets of code depending on the major
+mode.
+
+With no argument, this command toggles the mode.
+positive prefix argument turns on the mode.
+Negative prefix argument turns off the mode.
+
+Key bindings:
+\\{yas-minor-mode-map}
+
+(fn &optional ARG)" t nil) (defvar yas-global-mode nil "Non-nil if Yas-Global mode is enabled.
+See the `yas-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `yas-global-mode'.") (custom-autoload (quote yas-global-mode) "yasnippet" nil) (autoload (quote yas-global-mode) "yasnippet" "Toggle Yas minor mode in all buffers.
+With prefix ARG, enable Yas-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Yas minor mode is enabled in all buffers where
+`yas-minor-mode-on' would do it.
+See `yas-minor-mode' for more information on Yas minor mode.
+
+(fn &optional ARG)" t nil) (autoload (quote snippet-mode) "yasnippet" "A mode for editing yasnippets" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "yasnippet" (quote ("yas" "help-snippet-def" "snippet-mode-map")))) (provide (quote yasnippet-autoloads))) "s" ((s-autoloads s) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "s" (quote ("s-")))) (provide (quote s-autoloads))) "elpy" ((elpy-autoloads elpy-pkg elpy-django elpy elpy-profile elpy-refactor elpy-rpc elpy-shell) (autoload (quote elpy-enable) "elpy" "Enable Elpy in all future Python buffers.
+
+(fn &optional IGNORED)" t nil) (autoload (quote elpy-mode) "elpy" "Minor mode in Python buffers for the Emacs Lisp Python Environment.
+
+This mode fully supports virtualenvs. Once you switch a
+virtualenv using \\[pyvenv-workon], you can use
+\\[elpy-rpc-restart] to make the elpy Python process use your
+virtualenv.
+
+\\{elpy-mode-map}
+
+(fn &optional ARG)" t nil) (autoload (quote elpy-config) "elpy" "Configure Elpy.
+
+This function will pop up a configuration buffer, which is mostly
+a customize buffer, but has some more options.
+
+(fn)" t nil) (autoload (quote elpy-version) "elpy" "Display the version of Elpy.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy" (quote ("elpy-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy-django" (quote ("elpy-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy-profile" (quote ("elpy-profile-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy-refactor" (quote ("elpy-refactor-")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy-rpc" (quote ("elpy-" "with-elpy-rpc-virtualenv-activated")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "elpy-shell" (quote ("elpy-")))) (provide (quote elpy-autoloads))) "dash" ((dash dash-autoloads) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "dash" (quote ("dash-" "-keep" "-butlast" "-non" "-only-some" "-zip" "-e" "->" "-a" "-gr" "-when-let" "-d" "-l" "-s" "-p" "-r" "-m" "-i" "-f" "-u" "-value-to-list" "-t" "--" "-c" "!cons" "!cdr")))) (provide (quote dash-autoloads))) "f" ((f-autoloads f) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "f" (quote ("f-")))) (provide (quote f-autoloads))) "pythonic" ((pythonic pythonic-autoloads) (autoload (quote pythonic-activate) "pythonic" "Activate python VIRTUALENV.
+
+(fn VIRTUALENV)" t nil) (autoload (quote pythonic-deactivate) "pythonic" "Deactivate python virtual environment.
+
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pythonic" (quote ("pythonic-")))) (provide (quote pythonic-autoloads))) "anaconda-mode" ((anaconda-mode-autoloads anaconda-mode) (autoload (quote anaconda-mode) "anaconda-mode" "Code navigation, documentation lookup and completion for Python.
+
+\\{anaconda-mode-map}
+
+(fn &optional ARG)" t nil) (autoload (quote anaconda-eldoc-mode) "anaconda-mode" "Toggle echo area display of Python objects at point.
+
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "anaconda-mode" (quote ("turn-o" "anaconda-")))) (provide (quote anaconda-mode-autoloads))) "pos-tip" ((pos-tip-autoloads pos-tip) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "pos-tip" (quote ("pos-tip-")))) (provide (quote pos-tip-autoloads))) "company-quickhelp" ((company-quickhelp company-quickhelp-autoloads) (autoload (quote company-quickhelp-local-mode) "company-quickhelp" "Provides documentation popups for `company-mode' using `pos-tip'.
+
+(fn &optional ARG)" t nil) (defvar company-quickhelp-mode nil "Non-nil if Company-Quickhelp mode is enabled.
+See the `company-quickhelp-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `company-quickhelp-mode'.") (custom-autoload (quote company-quickhelp-mode) "company-quickhelp" nil) (autoload (quote company-quickhelp-mode) "company-quickhelp" "Toggle Company-Quickhelp-Local mode in all buffers.
+With prefix ARG, enable Company-Quickhelp mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Company-Quickhelp-Local mode is enabled in all buffers where
+`company-quickhelp-local-mode' would do it.
+See `company-quickhelp-local-mode' for more information on Company-Quickhelp-Local mode.
+
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "company-quickhelp" (quote ("company-quickhelp-")))) (provide (quote company-quickhelp-autoloads)))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "counsel" nil "swiper" nil "ivy" nil "which-key" nil "evil" nil "goto-chg" nil "cl-lib" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "doom-themes" nil "rainbow-delimiters" nil "general" nil "elpy" nil "company" nil "highlight-indentation" nil "pyvenv" nil "yasnippet" nil "s" nil "anaconda-mode" nil "pythonic" nil "f" nil "dash" nil "company-quickhelp" nil "pos-tip" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "cl-lib" nil "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "doom-themes" (doom-themes :type git :flavor melpa :files (:defaults "themes/*.el" "doom-themes-pkg.el") :host github :repo "hlissner/emacs-doom-themes") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "elpy" (elpy :type git :flavor melpa :files ("*.el" "NEWS.rst" "snippets" "elpy" "elpy-pkg.el") :host github :repo "jorgenschaefer/elpy") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "highlight-indentation" (highlight-indentation :type git :flavor melpa :host github :repo "antonj/Highlight-Indentation-for-Emacs") "pyvenv" (pyvenv :type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv") "yasnippet" (yasnippet :type git :flavor melpa :files ("yasnippet.el" "snippets" "yasnippet-pkg.el") :host github :repo "joaotavora/yasnippet") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil)) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "counsel" "swiper" "ivy" "which-key" "evil" "goto-chg" "cl-lib" "evil-commentary" "evil-collection" "annalist" "evil-org" "doom-themes" "rainbow-delimiters" "general" "company" "company-quickhelp" "pos-tip" "anaconda-mode" "pythonic" "s" "f" "dash")
 
 t

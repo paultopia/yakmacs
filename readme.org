@@ -317,6 +317,42 @@ ORG MODE, NORMAL:
 
 
 
+* Languages 
+
+** Completion, generally
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'company)
+(add-hook 'prog-mode-hook 'company-mode)
+(straight-use-package 'company-quickhelp)
+(add-hook 'prog-mode-hook 'company-quickhelp-mode)
+#+END_SRC
+
+** Line numbers, generally
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'prog-mode-hook 'linum-mode)
+(setq linum-format "%4d \u2502 ")
+#+END_SRC
+
+** Python  :fragile:
+
+This is marked fragile because it will depend on local python config. On the PI, I used an alias to get python3 to be python, 
+and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine, there'll have to be some kind of virtualenv thing happening. 
+
+I first tried elpy, but couldn't get it to see the python3 interpreter.  So, trying anaconda instead, because I don't have the patience for this nonsense.
+
+*** Anaconda
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'anaconda-mode)
+(eval-after-load "company"
+ '(add-to-list 'company-backends 'company-anaconda))
+(add-hook 'python-mode-hook 'anaconda-mode)
+#+END_SRC
+
+
+
 * Development (of emacs config) conveniences   :dev: 
 
 
