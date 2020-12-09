@@ -131,10 +131,6 @@ writing code. But a light theme is fine for now.
 
 #+END_SRC
 
-Well, that's interesting. It seems to load the theme, but it doesn't get the background right. 
-There's a light background, but it isn't blue like it is in the [[https://github.com/hlissner/emacs-doom-themes/tree/screenshots#doom-acario-light][screenshot]]. 
-
-Whatever.  I'll work on this down the line.  
 
 ** Get rid of menubar, toolbar, scrollbar
 
@@ -204,17 +200,19 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 GLOBAL KEYBINDINGS FROM LEADER KEY 
 
-| command | function              |
-| f f     | find file             |
-| f s     | save file             |
-| f n     | save to new name      |
-| w /     | new window to right   |
-| w -     | new window below      |
-| w d     | delete current window |
-| w x     | delete other windows  |
-| w c     | cycle to next window  |
-| b d     | kill buffer           |
-| b b     | buffer menu           |
+| command | function               |
+| f f     | find file              |
+| f s     | save file              |
+| f n     | save to new name       |
+| w /     | new window to right    |
+| w -     | new window below       |
+| w d     | delete current window  |
+| w x     | delete other windows   |
+| w c     | cycle to next window   |
+| b d     | kill buffer            |
+| b b     | buffer menu            |
+| e e     | eval sexp before point |
+|         |                        |
 
 
 *** Files   :key:
@@ -255,6 +253,20 @@ tryna swipe the bindings I use most often in spacemacs
 "wd" 'delete-window
 "wx" 'delete-other-windows
 "wc" 'other-window)
+
+#+END_SRC
+
+
+*** Elisp :key:
+
+I want keybindings to quickly evaluate some elisp so that I don't have to remember the command to try a tweak in this config/later.
+
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"e" '(:ignore t :which-key "Buffers")
+"ee" 'eval-last-sexp)
 
 #+END_SRC
 
@@ -351,6 +363,7 @@ because I don't *think* anything else uses @ ...?
     (evil-global-set-key 'normal (kbd "@") 'add-lisp-delimiters)))
 
 #+END_SRC
+
 
 
 
