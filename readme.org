@@ -357,8 +357,6 @@ I want keybindings to quickly evaluate some elisp so that I don't have to rememb
 
 *** Org mode
 
-**** Ergonomic header and todo cycling                                  :key:
-
 ORG MODE, NORMAL: 
 
 | command | function     |
@@ -395,6 +393,13 @@ ORG MODE, NORMAL:
 #+BEGIN_SRC emacs-lisp
 (add-hook 'prog-mode-hook 'linum-mode)
 (setq linum-format "%4d \u2502 ")
+#+END_SRC
+
+** Make sure I don't screw up lines.
+
+#+BEGIN_SRC emacs-lisp
+
+(add-hook 'prog-mode-hook (lambda () (visual-line-mode -1)))
 #+END_SRC
 
 ** Python  :fragile:
@@ -448,9 +453,14 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 
 #+END_SRC
 
-*** Keymaps for Markdown :key:
+*** Keybindings for Markdown                                            :key:
 
 (Really need to reorg this.  Not sure that I can define keys before bringing in the mode tho...)
+
+| command | function           |
+| , h     | hide markup        |
+| , f     | fold/unfold header |
+|         |                    |
 
 #+BEGIN_SRC emacs-lisp
 
@@ -459,6 +469,19 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 "h" 'markdown-toggle-markup-hiding
 "f" 'markdown-cycle)
 
+#+END_SRC
+
+*** De-uglify markdown line-breaks
+
+#+BEGIN_SRC emacs-lisp
+
+(defun turn-off-fringe () 
+(fringe-mode 0))
+
+
+(add-hook 'markdown-mode-hook 'light-mode)
+(add-hook 'markdown-mode-hook 'turn-off-fringe)
+(add-hook 'markdown-mode-hook 'visual-line-mode)
 #+END_SRC
 
 * Development (of emacs config) conveniences   :dev: 
