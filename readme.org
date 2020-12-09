@@ -179,6 +179,13 @@ Start out in light mode
 (light-mode)
 #+END_SRC
 
+
+** Font
+
+#+BEGIN_SRC emacs-lisp
+(set-frame-font "Inconsolata Bold 16" nil t)
+#+END_SRC
+
 ** GUI tweaks
 
 Get rid of menubar, toolbar, scrollbar
