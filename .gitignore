@@ -3,4 +3,5 @@ configuration.el
 readme.el
 straight/build/
 straight/repos/
+url/
 init.el~
