@@ -448,6 +448,19 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 
 #+END_SRC
 
+*** Keymaps for Markdown :key:
+
+(Really need to reorg this.  Not sure that I can define keys before bringing in the mode tho...)
+
+#+BEGIN_SRC emacs-lisp
+
+(mode-binding 
+:keymaps 'markdown-mode-map
+"h" 'markdown-toggle-markup-hiding
+"f" 'markdown-cycle)
+
+#+END_SRC
+
 * Development (of emacs config) conveniences   :dev: 
 
 
