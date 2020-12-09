@@ -124,11 +124,19 @@ The doom themes look nice. Ultimately, I want to set a light, low-contrast, them
 (i.e., in markdown mode), and a dark theme with higher contrast but a relatively limited spectrum for 
 writing code. But a light theme is fine for now.
 
+light theme best candidate: doom-opera-light or doom-acario-light
+dark theme best candidate: doom-sourcerer (but doom-palenight and doom-moonlight are also good)
+
+the advice on load-theme comes from [[https://emacs.stackexchange.com/a/3114/12604][this SO]] --- trying it to resolve weird sticky colored line after changing themes.
+
 #+BEGIN_SRC emacs-lisp
 
 (straight-use-package 'doom-themes) 
-(load-theme 'doom-acario-light t)
+(defadvice load-theme (before theme-dont-propagate activate)
+ (mapc #'disable-theme custom-enabled-themes))
 
+; (load-theme 'doom-acario-light t)
+(load-theme 'doom-opera-light t)
 #+END_SRC
 
 
