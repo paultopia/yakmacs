@@ -1,5 +1,6 @@
 auto-save-list/
 configuration.el
 readme.el
-straight/
+straight/build/
+straight/repos/
 init.el~
