@@ -623,6 +623,12 @@ because I don't *think* anything else uses @ ...?
    - MORE KEYBINDINGS for stuff I actually use.
 ** git
    - quick and easy way to add, commit, and push in whatever repo I'm in.
+   - I guess I could use magit?  but it's more complex than git itself. 
+     - keybindings I would need:
+       - ~magit-stage-file~ for current file
+       - ~magit-stage-modified~ is basically ~git add .~ I \think\?
+       - ~magit-push-current-to-upstream~ appears to be ~git push~ although maybe ~magit-push-current-to-pushremote~ sometimes?
+       - ~magit-commit-create~ to commit... I guess??
 ** terminal    
    - one keybinding for a quick and easy command
    - another keybinding for a well-configured terminal window---maybe even eshell?
