@@ -454,10 +454,10 @@ I think I pretty much just only want these keybindings in normal mode for now.
 *** Colors :key:
 
 #+BEGIN_SRC emacs-lisp
-;(leader-binding
-;"c" '(:ignore t :which-key "Colors")
-;"cl" 'light-mode
-;"ed" 'dark-mode)
+  (leader-binding
+  "c" '(:ignore t :which-key "Colors")
+  "cl" 'light-mode
+  "cd" 'dark-mode)
 #+END_SRC
 
 *** Elisp :key:
