@@ -25,6 +25,7 @@ that I didn't know how to escape, in init.el.)  So that's cool.
 
    - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
 
+
 * All the Keybindings I've defined, listed.
 
 All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
@@ -177,31 +178,36 @@ Let's get as much evilified as humanly possible just to start, eh?
 Setup
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'doom-themes) 
+;(straight-use-package 'doom-themes) 
+(straight-use-package 'leuven-theme)
+
 #+END_SRC
 
 Convenience functions
 
 #+BEGIN_SRC emacs-lisp
 
-(defvar dark-theme 'doom-sourcerer)
-(defvar light-theme 'doom-tomorrow-day)
+  ;; (defvar dark-theme 'doom-sourcerer)
+  ;; (defvar light-theme 'doom-tomorrow-day)
 
-(defun disable-all-themes ()
-  "disable all active themes."
-  (dolist (i custom-enabled-themes)
-    (disable-theme i)))
+  (defvar dark-theme 'leuven-dark)
+  (defvar light-theme 'leuven)
 
-(defun dark-mode ()
-(interactive)
-(disable-all-themes)
-(load-theme dark-theme t))
+  (defun disable-all-themes ()
+    "disable all active themes."
+    (dolist (i custom-enabled-themes)
+      (disable-theme i)))
+
+  (defun dark-mode ()
+  (interactive)
+  (disable-all-themes)
+  (load-theme dark-theme t))
 
 
-(defun light-mode ()
-(interactive)
-(disable-all-themes)
-(load-theme light-theme t))
+  (defun light-mode ()
+  (interactive)
+  (disable-all-themes)
+  (load-theme light-theme t))
 
 
 #+END_SRC
@@ -238,7 +244,7 @@ Start out in light mode
 #+BEGIN_SRC emacs-lisp
 
 (defvar code-font-string "Inconsolata Light 18")
-(defvar prose-font-string "IBM Plex Serif Light 18")
+(defvar prose-font-string "IBM Plex Serif 16")
 
 (defun code-font () 
 (interactive)
@@ -250,6 +256,13 @@ Start out in light mode
 
 (code-font)
 
+
+#+END_SRC
+
+A quick fix for org.
+
+#+BEGIN_SRC emacs-lisp
+(setq org-fontify-whole-heading-line t)
 #+END_SRC
 
 
@@ -611,6 +624,8 @@ is wanting to be able to use emacs for markdown and I hate spacemacs markdown la
       - some kind of clone of spacemacs golden ratio mode
 
 ** TODO some kind of keybinding to bail out of partially typed commands.
+
+
 * inspo
 
 [[https://sam217pa.github.io/2016/09/02/how-to-build-your-own-spacemacs/][this person]] [[https://sam217pa.github.io/2016/08/30/how-to-make-your-own-spacemacs/][also]].
