@@ -102,6 +102,7 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 
 #+END_SRC
 
+
 * Browsing and Finding Things 
 
 ** Files and such  :fragile: 
@@ -184,7 +185,7 @@ Convenience functions
 #+BEGIN_SRC emacs-lisp
 
 (defvar dark-theme 'doom-sourcerer)
-(defvar light-theme 'doom-opera-light)
+(defvar light-theme 'doom-tomorrow-day)
 
 (defun disable-all-themes ()
   "disable all active themes."
@@ -235,7 +236,20 @@ Start out in light mode
 ** Font
 
 #+BEGIN_SRC emacs-lisp
-(set-frame-font "Inconsolata Bold 16" nil t)
+
+(defvar code-font-string "Inconsolata Light 18")
+(defvar prose-font-string "IBM Plex Serif Light 18")
+
+(defun code-font () 
+(interactive)
+(set-frame-font code-font-string nil t))
+
+(defun prose-font () 
+(interactive)
+(set-frame-font prose-font-string nil t))
+
+(code-font)
+
 #+END_SRC
 
 
@@ -299,7 +313,9 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 * Languages 
 
-** Completion, generally
+** Cross- programming language stuff
+
+Completions
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'company)
@@ -308,19 +324,25 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 (add-hook 'prog-mode-hook 'company-quickhelp-mode)
 #+END_SRC
 
-** Line numbers, generally
+Line numbers
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'prog-mode-hook 'linum-mode)
 (setq linum-format "%4d \u2502 ")
 #+END_SRC
 
-** Make sure I don't screw up lines.
+Get rid of visual line mode just in case I switched in from markdown.
 
 #+BEGIN_SRC emacs-lisp
-
 (add-hook 'prog-mode-hook (lambda () (visual-line-mode -1)))
 #+END_SRC
+
+Make sure code is in a proper code font 
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'prog-mode-hook `code-font)
+#+END_SRC
+
 
 ** Python  :fragile:
 
@@ -382,9 +404,43 @@ De-uglify the line breaks and such
 
 
 (add-hook 'markdown-mode-hook 'light-mode)
-(add-hook 'markdown-mode-hook 'turn-off-fringe)
+; (add-hook 'markdown-mode-hook 'turn-off-fringe)
 (add-hook 'markdown-mode-hook 'visual-line-mode)
+
+(add-hook 'markdown-mode-hook `prose-font)
+
+(defun text-margins ()
+  (setq left-margin-width 16)
+  (setq right-margin-width 16))
+(add-hook 'text-mode-hook 'text-margins)
+
 #+END_SRC
+
+
+** In and out of text and prog
+
+#+BEGIN_SRC emacs-lisp
+
+(defun text-margins ()
+  (setq left-margin-width 16)
+  (setq right-margin-width 16))
+(add-hook 'markdown-mode-hook 'text-margins)
+
+(defun prog-margins ()
+  (setq left-margin-width 2)
+  (setq right-margin-width 2))
+(add-hook 'prog-mode-hook 'prog-margins)
+
+(defun text-linespacing ()
+  (setq line-spacing 0.5))
+(add-hook 'markdown-mode-hook 'text-linespacing)
+
+(defun prog-linespacing ()
+  (setq line-spacing nil))
+(add-hook 'prog-mode-hook 'prog-linespacing)
+
+#+END_SRC
+
 
 * Keybindings
 
