@@ -46,7 +46,8 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | b d     | kill buffer            |
 | b b     | buffer menu            |
 | e e     | eval sexp before point |
-|         |                        |
+| c l     | light color theme      |
+| c d     | dark color theme       |
 
 
 Mode leader is comma.
@@ -239,6 +240,7 @@ Start out in light mode
 (set-frame-font "Inconsolata Bold 16" nil t)
 #+END_SRC
 
+
 ** GUI tweaks
 
 Get rid of menubar, toolbar, scrollbar
@@ -256,6 +258,7 @@ Start full-sized
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 #+END_SRC
+
 
 ** Rainbow parens
 
@@ -293,106 +296,6 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 
 
-* Keybindings
-
-** Bust out General
-
-I think I pretty much just only want these keybindings in normal mode for now.
-
-#+BEGIN_SRC emacs-lisp
-(straight-use-package 'general)
-
-(defconst leader "SPC")
-(defconst mode-leader ",")
-(general-create-definer leader-binding
-  :prefix leader
-  :states 'normal
-  :keymaps 'override) 
-
-(general-create-definer mode-binding
-  :prefix mode-leader
-  :states 'normal
-  :keymaps 'override)
-
-#+END_SRC
-
-** Global leader keybindings 
-
-
-*** Files   :key:
-
-tryna swipe the bindings I use most often in spacemacs
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"f" '(:ignore t :which-key "Files")
-"ff" 'counsel-find-file
-"fs" 'save-buffer
-"fn" 'write-file)
-
-#+END_SRC
-
-*** Buffers    :key:
-
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"b" '(:ignore t :which-key "Buffers")
-"bd" 'kill-this-buffer
-"bb" 'ivy-switch-buffer)
-
-#+END_SRC
-
-*** Windows   :key: 
-
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"w" '(:ignore t :which-key "Windows")
-"w/" 'split-window-right
-"w-" 'split-window-below
-"wd" 'delete-window
-"wx" 'delete-other-windows
-"wc" 'other-window)
-
-#+END_SRC
-
-*** Colors :key:
-
-#+BEGIN_SRC emacs-lisp
-;(leader-binding
-;"c" '(:ignore t :which-key "Colors")
-;"cl" 'light-mode
-;"ed" 'dark-mode)
-#+END_SRC
-
-*** Elisp :key:
-
-I want keybindings to quickly evaluate some elisp so that I don't have to remember the command to try a tweak in this config/later.
-
-
-#+BEGIN_SRC emacs-lisp
-(leader-binding
-"e" '(:ignore t :which-key "Elisp")
-"ee" 'eval-last-sexp)
-#+END_SRC
-
-** Mode-specific leader keybindings
-
-*** Org mode
-
-
-#+BEGIN_SRC emacs-lisp
-
-(mode-binding 
-:keymaps 'org-mode-map
-"t" 'org-todo
-"f" 'org-cycle )
-
-#+END_SRC
 
 
 
@@ -472,19 +375,7 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 
 #+END_SRC
 
-*** Keybindings for Markdown                                            :key:
-
-(Really need to reorg this.  Not sure that I can define keys before bringing in the mode tho...)
-#+BEGIN_SRC emacs-lisp
-
-(mode-binding 
-:keymaps 'markdown-mode-map
-"h" 'markdown-toggle-markup-hiding
-"f" 'markdown-cycle)
-
-#+END_SRC
-
-*** De-uglify markdown line-breaks
+De-uglify the line breaks and such
 
 #+BEGIN_SRC emacs-lisp
 
@@ -496,6 +387,113 @@ and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine
 (add-hook 'markdown-mode-hook 'turn-off-fringe)
 (add-hook 'markdown-mode-hook 'visual-line-mode)
 #+END_SRC
+
+* Keybindings
+
+** Bust out General
+
+I think I pretty much just only want these keybindings in normal mode for now.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'general)
+
+(defconst leader "SPC")
+(defconst mode-leader ",")
+(general-create-definer leader-binding
+  :prefix leader
+  :states 'normal
+  :keymaps 'override) 
+
+(general-create-definer mode-binding
+  :prefix mode-leader
+  :states 'normal
+  :keymaps 'override)
+
+#+END_SRC
+
+** Global leader keybindings 
+
+*** Files   :key:
+
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"f" '(:ignore t :which-key "Files")
+"ff" 'counsel-find-file
+"fs" 'save-buffer
+"fn" 'write-file)
+
+#+END_SRC
+
+*** Buffers    :key:
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"b" '(:ignore t :which-key "Buffers")
+"bd" 'kill-this-buffer
+"bb" 'ivy-switch-buffer)
+
+#+END_SRC
+
+*** Windows   :key: 
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"w" '(:ignore t :which-key "Windows")
+"w/" 'split-window-right
+"w-" 'split-window-below
+"wd" 'delete-window
+"wx" 'delete-other-windows
+"wc" 'other-window)
+
+#+END_SRC
+
+*** Colors :key:
+
+#+BEGIN_SRC emacs-lisp
+;(leader-binding
+;"c" '(:ignore t :which-key "Colors")
+;"cl" 'light-mode
+;"ed" 'dark-mode)
+#+END_SRC
+
+*** Elisp :key:
+
+#+BEGIN_SRC emacs-lisp
+(leader-binding
+"e" '(:ignore t :which-key "Elisp")
+"ee" 'eval-last-sexp)
+#+END_SRC
+
+** Modes from comma leader
+
+*** Markdown                                            :key:
+
+#+BEGIN_SRC emacs-lisp
+
+(mode-binding 
+:keymaps 'markdown-mode-map
+"h" 'markdown-toggle-markup-hiding
+"f" 'markdown-cycle)
+
+#+END_SRC
+
+*** Org
+
+#+BEGIN_SRC emacs-lisp
+
+(mode-binding 
+:keymaps 'org-mode-map
+"t" 'org-todo
+"f" 'org-cycle )
+
+#+END_SRC
+
+
+
 
 * Development (of emacs config) conveniences   :dev: 
 
