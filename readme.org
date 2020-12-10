@@ -1,7 +1,5 @@
 # -*- in-config-file: t -*-
 
-reminder to self: g<tab> unfolds headings, for when you open this file and forget the keybinding.
-
 
 
 
