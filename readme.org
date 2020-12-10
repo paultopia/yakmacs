@@ -106,17 +106,7 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 
 * Browsing and Finding Things 
 
-** Files and such  :fragile: 
-
-Note *IMPORTANT*: this needs to be invoked right after use-package.  When it's further down in the init, it seems to be clobbered 
-by some other package, and starts generating weird rgb errors.  I think it has something to do with doom-theme, but 
-I also just tried a bare init and then loaded doom theme and this and it's ok somehow.  So somehow 
-there might be a three-way conflict between doom-theme this and some other package?  Fuck if I know.  
-
-[[https://github.com/abo-abo/swiper/issues/2748][unholy details here]]
-
-update: this may be fixed; I swapped in a new version of the swiper library and moved the installation of counsel 
-down to the bottom of the file, and it worked just fine. 
+** Files and such  
 
 Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 
@@ -171,7 +161,7 @@ Let's get as much evilified as humanly possible just to start, eh?
 
 
 * Visual 
-
+  
 ** Theme
 
 
@@ -596,13 +586,14 @@ because I don't *think* anything else uses @ ...?
 ** minor keybinding tweaks
      - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
      - bind the arrow keys to paging in which-keys (so sue me, I like arrow keys)
-** editing tweaks
-   - word wraps --- I could just set (global-visual-line-mode 1) but I wonder if I want it mode specific?
 ** some kind of non-utf-8 utility
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
    - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
 ** swipe-scrolling on the touchpad like with vim
-** TODO Language support
+** Some kind of lisp editing
+   - [[https://github.com/noctuid/lispyville][lispyville?]]
+   - [[https://github.com/luxbock/evil-cleverparens][evil-cleverparens?]]
+** Language support
    this is the list of languages that I must have functioning before I'm even going to consider moving off 
    spacemacs.  Not the nice-to-have languages.
    only languages with actual projects that I might want to edit in the near future (so no haskell, go, etc.)
@@ -619,11 +610,11 @@ is wanting to be able to use emacs for markdown and I hate spacemacs markdown la
 *** TODO makefiles
 *** TODO JSON
 *** TODO YAML
-** TODO better undo-redo 
-** TODO window management
+** better undo-redo 
+** window management
       - some kind of clone of spacemacs golden ratio mode
 
-** TODO some kind of keybinding to bail out of partially typed commands.
+** some kind of keybinding to bail out of partially typed commands.
 
 
 * inspo
