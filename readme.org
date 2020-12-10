@@ -349,11 +349,12 @@ Make sure code is in a proper code font
 
 ** Python  :fragile:
 
-This is marked fragile because it will depend on local python config. On the PI, I used an alias to get python3 to be python, 
-and then I pip-3 installed jedi, black, autopep8, and yapf.  On the real machine, there'll have to be some kind of virtualenv thing happening. 
 
+Currently *untested* after move to main machine. On pi, completions worked. 
+But on pi I pip-3 installed jedi, black, autopep8, and yapf.  
 
-*** Anaconda
+Also needs virtualenv and pipenv integration of some kind. 
+
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'anaconda-mode)
@@ -594,28 +595,37 @@ because I don't *think* anything else uses @ ...?
    - [[https://github.com/noctuid/lispyville][lispyville?]]
    - [[https://github.com/luxbock/evil-cleverparens][evil-cleverparens?]]
 ** Language support
-   this is the list of languages that I must have functioning before I'm even going to consider moving off 
-   spacemacs.  Not the nice-to-have languages.
-   only languages with actual projects that I might want to edit in the near future (so no haskell, go, etc.)
-   and leaving off languages with perfectly good alternative editors (swift, r)
-*** TODO Markdown
-Not technically mandatory since I have lots of alternative editors, but since part of the point of this project
-is wanting to be able to use emacs for markdown and I hate spacemacs markdown layer, let's do it.
-**** TODO spell check
-*** TODO Javascript
-*** TODO HTML
-*** TODO Vue.js
-*** TODO Clojure
-*** TODO shell scripts
-*** TODO makefiles
-*** TODO JSON
-*** TODO YAML
+*** Javascript
+*** HTML
+*** Vue.js
+*** Clojure
+*** shell scripts
+*** makefiles
+*** JSON
+*** YAML
 ** better undo-redo 
 ** window management
       - some kind of clone of spacemacs golden ratio mode
+      - some way to pin a buffer to a window, so that I can close the window and reopen w/ same buffer there.
 
 ** some kind of keybinding to bail out of partially typed commands.
 
+** hotkey to open this config file like spacemacs has
+   - and to reload it
+** Markdown enhancements
+   - word count in the modeline that just treats markdown punctuation as spaces
+   - some way to hide or dimish in-line footnotes.
+   - a nice UI to query a CSL json for citations (built on ivy?)
+   - highlight and overwrite
+   - spell check
+** org enhancements
+   - fix the weird thing where these internal lists don't tab-indent to same spot
+   - MORE KEYBINDINGS for stuff I actually use.
+** git
+   - quick and easy way to add, commit, and push in whatever repo I'm in.
+** terminal    
+   - one keybinding for a quick and easy command
+   - another keybinding for a well-configured terminal window---maybe even eshell?
 
 * inspo
 
