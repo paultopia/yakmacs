@@ -353,8 +353,7 @@ Ok, now let's see if I can get a straight-up commit going.
 (defun git-quick-commit ()
 (interactive)
 (git-add-all)
-(magit-commit-create)
-(magit-push-current-to-upstream))
+(magit-commit-create))
 
 #+END_SRC
 
