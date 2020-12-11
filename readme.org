@@ -338,7 +338,7 @@ Following the suggestion in [[https://stackoverflow.com/a/6156444/4386239][this 
 (defun git-add-all ()
   (interactive)
   (let ((current-prefix-arg '(4)))
-  (magit-stage-modified)))
+  (magit-stage-modified "t")))
 
 #+END_SRC
 
