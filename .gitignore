@@ -5,3 +5,7 @@ straight/build/
 straight/repos/
 url/
 init.el~
+transient/
+#*
+*~
+

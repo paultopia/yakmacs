@@ -424,15 +424,37 @@ evil cleverparens doesn't appear to work though, at least not in this file. It s
 
 #+END_SRC
 
+Syntax checking
 
-** Python  :fragile:
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'flycheck)
+(add-hook 'prog-mode-hook #'global-flycheck-mode)
+#+END_SRC
+
+installed on my system: 
+pylint (python, via ~pip install pylint~)
+eslint (js, via ~npm install -g eslint~)
+html-tidy (html, via ~brew install tidy-html5~)
+jq (json, via ~brew install jq~)
+shellcheck (bash, via ~brew install shellcheck~)
+yamllint (yaml, via ~pip install yamllint~)
+stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
 
 
-Currently *untested* after move to main machine. On pi, completions worked. 
-But on pi I pip-3 installed jedi, black, autopep8, and yapf.  
+** Python  
 
-Also needs virtualenv and pipenv integration of some kind. 
+Currently working: completion, syntax checking via [[https://www.flycheck.org][flycheck]], accessing an interpeter in a window with ~M-x run-python~ 
 
+Not yet tested: sending code out for execution in an interpreter
+
+Not yet implemented: forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); any kind of pipenv/pyenv integration; test runner integration; keybindings 
+
+Globally installed python libraries: jedi, black, autopep8, plyint, yapf.  
+
+Probably needs virtualenv and pipenv integration of some kind to get rid of syntax checking unable to import errors?  
+maybe exec-path-from-shell combined with virtualenv will do that though?  (I suspect the interpreter works because of ~exec-path-from-shell~)
+
+- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'anaconda-mode)
@@ -440,20 +462,6 @@ Also needs virtualenv and pipenv integration of some kind.
  '(add-to-list 'company-backends 'company-anaconda))
 (add-hook 'python-mode-hook 'anaconda-mode)
 #+END_SRC
-
-*** PYTHON TODO 
-
-- make sure this works on real machine, haven't checked after moving to prod.
-
-- add [[https://github.com/pythonic-emacs/blacken][blacken]]
-
-- add and set up [[https://www.flycheck.org/en/latest/user/installation.html][flycheck]] for syntax checking (probably for other languages too)
-
-- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]?  This may have to wait till real machine.
-
-- keybindings for a shell?  maybe also after.  (and for sending commands to shell etc.)
-
-- test runner support?  
 
 
 ** Markdown
