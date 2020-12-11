@@ -334,6 +334,10 @@ Trying to create the equivalent of ~git add .~ --- the function ~magit-stage-mod
 
 Following the suggestion in [[https://stackoverflow.com/a/6156444/4386239][this SO]] I'm going to just try to force that in. 
 
+Actually, it looks like I don't need to do all that jazz with forced prefix arguments and ~call-interactively~ --- I can just pass it a value.  For now?  Is this
+ a bug/undocumented behavior or do I just not understand the function definition?  Is there a way to get emacs to give you the code for a function?
+
+
 #+BEGIN_SRC emacs-lisp
 (defun git-add-all ()
   (interactive)
@@ -342,6 +346,17 @@ Following the suggestion in [[https://stackoverflow.com/a/6156444/4386239][this 
 
 #+END_SRC
 
+Ok, now let's see if I can get a straight-up commit going. 
+
+#+BEGIN_SRC emacs-lisp
+
+(defun git-quick-commit ()
+(interactive)
+(git-add-all)
+(magit-commit-create)
+(magit-push-current-to-upstream))
+
+#+END_SRC
 
 * Languages 
 
@@ -588,7 +603,8 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 "ga" 'magit-stage-file
 "g." 'git-add-all
 "gc" 'magit-commit-create
-"gp" 'magit-push-current-to-upstream)
+"gp" 'magit-push-current-to-upstream
+"gg" 'git-quick-commit)
 
 #+END_SRC
 
