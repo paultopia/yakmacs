@@ -343,6 +343,8 @@ Following the suggestion in [[https://stackoverflow.com/a/6156444/4386239][this 
 Actually, it looks like I don't need to do all that jazz with forced prefix arguments and ~call-interactively~ --- I can just pass it a value.  For now?  Is this
  a bug/undocumented behavior or do I just not understand the function definition?  Is there a way to get emacs to give you the code for a function?
 
+I can probably get rid of that current prefix arg thing.  but this works now, so, why?  
+
 
 #+BEGIN_SRC emacs-lisp
 (defun git-add-all ()
