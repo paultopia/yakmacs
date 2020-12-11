@@ -8,4 +8,5 @@ init.el~
 transient/
 #*
 *~
+eshell/
 
