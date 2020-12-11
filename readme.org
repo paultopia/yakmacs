@@ -566,6 +566,19 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 
 #+END_SRC
 
+*** Git :key: 
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"g" '(:ignore t which-key "Git")
+"ga" 'magit-stage-file
+"g." 'magit-stage-modified
+"gc" 'magit-commit-create
+"gp" 'magit-push-current-to-upstream)
+
+#+END_SRC
+
 ** Modes from comma leader
 
 *** Markdown                                            :key:
