@@ -709,7 +709,6 @@ because I don't *think* anything else uses @ ...?
 ** Fancier modeline with mode and git enhancements
    - I'm happy with [[https://github.com/dbordak/telephone-line/][telephone-line]] for now, except I'd like to be able to have three color chunks, one reflecting mode, 1 reflecting file save status, and 1 reflecting git status.
 ** minor keybinding tweaks
-     - [[https://emacs.stackexchange.com/a/13770/12604][swipe this]] and map it to escape to allow me to bail from any command in normal mode
      - bind the arrow keys to paging in which-keys (so sue me, I like arrow keys)
 ** some kind of non-utf-8 utility
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
@@ -718,6 +717,7 @@ because I don't *think* anything else uses @ ...?
 ** Some kind of lisp editing
    - [[https://github.com/noctuid/lispyville][lispyville?]]
    - [[https://github.com/luxbock/evil-cleverparens][evil-cleverparens?]]
+(for some reason neither keeps me from deleting into unbalanced parens.)
 ** Language support
 *** Javascript
 *** HTML
@@ -732,10 +732,7 @@ because I don't *think* anything else uses @ ...?
       - some kind of clone of spacemacs golden ratio mode
       - some way to pin a buffer to a window, so that I can close the window and reopen w/ same buffer there.
 
-** some kind of keybinding to bail out of partially typed commands.
-
-** hotkey to open this config file like spacemacs has
-   - and to reload it
+** hotkey to reload this config file like spacemacs has
 ** Markdown enhancements
    - word count in the modeline that just treats markdown punctuation as spaces
    - some way to hide or dimish in-line footnotes.
@@ -745,14 +742,6 @@ because I don't *think* anything else uses @ ...?
 ** org enhancements
    - fix the weird thing where these internal lists don't tab-indent to same spot
    - MORE KEYBINDINGS for stuff I actually use.
-** git
-   - quick and easy way to add, commit, and push in whatever repo I'm in.
-   - I guess I could use magit?  but it's more complex than git itself. 
-     - keybindings I would need:
-       - ~magit-stage-file~ for current file
-       - ~magit-stage-modified~ is basically ~git add .~ I \think\?
-       - ~magit-push-current-to-upstream~ appears to be ~git push~ although maybe ~magit-push-current-to-pushremote~ sometimes?
-       - ~magit-commit-create~ to commit... I guess??
 ** terminal    
    - one keybinding for a quick and easy command
    - another keybinding for a well-configured terminal window---maybe even eshell?
