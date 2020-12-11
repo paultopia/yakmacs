@@ -30,6 +30,8 @@ that I didn't know how to escape, in init.el.)  So that's cool.
 
 All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
 
+evil escape key set to ESC ESC 
+
 GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 
@@ -171,6 +173,9 @@ Let's get as much evilified as humanly possible just to start, eh?
 (evil-org-set-key-theme '(navigation insert textobjects additional calendar))
 (require 'evil-org-agenda)
 (evil-org-agenda-set-keys)
+
+; keybindings for this down below.
+(straight-use-package 'evil-escape)
 
 #+END_SRC
 
@@ -520,6 +525,14 @@ De-uglify the line breaks and such
 
 
 * Keybindings
+
+** evil escape
+
+#+BEGIN_SRC emacs-lisp
+(evil-escape-mode)
+(setq-default evil-escape-delay 0.2)
+(global-set-key (kbd "ESC ESC") 'evil-escape)
+#+END_SRC
 
 ** Bust out General
 
