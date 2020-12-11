@@ -365,6 +365,7 @@ Ok, now let's see if I can get a straight-up commit going.
 
 #+END_SRC
 
+
 * Languages 
 
 ** Cross- programming language stuff
@@ -395,6 +396,27 @@ Make sure code is in a proper code font
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'prog-mode-hook `code-font)
+#+END_SRC
+
+Time to take control of my parens. 
+
+evil cleverparens doesn't appear to work though, at least not in this file. It still lets me delete 
+
+#+BEGIN_SRC emacs-lisp
+
+    (straight-use-package 'smartparens)
+    (add-hook 'smartparens-enabled-hook #'evil-cleverparens-mode)
+    (straight-use-package 'evil-cleverparens)
+    (require 'smartparens-config)
+    (add-hook 'prog-mode-hook #'smartparens-strict-mode)
+    
+  ; just to make it easier to work on lisp
+    (sp-pair "'" "'" :actions :rem)
+
+  ; temporary until I get finished working on this file
+    (add-hook 'org-mode-hook #'smartparens-strict-mode)
+
+
 #+END_SRC
 
 
