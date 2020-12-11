@@ -330,6 +330,19 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 #+END_SRC
 
+Trying to create the equivalent of ~git add .~ --- the function ~magit-stage-modified~ is close, but appears to require a prefix argument to make it work.
+
+Following the suggestion in [[https://stackoverflow.com/a/6156444/4386239][this SO]] I'm going to just try to force that in. 
+
+#+BEGIN_SRC emacs-lisp
+(defun git-add-all ()
+  (interactive)
+  (let ((current-prefix-arg '(4)))
+  (magit-stage-modified)))
+
+#+END_SRC
+
+
 * Languages 
 
 ** Cross- programming language stuff
@@ -573,7 +586,7 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 (leader-binding
 "g" '(:ignore t which-key "Git")
 "ga" 'magit-stage-file
-"g." 'magit-stage-modified
+"g." 'git-add-all
 "gc" 'magit-commit-create
 "gp" 'magit-push-current-to-upstream)
 

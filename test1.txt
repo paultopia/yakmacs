@@ -1,0 +1,1 @@
+this is a test file for magit that will go away soon.
