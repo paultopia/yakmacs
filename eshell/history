@@ -1,0 +1,16 @@
+cd ..
+cd Dropbox/codesnips/
+ls
+chmod +x test.sh
+ls
+./test.sh
+cat test.txt
+exit
+cd ~/Dropbox/codesnips/
+pbpaste >> test.txt
+ls
+cat test.txt
+pbpaste >> test.txt
+cat test.txt
+exit
+exit
