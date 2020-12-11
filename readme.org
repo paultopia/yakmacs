@@ -121,6 +121,28 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 #+END_SRC
 
 
+* Emacs mechanical tweaks
+
+I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs/BackupDirectory][the wiki]] 
+
+#+BEGIN_SRC emacs-lisp
+(defvar backup-dir "~/Dropbox/emacs-backup-files")
+    (setq backup-directory-alist
+          `((".*" . ,backup-dir)))
+    (setq auto-save-file-name-transforms
+          `((".*" ,backup-dir t)))
+
+(message "Deleting old backup files...")
+(let ((week (* 60 60 24 7))
+      (current (float-time (current-time))))
+  (dolist (file (directory-files backup-dir t))
+    (when (and (backup-file-name-p file)
+               (> (- current (float-time (fifth (file-attributes file))))
+                  week))
+      (message "%s" file)
+      (delete-file file))))
+#+END_SRC
+
 * Browsing and Finding Things 
 
 ** Files and such  
