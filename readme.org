@@ -33,29 +33,35 @@ All bindings are from normal state.  I haven't defined anything for insert at al
 GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 
-| command | function               |
-| FILES   |                        |
-| f f     | find file              |
-| f s     | save file              |
-| f n     | save to new name       |
-| fed     | open config file       |
-| WINDOWS |                        |
-| w /     | new window to right    |
-| w -     | new window below       |
-| w d     | delete current window  |
-| w x     | delete other windows   |
-| w c     | cycle to next window   |
-| BUFFERS |                        |
-| b d     | kill buffer            |
-| b b     | buffer menu            |
-| ELISP   |                        |
-| e e     | eval sexp before point |
-| COLORS  |                        |
-| c l     | light color theme      |
-| c d     | dark color theme       |
-| HELP    |                        |
-| h f     | describe function      |
-|         |                        |
+| command | function                           |
+| FILES   |                                    |
+| f f     | find file                          |
+| f s     | save file                          |
+| f n     | save to new name                   |
+| fed     | open config file                   |
+| WINDOWS |                                    |
+| w /     | new window to right                |
+| w -     | new window below                   |
+| w d     | delete current window              |
+| w x     | delete other windows               |
+| w c     | cycle to next window               |
+| BUFFERS |                                    |
+| b d     | kill buffer                        |
+| b b     | buffer menu                        |
+| ELISP   |                                    |
+| e e     | eval sexp before point             |
+| COLORS  |                                    |
+| c l     | light color theme                  |
+| c d     | dark color theme                   |
+| HELP    |                                    |
+| h f     | describe function                  |
+| GIT     |                                    |
+| g g     | git add . && git commit (not push) |
+| g a     | git add <CURRENT FILE>             |
+| g .     | git add .                          |
+| g c     | git commit                         |
+| g p     | git push                           |
+|         |                                    |
 
 
 Mode leader is comma.
