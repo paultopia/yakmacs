@@ -34,19 +34,28 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 
 | command | function               |
+| FILES   |                        |
 | f f     | find file              |
 | f s     | save file              |
 | f n     | save to new name       |
+| fed     | open config file       |
+| WINDOWS |                        |
 | w /     | new window to right    |
 | w -     | new window below       |
 | w d     | delete current window  |
 | w x     | delete other windows   |
 | w c     | cycle to next window   |
+| BUFFERS |                        |
 | b d     | kill buffer            |
 | b b     | buffer menu            |
+| ELISP   |                        |
 | e e     | eval sexp before point |
+| COLORS  |                        |
 | c l     | light color theme      |
 | c d     | dark color theme       |
+| HELP    |                        |
+| h f     | describe function      |
+|         |                        |
 
 
 Mode leader is comma.
@@ -314,6 +323,13 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 
 
+* Git
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'magit)
+
+#+END_SRC
+
 * Languages 
 
 ** Cross- programming language stuff
@@ -484,6 +500,19 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 #+END_SRC
 
+
+I think I'd like a special keybinding to get this file open.  spacemacs uses f e d and hence it already in muscle memory I guess
+
+#+BEGIN_SRC emacs-lisp
+
+(defun open-config ()
+(interactive)
+(find-file "~/.emacs.d/readme.org"))
+
+(leader-binding "fed" 'open-config)
+
+#+END_SRC
+
 *** Buffers    :key:
 
 #+BEGIN_SRC emacs-lisp
@@ -524,6 +553,17 @@ I think I pretty much just only want these keybindings in normal mode for now.
 (leader-binding
 "e" '(:ignore t :which-key "Elisp")
 "ee" 'eval-last-sexp)
+#+END_SRC
+
+
+*** Help :key: 
+
+#+BEGIN_SRC emacs-lisp
+
+(leader-binding
+"h" '(:ignore t :which-key "Help")
+"hf" 'describe-function)
+
 #+END_SRC
 
 ** Modes from comma leader
