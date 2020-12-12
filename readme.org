@@ -218,7 +218,6 @@ Let's get as much evilified as humanly possible just to start, eh?
 Setup
 
 #+BEGIN_SRC emacs-lisp
-;(straight-use-package 'doom-themes) 
 (straight-use-package 'leuven-theme)
 
 #+END_SRC
@@ -226,10 +225,6 @@ Setup
 Convenience functions
 
 #+BEGIN_SRC emacs-lisp
-
-  ;; (defvar dark-theme 'doom-sourcerer)
-  ;; (defvar light-theme 'doom-tomorrow-day)
-
   (defvar dark-theme 'leuven-dark)
   (defvar light-theme 'leuven)
 
@@ -248,8 +243,6 @@ Convenience functions
   (interactive)
   (disable-all-themes)
   (load-theme light-theme t))
-
-
 #+END_SRC
 
 
@@ -785,7 +778,6 @@ because I don't *think* anything else uses @ ...?
    - some way to hide or dimish in-line footnotes.
    - a nice UI to query a CSL json for citations (built on ivy?)
    - highlight and overwrite
-   - spell check
 ** org enhancements
    - fix the weird thing where these internal lists don't tab-indent to same spot
    - MORE KEYBINDINGS for stuff I actually use.
