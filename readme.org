@@ -81,10 +81,12 @@ ORG MODE
 
 MARKDOWN
 
-| command | function           |
-| , h     | hide markup        |
-| , f     | fold/unfold header |
-|         |                    |
+| command | function                            |
+| , h     | hide markup                         |
+| , f     | fold/unfold header                  |
+| , s s   | turn on spell checking              |
+| s f     | fix word before point (spell check) |
+|         |                                     |
 
 
 
@@ -535,6 +537,7 @@ De-uglify the line breaks and such
 #+END_SRC
 
 
+
 ** In and out of text and prog
 
 #+BEGIN_SRC emacs-lisp
@@ -700,7 +703,10 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 (mode-binding 
 :keymaps 'markdown-mode-map
 "h" 'markdown-toggle-markup-hiding
-"f" 'markdown-cycle)
+"f" 'markdown-cycle
+"s" (:ignore t which-key "Spell checking") 
+"ss" 'flyspell-mode
+"sf" 'flyspell-correct-word-before-point)
 
 #+END_SRC
 
