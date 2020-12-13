@@ -73,6 +73,9 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | g c                               | git commit                         |
 | g p                               | git push                           |
 |                                   |                                    |
+| UNDO-REDO                         |                                    |
+| u u                               | undo                               |
+| u r                               | redo                               |
 
 
 Mode leader is comma.
@@ -162,6 +165,13 @@ I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs
 ;                  week))
 ;      (message "%s" file)
 ;      (delete-file file))))
+#+END_SRC
+
+Undo-redo is impossibly confusing and I can never redo anything and I hate it to death.  Let's try a lib.
+Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems normal.  keybindings down below per usual.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'undo-fu)
 #+END_SRC
 
 * Browsing and Finding Things 
@@ -766,6 +776,15 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 
 #+END_SRC
 
+
+*** Undo-redo :key:
+
+#+BEGIN_SRC emacs-lisp
+(leader-binding
+"u" '(:ignore t :which-key "Undo/Redo")
+"uu" 'undo-fu-only-undo
+"ur" 'undo-fu-only-redo)
+#+END_SRC
 
 ** Modes from comma leader
 
