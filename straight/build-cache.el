@@ -3,7 +3,7 @@
 
 "26.3"
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-12-12 22:44:50" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-12-12 22:44:50" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-12-12 22:44:50" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-12-12 22:44:50" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-12-12 22:44:50" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "exec-path-from-shell" ("2020-12-12 22:44:50" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "counsel" ("2020-12-12 22:44:51" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2020-12-12 22:44:51" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2020-12-12 22:44:51" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "which-key" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "evil" ("2020-12-12 22:44:51" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2020-12-12 22:44:51" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2020-12-12 22:44:51" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2020-12-12 22:44:51" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2020-12-12 22:44:51" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2020-12-12 22:44:51" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "leuven-theme" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2020-12-12 22:44:51" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "magit" ("2020-12-12 22:44:51" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "dash" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "git-commit" ("2020-12-12 22:44:51" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2020-12-12 22:44:51" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2020-12-12 22:44:51" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2020-12-12 22:44:51" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2020-12-12 22:44:51" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2020-12-12 22:44:51" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "pkg-info" ("2020-12-12 22:44:51" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2020-12-12 22:44:51" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "let-alist" ("2020-12-12 22:44:51" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2020-12-12 22:44:51" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2020-12-12 22:44:51" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "s" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "f" ("2020-12-12 22:44:51" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "markdown-mode" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "general" ("2020-12-12 22:44:51" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "golden-ratio" ("2020-12-12 22:44:51" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "undo-fu" ("2020-12-12 22:44:51" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu"))))
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2020-12-13 17:34:38" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2020-12-13 17:34:38" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2020-12-13 17:34:37" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2020-12-13 17:34:37" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2020-12-13 17:34:37" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "exec-path-from-shell" ("2020-12-13 17:34:37" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "counsel" ("2020-12-13 17:34:38" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2020-12-13 17:34:38" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2020-12-13 17:34:38" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "which-key" ("2020-12-13 17:34:41" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "evil" ("2020-12-13 17:34:41" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2020-12-13 17:34:41" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2020-12-13 17:34:41" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2020-12-13 17:34:41" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2020-12-13 17:34:41" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2020-12-13 17:34:41" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "leuven-theme" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2020-12-13 17:34:41" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "magit" ("2020-12-13 17:34:41" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2020-12-13 17:34:41" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "dash" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "git-commit" ("2020-12-13 17:34:41" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2020-12-13 17:34:41" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2020-12-13 17:34:41" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2020-12-13 17:34:41" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2020-12-13 17:34:41" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2020-12-13 17:34:41" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2020-12-13 17:34:41" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2020-12-13 17:34:41" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "pkg-info" ("2020-12-13 17:34:40" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2020-12-13 17:34:40" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "let-alist" ("2020-12-13 17:34:41" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2020-12-13 17:34:41" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2020-12-13 17:34:41" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "s" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "f" ("2020-12-13 17:34:41" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "markdown-mode" ("2020-12-13 17:34:41" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "general" ("2020-12-13 17:34:41" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "golden-ratio" ("2020-12-13 17:34:41" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "undo-fu" ("2020-12-13 17:34:38" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "zone-nyan" ("2020-12-13 17:34:38" ("esxml") (:type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git" :package "zone-nyan" :local-repo "zone-nyan")) "esxml" ("2020-12-13 17:34:38" nil (:type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml" :package "esxml" :local-repo "esxml")) "projectile" ("2020-12-13 17:34:41" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile"))))
 
 #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-autoloads straight) (autoload (quote straight-get-recipe) "straight" "Interactively select a recipe from one of the recipe repositories.
 All recipe repositories in `straight-recipe-repositories' will
@@ -3509,10 +3509,393 @@ wraps the `undo-only' function.
 
 Optional argument ARG the number of steps to undo.
 
-(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "undo-fu" (quote ("undo-fu-")))) (provide (quote undo-fu-autoloads)))))
+(fn &optional ARG)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "undo-fu" (quote ("undo-fu-")))) (provide (quote undo-fu-autoloads))) "esxml" ((esxml esxml-autoloads esxml-pkg esxml-query) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "esxml" (quote ("esxml-" "xml-to-esxml" "string-trim-whitespace" "sxml-to-" "pp-esxml-to-xml" "attr")))) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "esxml-query" (quote ("esxml-")))) (provide (quote esxml-autoloads))) "zone-nyan" ((zone-nyan zone-nyan-autoloads) (autoload (quote zone-nyan) "zone-nyan" "Zone out with nyan cat!
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" nil "cl-lib" nil "counsel" nil "swiper" nil "ivy" nil "which-key" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "leuven-theme" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "magit" nil "async" nil "dash" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "pkg-info" nil "epl" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "s" nil "f" nil "markdown-mode" nil "general" nil "golden-ratio" nil "undo-fu" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
+(fn)" nil nil) (autoload (quote zone-nyan-preview) "zone-nyan" "Preview the `zone-nyan' zone program.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "undo-fu" "counsel" "swiper" "ivy" "which-key" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "leuven-theme" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "golden-ratio" "magit" "async" "dash" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "pkg-info" "epl" "let-alist" "anaconda-mode" "pythonic" "s" "f" "markdown-mode" "general")
+(fn)" t nil) (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "zone-nyan" (quote ("zone-nyan-")))) (provide (quote zone-nyan-autoloads))) "projectile" ((projectile-autoloads projectile) (autoload (quote projectile-version) "projectile" "Get the Projectile version as string.
+
+If called interactively or if SHOW-VERSION is non-nil, show the
+version in the echo area and the messages buffer.
+
+The returned string includes both, the version from package.el
+and the library version, if both a present and different.
+
+If the version number could not be determined, signal an error,
+if called interactively, or if SHOW-VERSION is non-nil, otherwise
+just return nil.
+
+(fn &optional SHOW-VERSION)" t nil) (autoload (quote projectile-invalidate-cache) "projectile" "Remove the current project's files from `projectile-projects-cache'.
+
+With a prefix argument PROMPT prompts for the name of the project whose cache
+to invalidate.
+
+(fn PROMPT)" t nil) (autoload (quote projectile-purge-file-from-cache) "projectile" "Purge FILE from the cache of the current project.
+
+(fn FILE)" t nil) (autoload (quote projectile-purge-dir-from-cache) "projectile" "Purge DIR from the cache of the current project.
+
+(fn DIR)" t nil) (autoload (quote projectile-cache-current-file) "projectile" "Add the currently visited file to the cache.
+
+(fn)" t nil) (autoload (quote projectile-discover-projects-in-directory) "projectile" "Discover any projects in DIRECTORY and add them to the projectile cache.
+This function is not recursive and only adds projects with roots
+at the top level of DIRECTORY.
+
+(fn DIRECTORY)" t nil) (autoload (quote projectile-discover-projects-in-search-path) "projectile" "Discover projects in `projectile-project-search-path'.
+Invoked automatically when `projectile-mode' is enabled.
+
+(fn)" t nil) (autoload (quote projectile-switch-to-buffer) "projectile" "Switch to a project buffer.
+
+(fn)" t nil) (autoload (quote projectile-switch-to-buffer-other-window) "projectile" "Switch to a project buffer and show it in another window.
+
+(fn)" t nil) (autoload (quote projectile-switch-to-buffer-other-frame) "projectile" "Switch to a project buffer and show it in another frame.
+
+(fn)" t nil) (autoload (quote projectile-display-buffer) "projectile" "Display a project buffer in another window without selecting it.
+
+(fn)" t nil) (autoload (quote projectile-project-buffers-other-buffer) "projectile" "Switch to the most recently selected buffer project buffer.
+Only buffers not visible in windows are returned.
+
+(fn)" t nil) (autoload (quote projectile-multi-occur) "projectile" "Do a `multi-occur' in the project's buffers.
+With a prefix argument, show NLINES of context.
+
+(fn &optional NLINES)" t nil) (autoload (quote projectile-find-other-file) "projectile" "Switch between files with the same name but different extensions.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+(fn &optional FLEX-MATCHING)" t nil) (autoload (quote projectile-find-other-file-other-window) "projectile" "Switch between files with the same name but different extensions in other window.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+(fn &optional FLEX-MATCHING)" t nil) (autoload (quote projectile-find-other-file-other-frame) "projectile" "Switch between files with the same name but different extensions in other frame.
+With FLEX-MATCHING, match any file that contains the base name of current file.
+Other file extensions can be customized with the variable `projectile-other-file-alist'.
+
+(fn &optional FLEX-MATCHING)" t nil) (autoload (quote projectile-find-file-dwim) "projectile" "Jump to a project's files using completion based on context.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim' still switches to \"projectile/projectile.el\" immediately
+ because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename like
+ \"projectile/a\", a list of files with character 'a' in that directory is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-file-dwim-other-window) "projectile" "Jump to a project's files using completion based on context in other window.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim-other-window' still switches to \"projectile/projectile.el\"
+immediately because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim-other-window' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename
+like \"projectile/a\", a list of files with character 'a' in that directory
+is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-file-dwim-other-frame) "projectile" "Jump to a project's files using completion based on context in other frame.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+If point is on a filename, Projectile first tries to search for that
+file in project:
+
+- If it finds just a file, it switches to that file instantly.  This works even
+if the filename is incomplete, but there's only a single file in the current project
+that matches the filename at point.  For example, if there's only a single file named
+\"projectile/projectile.el\" but the current filename is \"projectile/proj\" (incomplete),
+`projectile-find-file-dwim-other-frame' still switches to \"projectile/projectile.el\"
+immediately because this is the only filename that matches.
+
+- If it finds a list of files, the list is displayed for selecting.  A list of
+files is displayed when a filename appears more than one in the project or the
+filename at point is a prefix of more than two files in a project.  For example,
+if `projectile-find-file-dwim-other-frame' is executed on a filepath like \"projectile/\", it lists
+the content of that directory.  If it is executed on a partial filename
+like \"projectile/a\", a list of files with character 'a' in that directory
+is presented.
+
+- If it finds nothing, display a list of all files in project for selecting.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-file) "projectile" "Jump to a project's file using completion.
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-file-other-window) "projectile" "Jump to a project's file using completion and show it in another window.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-file-other-frame) "projectile" "Jump to a project's file using completion and show it in another frame.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-toggle-project-read-only) "projectile" "Toggle project read only.
+
+(fn)" t nil) (autoload (quote projectile-find-dir) "projectile" "Jump to a project's directory using completion.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-dir-other-window) "projectile" "Jump to a project's directory in other window using completion.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-dir-other-frame) "projectile" "Jump to a project's directory in other frame using completion.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-test-file) "projectile" "Jump to a project's test file using completion.
+
+With a prefix arg INVALIDATE-CACHE invalidates the cache first.
+
+(fn &optional INVALIDATE-CACHE)" t nil) (autoload (quote projectile-find-related-file-other-window) "projectile" "Open related file in other window.
+
+(fn)" t nil) (autoload (quote projectile-find-related-file-other-frame) "projectile" "Open related file in other frame.
+
+(fn)" t nil) (autoload (quote projectile-find-related-file) "projectile" "Open related file.
+
+(fn)" t nil) (autoload (quote projectile-related-files-fn-groups) "projectile" "Generate a related-files-fn which relates as KIND for files in each of GROUPS.
+
+(fn KIND GROUPS)" nil nil) (autoload (quote projectile-related-files-fn-extensions) "projectile" "Generate a related-files-fn which relates as KIND for files having EXTENSIONS.
+
+(fn KIND EXTENSIONS)" nil nil) (autoload (quote projectile-related-files-fn-test-with-prefix) "projectile" "Generate a related-files-fn which relates tests and impl for files with EXTENSION based on TEST-PREFIX.
+
+(fn EXTENSION TEST-PREFIX)" nil nil) (autoload (quote projectile-related-files-fn-test-with-suffix) "projectile" "Generate a related-files-fn which relates tests and impl for files with EXTENSION based on TEST-SUFFIX.
+
+(fn EXTENSION TEST-SUFFIX)" nil nil) (autoload (quote projectile-project-info) "projectile" "Display info for current project.
+
+(fn)" t nil) (autoload (quote projectile-find-implementation-or-test-other-window) "projectile" "Open matching implementation or test file in other window.
+
+(fn)" t nil) (autoload (quote projectile-find-implementation-or-test-other-frame) "projectile" "Open matching implementation or test file in other frame.
+
+(fn)" t nil) (autoload (quote projectile-toggle-between-implementation-and-test) "projectile" "Toggle between an implementation file and its test file.
+
+(fn)" t nil) (autoload (quote projectile-grep) "projectile" "Perform rgrep in the project.
+
+With a prefix ARG asks for files (globbing-aware) which to grep in.
+With prefix ARG of `-' (such as `M--'), default the files (without prompt),
+to `projectile-grep-default-files'.
+
+With REGEXP given, don't query the user for a regexp.
+
+(fn &optional REGEXP ARG)" t nil) (autoload (quote projectile-ag) "projectile" "Run an ag search with SEARCH-TERM in the project.
+
+With an optional prefix argument ARG SEARCH-TERM is interpreted as a
+regular expression.
+
+(fn SEARCH-TERM &optional ARG)" t nil) (autoload (quote projectile-ripgrep) "projectile" "Run a Ripgrep search with `SEARCH-TERM' at current project root.
+
+With an optional prefix argument ARG SEARCH-TERM is interpreted as a
+regular expression.
+
+(fn SEARCH-TERM &optional ARG)" t nil) (autoload (quote projectile-regenerate-tags) "projectile" "Regenerate the project's [e|g]tags.
+
+(fn)" t nil) (autoload (quote projectile-find-tag) "projectile" "Find tag in project.
+
+(fn)" t nil) (autoload (quote projectile-run-command-in-root) "projectile" "Invoke `execute-extended-command' in the project's root.
+
+(fn)" t nil) (autoload (quote projectile-run-shell-command-in-root) "projectile" "Invoke `shell-command' in the project's root.
+
+(fn)" t nil) (autoload (quote projectile-run-async-shell-command-in-root) "projectile" "Invoke `async-shell-command' in the project's root.
+
+(fn)" t nil) (autoload (quote projectile-run-gdb) "projectile" "Invoke `gdb' in the project's root.
+
+(fn)" t nil) (autoload (quote projectile-run-shell) "projectile" "Invoke `shell' in the project's root.
+
+Switch to the project specific shell buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-run-eshell) "projectile" "Invoke `eshell' in the project's root.
+
+Switch to the project specific eshell buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-run-ielm) "projectile" "Invoke `ielm' in the project's root.
+
+Switch to the project specific ielm buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-run-term) "projectile" "Invoke `term' in the project's root.
+
+Switch to the project specific term buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-run-vterm) "projectile" "Invoke `vterm' in the project's root.
+
+Switch to the project specific term buffer if it already exists.
+
+Use a prefix argument ARG to indicate creation of a new process instead.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-replace) "projectile" "Replace literal string in project using non-regexp `tags-query-replace'.
+
+With a prefix argument ARG prompts you for a directory on which
+to run the replacement.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-replace-regexp) "projectile" "Replace a regexp in the project using `tags-query-replace'.
+
+With a prefix argument ARG prompts you for a directory on which
+to run the replacement.
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-kill-buffers) "projectile" "Kill project buffers.
+
+The buffer are killed according to the value of
+`projectile-kill-buffers-filter'.
+
+(fn)" t nil) (autoload (quote projectile-save-project-buffers) "projectile" "Save all project buffers.
+
+(fn)" t nil) (autoload (quote projectile-dired) "projectile" "Open `dired' at the root of the project.
+
+(fn)" t nil) (autoload (quote projectile-dired-other-window) "projectile" "Open `dired'  at the root of the project in another window.
+
+(fn)" t nil) (autoload (quote projectile-dired-other-frame) "projectile" "Open `dired' at the root of the project in another frame.
+
+(fn)" t nil) (autoload (quote projectile-vc) "projectile" "Open `vc-dir' at the root of the project.
+
+For git projects `magit-status-internal' is used if available.
+For hg projects `monky-status' is used if available.
+
+If PROJECT-ROOT is given, it is opened instead of the project
+root directory of the current buffer file.  If interactively
+called with a prefix argument, the user is prompted for a project
+directory to open.
+
+(fn &optional PROJECT-ROOT)" t nil) (autoload (quote projectile-recentf) "projectile" "Show a list of recently visited files in a project.
+
+(fn)" t nil) (autoload (quote projectile-configure-project) "projectile" "Run project configure command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-compile-project) "projectile" "Run project compilation command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-test-project) "projectile" "Run project test command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-install-project) "projectile" "Run project install command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-package-project) "projectile" "Run project package command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-run-project) "projectile" "Run project run command.
+
+Normally you'll be prompted for a compilation command, unless
+variable `compilation-read-command'.  You can force the prompt
+with a prefix ARG.
+
+(fn ARG)" t nil) (autoload (quote projectile-repeat-last-command) "projectile" "Run last projectile external command.
+
+External commands are: `projectile-configure-project',
+`projectile-compile-project', `projectile-test-project',
+`projectile-install-project', `projectile-package-project',
+and `projectile-run-project'.
+
+If the prefix argument SHOW_PROMPT is non nil, the command can be edited.
+
+(fn SHOW-PROMPT)" t nil) (autoload (quote projectile-switch-project) "projectile" "Switch to a project we have visited before.
+Invokes the command referenced by `projectile-switch-project-action' on switch.
+With a prefix ARG invokes `projectile-commander' instead of
+`projectile-switch-project-action.'
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-switch-open-project) "projectile" "Switch to a project we have currently opened.
+Invokes the command referenced by `projectile-switch-project-action' on switch.
+With a prefix ARG invokes `projectile-commander' instead of
+`projectile-switch-project-action.'
+
+(fn &optional ARG)" t nil) (autoload (quote projectile-find-file-in-directory) "projectile" "Jump to a file in a (maybe regular) DIRECTORY.
+
+This command will first prompt for the directory the file is in.
+
+(fn &optional DIRECTORY)" t nil) (autoload (quote projectile-find-file-in-known-projects) "projectile" "Jump to a file in any of the known projects.
+
+(fn)" t nil) (autoload (quote projectile-cleanup-known-projects) "projectile" "Remove known projects that don't exist anymore.
+
+(fn)" t nil) (autoload (quote projectile-clear-known-projects) "projectile" "Clear both `projectile-known-projects' and `projectile-known-projects-file'.
+
+(fn)" t nil) (autoload (quote projectile-remove-known-project) "projectile" "Remove PROJECT from the list of known projects.
+
+(fn &optional PROJECT)" t nil) (autoload (quote projectile-remove-current-project-from-known-projects) "projectile" "Remove the current project from the list of known projects.
+
+(fn)" t nil) (autoload (quote projectile-add-known-project) "projectile" "Add PROJECT-ROOT to the list of known projects.
+
+(fn PROJECT-ROOT)" t nil) (autoload (quote projectile-ibuffer) "projectile" "Open an IBuffer window showing all buffers in the current project.
+
+Let user choose another project when PROMPT-FOR-PROJECT is supplied.
+
+(fn PROMPT-FOR-PROJECT)" t nil) (autoload (quote projectile-commander) "projectile" "Execute a Projectile command with a single letter.
+The user is prompted for a single character indicating the action to invoke.
+The `?' character describes then
+available actions.
+
+See `def-projectile-commander-method' for defining new methods.
+
+(fn)" t nil) (autoload (quote projectile-browse-dirty-projects) "projectile" "Browse dirty version controlled projects.
+
+With a prefix argument, or if CACHED is non-nil, try to use the cached
+dirty project list.
+
+(fn &optional CACHED)" t nil) (autoload (quote projectile-edit-dir-locals) "projectile" "Edit or create a .dir-locals.el file of the project.
+
+(fn)" t nil) (defvar projectile-mode nil "Non-nil if Projectile mode is enabled.
+See the `projectile-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `projectile-mode'.") (custom-autoload (quote projectile-mode) "projectile" nil) (autoload (quote projectile-mode) "projectile" "Minor mode to assist project management and navigation.
+
+When called interactively, toggle `projectile-mode'.  With prefix
+ARG, enable `projectile-mode' if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable `projectile-mode' if ARG is omitted,
+nil or positive.  If ARG is `toggle', toggle `projectile-mode'.
+Otherwise behave as if called interactively.
+
+\\{projectile-mode-map}
+
+(fn &optional ARG)" t nil) (define-obsolete-function-alias (quote projectile-global-mode) (quote projectile-mode) "1.0") (if (fboundp (quote register-definition-prefixes)) (register-definition-prefixes "projectile" (quote ("projectile-" "??" "delete-file-projectile-remove-from-cache" "def-projectile-commander-method" "compilation-find-file-projectile-find-compilation-buffer")))) (provide (quote projectile-autoloads)))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" nil "cl-lib" nil "counsel" nil "swiper" nil "ivy" nil "which-key" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "leuven-theme" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "magit" nil "async" nil "dash" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "pkg-info" nil "epl" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "s" nil "f" nil "markdown-mode" nil "general" nil "golden-ratio" nil "undo-fu" nil "zone-nyan" nil "esxml" nil "projectile" nil)) melpa #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu") "zone-nyan" (zone-nyan :type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git") "esxml" (esxml :type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "undo-fu" "zone-nyan" "esxml" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "which-key" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "leuven-theme" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "golden-ratio" "magit" "async" "dash" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "s" "f" "markdown-mode" "general")
 
 t
