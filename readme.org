@@ -430,6 +430,7 @@ Time to take control of my parens.
 
 evil cleverparens doesn't appear to work though, at least not in this file. It still lets me delete 
 
+
 #+BEGIN_SRC emacs-lisp
 
     (straight-use-package 'smartparens)
@@ -530,6 +531,39 @@ De-uglify the line breaks and such
 #+END_SRC
 
 
+This is some experimental code to try and mess with the spelling. 
+
+I'm basically going to take [[https://emacs.stackexchange.com/questions/55465/how-do-i-get-flyspell-to-ignore-pandoc-citations-in-markdown]]
+
+and try to advice it to the ~flyspell-generic-check-word-predicate~ defined in markdown mode.
+
+Markdown mode does something weird there.  It defines its own function 
+~markdown-flyspell-check-word-p~ 
+https://github.com/jrblevin/markdown-mode/blob/39cc7176d3ba33d88e02cdd0707d4dac23836977/markdown-mode.el#L2152 
+
+and then uses ~setq-local~ to define the flyspell function as the markdown function. 
+
+So I'm not sure if advising the markdown mode function or the flyspell function is right? 
+
+I'll try advising the markdown function first. 
+
+
+#+BEGIN_SRC emacs-lisp
+
+
+; correct but only works on strings not characters.
+(defun is-ampersand (s)
+(string= "@" s))
+
+; correct, identifies if word at point is cite, took hours
+(defun not-cite ()
+ (save-excursion
+  (forward-word -1)
+  (let ((result (is-ampersand (string (preceding-char)))))
+   (not result)
+   )))
+   
+#+END_SRC
 
 ** In and out of text and prog
 
