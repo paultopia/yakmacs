@@ -217,11 +217,16 @@ Let's get as much evilified as humanly possible just to start, eh?
 (require 'evil-org-agenda)
 (evil-org-agenda-set-keys)
 
-; keybindings for this down below.
-(straight-use-package 'evil-escape)
-
 #+END_SRC
 
+I have keybindings for this down below, but I need a universal bail out of things command.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'evil-escape)
+#+END_SRC
+
+I wish I knew how the parsing/evaluation order of these files worked. Can I set a keybinding for something before actually using it? 
+I feel like I've seen people actually call functions before defining them in blog posts and such about elisp. 
 
 * Visual 
   
@@ -369,6 +374,14 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 
 
+
+** Golden ratio
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'golden-ratio)
+(require 'golden-ratio)
+(golden-ratio-mode 1)
+#+END_SRC
 
 * Git
 #+BEGIN_SRC emacs-lisp
@@ -835,8 +848,8 @@ because I don't *think* anything else uses @ ...?
 *** JSON
 *** YAML
 ** better undo-redo 
+   - maybe try [[https://gitlab.com/ideasman42/emacs-undo-fu][this lib?]]
 ** window management
-      - some kind of clone of spacemacs golden ratio mode
       - some way to pin a buffer to a window, so that I can close the window and reopen w/ same buffer there.
 
 ** hotkey to reload this config file like spacemacs has
