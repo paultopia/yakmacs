@@ -560,9 +560,21 @@ I'll try advising the markdown function first.
  (save-excursion
   (forward-word -1)
   (let ((result (is-ampersand (string (preceding-char)))))
-   (not result)
-   )))
+   (not result))))
+
+; for my personal debugging
+(defun confirm-not-cite ()
+(interactive)
+(print (not-cite)))
    
+; now let's figure out how to advise that function.
+
+(defun not-cite-advice (orig)
+ (if (not-cite)
+  (orig)
+  nil))
+
+(advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
 #+END_SRC
 
 ** In and out of text and prog
