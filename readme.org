@@ -730,7 +730,7 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 #+BEGIN_SRC emacs-lisp
 
 (leader-binding
-"g" '(:ignore t which-key "Git")
+"g" '(:ignore t :which-key "Git")
 "ga" 'magit-stage-file
 "g." 'git-add-all
 "gc" 'magit-commit-create
@@ -750,7 +750,7 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 :keymaps 'markdown-mode-map
 "h" 'markdown-toggle-markup-hiding
 "f" 'markdown-cycle
-"s" '(:ignore t which-key "Spell checking") 
+"s" '(:ignore t :which-key "Spell checking") 
 "ss" 'flyspell-mode
 "sf" 'flyspell-correct-word-before-point)
 
