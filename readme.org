@@ -38,6 +38,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | command                           | function                           |
 |-----------------------------------+------------------------------------|
 | FILES                             |                                    |
+| f f                               | find-files                         |
 | f s                               | save file                          |
 | f n                               | save to new name                   |
 | f e d                             | open config file                   |
