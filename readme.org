@@ -36,29 +36,35 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 
 | command                           | function                           |
+|-----------------------------------+------------------------------------|
 | FILES                             |                                    |
-| f f                               | find file                          |
 | f s                               | save file                          |
 | f n                               | save to new name                   |
 | f e d                             | open config file                   |
+|                                   |                                    |
 | WINDOWS                           |                                    |
 | w /                               | new window to right                |
 | w -                               | new window below                   |
 | w d                               | delete current window              |
 | w x                               | delete other windows               |
 | w c                               | cycle to next window               |
+|                                   |                                    |
 | BUFFERS                           |                                    |
 | b d                               | kill buffer                        |
 | b b                               | buffer menu                        |
+|                                   |                                    |
 | ELISP/EXECUTE COMMANDS AND SHELLS |                                    |
 | e e                               | eval sexp before point             |
 | e x s                             | eshell                             |
 | e x c                             | shell command                      |
+|                                   |                                    |
 | COLORS                            |                                    |
 | c l                               | light color theme                  |
 | c d                               | dark color theme                   |
+|                                   |                                    |
 | HELP                              |                                    |
 | h f                               | describe function                  |
+|                                   |                                    |
 | GIT                               |                                    |
 | g g                               | git add . && git commit (not push) |
 | g a                               | git add <CURRENT FILE>             |
@@ -81,12 +87,18 @@ ORG MODE
 
 MARKDOWN
 
-| command | function                            |
-| , h     | hide markup                         |
-| , f     | fold/unfold header                  |
-| , s s   | turn on spell checking              |
-| s f     | fix word before point (spell check) |
-|         |                                     |
+| command  | function                                    |
+|----------+---------------------------------------------|
+| , h      | hide markup                                 |
+| , f      | fold/unfold header                          |
+|          |                                             |
+| SPELLING |                                             |
+| , s s    | turn on running spell checking (seems slow) |
+| , s f    | fix word before point (spell check)         |
+| , s b    | spellcheck the buffer as is                 |
+| , s w    | spellcheck the word at point                |
+| , s n    | go to next error                            |
+| , s p    | go to previous error                        |
 
 
 
@@ -394,7 +406,7 @@ Ok, now let's see if I can get a straight-up commit going.
 #+END_SRC
 
 
-* Languages 
+* Programming 
 
 ** Cross- programming language stuff
 
@@ -486,7 +498,7 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
 #+END_SRC
 
 
-** Markdown
+* Markdown
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'markdown-mode)
@@ -584,7 +596,8 @@ there is no documentation about advice at all.  best I can find for how to use a
   (advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
 #+END_SRC
 
-** In and out of text and prog
+
+* Visual changes between writing and programming
 
 #+BEGIN_SRC emacs-lisp
 
@@ -752,7 +765,11 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 "f" 'markdown-cycle
 "s" '(:ignore t :which-key "Spell checking") 
 "ss" 'flyspell-mode
-"sf" 'flyspell-correct-word-before-point)
+"sb" 'flyspell-buffer
+"sw" 'flyspell-word
+"sf" 'flyspell-correct-word-before-point
+"sn" 'flyspell-goto-next-error
+"sp" 'evil-previous-flyspell-error)
 
 #+END_SRC
 
@@ -767,7 +784,7 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 
 #+END_SRC
 
-
+snarly
 
 
 * Development (of emacs config) conveniences   :dev: 
@@ -807,10 +824,6 @@ because I don't *think* anything else uses @ ...?
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
    - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
 ** swipe-scrolling on the touchpad like with vim
-** Some kind of lisp editing
-   - [[https://github.com/noctuid/lispyville][lispyville?]]
-   - [[https://github.com/luxbock/evil-cleverparens][evil-cleverparens?]]
-(for some reason neither keeps me from deleting into unbalanced parens.)
 ** Language support
 *** Javascript
 *** HTML
@@ -834,9 +847,6 @@ because I don't *think* anything else uses @ ...?
 ** org enhancements
    - fix the weird thing where these internal lists don't tab-indent to same spot
    - MORE KEYBINDINGS for stuff I actually use.
-** terminal    
-   - one keybinding for a quick and easy command
-   - another keybinding for a well-configured terminal window---maybe even eshell?
 
 * inspo
 
