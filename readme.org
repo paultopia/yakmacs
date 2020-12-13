@@ -434,16 +434,14 @@ evil cleverparens doesn't appear to work though, at least not in this file. It s
 #+BEGIN_SRC emacs-lisp
 
     (straight-use-package 'smartparens)
-    (add-hook 'smartparens-enabled-hook #'evil-cleverparens-mode)
     (straight-use-package 'evil-cleverparens)
+    (add-hook 'smartparens-enabled-hook #'evil-cleverparens-mode)
     (require 'smartparens-config)
-    (add-hook 'prog-mode-hook #'smartparens-strict-mode)
+    (add-hook 'prog-mode-hook #'smartparens-mode)
     
   ; just to make it easier to work on lisp
     (sp-pair "'" "'" :actions :rem)
 
-  ; temporary until I get finished working on this file
-    (add-hook 'org-mode-hook #'smartparens-strict-mode)
 
 
 #+END_SRC
@@ -547,34 +545,43 @@ So I'm not sure if advising the markdown mode function or the flyspell function 
 
 I'll try advising the markdown function first. 
 
+there is no documentation about advice at all.  best I can find for how to use around is: https://emacs.stackexchange.com/questions/26554/can-you-intercept-a-function-and-return-your-own-value-using-advice 
+
 
 #+BEGIN_SRC emacs-lisp
 
 
-; correct but only works on strings not characters.
-(defun is-ampersand (s)
-(string= "@" s))
+  ; correct but only works on strings not characters.
+  (defun is-ampersand (s)
+  (string= "@" s))
 
-; correct, identifies if word at point is cite, took hours
-(defun not-cite ()
- (save-excursion
-  (forward-word -1)
-  (let ((result (is-ampersand (string (preceding-char)))))
-   (not result))))
+  ; correct, identifies if word at point is cite, took hours
+  (defun not-cite ()
+   (save-excursion
+    (forward-word -1)
+    (let ((result (is-ampersand (string (preceding-char)))))
+     (not result))))
 
-; for my personal debugging
-(defun confirm-not-cite ()
-(interactive)
-(print (not-cite)))
+  ; for my personal debugging
+  (defun confirm-not-cite ()
+  (interactive)
+  (print (not-cite)))
    
-; now let's figure out how to advise that function.
+  ; now let's figure out how to advise that function.
 
-(defun not-cite-advice (orig)
- (if (not-cite)
-  (orig)
-  nil))
+; this doesn't work... produces error "void-function orig"
 
-(advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
+  ;; (defun not-cite-advice (orig)
+  ;;  (if (not-cite)
+  ;;   (orig)
+  ;;   nil))
+
+; this one works!  Yay!
+(defun not-cite-advice (orig &rest args)
+(if (not-cite)
+(apply orig args)))
+
+  (advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
 #+END_SRC
 
 ** In and out of text and prog
