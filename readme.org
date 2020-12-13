@@ -37,11 +37,14 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 | command                           | function                           |
 |-----------------------------------+------------------------------------|
-| FILES                             |                                    |
+| FILES AND PROJECTS                |                                    |
 | f f                               | find-files                         |
 | f s                               | save file                          |
 | f n                               | save to new name                   |
 | f e d                             | open config file                   |
+| f p g                          | grep in project                    |
+| f p f                             | find file in project               |
+| f p s                             | switch project                     |
 |                                   |                                    |
 | WINDOWS                           |                                    |
 | w /                               | new window to right                |
@@ -703,10 +706,15 @@ I think I pretty much just only want these keybindings in normal mode for now.
 #+BEGIN_SRC emacs-lisp
 
 (leader-binding
-"f" '(:ignore t :which-key "Files")
+"f" '(:ignore t :which-key "Files and Projects")
 "ff" 'counsel-find-file
 "fs" 'save-buffer
-"fn" 'write-file)
+"fn" 'write-file
+"fp" '(:ignore t :which-key "Project")
+"fpg" 'projectile-grep
+"fpf" 'projectile-find-file
+"fps" 'projectile-switch-project
+ )
 
 #+END_SRC
 
