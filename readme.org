@@ -96,18 +96,19 @@ ORG MODE
 
 MARKDOWN
 
-| command  | function                                    |
-|----------+---------------------------------------------|
-| , h      | hide markup                                 |
-| , f      | fold/unfold header                          |
-|          |                                             |
-| SPELLING |                                             |
-| , s s    | turn on running spell checking (seems slow) |
-| , s f    | fix word before point (spell check)         |
-| , s b    | spellcheck the buffer as is                 |
-| , s w    | spellcheck the word at point                |
-| , s n    | go to next error                            |
-| , s p    | go to previous error                        |
+| command  | function                                      |
+|----------+-----------------------------------------------|
+| , h      | hide markup                                   |
+| , f      | fold/unfold header                            |
+|          |                                               |
+| SPELLING |                                               |
+| , s s    | Mark and correct buffer (one spellcheck pass) |
+| , s b    | Mark spelling errors currently in buffer      |
+| , s m    | Turn on running spell checking (seems slow)   |
+| , s f    | Correct marked word at point            |
+| , s c    | Correct all marked errors                     |
+| , s w    | Check spelling of word at point               |
+
 
 
 
@@ -638,6 +639,20 @@ try again to get reasonable spelling
   (let ((current-prefix-arg '(4)))
   (call-interactively 'flyspell-correct-wrapper)))
 
+(defun correct-marked-spelling-errors ()
+(interactive)
+(save-excursion
+ (end-of-buffer)
+ (correct-all-spelling)))
+
+(defun full-spellcheck ()
+(interactive)
+(flyspell-buffer)
+(save-excursion
+ (end-of-buffer)
+ (correct-all-spelling)))
+
+
 #+END_SRC
 
 * Visual changes between writing and programming
@@ -822,13 +837,13 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 :keymaps 'markdown-mode-map
 "h" 'markdown-toggle-markup-hiding
 "f" 'markdown-cycle
-"s" '(:ignore t :which-key "Spell checking") 
-"ss" 'flyspell-mode
-"sb" 'flyspell-buffer
-"sw" 'flyspell-word
-"sf" 'flyspell-correct-word-before-point
-"sn" 'flyspell-goto-next-error
-"sp" 'evil-previous-flyspell-error)
+"s" '(:ignore t :which-key "Spell checking")
+"ss" '(full-spellcheck :which-key "Mark and correct buffer")
+"sm" '(flyspell-mode :which-key "Spellcheck on the fly")
+"sb" '(flyspell-buffer :which-key "Mark spelling errors")
+"sc" '(correct-marked-spelling-errors :which-key "Correct marked errors")
+"sw" '(flyspell-word :which-key "Check spelling of word")
+"sf" '(flyspell-correct-word-before-point :which-key "Correct marked word"))
 
 #+END_SRC
 
