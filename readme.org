@@ -385,6 +385,9 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 #+BEGIN_SRC emacs-lisp
 
 (straight-use-package 'telephone-line)
+(straight-use-package 'nyan-mode)
+(require 'nyan-mode)
+(nyan-mode)
 
 (setq telephone-line-lhs
       '((evil   . (telephone-line-airline-position-segment
@@ -393,10 +396,13 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
                    telephone-line-process-segment
                    telephone-line-buffer-segment
                    telephone-line-buffer-modified-segment))
+(nil . (telephone-line-nyan-segment))
 ))
 (setq telephone-line-rhs
-      '((evil    . (telephone-line-major-mode-segment))
-))
+      '(
+;(nil . (telephone-line-nyan-segment))
+(evil    . (telephone-line-major-mode-segment)
+)))
 
 (telephone-line-mode 1)
 
