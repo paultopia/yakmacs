@@ -42,7 +42,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | f s                               | save file                          |
 | f n                               | save to new name                   |
 | f e d                             | open config file                   |
-| f p g                          | grep in project                    |
+| f p g                             | grep in project                    |
 | f p f                             | find file in project               |
 | f p s                             | switch project                     |
 |                                   |                                    |
@@ -68,6 +68,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 |                                   |                                    |
 | HELP                              |                                    |
 | h f                               | describe function                  |
+| h v                               | describe variable                  |
 |                                   |                                    |
 | GIT                               |                                    |
 | g g                               | git add . && git commit (not push) |
@@ -757,7 +758,8 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 
 (leader-binding
 "h" '(:ignore t :which-key "Help")
-"hf" 'describe-function)
+"hf" 'describe-function
+"hv" 'describe-variable)
 
 #+END_SRC
 
