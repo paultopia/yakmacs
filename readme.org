@@ -69,6 +69,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | HELP                              |                                    |
 | h f                               | describe function                  |
 | h v                               | describe variable                  |
+| h a                               | apropos                            |
 |                                   |                                    |
 | GIT                               |                                    |
 | g g                               | git add . && git commit (not push) |
@@ -208,6 +209,7 @@ I think projectile will be useful for things like project-wide find
 (setq projectile-completion-system 'ivy)
 #+END_SRC
 
+
 ** Commands
 
 Which-key is apparently The Thing 
@@ -218,6 +220,15 @@ Which-key is apparently The Thing
 (which-key-mode)
 #+END_SRC
 
+
+** Characters
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'avy)
+(require 'avy)
+(straight-use-package 'avy-menu)
+(require 'avy-menu)
+#+END_SRC
 
 * Evilify everything because emacs keybindings are horrible
 
@@ -614,7 +625,20 @@ Make flyspell ignore words starting with ampersand (pandoc citation refs)
   (advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
 #+END_SRC
 
+try again to get reasonable spelling
 
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'flyspell-correct)
+(straight-use-package 'flyspell-correct-avy-menu)
+(require 'flyspell-correct)
+(require 'flyspell-correct-avy-menu)
+
+(defun correct-all-spelling ()
+  (interactive)
+  (let ((current-prefix-arg '(4)))
+  (call-interactively 'flyspell-correct-wrapper)))
+
+#+END_SRC
 
 * Visual changes between writing and programming
 
@@ -759,7 +783,8 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 (leader-binding
 "h" '(:ignore t :which-key "Help")
 "hf" 'describe-function
-"hv" 'describe-variable)
+"hv" 'describe-variable
+"ha" 'counsel-apropos)
 
 #+END_SRC
 
