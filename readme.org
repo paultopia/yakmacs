@@ -769,7 +769,7 @@ Same with f e r and restart emacs.
 (leader-binding 
 "fe" '(:ignore t :which-key "Config/Restart")
 "fed" 'open-config
-"fed" 'restart-emacs)
+"fer" 'restart-emacs)
 
 #+END_SRC
 
