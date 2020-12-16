@@ -42,6 +42,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | f s                               | save file                          |
 | f n                               | save to new name                   |
 | f e d                             | open config file                   |
+| f e r                             | restart emacs                      |
 | f p g                             | grep in project                    |
 | f p f                             | find file in project               |
 | f p s                             | switch project                     |
@@ -147,7 +148,7 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 #+END_SRC
 
 Make use of the trash can before I start trying to use things like dired
-
+UNTESTED
 #+BEGIN_SRC emacs-lisp
 
 (straight-use-package 'osx-trash)
@@ -190,6 +191,12 @@ Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems 
 (straight-use-package 'undo-fu)
 #+END_SRC
 
+Let's see if I can get a restart in
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'restart-emacs)
+
+#+END_SRC
 
 * Frivolity
 
@@ -751,6 +758,7 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 
 I think I'd like a special keybinding to get this file open.  spacemacs uses f e d and hence it already in muscle memory I guess
+Same with f e r and restart emacs.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -758,7 +766,10 @@ I think I'd like a special keybinding to get this file open.  spacemacs uses f e
 (interactive)
 (find-file "~/.emacs.d/readme.org"))
 
-(leader-binding "fed" 'open-config)
+(leader-binding 
+"fe" '(:ignore t :which-key "Config/Restart")
+"fed" 'open-config
+"fed" 'restart-emacs)
 
 #+END_SRC
 
