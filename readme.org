@@ -198,6 +198,12 @@ Let's see if I can get a restart in
 
 #+END_SRC
 
+Getting sick of having a window with the welcome message show up when I open something from the commandline 
+
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-startup-screen t)
+#+END_SRC
+
 * Frivolity
 
 #+BEGIN_SRC emacs-lisp
