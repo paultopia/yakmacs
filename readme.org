@@ -146,6 +146,16 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 
 #+END_SRC
 
+Make use of the trash can before I start trying to use things like dired
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'osx-trash)
+(when (eq system-type 'darwin)
+  (osx-trash-setup))
+(setq delete-by-moving-to-trash t)
+
+#+END_SRC
 
 * Emacs mechanical tweaks
 
