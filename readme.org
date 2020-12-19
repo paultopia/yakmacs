@@ -78,6 +78,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | g .                               | git add .                          |
 | g c                               | git commit                         |
 | g p                               | git push                           |
+| g u                               | git pull                           |
 |                                   |                                    |
 | UNDO-REDO                         |                                    |
 | u u                               | undo                               |
@@ -848,7 +849,8 @@ Same with f e r and restart emacs.
 "g." 'git-add-all
 "gc" 'magit-commit-create
 "gp" 'magit-push-current-to-upstream
-"gg" 'git-quick-commit)
+"gg" 'git-quick-commit
+"gu" 'magit-pull-from-upstream)
 
 #+END_SRC
 

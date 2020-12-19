@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/repos/rol_in_usa/" "~/Dropbox/")
+("~/.emacs.d/" "~/repos/rol_in_usa/" "~/repos/networked-leviathan/" "~/Dropbox/")
