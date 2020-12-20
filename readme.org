@@ -597,105 +597,15 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
 
 * Markdown
 
-#+BEGIN_SRC emacs-lisp
-(straight-use-package 'markdown-mode)
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(autoload 'gfm-mode "markdown-mode"
-   "Major mode for GitHub Flavored Markdown files" t)
-(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
-
-(setq markdown-command
-      (concat
-       "/usr/local/bin/pandoc"
-       " --from=markdown --to=html"
-       " --standalone --mathjax --highlight-style=pygments"))
-
-#+END_SRC
-
-Beginning experiments to move this to a second file because it's getting to be kinda a lot  (NOT WORKING)
-First just dumping a print function in to make sure this works.  Then will go from there.
+My markdown config is getting a bit extreme, so I'm going to shove it off entirely into a separate file
 
 #+BEGIN_SRC emacs-lisp
-(org-babel-load-file "~/.emacs.d/markdown-enhancements.org")
+(org-babel-load-file "~/.emacs.d/markdown/markdown-main.org")
 #+END_SRC
 
-And it works! Now I can start moving markdown stuff over and ultimately adding more complex code in isolation from this file.
+keybindings are still here though.  Hope that works.
 
-
-De-uglify the line breaks and such
-
-#+BEGIN_SRC emacs-lisp
-
-(defun turn-off-fringe () 
-(fringe-mode 0))
-
-
-(add-hook 'markdown-mode-hook 'light-mode)
-; (add-hook 'markdown-mode-hook 'turn-off-fringe)
-(add-hook 'markdown-mode-hook 'visual-line-mode)
-
-(add-hook 'markdown-mode-hook `prose-font)
-
-(defun text-margins ()
-  (setq left-margin-width 16)
-  (setq right-margin-width 16))
-(add-hook 'text-mode-hook 'text-margins)
-
-#+END_SRC
-
-Make flyspell ignore words starting with ampersand (pandoc citation refs)
-
-#+BEGIN_SRC emacs-lisp
-
-
-  (defun is-ampersand (s)
-  (string= "@" s))
-
-  (defun not-cite ()
-   (save-excursion
-    (forward-word -1)
-    (let ((result (is-ampersand (string (preceding-char)))))
-     (not result))))
-
-(defun not-cite-advice (orig &rest args)
-(if (not-cite)
-(apply orig args)))
-
-  (advice-add 'markdown-flyspell-check-word-p :around #'not-cite-advice)
-#+END_SRC
-
-try again to get reasonable spelling
-
-#+BEGIN_SRC emacs-lisp
-(straight-use-package 'flyspell-correct)
-(straight-use-package 'flyspell-correct-avy-menu)
-(require 'flyspell-correct)
-(require 'flyspell-correct-avy-menu)
-
-(defun correct-all-spelling ()
-  (interactive)
-  (let ((current-prefix-arg '(4)))
-  (call-interactively 'flyspell-correct-wrapper)))
-
-(defun correct-marked-spelling-errors ()
-(interactive)
-(save-excursion
- (end-of-buffer)
- (correct-all-spelling)))
-
-(defun full-spellcheck ()
-(interactive)
-(flyspell-buffer)
-(save-excursion
- (end-of-buffer)
- (correct-all-spelling)))
-
-
-#+END_SRC
 
 * Visual changes between writing and programming
 
