@@ -616,6 +616,16 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
 
 #+END_SRC
 
+Beginning experiments to move this to a second file because it's getting to be kinda a lot  (NOT WORKING)
+First just dumping a print function in to make sure this works.  Then will go from there.
+
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/markdown-enhancements.org")
+#+END_SRC
+
+And it works! Now I can start moving markdown stuff over and ultimately adding more complex code in isolation from this file.
+
+
 De-uglify the line breaks and such
 
 #+BEGIN_SRC emacs-lisp
