@@ -26,7 +26,7 @@
     ))
 
 (defun get-all-inline-footnotes ()
-  "gets locations of all footnotes in buffer"
+  "Returns locations of all footnotes in buffer in reverse order."
   (interactive)
   (save-excursion
     (beginning-of-buffer)
@@ -75,3 +75,15 @@
   (let ((result (extract-text (extract-footnote (find-next-inline-footnote)))))
     (print result)
     ))
+
+(defun enumerate-all-inline-footnotes ()
+  "Extract all footnotes in buffer and enumerate them. Returns numbered list of footnotes in order of buffer."
+  (interactive)
+  (let* ((out)
+	 (notelocs (get-all-inline-footnotes))
+	 (num (length notelocs)))
+    (dolist (item notelocs out)
+      (setq out (cons (list num item) out))
+      (setq num (1- num))
+      )
+    (print out)))
