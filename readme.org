@@ -60,6 +60,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 |                                   |                                    |
 | ELISP/EXECUTE COMMANDS AND SHELLS |                                    |
 | e e                               | eval sexp before point             |
+| e b                               | evaluate buffer                    |
 | e x s                             | eshell                             |
 | e x c                             | shell command                      |
 |                                   |                                    |
@@ -740,11 +741,13 @@ Same with f e r and restart emacs.
 (leader-binding
 "e" '(:ignore t :which-key "Elisp")
 "ee" 'eval-last-sexp
+"eb" 'eval-buffer
 "ex" '(:ignore t :which-key "Execute commands and shells")
 "exs" 'eshell
 "exc" 'shell-command
 "exp" '(run-python :which-key "Spawn python interpreter"))
 #+END_SRC
+
 
 
 *** Help :key: 
