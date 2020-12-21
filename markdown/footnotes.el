@@ -67,8 +67,9 @@
 
 (defun extract-text (footnote)
   "Extract text part of footnote."
-  (string-trim-right (string-trim-left footnote) "]") )
+  (string-trim-right (string-trim-left footnote "\\^\\[") "]") )
 
+;; utility function to make sure I clean footnote correctly (yes)
 (defun inspect-clean-footnote ()
   (interactive)
   (let ((result (extract-text (extract-footnote (find-next-inline-footnote)))))
