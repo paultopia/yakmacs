@@ -86,4 +86,32 @@
       (setq out (cons (list num item) out))
       (setq num (1- num))
       )
-    (print out)))
+   ; (print out)
+    out
+    ))
+
+(defun place-endnote-at-point (enum-note)
+  "Place an endnote, in pandoc format, at point. Does not add note marker to text."
+  (let* ((num (car enum-note))
+	 (pair (car (cdr enum-note)))
+	 (note (extract-footnote pair))
+	 (text (extract-text note))
+	 (ref (format "[^%d]: %s" num text)))
+    (insert ref)))
+
+(defun place-endnotes (enum-notes)
+  "Loops over list of enumerated footnotes, putting each at end of buffer. Does not add note markers to text."
+  (save-excursion
+    (end-of-buffer)
+    (insert "\n\n")
+    (dolist (elem enum-notes)
+      (place-endnote-at-point elem)
+      (insert "\n\n")
+      )))
+
+;; test function for putting all endnotes at bottom.
+(defun experimental-add-endnotes ()
+  (interactive)
+  (let ((enum-notes (enumerate-all-inline-footnotes)))
+    (place-endnotes enum-notes)
+    ))
