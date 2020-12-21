@@ -13,12 +13,12 @@
 	)))
 
 (defun find-next-inline-footnote ()
-  "Return a pair of points for starting caret and ending bracket of next footnote in current buffer. If not found, return a list beginning with -1."
+  "Return a pair of points for starting caret and ending bracket of next footnote in current buffer. If not found, return a list beginning with -2."
   (interactive)
   (let* (
 	 (fn (check-for-next-fn))
-	 (start (1- fn))
-	 (end (end-of-fn))
+	 (start (- fn 2))
+	 (end (1+ (end-of-fn)) )
 	 (results (list start end))
 	 )
     ;; (print results)
@@ -45,3 +45,14 @@
       ))
   )
 
+(defun inspect-footnote (pair)
+  (let* ((start (car pair))
+	 (end (car (cdr pair)))
+	 (content (buffer-substring start end)))
+    (print content)
+    ))
+
+;; utility function to make sure that I have the right coordinates for text plus markers.
+(defun inspect-next-footnote ()
+  (interactive)
+  (inspect-footnote (find-next-inline-footnote)))
