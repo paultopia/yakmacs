@@ -126,9 +126,11 @@
     (delete-region start end)
     (insert marker)))
 
+;; doesn't work right
 (defun replace-footnotes-with-markers (enum-notes)
   "Replace all footnotes with markers, from reverse to keep buffer locations from changing."
-  (let ((items (reverse )))
+  (let ((items (reverse enum-notes)))
+    (print "running replacer")
     (dolist (elem items)
       (replace-fn-with-marker elem)
 	)))
@@ -137,4 +139,4 @@
   (interactive)
   (let ((enum-notes (enumerate-all-inline-footnotes)))
     (place-endnotes enum-notes)
-    (replace-footnotes-with-markers (enum-notes))))
+    (replace-footnotes-with-markers enum-notes)))
