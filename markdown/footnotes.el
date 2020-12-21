@@ -115,3 +115,26 @@
   (let ((enum-notes (enumerate-all-inline-footnotes)))
     (place-endnotes enum-notes)
     ))
+
+(defun replace-fn-with-marker (enum-note)
+  "Takes an enumerated note, deletes the locations specified by it, and replaces with an endnote marker."
+  (let* ((num (car enum-note))
+	 (pair (car (cdr enum-note)))
+	 (start (car pair))
+	 (end (car (cdr pair)))
+	 (marker (format "[^%d]" num)))
+    (delete-region start end)
+    (insert marker)))
+
+(defun replace-footnotes-with-markers (enum-notes)
+  "Replace all footnotes with markers, from reverse to keep buffer locations from changing."
+  (let ((items (reverse )))
+    (dolist (elem items)
+      (replace-fn-with-marker elem)
+	)))
+
+(defun footnotes-to-endnotes ()
+  (interactive)
+  (let ((enum-notes (enumerate-all-inline-footnotes)))
+    (place-endnotes enum-notes)
+    (replace-footnotes-with-markers (enum-notes))))
