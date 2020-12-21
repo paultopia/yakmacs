@@ -45,6 +45,7 @@
       ))
   )
 
+;; utility function to look at footnotes
 (defun inspect-footnote (pair)
   (let* ((start (car pair))
 	 (end (car (cdr pair)))
@@ -56,3 +57,20 @@
 (defun inspect-next-footnote ()
   (interactive)
   (inspect-footnote (find-next-inline-footnote)))
+
+(defun extract-footnote (pair)
+  (let* ((start (car pair))
+	 (end (car (cdr pair)))
+	 (content (buffer-substring-no-properties start end)))
+    content
+    ))
+
+(defun extract-text (footnote)
+  "Extract text part of footnote."
+  (string-trim-right (string-trim-left footnote) "]") )
+
+(defun inspect-clean-footnote ()
+  (interactive)
+  (let ((result (extract-text (extract-footnote (find-next-inline-footnote)))))
+    (print result)
+    ))
