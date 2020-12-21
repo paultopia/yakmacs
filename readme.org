@@ -93,7 +93,7 @@ ORG MODE
 |---------+--------------|
 | , t     | cycle todo   |
 | , f     | cycle header |
-|         |              |
+| , l     | insert link  |
 
 
 MARKDOWN
@@ -811,7 +811,8 @@ Same with f e r and restart emacs.
 (mode-binding 
 :keymaps 'org-mode-map
 "t" 'org-todo
-"f" 'org-cycle )
+"f" 'org-cycle 
+"l" 'org-insert-link)
 
 #+END_SRC
 
