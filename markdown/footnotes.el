@@ -1,3 +1,5 @@
+;; FUNCTIONALITY TO CONVERT FOOTNOTES TO ENDNOTES
+
 (defun end-of-fn ()
   "Assumes point is at beginning of fn bracket, jumps to end and returns value of point. Depends on smartparens."
   (sp-end-of-sexp)
@@ -93,3 +95,18 @@
     (place-endnotes enum-notes)
     (replace-footnotes-with-markers enum-notes)))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; FUNCTIONALITY TO CONVERT ENDNOTES TO FOOTNOTES
+
+
+(defconst marker-regex "\\[\\^[0-9]+]")
+
+(defun next-marker ()
+  (interactive)
+  (let* ((end (search-forward-regexp marker-regex))
+	(start (search-backward "[^"))
+	(results (list start end)))
+    ;; (print results)
+    (goto-char end)
+    results))
