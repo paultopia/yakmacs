@@ -53,6 +53,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | w d                               | delete current window              |
 | w x                               | delete other windows               |
 | w c                               | cycle to next window               |
+| w f                               | open a whole new frame             |
 |                                   |                                    |
 | BUFFERS                           |                                    |
 | b d                               | kill buffer                        |
@@ -722,7 +723,8 @@ Same with f e r and restart emacs.
 "w-" 'split-window-below
 "wd" 'delete-window
 "wx" 'delete-other-windows
-"wc" 'other-window)
+"wc" 'other-window
+"wf" 'make-frame-command)
 
 #+END_SRC
 
