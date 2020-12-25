@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/repos/rol_in_usa/" "~/Dropbox/" "~/repos/websiterevision2017/" "~/repos/casebook-14amend/" "~/repos/networked-leviathan/")
+("~/repos/recipes/" "~/.emacs.d/" "~/repos/rol_in_usa/" "~/Dropbox/" "~/repos/websiterevision2017/" "~/repos/casebook-14amend/" "~/repos/networked-leviathan/")

@@ -81,6 +81,8 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | g c                               | git commit                         |
 | g p                               | git push                           |
 | g u                               | git pull                           |
+| g i                               | git init                           |
+| g r a                             | add remote                        |
 |                                   |                                    |
 | UNDO-REDO                         |                                    |
 | u u                               | undo                               |
@@ -775,7 +777,10 @@ Same with f e r and restart emacs.
 "gc" 'magit-commit-create
 "gp" 'magit-push-current-to-upstream
 "gg" 'git-quick-commit
-"gu" 'magit-pull-from-upstream)
+"gu" 'magit-pull-from-upstream
+"gi" 'magit-init
+"gr" (:ignore t :which-key "Remotes")
+"gra" 'magit-remote-add)
 
 #+END_SRC
 
