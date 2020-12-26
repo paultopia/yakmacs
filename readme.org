@@ -146,6 +146,37 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 #+END_SRC
 
 
+* Perf tweaks to be done early
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'gcmh)
+(gcmh-mode 1)
+#+END_SRC
+
+attempt to fix an obnoxious screen flicker. borrowed from [[https://old.reddit.com/r/emacs/comments/ecctcp/how_to_debug_emacs_flickering_issue/fbasdxf/][here]] 
+
+(does not appear to be helping)
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+#+END_SRC
+
+keep gc out of minibuffer, and other GC tweaks borrowed from Doom and from the Walsh dude
+
+#+BEGIN_SRC emacs-lisp
+(defun defer-garbage-collection-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defvar base-gc-threshold 67108864)
+
+(defun restore-garbage-collection-hook ()
+  (garbage-collect)
+  (setq gc-cons-threshold base-gc-threshold))
+
+(add-hook 'minibuffer-setup-hook #'defer-garbage-collection-hook)
+(add-hook 'minibuffer-exit-hook #'restore-garbage-collection-hook)
+#+END_SRC
+
 
 * Make things involving the commandline work on mac.
 
@@ -166,6 +197,7 @@ UNTESTED
 (setq delete-by-moving-to-trash t)
 
 #+END_SRC
+
 
 * Emacs mechanical tweaks
 
@@ -220,6 +252,7 @@ I don't need these libs until I get to origami in markdown mode in an entire sep
   (straight-use-package 's)
 #+END_SRC
 
+
 * Frivolity
 
 #+BEGIN_SRC emacs-lisp
@@ -228,6 +261,7 @@ I don't need these libs until I get to origami in markdown mode in an entire sep
 (setq zone-programs [zone-nyan])
 (zone-when-idle 1200)
 #+END_SRC
+
 
 * Browsing and Finding Things 
 
@@ -278,6 +312,7 @@ Which-key is apparently The Thing
 (setq avy-style 'pre)
 #+END_SRC
 
+
 * Evilify everything because emacs keybindings are horrible
 
 ** Base evil 
@@ -319,6 +354,7 @@ I have keybindings for this down below, but I need a universal bail out of thing
 
 I wish I knew how the parsing/evaluation order of these files worked. Can I set a keybinding for something before actually using it? 
 I feel like I've seen people actually call functions before defining them in blog posts and such about elisp. 
+
 
 * Visual 
   
@@ -481,6 +517,7 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 (golden-ratio-mode 1)
 #+END_SRC
 
+
 * Git
 #+BEGIN_SRC emacs-lisp
 
@@ -618,6 +655,7 @@ I want to be able to use shift select.
 #+BEGIN_SRC emacs-lisp
 (setq org-support-shift-select t)
 #+END_SRC
+
 
 * Markdown
 
@@ -912,6 +950,7 @@ because I don't *think* anything else uses @ ...?
 ** org enhancements
    - fix the weird thing where these internal lists don't tab-indent to same spot
    - MORE KEYBINDINGS for stuff I actually use.
+
 
 * inspo
 
