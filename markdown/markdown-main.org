@@ -24,7 +24,6 @@ Load up markdown
 #+END_SRC
 
 
-
 De-uglify the line breaks and such
 
 #+BEGIN_SRC emacs-lisp

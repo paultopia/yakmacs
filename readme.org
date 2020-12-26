@@ -35,58 +35,60 @@ evil escape key set to ESC ESC
 GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 
-| command                           | function                           |
-|-----------------------------------+------------------------------------|
-| FILES AND PROJECTS                |                                    |
-| f f                               | find-files                         |
-| f s                               | save file                          |
-| f n                               | save to new name                   |
-| f e d                             | open config file                   |
-| f e r                             | restart emacs                      |
-| f p g                             | grep in project                    |
-| f p f                             | find file in project               |
-| f p s                             | switch project                     |
-|                                   |                                    |
-| WINDOWS                           |                                    |
-| w /                               | new window to right                |
-| w -                               | new window below                   |
-| w d                               | delete current window              |
-| w x                               | delete other windows               |
-| w c                               | cycle to next window               |
-| w f                               | open a whole new frame             |
-|                                   |                                    |
-| BUFFERS                           |                                    |
-| b d                               | kill buffer                        |
-| b b                               | buffer menu                        |
-|                                   |                                    |
-| ELISP/EXECUTE COMMANDS AND SHELLS |                                    |
-| e e                               | eval sexp before point             |
-| e b                               | evaluate buffer                    |
-| e x s                             | eshell                             |
-| e x c                             | shell command                      |
-|                                   |                                    |
-| COLORS                            |                                    |
-| c l                               | light color theme                  |
-| c d                               | dark color theme                   |
-|                                   |                                    |
-| HELP                              |                                    |
-| h f                               | describe function                  |
-| h v                               | describe variable                  |
-| h a                               | apropos                            |
-|                                   |                                    |
-| GIT                               |                                    |
-| g g                               | git add . && git commit (not push) |
-| g a                               | git add <CURRENT FILE>             |
-| g .                               | git add .                          |
-| g c                               | git commit                         |
-| g p                               | git push                           |
-| g u                               | git pull                           |
-| g i                               | git init                           |
-| g r a                             | add remote                        |
-|                                   |                                    |
-| UNDO-REDO                         |                                    |
-| u u                               | undo                               |
-| u r                               | redo                               |
+| command                           | function                                                        |
+|-----------------------------------+-----------------------------------------------------------------|
+| FILES AND PROJECTS                |                                                                 |
+| f f                               | find-files                                                      |
+| f s                               | save file                                                       |
+| f n                               | save to new name                                                |
+| f e d                             | open config file                                                |
+| f e r                             | restart emacs                                                   |
+| f p g                             | grep in project                                                 |
+| f p f                             | find file in project                                            |
+| f p s                             | switch project                                                  |
+|                                   |                                                                 |
+| WINDOWS                           |                                                                 |
+| w /                               | new window to right                                             |
+| w -                               | new window below                                                |
+| w d                               | delete current window                                           |
+| w x                               | delete other windows                                            |
+| w c                               | cycle to next window                                            |
+| w f                               | open a whole new frame                                          |
+|                                   |                                                                 |
+| BUFFERS                           |                                                                 |
+| b d                               | kill buffer                                                     |
+| b b                               | buffer menu                                                     |
+|                                   |                                                                 |
+| ELISP/EXECUTE COMMANDS AND SHELLS |                                                                 |
+| e e                               | eval sexp before point                                          |
+| e b                               | evaluate buffer                                                 |
+| e x s                             | eshell                                                          |
+| e x c                             | shell command                                                   |
+|                                   |                                                                 |
+| COLORS                            |                                                                 |
+| c l                               | light color theme                                               |
+| c d                               | dark color theme                                                |
+|                                   |                                                                 |
+| HELP                              |                                                                 |
+| h f                               | describe function                                               |
+| h v                               | describe variable                                               |
+| h a                               | apropos                                                         |
+|                                   |                                                                 |
+| GIT                               |                                                                 |
+| g g                               | git add . && git commit (not push)                              |
+| g a                               | git add <CURRENT FILE>                                          |
+| g .                               | git add .                                                       |
+| g c                               | git commit                                                      |
+| g p                               | git push                                                        |
+| g u                               | git pull                                                        |
+| g i                               | git init                                                        |
+| g r a                             | add remote                                                      |
+| g d f                             | diff file in buffer                                             |
+| g d a                             | diff all unstaged files (ONLY WORKS FOR FILES  ALREADY TRACKED) |
+|                                   |                                                                 |
+| UNDO-REDO                         |                                                                 |
+| u u                               | undo                                                            |
+| u r                               | redo                                                            |
 
 
 Mode leader is comma.
@@ -689,6 +691,11 @@ I want to be able to use shift select.
 (setq org-support-shift-select t)
 #+END_SRC
 
+I HATE org's link hiding. HATE IT.  It makes it impossible to edit links.  Die die die die.
+
+#+BEGIN_SRC emacs-lisp
+(setq org-descriptive-links nil)
+#+END_SRC
 
 * Markdown
 
@@ -882,6 +889,9 @@ Same with f e r and restart emacs.
 "gg" 'git-quick-commit
 "gu" 'magit-pull-from-upstream
 "gi" 'magit-init
+"gd" '(:ignore t :which-key "Diffing")
+"gdf" '(magit-diff-buffer-file :which-key "Diff current file (use q to exit magit buffer)")
+"gda" '(magit-diff-unstaged :which-key "Diff all unstaged files ALREADY TRACKED")
 "gr" '(:ignore t :which-key "Remotes")
 "gra" 'magit-remote-add)
 

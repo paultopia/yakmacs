@@ -1,1 +1,1 @@
-nil
+((magit-merge nil))
