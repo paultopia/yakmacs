@@ -1,0 +1,115 @@
+* All the Keybindings I've defined, listed.
+
+All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
+
+exception: control-u and control-r ought (?) to work in insert mode for undo-fu undo and redo.  I think.
+
+evil escape key set to ESC ESC
+
+GLOBAL KEYBINDINGS FROM LEADER KEY (space)
+
+
+| command                           | function                                                        |
+|-----------------------------------+-----------------------------------------------------------------|
+| FILES AND PROJECTS                |                                                                 |
+| f f                               | find-files                                                      |
+| f s                               | save file                                                       |
+| f n                               | save to new name                                                |
+| f e d                             | open config file                                                |
+| f e r                             | restart emacs                                                   |
+| f p g                             | grep in project                                                 |
+| f p f                             | find file in project                                            |
+| f p s                             | switch project                                                  |
+|                                   |                                                                 |
+| WINDOWS                           |                                                                 |
+| w /                               | new window to right                                             |
+| w -                               | new window below                                                |
+| w d                               | delete current window                                           |
+| w x                               | delete other windows                                            |
+| w c                               | cycle to next window                                            |
+| w f                               | open a whole new frame                                          |
+|                                   |                                                                 |
+| BUFFERS                           |                                                                 |
+| b d                               | kill buffer                                                     |
+| b b                               | buffer menu                                                     |
+|                                   |                                                                 |
+| ELISP/EXECUTE COMMANDS AND SHELLS |                                                                 |
+| e e                               | eval sexp before point                                          |
+| e b                               | evaluate buffer                                                 |
+| e x s                             | eshell                                                          |
+| e x c                             | shell command                                                   |
+|                                   |                                                                 |
+| COLORS                            |                                                                 |
+| c l                               | light color theme                                               |
+| c d                               | dark color theme                                                |
+|                                   |                                                                 |
+| HELP                              |                                                                 |
+| h f                               | describe function                                               |
+| h v                               | describe variable                                               |
+| h a                               | apropos                                                         |
+|                                   |                                                                 |
+| GIT                               |                                                                 |
+| g g                               | git add . && git commit (not push)                              |
+| g a                               | git add <CURRENT FILE>                                          |
+| g .                               | git add .                                                       |
+| g c                               | git commit                                                      |
+| g p                               | git push                                                        |
+| g u                               | git pull                                                        |
+| g i                               | git init                                                        |
+| g r a                             | add remote                                                      |
+| g d f                             | diff file in buffer                                             |
+| g d a                             | diff all unstaged files (ONLY WORKS FOR FILES  ALREADY TRACKED) |
+|                                   |                                                                 |
+| UNDO-REDO                         |                                                                 |
+| u u                               | undo                                                            |
+| u r                               | redo                                                            |
+
+
+Mode leader is comma.
+
+ORG MODE
+
+| command | function     |
+|---------+--------------|
+| , t     | cycle todo   |
+| , f     | cycle header |
+| , l     | insert link  |
+
+
+MARKDOWN
+
+| command                       | function                                      |
+|-------------------------------+-----------------------------------------------|
+| , v                           | hide markup                                   |
+|                               |                                               |
+| HEADERS                       |                                               |
+| , h f                         | fold/unfold header                            |
+| , h a                         | add header at same level                      |
+| , h p                         | add parent-level header                       |
+| , h c                         | add child-level header                        |
+| , h u                         | Upshift (promote) header subtree        (also works on list items) |
+| , h d                         | Downshift (demote) header subtree    (also works on list items)         |
+|                               |                                               |
+| SPELLING                      |                                               |
+| , s s                         | Mark and correct buffer (one spellcheck pass) |
+| , s b                         | Mark spelling errors currently in buffer      |
+| , s m                         | Turn on running spell checking (seems slow)   |
+| , s f                         | Correct marked word at point                  |
+| , s c                         | Correct all marked errors                     |
+| , s w                         | Check spelling of word at point               |
+|                               |                                               |
+| FOOTNOTES AND CITES           |                                               |
+| , n v                         | Toggle visibility of all footnotes and cites  |
+| , n n                         | Toggle visibility of note at point            |
+|                               |                                               |
+| OUTLINES  (headers and lists) |                                               |
+| , o n                         | Next item (same leve)                         |
+| , o p                         | Previous item (same level)                    |
+| , o f                         | Next item (any level)                         |
+| , o b                         | Previous item (any level)                     |
+| , o u                         | Up to parent item                             |
+
+
+* Built-in keybindings I always forget
+
+Standard evil search: forward slash to begin.  hit enter and then n moves forward and N moves backward 

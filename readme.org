@@ -26,101 +26,7 @@ that I didn't know how to escape, in init.el.)  So that's cool.
    - As much as possible, I try to keep keybindings together rather than with their associated packages.  This might be a mistake?
 
 
-* All the Keybindings I've defined, listed.
-
-All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
-
-evil escape key set to ESC ESC 
-
-GLOBAL KEYBINDINGS FROM LEADER KEY (space)
-
-
-| command                           | function                                                        |
-|-----------------------------------+-----------------------------------------------------------------|
-| FILES AND PROJECTS                |                                                                 |
-| f f                               | find-files                                                      |
-| f s                               | save file                                                       |
-| f n                               | save to new name                                                |
-| f e d                             | open config file                                                |
-| f e r                             | restart emacs                                                   |
-| f p g                             | grep in project                                                 |
-| f p f                             | find file in project                                            |
-| f p s                             | switch project                                                  |
-|                                   |                                                                 |
-| WINDOWS                           |                                                                 |
-| w /                               | new window to right                                             |
-| w -                               | new window below                                                |
-| w d                               | delete current window                                           |
-| w x                               | delete other windows                                            |
-| w c                               | cycle to next window                                            |
-| w f                               | open a whole new frame                                          |
-|                                   |                                                                 |
-| BUFFERS                           |                                                                 |
-| b d                               | kill buffer                                                     |
-| b b                               | buffer menu                                                     |
-|                                   |                                                                 |
-| ELISP/EXECUTE COMMANDS AND SHELLS |                                                                 |
-| e e                               | eval sexp before point                                          |
-| e b                               | evaluate buffer                                                 |
-| e x s                             | eshell                                                          |
-| e x c                             | shell command                                                   |
-|                                   |                                                                 |
-| COLORS                            |                                                                 |
-| c l                               | light color theme                                               |
-| c d                               | dark color theme                                                |
-|                                   |                                                                 |
-| HELP                              |                                                                 |
-| h f                               | describe function                                               |
-| h v                               | describe variable                                               |
-| h a                               | apropos                                                         |
-|                                   |                                                                 |
-| GIT                               |                                                                 |
-| g g                               | git add . && git commit (not push)                              |
-| g a                               | git add <CURRENT FILE>                                          |
-| g .                               | git add .                                                       |
-| g c                               | git commit                                                      |
-| g p                               | git push                                                        |
-| g u                               | git pull                                                        |
-| g i                               | git init                                                        |
-| g r a                             | add remote                                                      |
-| g d f                             | diff file in buffer                                             |
-| g d a                             | diff all unstaged files (ONLY WORKS FOR FILES  ALREADY TRACKED) |
-|                                   |                                                                 |
-| UNDO-REDO                         |                                                                 |
-| u u                               | undo                                                            |
-| u r                               | redo                                                            |
-
-
-Mode leader is comma.
-
-ORG MODE 
-
-| command | function     |
-|---------+--------------|
-| , t     | cycle todo   |
-| , f     | cycle header |
-| , l     | insert link  |
-
-
-MARKDOWN
-
-| command             | function                                      |
-|---------------------+-----------------------------------------------|
-| , h                 | hide markup                                   |
-| , f                 | fold/unfold header                            |
-|                     |                                               |
-| SPELLING            |                                               |
-| , s s               | Mark and correct buffer (one spellcheck pass) |
-| , s b               | Mark spelling errors currently in buffer      |
-| , s m               | Turn on running spell checking (seems slow)   |
-| , s f               | Correct marked word at point                  |
-| , s c               | Correct all marked errors                     |
-| , s w               | Check spelling of word at point               |
-|                     |                                               |
-| FOOTNOTES AND CITES |                                               |
-| , n v               | Toggle visibility of all footnotes and cites  |
-| , n n              | Toggle visibility of note at point |
-
+Keybindings are now listed in keybindings.org in this repository
 
 
 
@@ -706,7 +612,6 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 (org-babel-load-file "~/.emacs.d/markdown/markdown-main.org")
 #+END_SRC
 
-keybindings are still here though.  Hope that works.
 
 
 * Visual changes between writing and programming
@@ -909,26 +814,12 @@ Same with f e r and restart emacs.
 
 ** Modes from comma leader
 
-*** Markdown                                            :key:
+Markdown keybindings moved to markdown dir because I'm changing it a lot.
 
 #+BEGIN_SRC emacs-lisp
-
-(mode-binding 
-:keymaps 'markdown-mode-map
-"h" 'markdown-toggle-markup-hiding
-"f" 'markdown-cycle
-"n" '(:ignore t :which-key "Notes (Footnotes and Cites)")
-"nv" '(origami-toggle-all-nodes :which-key "Toggle visibility of all cites and footnotes")
-"nn" '(origami-toggle-node :which-key "Toggle visibility of note at point")
-"s" '(:ignore t :which-key "Spell checking")
-"ss" '(full-spellcheck :which-key "Mark and correct buffer")
-"sm" '(flyspell-mode :which-key "Spellcheck on the fly")
-"sb" '(flyspell-buffer :which-key "Mark spelling errors")
-"sc" '(correct-marked-spelling-errors :which-key "Correct marked errors")
-"sw" '(flyspell-word :which-key "Check spelling of word")
-"sf" '(flyspell-correct-word-before-point :which-key "Correct marked word"))
-
+(org-babel-load-file "~/.emacs.d/markdown/markdown-keybindings.org")
 #+END_SRC
+
 
 *** Org
 

@@ -23,6 +23,11 @@ Load up markdown
 
 #+END_SRC
 
+I don't like trailing hashes
+
+#+BEGIN_SRC emacs-lisp
+(setq markdown-asymmetric-header t)
+#+END_SRC
 
 De-uglify the line breaks and such
 
@@ -107,3 +112,20 @@ Make it possible to hide footnotes
 (add-hook 'markdown-mode-hook 'origami-mode)
 
 #+END_SRC
+
+Helper functions to add parent and child headings
+
+#+BEGIN_SRC emacs-lisp
+
+(defun pg-add-parent-header ()
+(interactive)
+(let ((current-prefix-arg '(4)))
+(call-interactively 'markdown-insert-header-dwim)))
+
+(defun pg-add-child-header ()
+(interactive)
+(let ((current-prefix-arg '(16)))
+(call-interactively 'markdown-insert-header-dwim)))
+
+#+END_SRC
+
