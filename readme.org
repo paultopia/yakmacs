@@ -102,18 +102,22 @@ ORG MODE
 
 MARKDOWN
 
-| command  | function                                      |
-|----------+-----------------------------------------------|
-| , h      | hide markup                                   |
-| , f      | fold/unfold header                            |
-|          |                                               |
-| SPELLING |                                               |
-| , s s    | Mark and correct buffer (one spellcheck pass) |
-| , s b    | Mark spelling errors currently in buffer      |
-| , s m    | Turn on running spell checking (seems slow)   |
-| , s f    | Correct marked word at point            |
-| , s c    | Correct all marked errors                     |
-| , s w    | Check spelling of word at point               |
+| command             | function                                      |
+|---------------------+-----------------------------------------------|
+| , h                 | hide markup                                   |
+| , f                 | fold/unfold header                            |
+|                     |                                               |
+| SPELLING            |                                               |
+| , s s               | Mark and correct buffer (one spellcheck pass) |
+| , s b               | Mark spelling errors currently in buffer      |
+| , s m               | Turn on running spell checking (seems slow)   |
+| , s f               | Correct marked word at point                  |
+| , s c               | Correct all marked errors                     |
+| , s w               | Check spelling of word at point               |
+|                     |                                               |
+| FOOTNOTES AND CITES |                                               |
+| , n v               | Toggle visibility of all footnotes and cites  |
+| , n n              | Toggle visibility of note at point |
 
 
 
@@ -207,6 +211,13 @@ Getting sick of having a window with the welcome message show up when I open som
 
 #+BEGIN_SRC emacs-lisp
 (setq inhibit-startup-screen t)
+#+END_SRC
+
+I don't need these libs until I get to origami in markdown mode in an entire separate config file, but they're generally useful enough that I'd rather load them up right on top.
+
+#+BEGIN_SRC emacs-lisp
+  (straight-use-package 'dash)
+  (straight-use-package 's)
 #+END_SRC
 
 * Frivolity
@@ -599,6 +610,15 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
 #+END_SRC
 
 
+
+* Org
+
+I want to be able to use shift select.
+
+#+BEGIN_SRC emacs-lisp
+(setq org-support-shift-select t)
+#+END_SRC
+
 * Markdown
 
 
@@ -804,6 +824,9 @@ Same with f e r and restart emacs.
 :keymaps 'markdown-mode-map
 "h" 'markdown-toggle-markup-hiding
 "f" 'markdown-cycle
+"n" '(:ignore t :which-key "Notes (Footnotes and Cites)")
+"nv" '(origami-toggle-all-nodes :which-key "Toggle visibility of all cites and footnotes")
+"nn" '(origami-toggle-node :which-key "Toggle visibility of note at point")
 "s" '(:ignore t :which-key "Spell checking")
 "ss" '(full-spellcheck :which-key "Mark and correct buffer")
 "sm" '(flyspell-mode :which-key "Spellcheck on the fly")

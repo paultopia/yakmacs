@@ -93,3 +93,16 @@ Set up flyspell
 
 
 #+END_SRC
+
+Make it possible to hide footnotes
+
+#+BEGIN_SRC emacs-lisp
+
+ (straight-use-package 'origami)
+ (require 'origami)
+
+ (add-to-list 'origami-parser-alist `(markdown-mode . ,(origami-markers-parser "[" "]")))
+
+(add-hook 'markdown-mode-hook 'origami-mode)
+
+#+END_SRC
