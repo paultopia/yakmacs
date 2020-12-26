@@ -1,4 +1,4 @@
-# -*- in-config-file: t -*-
+# -*- in-config-file: t; lexical-binding: t  -*-
 
 
 
@@ -917,5 +917,5 @@ because I don't *think* anything else uses @ ...?
 
 [[https://sam217pa.github.io/2016/09/02/how-to-build-your-own-spacemacs/][this person]] [[https://sam217pa.github.io/2016/08/30/how-to-make-your-own-spacemacs/][also]].
 [[https://jamiecollinson.com/blog/my-emacs-config/#][this setup]]
-
+[[https://so.nwalsh.com/2020/02/29/dot-emacs%20][this person has a million perf tweaks]]
 

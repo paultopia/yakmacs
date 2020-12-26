@@ -1,3 +1,5 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
 * Markdown config
 
 Load up markdown
