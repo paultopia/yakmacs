@@ -155,10 +155,10 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 
 attempt to fix an obnoxious screen flicker. borrowed from [[https://old.reddit.com/r/emacs/comments/ecctcp/how_to_debug_emacs_flickering_issue/fbasdxf/][here]] 
 
-(does not appear to be helping)
+(does not appear to be helping ... actually it seems to be making it worse and I'm going to comment it out for now)
 
 #+BEGIN_SRC emacs-lisp
-(add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
+; (add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
 #+END_SRC
 
 keep gc out of minibuffer, and other GC tweaks borrowed from Doom and from the Walsh dude
@@ -201,6 +201,26 @@ UNTESTED
 
 * Emacs mechanical tweaks
 
+Kill all the damn beeping
+
+#+BEGIN_SRC emacs-lisp
+
+(setq visible-bell 1)
+
+#+END_SRC
+
+Also kill all the annoying confirmations.  Borrowed from [[https://www.masteringemacs.org/article/disabling-prompts-emacs][here]]. 
+
+#+BEGIN_SRC emacs-lisp
+(fset 'yes-or-no-p 'y-or-n-p)
+
+(setq confirm-nonexistent-file-or-buffer nil)
+
+(setq kill-buffer-query-functions
+  (remq 'process-kill-buffer-query-function
+         kill-buffer-query-functions))
+#+END_SRC
+
 I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs/BackupDirectory][the wiki]] 
 
 #+BEGIN_SRC emacs-lisp
@@ -226,7 +246,9 @@ I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs
 #+END_SRC
 
 Undo-redo is impossibly confusing and I can never redo anything and I hate it to death.  Let's try a lib.
-Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems normal.  keybindings down below per usual.
+Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems normal.  keybindings down below per usual, but also suggested keybindings [[https://gitlab.com/ideasman42/emacs-undo-fu][in here]] for evil.
+
+(actually I take that back.  I'm going to define them down below in general, but I'm going to use C-u and C-r for it globally, including in insert mode, because fuck that noise.
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'undo-fu)
@@ -251,6 +273,17 @@ I don't need these libs until I get to origami in markdown mode in an entire sep
   (straight-use-package 'dash)
   (straight-use-package 's)
 #+END_SRC
+
+Everything is UTF-8.  EVERYTHING. Borrowed from [[https://www.masteringemacs.org/article/working-coding-systems-unicode-emacs][here.]]  
+
+#+BEGIN_SRC emacs-lisp
+(prefer-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
+#+END_SRC
+
 
 
 * Frivolity
@@ -722,6 +755,18 @@ I think I pretty much just only want these keybindings in normal mode for now.
   :prefix mode-leader
   :states 'normal
   :keymaps 'override)
+
+#+END_SRC
+
+** Super global keybindings
+
+Mostly for undo-redo.
+
+#+BEGIN_SRC emacs-lisp
+
+  (general-define-key
+  "C-u" 'undo-fu-only-undo
+  "C-r" 'undo-fu-only-redo)
 
 #+END_SRC
 
