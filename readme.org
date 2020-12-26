@@ -779,7 +779,7 @@ Same with f e r and restart emacs.
 "gg" 'git-quick-commit
 "gu" 'magit-pull-from-upstream
 "gi" 'magit-init
-"gr" (:ignore t :which-key "Remotes")
+"gr" '(:ignore t :which-key "Remotes")
 "gra" 'magit-remote-add)
 
 #+END_SRC
