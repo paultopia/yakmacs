@@ -63,6 +63,7 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | UNDO-REDO                         |                                                                 |
 | u u                               | undo                                                            |
 | u r                               | redo                                                            |
+|                                   |                                                                 |
 
 
 Mode leader is comma.

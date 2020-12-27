@@ -494,6 +494,7 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 (straight-use-package 'magit)
 
+(evil-collection-init 'magit)
 #+END_SRC
 
 Trying to create the equivalent of ~git add .~ --- the function ~magit-stage-modified~ is close, but appears to require a prefix argument to make it work.
@@ -633,6 +634,7 @@ I HATE org's link hiding. HATE IT.  It makes it impossible to edit links.  Die d
 (setq org-descriptive-links nil)
 #+END_SRC
 
+
 * Markdown
 
 
@@ -714,6 +716,8 @@ Mostly for undo-redo.
 #+END_SRC
 
 ** Global leader keybindings 
+
+
 
 *** Files   :key:
 
@@ -837,12 +841,15 @@ Same with f e r and restart emacs.
 
 *** Undo-redo :key:
 
+These are bonus bindings, I already have a bunch of other bindings to this, but I'm trying to make sure I never miss it.
+
 #+BEGIN_SRC emacs-lisp
 (leader-binding
 "u" '(:ignore t :which-key "Undo/Redo")
 "uu" 'undo-fu-only-undo
 "ur" 'undo-fu-only-redo)
 #+END_SRC
+
 
 ** Modes from comma leader
 
