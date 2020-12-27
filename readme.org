@@ -192,6 +192,13 @@ Everything is UTF-8.  EVERYTHING. Borrowed from [[https://www.masteringemacs.org
 (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 #+END_SRC
 
+Maybe a bit more help 
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'helpful)
+(setq counsel-describe-function-function #'helpful-callable)
+(setq counsel-describe-variable-function #'helpful-variable)
+#+END_SRC
 
 
 * Frivolity
@@ -662,6 +669,7 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 #+END_SRC
 
 
+
 * Keybindings
 
 ** evil escape
@@ -798,9 +806,10 @@ Same with f e r and restart emacs.
 
 (leader-binding
 "h" '(:ignore t :which-key "Help")
-"hf" 'describe-function
-"hv" 'describe-variable
-"ha" 'counsel-apropos)
+"hf" 'helpful-callable
+"hv" 'helpful-variable
+"ha" 'counsel-apropos
+"hh" 'helpful-at-point)
 
 #+END_SRC
 
