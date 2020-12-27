@@ -297,6 +297,29 @@ I wish I knew how the parsing/evaluation order of these files worked. Can I set 
 I feel like I've seen people actually call functions before defining them in blog posts and such about elisp. 
 
 
+* Make startup useful
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'dashboard)
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+
+(setq dashboard-set-init-info t)
+(setq dashboard-set-footer nil)
+(setq dashboard-projects-backend 'projectile)
+
+(setq dashboard-items '((recents  . 5)
+                        (projects . 5)
+                        (bookmarks . 5)
+                        (registers . 5)))
+
+(evil-collection-init 'dashboard)
+
+#+END_SRC
+
+
+
 * Visual 
   
 ** Theme
