@@ -55,8 +55,8 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 * Perf tweaks to be done early
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'gcmh)
-(gcmh-mode 1)
+  (straight-use-package 'gcmh)
+  (gcmh-mode 1)
 #+END_SRC
 
 attempt to fix an obnoxious screen flicker. borrowed from [[https://old.reddit.com/r/emacs/comments/ecctcp/how_to_debug_emacs_flickering_issue/fbasdxf/][here]] 
@@ -69,18 +69,22 @@ attempt to fix an obnoxious screen flicker. borrowed from [[https://old.reddit.c
 
 keep gc out of minibuffer, and other GC tweaks borrowed from Doom and from the Walsh dude
 
+(I'm getting suspicious of this.  I seem to get a large lag when 
+I save with :w, but not using keybindings.  starting to smell 
+like some kind of minibuffer usage thing...)
+
 #+BEGIN_SRC emacs-lisp
-(defun defer-garbage-collection-hook ()
-  (setq gc-cons-threshold most-positive-fixnum))
+  ;; (defun defer-garbage-collection-hook ()
+  ;;   (setq gc-cons-threshold most-positive-fixnum))
 
-(defvar base-gc-threshold 67108864)
+  ;; (defvar base-gc-threshold 67108864)
 
-(defun restore-garbage-collection-hook ()
-  (garbage-collect)
-  (setq gc-cons-threshold base-gc-threshold))
+  ;; (defun restore-garbage-collection-hook ()
+  ;;   (garbage-collect)
+  ;;   (setq gc-cons-threshold base-gc-threshold))
 
-(add-hook 'minibuffer-setup-hook #'defer-garbage-collection-hook)
-(add-hook 'minibuffer-exit-hook #'restore-garbage-collection-hook)
+  ;; (add-hook 'minibuffer-setup-hook #'defer-garbage-collection-hook)
+  ;; (add-hook 'minibuffer-exit-hook #'restore-garbage-collection-hook)
 #+END_SRC
 
 
@@ -127,7 +131,7 @@ Also kill all the annoying confirmations.  Borrowed from [[https://www.mastering
          kill-buffer-query-functions))
 #+END_SRC
 
-Get my mac keys back. From [[https://gist.github.com/railwaycat/3498096][here]]  This is a consequence of switching from emacs-plus to emacs-macport.
+Get my mac keys back. From [[https://gist.github.com/railwaycat/3498096][here]]  This is a consequence of switching from emacs-plus to emacs-macport
 
 For some reason, it needs to be called twice to get it to work. But calling it twice does work, so.
 
