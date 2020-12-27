@@ -672,6 +672,17 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 
 
 
+* Data serialization languages
+
+** Yaml
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'yaml-mode)
+
+(add-hook 'yaml-mode-hook #'global-flycheck-mode)
+
+#+END_SRC
+
 * Keybindings
 
 ** evil escape
