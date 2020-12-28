@@ -188,6 +188,16 @@ Maybe a bit more help
 (setq counsel-describe-variable-function #'helpful-variable)
 #+END_SRC
 
+helpful-variable seems to fail randomly when point is at the wrong place in a buffer,
+might want to switch back to built-in describe-variable. See[[https://github.com/Wilfred/helpful/issues/251][this issue.]] 
+
+
+I also want a global editing setting to overwrite when I select, because 
+that's the functionality I'm used to. 
+
+#+BEGIN_SRC emacs-lisp
+(delete-selection-mode 1)
+#+END_SRC
 
 * Frivolity
 
