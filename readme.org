@@ -742,6 +742,7 @@ Mostly for undo-redo.
 "fpg" 'projectile-grep
 "fpf" 'projectile-find-file
 "fps" 'projectile-switch-project
+"fpr" 'projectile-replace
  )
 
 #+END_SRC
