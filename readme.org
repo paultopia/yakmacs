@@ -139,19 +139,6 @@ I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs
     (setq auto-save-file-name-transforms
           `((".*" ,backup-dir t)))
 
-; this *was* working, or at least failing silently.  then randomly, after I added 
-; some keybindings down below it started blowing up with "symbol's function definition is void: fifth"
-; which, wtf??  so I'm just going to kill it for now.
-
-;(message "Deleting old backup files...")
-;(let ((week (* 60 60 24 7))
-;      (current (float-time (current-time))))
-;  (dolist (file (directory-files backup-dir t))
-;    (when (and (backup-file-name-p file)
-;               (> (- current (float-time (fifth (file-attributes file))))
-;                  week))
-;      (message "%s" file)
-;      (delete-file file))))
 #+END_SRC
 
 Undo-redo is impossibly confusing and I can never redo anything and I hate it to death.  Let's try a lib.
