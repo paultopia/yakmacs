@@ -52,42 +52,6 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 #+END_SRC
 
 
-* Perf tweaks to be done early
-
-#+BEGIN_SRC emacs-lisp
-  (straight-use-package 'gcmh)
-  (gcmh-mode 1)
-#+END_SRC
-
-attempt to fix an obnoxious screen flicker. borrowed from [[https://old.reddit.com/r/emacs/comments/ecctcp/how_to_debug_emacs_flickering_issue/fbasdxf/][here]] 
-
-(does not appear to be helping ... actually it seems to be making it worse and I'm going to comment it out for now)
-
-#+BEGIN_SRC emacs-lisp
-; (add-to-list 'default-frame-alist '(inhibit-double-buffering . t))
-#+END_SRC
-
-keep gc out of minibuffer, and other GC tweaks borrowed from Doom and from the Walsh dude
-
-(I'm getting suspicious of this.  I seem to get a large lag when 
-I save with :w, but not using keybindings.  starting to smell 
-like some kind of minibuffer usage thing...)
-
-#+BEGIN_SRC emacs-lisp
-  ;; (defun defer-garbage-collection-hook ()
-  ;;   (setq gc-cons-threshold most-positive-fixnum))
-
-  ;; (defvar base-gc-threshold 67108864)
-
-  ;; (defun restore-garbage-collection-hook ()
-  ;;   (garbage-collect)
-  ;;   (setq gc-cons-threshold base-gc-threshold))
-
-  ;; (add-hook 'minibuffer-setup-hook #'defer-garbage-collection-hook)
-  ;; (add-hook 'minibuffer-exit-hook #'restore-garbage-collection-hook)
-#+END_SRC
-
-
 * Make things involving the commandline work on mac.
 
 #+BEGIN_SRC emacs-lisp
