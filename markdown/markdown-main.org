@@ -41,7 +41,7 @@ De-uglify the line breaks and such
 ; (add-hook 'markdown-mode-hook 'turn-off-fringe)
 (add-hook 'markdown-mode-hook 'visual-line-mode)
 
-(add-hook 'markdown-mode-hook `prose-font)
+(add-hook 'markdown-mode-hook 'prose-font)
 
 (defun text-margins ()
   (setq left-margin-width 16)
