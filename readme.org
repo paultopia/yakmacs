@@ -201,11 +201,15 @@ that's the functionality I'm used to.
 
 * Frivolity
 
+turning off the nyan cat screensaver reluctantly because it seems
+to leave the region in a weird place and I don't trust it, when 
+I'm randomly getting copy-paste-search-undo quirks.
+
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'zone-nyan)
-(require 'zone)
-(setq zone-programs [zone-nyan])
-(zone-when-idle 1200)
+  ;; (straight-use-package 'zone-nyan)
+  ;; (require 'zone)
+  ;; (setq zone-programs [zone-nyan])
+  ;; (zone-when-idle 1200)
 #+END_SRC
 
 
@@ -271,6 +275,14 @@ Which-key is apparently The Thing
 (evil-mode)
 
 #+END_SRC
+
+
+I'm having weird glitches with changes disappearing in big markdown buffers, and I'm wondering if that has something to do with evil. So this is an experiment.
+
+#+BEGIN_SRC emacs-lisp
+(fset 'evil-visual-update-x-selection 'ignore) 
+#+END_SRC
+
 
 ** Add more evil bindings
 Let's get as much evilified as humanly possible just to start, eh?
