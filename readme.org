@@ -537,6 +537,12 @@ Ok, now let's see if I can get a straight-up commit going.
 #+END_SRC
 
 
+I'd like to be able to pull; setting global auto-revert mode to avoid pain like pulling open buffers, which would be a bad oops.  
+
+#+BEGIN_SRC emacs-lisp
+(global-auto-revert-mode t)
+#+END_SRC
+
 * Programming 
 
 ** Cross- programming language stuff
