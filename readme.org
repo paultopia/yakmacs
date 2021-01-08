@@ -337,6 +337,20 @@ I feel like I've seen people actually call functions before defining them in blo
 
 
 
+* Misc utility functions
+
+Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsciiCharacters][the wiki]])
+
+#+BEGIN_SRC emacs-lisp
+
+(defun occur-non-ascii ()
+  "Find any non-ascii characters in the current buffer."
+  (interactive)
+  (occur "[^[:ascii:]]"))
+
+#+END_SRC
+
+
 * Visual 
   
 ** Theme
