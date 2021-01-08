@@ -6,6 +6,7 @@ straight/repos/
 url/
 init.el~
 transient/
+projectile-bookmarks.eld
 #*
 *~
 eshell/
