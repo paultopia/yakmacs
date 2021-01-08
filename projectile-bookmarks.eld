@@ -1,1 +1,0 @@
-("~/repos/teaching_private/" "~/.emacs.d/" "~/repos/rol_in_usa/" "~/repos/lawpy/" "~/repos/recipes/" "~/.emacs.d/straight/repos/magit/" "~/Dropbox/" "~/repos/websiterevision2017/" "~/repos/casebook-14amend/" "~/repos/networked-leviathan/")
