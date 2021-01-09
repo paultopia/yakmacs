@@ -343,13 +343,40 @@ Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsc
 
 #+BEGIN_SRC emacs-lisp
 
-(defun occur-non-ascii ()
+(defun find-non-ascii ()
   "Find any non-ascii characters in the current buffer."
   (interactive)
   (occur "[^[:ascii:]]"))
 
 #+END_SRC
 
+
+* Machine-specific config
+
+I'm using this emacs config across work and home machines, but some stuff is different. Particularly, I only use dropbox on my home machine, 
+and use onedrive for work things; configuration that requires saving to a dropbox file should only happen on a personal computer. 
+
+Right now, I'm just setting up environment variable to get a machine identifier.  Will create machine-specific config down the line. 
+
+I really want to use an enum for this, but right now it's just a string. So permissible values are "home-computer" and "office-computer)
+
+#+BEGIN_SRC emacs-lisp
+(exec-path-from-shell-copy-env "WHICH_COMPUTER")
+(defvar which-computer)
+
+(setq which-computer (getenv "WHICH_COMPUTER"))
+
+; just to make sure I can detect computer
+
+(defun say-computer ()
+(interactive)
+(cond ((string= which-computer "home-computer") (print "I'm the home computer!"))
+      ((string= which-computer "office-computer") (print "I'm the office computer!"))
+      (t (print "I don't know which computer I am. :-(")))
+)
+
+
+#+END_SRC
 
 * Visual 
   
