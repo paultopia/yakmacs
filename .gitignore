@@ -12,6 +12,7 @@ projectile-bookmarks.eld
 eshell/
 markdown-enhancements.el
 markdown-main.el
+keybindings.el
 recentf
 markdown/markdown-main.el
 markdown/markdown-keybindings.el

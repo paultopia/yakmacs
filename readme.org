@@ -742,7 +742,8 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 
 * Keybindings
 
-** evil escape
+
+Set up evil escape
 
 #+BEGIN_SRC emacs-lisp
 (evil-escape-mode)
@@ -750,9 +751,9 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 (global-set-key (kbd "ESC ESC") 'evil-escape)
 #+END_SRC
 
-** Bust out General
 
-I think I pretty much just only want these keybindings in normal mode for now.
+Load up general
+
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'general)
@@ -771,179 +772,13 @@ I think I pretty much just only want these keybindings in normal mode for now.
 
 #+END_SRC
 
-** Super global keybindings
-
-Mostly for undo-redo.
+Load up keybindings file 
 
 #+BEGIN_SRC emacs-lisp
 
-  (general-define-key
-  "C-u" 'undo-fu-only-undo
-  "C-r" 'undo-fu-only-redo)
+(org-babel-load-file "~/.emacs.d/keybindings.org")
 
 #+END_SRC
-
-** Global leader keybindings 
-
-
-
-*** Files   :key:
-
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"f" '(:ignore t :which-key "Files and Projects")
-"ff" 'counsel-find-file
-"fs" 'save-buffer
-"fn" 'write-file
-"fp" '(:ignore t :which-key "Project")
-"fpg" 'projectile-grep
-"fpf" 'projectile-find-file
-"fps" 'projectile-switch-project
-"fpr" 'projectile-replace
- )
-
-#+END_SRC
-
-
-I think I'd like a special keybinding to get this file open.  spacemacs uses f e d and hence it already in muscle memory I guess
-Same with f e r and restart emacs.
-
-#+BEGIN_SRC emacs-lisp
-
-(defun open-config ()
-(interactive)
-(find-file "~/.emacs.d/readme.org"))
-
-(leader-binding 
-"fe" '(:ignore t :which-key "Config/Restart")
-"fed" 'open-config
-"fer" 'restart-emacs)
-
-#+END_SRC
-
-*** Buffers    :key:
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"b" '(:ignore t :which-key "Buffers")
-"bd" 'kill-this-buffer
-"bb" 'ivy-switch-buffer)
-
-#+END_SRC
-
-*** Windows   :key: 
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"w" '(:ignore t :which-key "Windows")
-"w/" 'split-window-right
-"w-" 'split-window-below
-"wd" 'delete-window
-"wx" 'delete-other-windows
-"wc" 'other-window
-"wf" 'make-frame-command)
-
-#+END_SRC
-
-*** Colors :key:
-
-#+BEGIN_SRC emacs-lisp
-  (leader-binding
-  "c" '(:ignore t :which-key "Colors")
-  "cl" 'light-mode
-  "cd" 'dark-mode)
-#+END_SRC
-
-*** Elisp/Execute shell commands                                        :key:
-
-#+BEGIN_SRC emacs-lisp
-(leader-binding
-"e" '(:ignore t :which-key "Elisp")
-"ee" 'eval-last-sexp
-"eb" 'eval-buffer
-"es" 'eval-expression
-"ex" '(:ignore t :which-key "Execute commands and shells")
-"exs" 'eshell
-"exc" 'shell-command
-"exp" '(run-python :which-key "Spawn python interpreter"))
-
-#+END_SRC
-
-
-
-*** Help :key: 
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"h" '(:ignore t :which-key "Help")
-"hf" 'helpful-callable
-"hv" 'helpful-variable
-"ha" 'counsel-apropos
-"hh" 'helpful-at-point)
-
-#+END_SRC
-
-*** Git :key: 
-
-#+BEGIN_SRC emacs-lisp
-
-(leader-binding
-"g" '(:ignore t :which-key "Git")
-"ga" 'magit-stage-file
-"g." 'git-add-all
-"gc" 'magit-commit-create
-"gp" 'magit-push-current-to-upstream
-"gg" 'git-quick-commit
-"gu" 'magit-pull-from-upstream
-"gi" 'magit-init
-"gd" '(:ignore t :which-key "Diffing")
-"gdf" '(magit-diff-buffer-file :which-key "Diff current file (use q to exit magit buffer)")
-"gda" '(magit-diff-unstaged :which-key "Diff all unstaged files ALREADY TRACKED")
-"gr" '(:ignore t :which-key "Remotes")
-"gra" 'magit-remote-add)
-
-#+END_SRC
-
-
-*** Undo-redo :key:
-
-These are bonus bindings, I already have a bunch of other bindings to this, but I'm trying to make sure I never miss it.
-
-#+BEGIN_SRC emacs-lisp
-(leader-binding
-"u" '(:ignore t :which-key "Undo/Redo")
-"uu" 'undo-fu-only-undo
-"ur" 'undo-fu-only-redo)
-#+END_SRC
-
-
-** Modes from comma leader
-
-Markdown keybindings moved to markdown dir because I'm changing it a lot.
-
-#+BEGIN_SRC emacs-lisp
-(org-babel-load-file "~/.emacs.d/markdown/markdown-keybindings.org")
-#+END_SRC
-
-
-*** Org
-
-#+BEGIN_SRC emacs-lisp
-
-(mode-binding 
-:keymaps 'org-mode-map
-"t" 'org-todo
-"f" 'org-cycle 
-"l" 'org-insert-link)
-
-#+END_SRC
-
-
 
 
 * Development (of emacs config) conveniences   :dev: 
