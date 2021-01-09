@@ -838,10 +838,12 @@ Same with f e r and restart emacs.
 "e" '(:ignore t :which-key "Elisp")
 "ee" 'eval-last-sexp
 "eb" 'eval-buffer
+"es" 'eval-expression
 "ex" '(:ignore t :which-key "Execute commands and shells")
 "exs" 'eshell
 "exc" 'shell-command
 "exp" '(run-python :which-key "Spawn python interpreter"))
+
 #+END_SRC
 
 

@@ -36,8 +36,10 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | ELISP/EXECUTE COMMANDS AND SHELLS |                                                                 |
 | e e                               | eval sexp before point                                          |
 | e b                               | evaluate buffer                                                 |
+| e s                               | evaluate elisp expression interactively (in minibuffer)         |
 | e x s                             | eshell                                                          |
 | e x c                             | shell command                                                   |
+| e x p                             | span python shell                                               |
 |                                   |                                                                 |
 | COLORS                            |                                                                 |
 | c l                               | light color theme                                               |
