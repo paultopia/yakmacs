@@ -703,6 +703,16 @@ My markdown config is getting a bit extreme, so I'm going to shove it off entire
 
 
 
+* JSON
+
+I'm going to start making use of JQ to try to work with some citeproc-json goodness.  right now it's just here for testing.
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'counsel-jq)
+
+#+END_SRC
+
 * Visual changes between writing and programming
 
 #+BEGIN_SRC emacs-lisp
