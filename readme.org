@@ -659,14 +659,17 @@ Currently working: completion, syntax checking via [[https://www.flycheck.org][f
 
 Not yet tested: sending code out for execution in an interpreter
 
-Not yet implemented: forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); any kind of pipenv/pyenv integration; test runner integration; keybindings 
+Not yet implemented: 
+- forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
+- test runner integration
+- keybindings 
+- any kind of pipenv/pyenv integration
+
+In progress
+- poetry integration
 
 Globally installed python libraries: jedi, black, autopep8, plyint, yapf.  
 
-Probably needs virtualenv and pipenv integration of some kind to get rid of syntax checking unable to import errors?  
-maybe exec-path-from-shell combined with virtualenv will do that though?  (I suspect the interpreter works because of ~exec-path-from-shell~)
-
-- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'anaconda-mode)
@@ -674,6 +677,33 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
  '(add-to-list 'company-backends 'company-anaconda))
 (add-hook 'python-mode-hook 'anaconda-mode)
 #+END_SRC
+
+Let's try to get poetry integration going.  Apparently that also requires transient and pyvenv packages.
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'pyvenv)
+(straight-use-package 'transient)
+(straight-use-package 'poetry)
+(require 'poetry)
+(add-hook 'python-mode-hook 'poetry-tracking-mode)
+
+#+END_SRC
+
+This seems to get me in virtualenv?  
+But it also breaks linting, because in the virtualenv the globally installed pylint doesn't seem to be available.  
+I might be ok with just putting linters in all the environments?
+
+It looks like the way to get linting going is just to install *pylint* in every environment.  I can get behind that.
+Not sure if completion will work either, but installing *jedi* in every environment to see.
+
+
+notes 
+
+Probably needs virtualenv and pipenv integration of some kind to get rid of syntax checking unable to import errors?  
+maybe exec-path-from-shell combined with virtualenv will do that though?  (I suspect the interpreter works because of ~exec-path-from-shell~)
+
+- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
 
 
