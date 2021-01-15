@@ -712,6 +712,14 @@ maybe exec-path-from-shell combined with virtualenv will do that though?  (I sus
 
 - some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
+There's a suggestion in the [[https://elpy.readthedocs.io/en/latest/ide.html#syntax-checking][elpy docs]] that maybe I can get around the specific per-project installation: 
+
+#+BEGIN_QUOTE
+ It is possible to create a single virtual env for the sole purpose of installing flake8 in there, and then simply link the command script to a 
+ directory inside your PATH, meaning you do not need to install the program in every virtual env separately.
+ #+END_QUOTE
+
+
 
 
 * Org
