@@ -1,8 +1,13 @@
-import requests
-print("hello world")
-foo = requests.get("https://gowder.io").status_code
+"""I'm a module docstring to satisfy the linter"""
 
-print(foo)
+import requests
+
+def try_a_request():
+    "let's try a request"
+    resp = requests.get("https://gowder.io")
+    return resp.status_code
+
+print("hello world")
 
 
 

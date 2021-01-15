@@ -655,18 +655,25 @@ stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
 
 ** Python  
 
-Currently working: completion, syntax checking via [[https://www.flycheck.org][flycheck]], accessing an interpeter in a window with ~M-x run-python~ 
+Currently working: 
+
+- poetry
+
+- syntax checking via [[https://www.flycheck.org][flycheck]]  (in poetry virtualenvs, only if pylint is in environment)
+
+- accessing an interpeter in a window with ~M-x run-python~ 
 
 Not yet tested: sending code out for execution in an interpreter
 
 Not yet implemented: 
 - forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
-- test runner integration
-- keybindings 
-- any kind of pipenv/pyenv integration
+- test runner integration 
+- pipenv
+- stronger linting
 
 In progress
-- poetry integration
+- keybindings
+- getting completion working again after poetry
 
 Globally installed python libraries: jedi, black, autopep8, plyint, yapf.  
 
