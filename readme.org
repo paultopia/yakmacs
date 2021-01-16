@@ -730,7 +730,9 @@ so... is this already in company??  Doesn't seem to be.
 
 I also happen to see that I haven't actually installed company-anaconda (oops) despite invoking it here.  and it doesn't seem to be necessary, per the company docs?
 
-Ok, this is weird.  I'm going to try to get completions going and also see if black works in the virtualenv, if so, then maybe I'll work on completions more.  
+Ok, this is weird.  I'm going to try to get completions going and also see if flake8 works in the virtualenv, if so, then maybe I'll work on completions more.  
+
+Yet another update: flake8 works in venv from commandline after being simlinked onto PATH, not before.  So I think we're solid except for completion investigation.
 
 
 * Org
