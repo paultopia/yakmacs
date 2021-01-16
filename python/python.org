@@ -1,0 +1,66 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Python config
+
+Currently working: 
+
+- poetry
+
+- syntax checking via [[https://www.flycheck.org][flycheck]]  (in poetry virtualenvs, only if pylint is in environment)
+
+- accessing an interpeter in a window with ~M-x run-python~ 
+
+- sending code out for execution in an interpreter
+
+- linting and such even in a virtualenv
+
+- completion (also including in virtualenv)
+
+Not yet implemented: 
+- forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
+- test runner integration 
+- pipenv
+
+In progress
+- keybindings
+
+
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'anaconda-mode)
+(straight-use-package 'company-anaconda)
+(eval-after-load "company"
+ '(add-to-list 'company-backends 'company-anaconda))
+(add-hook 'python-mode-hook 'anaconda-mode)
+#+END_SRC
+
+Let's try to get poetry integration going.  Apparently that also requires transient and pyvenv packages.
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'pyvenv)
+(straight-use-package 'transient)
+(straight-use-package 'poetry)
+(require 'poetry)
+(add-hook 'python-mode-hook 'poetry-tracking-mode)
+
+#+END_SRC
+
+
+*Notes on virtualenvs* 
+
+following the strategy outlined [[https://stackoverflow.com/a/65740776/4386239][here]] I've created a virtualenv with 
+
+flake8 black autopep8 pylint yapf
+
+and symlinked into PATH to avoid these virtualenv/linting problems.
+
+anaconda-mode seems to automatically install jedi when it's needed.  So that's nice. 
+
+Might want pipenv integration down the line too.  Several possibilities: 
+
+-  [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] 
+
+- [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] 
+
+- [[https://github.com/Rokutann/npy.el][npy.el]]? 

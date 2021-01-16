@@ -584,9 +584,9 @@ I'd like to be able to pull; setting global auto-revert mode to avoid pain like 
 (global-auto-revert-mode t)
 #+END_SRC
 
-* Programming 
 
-** Cross- programming language stuff
+* General Programming 
+
 
 Completions
 
@@ -652,72 +652,14 @@ shellcheck (bash, via ~brew install shellcheck~)
 yamllint (yaml, via ~pip install yamllint~)
 stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
 
+* Python
 
-** Python  
-
-Currently working: 
-
-- poetry
-
-- syntax checking via [[https://www.flycheck.org][flycheck]]  (in poetry virtualenvs, only if pylint is in environment)
-
-- accessing an interpeter in a window with ~M-x run-python~ 
-
-- sending code out for execution in an interpreter
-
-- linting and such even in a virtualenv
-
-- completion (also including in virtualenv)
-
-Not yet implemented: 
-- forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
-- test runner integration 
-- pipenv
-- stronger linting
-
-In progress
-- keybindings
-
-
+Moved to its own file.
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'anaconda-mode)
-(straight-use-package 'company-anaconda)
-(eval-after-load "company"
- '(add-to-list 'company-backends 'company-anaconda))
-(add-hook 'python-mode-hook 'anaconda-mode)
+(org-babel-load-file "~/.emacs.d/python/python.org")
 #+END_SRC
 
-Let's try to get poetry integration going.  Apparently that also requires transient and pyvenv packages.
-
-#+BEGIN_SRC emacs-lisp
-
-(straight-use-package 'pyvenv)
-(straight-use-package 'transient)
-(straight-use-package 'poetry)
-(require 'poetry)
-(add-hook 'python-mode-hook 'poetry-tracking-mode)
-
-#+END_SRC
-
-
-*Notes on virtualenvs* 
-
-following the strategy outlined [[https://stackoverflow.com/a/65740776/4386239][here]] I've created a virtualenv with 
-
-flake8 black autopep8 pylint yapf
-
-and symlinked into PATH to avoid these virtualenv/linting problems.
-
-anaconda-mode seems to automatically install jedi when it's needed.  So that's nice. 
-
-Might want pipenv integration down the line too.  Several possibilities: 
-
--  [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] 
-
-- [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] 
-
-- [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
 
 
@@ -739,7 +681,7 @@ I HATE org's link hiding. HATE IT.  It makes it impossible to edit links.  Die d
 * Markdown
 
 
-My markdown config is getting a bit extreme, so I'm going to shove it off entirely into a separate file
+Moved to its own file
 
 #+BEGIN_SRC emacs-lisp
 (org-babel-load-file "~/.emacs.d/markdown/markdown-main.org")
