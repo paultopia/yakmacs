@@ -663,7 +663,11 @@ Currently working:
 
 - accessing an interpeter in a window with ~M-x run-python~ 
 
-Not yet tested: sending code out for execution in an interpreter
+- sending code out for execution in an interpreter
+
+- linting and such even in a virtualenv
+
+- completion (also including in virtualenv)
 
 Not yet implemented: 
 - forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
@@ -673,13 +677,12 @@ Not yet implemented:
 
 In progress
 - keybindings
-- getting completion working again after poetry
 
-Globally installed python libraries: jedi, black, autopep8, plyint, yapf.  
 
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'anaconda-mode)
+(straight-use-package 'company-anaconda)
 (eval-after-load "company"
  '(add-to-list 'company-backends 'company-anaconda))
 (add-hook 'python-mode-hook 'anaconda-mode)
@@ -697,61 +700,26 @@ Let's try to get poetry integration going.  Apparently that also requires transi
 
 #+END_SRC
 
-This seems to get me in virtualenv?  
-But it also breaks linting, because in the virtualenv the globally installed pylint doesn't seem to be available.  
-I might be ok with just putting linters in all the environments?
 
-It looks like the way to get linting going is just to install *pylint* in every environment.  I can get behind that.
-Not sure if completion will work either, but installing *jedi* in every environment to see.
+*Notes on virtualenvs* 
 
+following the strategy outlined [[https://stackoverflow.com/a/65740776/4386239][here]] I've created a virtualenv with 
 
-notes 
-
-Probably needs virtualenv and pipenv integration of some kind to get rid of syntax checking unable to import errors?  
-maybe exec-path-from-shell combined with virtualenv will do that though?  (I suspect the interpreter works because of ~exec-path-from-shell~)
-
-- some kind of venv thing like [[https://github.com/marcwebbie/auto-virtualenv][auto-virtualenv]] --- or maybe [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] [[https://github.com/Rokutann/npy.el][npy.el]]? 
-
-There's a suggestion in the [[https://elpy.readthedocs.io/en/latest/ide.html#syntax-checking][elpy docs]] that maybe I can get around the specific per-project installation: 
-
-#+BEGIN_QUOTE
- It is possible to create a single virtual env for the sole purpose of installing flake8 in there, and then simply link the command script to a 
- directory inside your PATH, meaning you do not need to install the program in every virtual env separately.
- #+END_QUOTE
-
-*Update*: following the strategy outlined [[https://stackoverflow.com/a/65740776/4386239][here]] I've created a virtualenv with 
-
-flake8 jedi black autopep8 pylint yapf
+flake8 black autopep8 pylint yapf
 
 and symlinked into PATH to avoid these virtualenv/linting problems.
 
-But this still isn't complete, because jedi doesn't seem to have a single binary.  The jedi docs suggests that most installations are editor-specific anyway... 
-so... is this already in company??  Doesn't seem to be.
+anaconda-mode seems to automatically install jedi when it's needed.  So that's nice. 
 
-I also happen to see that I haven't actually installed company-anaconda (oops) despite invoking it here.  and it doesn't seem to be necessary, per the company docs?
+Might want pipenv integration down the line too.  Several possibilities: 
 
-Ok, this is weird.  I'm going to try to get completions going and also see if flake8 works in the virtualenv, if so, then maybe I'll work on completions more.  
+-  [[https://github.com/pwalsh/pipenv.el][integrate with pipenv?]] 
 
-Yet another update: flake8 works in venv from commandline after being simlinked onto PATH, not before.  So I think we're solid except for completion investigation.
+- [[https://github.com/pythonic-emacs/pyenv-mode][pyenv mode?]] 
 
-**Another update** 
+- [[https://github.com/Rokutann/npy.el][npy.el]]? 
 
-completion automatically seems to work for definitions in current buffer.  For external completions, right now, anaconda-mode-complete throws 
 
-Traceback (most recent call last):
-  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/providers/basehttp.py", line 40, in do_POST
-    status, response = self.server.service(data)
-  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/service.py", line 50, in __call__
-    result = self.apply(method, args)
-  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/service.py", line 105, in apply
-    server_error(args['id'], error)
-  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/errors.py", line 91, in server_error
-    raise ServiceException(500, dumps(response))
-service_factory.exceptions.ServiceException: (500, '{"jsonrpc": "2.0", "id": 1, "error": {"code": -32000, "message": "Server error", "data": "TypeError(\'__init__() takes from 1 to 2 positional arguments but 5 positional arguments (and 1 keyword-only argument) were given\')"}}')
-
---- but this may be due to the backend confusion, so I might try putting anaconda-company in and seeing what happens.
-
-looking at the \*anaconda-mode\* buffer, however, does seem to suggest that it automatically installs jedi for me.  There's a log of it doing so.  So that's good.
 
 * Org
 
