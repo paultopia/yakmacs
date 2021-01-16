@@ -719,7 +719,18 @@ There's a suggestion in the [[https://elpy.readthedocs.io/en/latest/ide.html#syn
  directory inside your PATH, meaning you do not need to install the program in every virtual env separately.
  #+END_QUOTE
 
+*Update*: following the strategy outlined [[https://stackoverflow.com/a/65740776/4386239][here]] I've created a virtualenv with 
 
+flake8 jedi black autopep8 pylint yapf
+
+and symlinked into PATH to avoid these virtualenv/linting problems.
+
+But this still isn't complete, because jedi doesn't seem to have a single binary.  The jedi docs suggests that most installations are editor-specific anyway... 
+so... is this already in company??  Doesn't seem to be.
+
+I also happen to see that I haven't actually installed company-anaconda (oops) despite invoking it here.  and it doesn't seem to be necessary, per the company docs?
+
+Ok, this is weird.  I'm going to try to get completions going and also see if black works in the virtualenv, if so, then maybe I'll work on completions more.  
 
 
 * Org
