@@ -1,0 +1,44 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Org capture 
+
+
+I think I'm going to try to make at least minimal use of org-capture. Doing it in a separate file because I expect to edit this a lot as I change projects.
+
+[[http://www.howardism.org/Technical/Emacs/capturing-intro.html][good intro]]
+
+
+#+BEGIN_SRC emacs-lisp
+  (setq org-default-notes-file "~/Dropbox/org/inbox.org")
+  ;; (setq org-capture-templates 
+  ;;   '("t" "Unfiled Task"  entry
+  ;;     (file org-default-notes-file)
+  ;;       "* TODO %?" :empty-lines 1))
+
+#+END_SRC
+
+
+
+** Current projects
+
+I'd really like to figure out how to git pull before running a template. 
+I guess I could advise the function, but it would be a bit tough to figure out which buffer...?
+So I expect merge conflicts here.  Hopefully it won't be too bad though. 
+
+Rule of Law in US
+
+#+BEGIN_SRC emacs-lisp
+  ;; (add-to-list 'org-capture-templates
+  ;;   '("r" "Rule of Law in USA Task"  entry
+  ;;     (file "~/repos/rol_in_usa/task_inbox.org")
+  ;;       "* TODO %?" :empty-lines 1))
+#+END_SRC
+
+Networked Leviathan
+
+#+BEGIN_SRC emacs-lisp
+  ;; (add-to-list 'org-capture-templates
+  ;;   '("n" "Rule of Law in USA Task"  entry
+  ;;     (file "~/repos/networked-leviathan/task_inbox.org")
+  ;;       "* TODO %?" :empty-lines 1))
+#+END_SRC

@@ -684,6 +684,11 @@ I HATE org's link hiding. HATE IT.  It makes it impossible to edit links.  Die d
 (setq org-descriptive-links nil)
 #+END_SRC
 
+Setting up org capture in a separate file in order to make it visually easier to just change as I change projects.  This is going to shift a lot.
+
+#+BEGIN_SRC emacs-lisp
+  (org-babel-load-file "~/.emacs.d/org/capture.org")
+#+END_SRC
 
 * Markdown
 
