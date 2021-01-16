@@ -28,11 +28,12 @@ I need to shadow the normal evil "u" binding too I think.  Something has simply 
 
 ** Global leader keybindings 
 
-*** Quick commands
+*** Todo (org)
 #+BEGIN_SRC emacs-lisp
 (leader-binding 
-"q" '(:ignore t :which-key "Quick Commands")
-"qn" 'org-capture
+"t" '(:ignore t :which-key "Todo")
+"tn" 'org-capture
+"tv" 'org-todo-list
 )
 #+END_SRC
 
@@ -175,12 +176,16 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 #+BEGIN_SRC emacs-lisp
 
 (mode-binding 
-:keymaps 'org-mode-map
+:states '(normal motion)
+:keymaps '(org-mode-map org-agenda-mode-map)
 "t" 'org-todo
 "f" 'org-cycle 
-"l" 'org-insert-link)
+"l" 'org-insert-link
+"s" 'org-save-all-org-buffers)
 
 #+END_SRC
+
+
 
 *** Python
 
@@ -188,6 +193,7 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 
 (mode-binding 
 :keymaps 'python-mode-map
+"c" 'company-complete
 "s" '(:ignore t :which-key "Talk to Interpreter")
 "ss" '(run-python :which-key "Spawn Interpreter")
 "sr" 'python-shell-send-region
@@ -220,9 +226,10 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 | command                           | function                                                        |
 |-----------------------------------+-----------------------------------------------------------------|
-| QUICK COMMANDS                    |                                                                 |
+| TODO                              |                                                                 |
 |-----------------------------------+-----------------------------------------------------------------|
-| q n                               | Quick Note (org capture)                                        |
+| t n                               | Quick Note (org capture)                                        |
+| t v                               | View todos                                                      |
 |-----------------------------------+-----------------------------------------------------------------|
 | FILES AND PROJECTS                |                                                                 |
 |-----------------------------------+-----------------------------------------------------------------|
@@ -297,13 +304,15 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 Mode leader is comma.
 
-ORG MODE
+ORG MODE AND ORG-AGENDA
 
-| command | function     |
-|---------+--------------|
-| , t     | cycle todo   |
-| , f     | cycle header |
-| , l     | insert link  |
+| command | function             |
+|---------+----------------------|
+| , t     | cycle todo           |
+| , f     | cycle header         |
+| , l     | insert link          |
+| , s     | save-all-org-buffers |
+|         |                      |
 
 
 MARKDOWN
@@ -372,6 +381,11 @@ PYTHON
 |---------------------------+-----------------------------------|
 | ,il                       | Shift region indentation to left  |
 | ,ir                       | Shift region indentation to right |
+|                           |                                   |
+|---------------------------+-----------------------------------|
+| MISC                      |                                   |
+|---------------------------+-----------------------------------|
+| , c                       | Complete (with company)           |
 |                           |                                   |
 
 

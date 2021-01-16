@@ -31,15 +31,23 @@ I'd really like to figure out how to git pull before running a template.
 I guess I could advise the function, but it would be a bit tough to figure out which buffer...?
 So I expect merge conflicts here.  Hopefully it won't be too bad though. 
 
+Define projects all in one place I think. 
+
+#+BEGIN_SRC emacs-lisp
+  (setq rolusa_tasks "~/OneDrive - Northwestern University/tasks/rolusa_tasks.org")
+  (setq netlev_tasks "~/OneDrive - Northwestern University/tasks/netlev_tasks.org")
+#+END_SRC
+
+
 Rule of Law in US
 
 #+BEGIN_SRC emacs-lisp
   (add-to-list 'org-capture-templates
     '("r" "Rule of Law in USA Task"  entry
-      (file "~/repos/rol_in_usa/task_inbox.org")
+      (file rolusa_tasks)
 	"* TODO %?" :empty-lines 1))
 
-(add-to-list 'org-agenda-files "~/repos/rol_in_usa/task_inbox.org" 'append)
+(add-to-list 'org-agenda-files rolusa_tasks 'append)
 
 #+END_SRC
 
@@ -48,9 +56,9 @@ Networked Leviathan
 #+BEGIN_SRC emacs-lisp
   (add-to-list 'org-capture-templates
     '("n" "Networked Leviathan Task"  entry
-      (file "~/repos/networked-leviathan/task_inbox.org")
+      (file netlev_tasks)
 	"* TODO %?" :empty-lines 1))
-(add-to-list 'org-agenda-files "~/repos/networked-leviathan/task_inbox.org" 'append)
+(add-to-list 'org-agenda-files netlev_tasks 'append)
 #+END_SRC
 
 this boilerplate really cries out for a macro.  
