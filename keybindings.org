@@ -28,6 +28,13 @@ I need to shadow the normal evil "u" binding too I think.  Something has simply 
 
 ** Global leader keybindings 
 
+*** Quick commands
+#+BEGIN_SRC emacs-lisp
+(leader-binding 
+"q" '(:ignore t :which-key "Quick Commands")
+"qn" 'org-capture
+)
+#+END_SRC
 
 *** Files
 
@@ -213,7 +220,12 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 | command                           | function                                                        |
 |-----------------------------------+-----------------------------------------------------------------|
+| QUICK COMMANDS                    |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
+| q n                               | Quick Note (org capture)                                        |
+|-----------------------------------+-----------------------------------------------------------------|
 | FILES AND PROJECTS                |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | f f                               | find-files                                                      |
 | f s                               | save file                                                       |
 | f n                               | save to new name                                                |
@@ -222,20 +234,25 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | f p g                             | grep in project                                                 |
 | f p f                             | find file in project                                            |
 | f p s                             | switch project                                                  |
-|                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | WINDOWS                           |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | w /                               | new window to right                                             |
 | w -                               | new window below                                                |
 | w d                               | delete current window                                           |
 | w x                               | delete other windows                                            |
 | w c                               | cycle to next window                                            |
 | w f                               | open a whole new frame                                          |
-|                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | BUFFERS                           |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
+|                                   |                                                                 |
 | b d                               | kill buffer                                                     |
 | b b                               | buffer menu                                                     |
 |                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | ELISP/EXECUTE COMMANDS AND SHELLS |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | e e                               | eval sexp before point                                          |
 | e b                               | evaluate buffer                                                 |
 | e s                               | evaluate elisp expression interactively (in minibuffer)         |
@@ -243,16 +260,22 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | e x c                             | shell command                                                   |
 | e x p                             | span python shell                                               |
 |                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | COLORS                            |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | c l                               | light color theme                                               |
 | c d                               | dark color theme                                                |
 |                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | HELP                              |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | h f                               | describe function                                               |
 | h v                               | describe variable                                               |
 | h a                               | apropos                                                         |
 |                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | GIT                               |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | g g                               | git add . && git commit (not push)                              |
 | g a                               | git add <CURRENT FILE>                                          |
 | g .                               | git add .                                                       |
@@ -264,7 +287,9 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | g d f                             | diff file in buffer                                             |
 | g d a                             | diff all unstaged files (ONLY WORKS FOR FILES  ALREADY TRACKED) |
 |                                   |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | UNDO-REDO                         |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
 | u u                               | undo                                                            |
 | u r                               | redo                                                            |
 |                                   |                                                                 |
@@ -283,36 +308,44 @@ ORG MODE
 
 MARKDOWN
 
-| command                       | function                                      |
-|-------------------------------+-----------------------------------------------|
-| , v                           | hide markup                                   |
-|                               |                                               |
-| HEADERS                       |                                               |
-| , h f                         | fold/unfold header                            |
-| , h a                         | add header at same level                      |
-| , h p                         | add parent-level header                       |
-| , h c                         | add child-level header                        |
+| command                       | function                                                           |
+|-------------------------------+--------------------------------------------------------------------|
+| , v                           | hide markup                                                        |
+|                               |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| HEADERS                       |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| , h f                         | fold/unfold header                                                 |
+| , h a                         | add header at same level                                           |
+| , h p                         | add parent-level header                                            |
+| , h c                         | add child-level header                                             |
 | , h u                         | Upshift (promote) header subtree        (also works on list items) |
-| , h d                         | Downshift (demote) header subtree    (also works on list items)         |
-|                               |                                               |
-| SPELLING                      |                                               |
-| , s s                         | Mark and correct buffer (one spellcheck pass) |
-| , s b                         | Mark spelling errors currently in buffer      |
-| , s m                         | Turn on running spell checking (seems slow)   |
-| , s f                         | Correct marked word at point                  |
-| , s c                         | Correct all marked errors                     |
-| , s w                         | Check spelling of word at point               |
-|                               |                                               |
-| FOOTNOTES AND CITES           |                                               |
-| , n v                         | Toggle visibility of all footnotes and cites  |
-| , n n                         | Toggle visibility of note at point            |
-|                               |                                               |
-| OUTLINES  (headers and lists) |                                               |
-| , o n                         | Next item (same leve)                         |
-| , o p                         | Previous item (same level)                    |
-| , o f                         | Next item (any level)                         |
-| , o b                         | Previous item (any level)                     |
-| , o u                         | Up to parent item                             |
+| , h d                         | Downshift (demote) header subtree    (also works on list items)    |
+|                               |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| SPELLING                      |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| , s s                         | Mark and correct buffer (one spellcheck pass)                      |
+| , s b                         | Mark spelling errors currently in buffer                           |
+| , s m                         | Turn on running spell checking (seems slow)                        |
+| , s f                         | Correct marked word at point                                       |
+| , s c                         | Correct all marked errors                                          |
+| , s w                         | Check spelling of word at point                                    |
+|                               |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| FOOTNOTES AND CITES           |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| , n v                         | Toggle visibility of all footnotes and cites                       |
+| , n n                         | Toggle visibility of note at point                                 |
+|                               |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| OUTLINES  (headers and lists) |                                                                    |
+|-------------------------------+--------------------------------------------------------------------|
+| , o n                         | Next item (same leve)                                              |
+| , o p                         | Previous item (same level)                                         |
+| , o f                         | Next item (any level)                                              |
+| , o b                         | Previous item (any level)                                          |
+| , o u                         | Up to parent item                                                  |
 
 
 PYTHON
@@ -320,18 +353,23 @@ PYTHON
 | command                   | function                          |
 |---------------------------+-----------------------------------|
 | SHELL/INTERPRETER         |                                   |
+|---------------------------+-----------------------------------|
 | ,ss                       | Spawn Interpreter                 |
 | ,sr                       | Send region to shell              |
 | ,sl                       | Send line to shell                |
 | ,sb                       | Send entire buffer to shell       |
 |                           |                                   |
+|---------------------------+-----------------------------------|
 | PACKAGES AND ENVIRONMENTS |                                   |
+|---------------------------+-----------------------------------|
 | ,pp                       | Poetry transient mode             |
 | ,pa                       | Add dependency in poetry          |
 | ,pi                       | Install poetry deps               |
 | ,pn                       | New poetry environment            |
 |                           |                                   |
+|---------------------------+-----------------------------------|
 | INDENTATION               |                                   |
+|---------------------------+-----------------------------------|
 | ,il                       | Shift region indentation to left  |
 | ,ir                       | Shift region indentation to right |
 |                           |                                   |
