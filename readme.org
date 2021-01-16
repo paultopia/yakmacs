@@ -734,6 +734,24 @@ Ok, this is weird.  I'm going to try to get completions going and also see if fl
 
 Yet another update: flake8 works in venv from commandline after being simlinked onto PATH, not before.  So I think we're solid except for completion investigation.
 
+**Another update** 
+
+completion automatically seems to work for definitions in current buffer.  For external completions, right now, anaconda-mode-complete throws 
+
+Traceback (most recent call last):
+  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/providers/basehttp.py", line 40, in do_POST
+    status, response = self.server.service(data)
+  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/service.py", line 50, in __call__
+    result = self.apply(method, args)
+  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/service.py", line 105, in apply
+    server_error(args['id'], error)
+  File "/Users/myuser/.emacs.d/anaconda-mode/0.1.13/service_factory-0.1.6-py3.8.egg/service_factory/errors.py", line 91, in server_error
+    raise ServiceException(500, dumps(response))
+service_factory.exceptions.ServiceException: (500, '{"jsonrpc": "2.0", "id": 1, "error": {"code": -32000, "message": "Server error", "data": "TypeError(\'__init__() takes from 1 to 2 positional arguments but 5 positional arguments (and 1 keyword-only argument) were given\')"}}')
+
+--- but this may be due to the backend confusion, so I might try putting anaconda-company in and seeing what happens.
+
+looking at the \*anaconda-mode\* buffer, however, does seem to suggest that it automatically installs jedi for me.  There's a log of it doing so.  So that's good.
 
 * Org
 

@@ -9,5 +9,3 @@ def try_a_request():
 
 print("hello world")
 
-
-
