@@ -16,6 +16,13 @@ I think I'm going to try to make at least minimal use of org-capture. Doing it i
 
 #+END_SRC
 
+Let's see if I can get org-agenda working too
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-agenda-files '("~/Dropbox/org/inbox.org"))
+
+#+END_SRC
 
 
 ** Current projects
@@ -31,6 +38,9 @@ Rule of Law in US
     '("r" "Rule of Law in USA Task"  entry
       (file "~/repos/rol_in_usa/task_inbox.org")
 	"* TODO %?" :empty-lines 1))
+
+(add-to-list 'org-agenda-files "~/repos/rol_in_usa/task_inbox.org" 'append)
+
 #+END_SRC
 
 Networked Leviathan
@@ -40,4 +50,7 @@ Networked Leviathan
     '("n" "Networked Leviathan Task"  entry
       (file "~/repos/networked-leviathan/task_inbox.org")
 	"* TODO %?" :empty-lines 1))
+(add-to-list 'org-agenda-files "~/repos/networked-leviathan/task_inbox.org" 'append)
 #+END_SRC
+
+this boilerplate really cries out for a macro.  
