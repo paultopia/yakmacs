@@ -180,6 +180,7 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 :keymaps '(org-mode-map org-agenda-mode-map)
 "t" 'org-todo
 "f" 'org-cycle 
+"g" 'org-global-cycle
 "l" 'org-insert-link
 "s" 'org-save-all-org-buffers)
 
