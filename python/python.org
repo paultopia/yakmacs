@@ -6,7 +6,7 @@ Currently working:
 
 - poetry
 
-- syntax checking via [[https://www.flycheck.org][flycheck]]  (in poetry virtualenvs, only if pylint is in environment)
+- syntax checking via [[https://www.flycheck.org][flycheck]]  
 
 - accessing an interpeter in a window with ~M-x run-python~ 
 
