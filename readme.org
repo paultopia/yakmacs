@@ -632,7 +632,14 @@ evil cleverparens doesn't appear to work though, at least not in this file. It s
   ; just to make it easier to work on lisp
     (sp-pair "'" "'" :actions :rem)
 
+#+END_SRC
 
+While I'm at it, it's silly not to have parens matched instantly.
+
+#+BEGIN_SRC emacs-lisp
+
+(setq show-paren-delay 0)
+(show-paren-mode 1)
 
 #+END_SRC
 
