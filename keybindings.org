@@ -132,9 +132,10 @@ Same with f e r and restart emacs.
 (leader-binding
 "h" '(:ignore t :which-key "Help")
 "hf" 'helpful-callable
-"hv" 'helpful-variable
+"hv" 'describe-variable
 "ha" 'counsel-apropos
-"hh" 'helpful-at-point)
+"hh" 'helpful-at-point
+"hk" 'describe-key)
 
 #+END_SRC
 
@@ -280,7 +281,8 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | h f                               | describe function                                               |
 | h v                               | describe variable                                               |
 | h a                               | apropos                                                         |
-|                                   |                                                                 |
+| h h                               | help at point                                                   |
+| h k                               | describe key                                                    |
 |-----------------------------------+-----------------------------------------------------------------|
 | GIT                               |                                                                 |
 |-----------------------------------+-----------------------------------------------------------------|
