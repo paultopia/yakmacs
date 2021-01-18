@@ -350,44 +350,6 @@ Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsc
 
 #+END_SRC
 
-* Fix Margin Clicks and Scrolls
-
-Make clicking in margins bring point to visual line.  
-
-#+BEGIN_SRC emacs-lisp
-
-  (defun set-point-to-margin-click (event) 
-    (interactive "e")
-    (let ((position (cddr (mouse-position)))
-         (clicked-window (posn-window (event-start event))))
-      (select-window clicked-window)
-      (let ((topline (car (cdr (window-body-edges)))))
-        (move-to-window-line 0)
-        (line-move-visual (- position topline)))))
-      
-	(global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
-	(global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
-
-#+END_SRC
-
-Let's get scrolling working in the margins too. I think this might be specific to the macport build I'm using; may break on office computer.
-
-If it breaks on office computer, I can just try mwheel-scroll without the modifier. 
-
-#+BEGIN_SRC emacs-lisp
-
-
-  (global-set-key (kbd "<left-margin> <wheel-down>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<left-margin> <wheel-up>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<left-margin> <wheel-left>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<left-margin> <wheel-right>") 'mac-mwheel-scroll)
-
-  (global-set-key (kbd "<right-margin> <wheel-down>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<right-margin> <wheel-up>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<right-margin> <wheel-left>") 'mac-mwheel-scroll)
-  (global-set-key (kbd "<right-margin> <wheel-right>") 'mac-mwheel-scroll)
-
-#+END_SRC
 
 
 * Machine-specific config
@@ -416,6 +378,7 @@ I really want to use an enum for this, but right now it's just a string. So perm
 
 
 #+END_SRC
+
 
 * Visual 
   
@@ -524,6 +487,51 @@ Start full-sized
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 #+END_SRC
 
+Make clicking in margins bring point to visual line.  
+
+#+BEGIN_SRC emacs-lisp
+
+  (defun set-point-to-margin-click (event) 
+    (interactive "e")
+    (let ((position (cddr (mouse-position)))
+         (clicked-window (posn-window (event-start event))))
+      (select-window clicked-window)
+      (let ((topline (car (cdr (window-body-edges)))))
+        (move-to-window-line 0)
+        (line-move-visual (- position topline)))))
+      
+	(global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
+	(global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
+
+#+END_SRC
+
+Let's get scrolling working in the margins too. I think this might be specific to the macport build I'm using; may break on office computer.
+
+If it breaks on office computer, I can just try mwheel-scroll without the modifier. 
+
+#+BEGIN_SRC emacs-lisp
+
+
+  (global-set-key (kbd "<left-margin> <wheel-down>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-up>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-left>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-right>") 'mac-mwheel-scroll)
+
+  (global-set-key (kbd "<right-margin> <wheel-down>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-up>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-left>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-right>") 'mac-mwheel-scroll)
+
+#+END_SRC
+
+** Line numbers
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'linum-relative)
+(require 'linum-relative)
+(setq linum-relative-backend 'display-line-numbers-mode)
+#+END_SRC
+
 
 ** Rainbow parens
 
@@ -572,10 +580,12 @@ Can't even begin to edit elisp without this, I want it in this mode noooow.
 
 ** Golden ratio
 
+I've decided this should be off by default.  It's useful but also annoying.  I'll bind it to a key. 
+
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'golden-ratio)
 (require 'golden-ratio)
-(golden-ratio-mode 1)
+; (golden-ratio-mode 1)
 #+END_SRC
 
 

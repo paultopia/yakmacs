@@ -28,14 +28,38 @@ I need to shadow the normal evil "u" binding too I think.  Something has simply 
 
 ** Global leader keybindings 
 
-*** Todo (org)
+will get keybindings for org roam in this namespace too when I implement it.
+
+*** Todo/Notes (org)
 #+BEGIN_SRC emacs-lisp
 (leader-binding 
-"t" '(:ignore t :which-key "Todo")
+"t" '(:ignore t :which-key "[T]odo/notes")
 "tn" 'org-capture
 "tv" 'org-todo-list
 )
 #+END_SRC
+
+*** Visual 
+
+do I want a "see all" function that makes every folded header in org and markdown and programming visible, plus widens any narrow?
+
+#+BEGIN_SRC emacs-lisp
+(leader-binding 
+"v" '(:ignore t :which-key "[V]isual")
+"vg" 'golden-ratio-mode
+"vl" '(:ignore t :which-key "[L]ines")
+"vln" 'display-line-numbers-mode
+"vlr" 'linum-relative-toggle
+"vlw" 'visual-line-mode
+"vc" '(:ignore t :which-key "[C]olors")
+"vcd" 'dark-mode
+"vcl" 'light-mode
+"vf" '(:ignore t :which-key "[F]onts")
+"vfc" 'code-font
+"vfp" 'prose-font
+)
+#+END_SRC
+
 
 *** Files
 
@@ -228,14 +252,25 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
 | command                           | function                                                        |
 |-----------------------------------+-----------------------------------------------------------------|
-| TODO                              |                                                                 |
+| TODO/Notes                        |                                                                 |
 |-----------------------------------+-----------------------------------------------------------------|
-| t n                               | Quick Note (org capture)                                        |
+| t n                               | Quick todo (org capture)                                        |
 | t v                               | View todos                                                      |
+|-----------------------------------+-----------------------------------------------------------------|
+| VISUAL                            |                                                                 |
+|-----------------------------------+-----------------------------------------------------------------|
+| v g                               | Golden ratio mode                                               |
+| v l n                             | Toggle line numbers (display-line-numbers-mode)                 |
+| v l r                             | Toggle relative line numbers                                   |
+| v l w                             | Toggle word wrap (visual-line-mode)                             |
+| v c d                             | Dark color theme                                                |
+| v c l                             | Light color theme                                               |
+| v f c                             | Code font (monospaced)                                          |
+| v f p                             | Prose font                                                      |
 |-----------------------------------+-----------------------------------------------------------------|
 | FILES AND PROJECTS                |                                                                 |
 |-----------------------------------+-----------------------------------------------------------------|
-| f f                               | find-files                                                      |
+| f f                               | find-file (open)                                                |
 | f s                               | save file                                                       |
 | f n                               | save to new name                                                |
 | f e d                             | open config file                                                |
