@@ -350,6 +350,19 @@ Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsc
 
 #+END_SRC
 
+Make clicking in margins work right(!)
+
+#+BEGIN_SRC emacs-lisp
+
+(defun set-point-to-margin-click ()
+  (interactive)
+  (message "test"))
+
+(global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
+(global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
+
+#+END_SRC
+
 
 * Machine-specific config
 
