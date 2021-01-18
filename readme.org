@@ -354,39 +354,14 @@ Make clicking in margins bring point to visual line.  Sometimes misses a bit
 
 #+BEGIN_SRC emacs-lisp
 
-      ;;   (defun set-point-to-margin-click ()
-      ;;     (interactive)
-      ;;     (let* ((mp (mouse-position))
-      ;;            (position (cddr mp))
-      ;;            (topline (car (cdr (window-body-edges))))
-      ;;            (window-position (- position topline))
-      ;;            (clickedin-window (window-at (cadr mp)
-      ;;                              (cddr mp)
-      ;;                              (car mp))))  
-      ;;       (select-window clickedin-window)
-      ;;       (goto-char (point-min))
-      ;;       (line-move-visual position)
-      ;; (print position)
-      ;; ))
-
-
-  (defun move-to-click-helper (pos)
-   (move-to-window-line 0)
-   (line-move-visual pos))
-
-  ;; (defun set-point-to-margin-click () 
-  ;;   (interactive)
-  ;;   (let ((position (cddr (mouse-position))))
-  ;;     (move-to-click-helper position)))
-
-
   (defun set-point-to-margin-click (event) 
     (interactive "e")
     (let ((position (cddr (mouse-position)))
          (clicked-window (posn-window (event-start event))))
       (select-window clicked-window)
       (let ((topline (car (cdr (window-body-edges)))))
-        (move-to-click-helper (- position topline)))))
+        (move-to-window-line 0)
+        (line-move-visual (- position topline)))))
       
 	(global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
 	(global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
