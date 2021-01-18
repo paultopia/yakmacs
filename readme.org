@@ -589,6 +589,7 @@ I've decided this should be off by default.  It's useful but also annoying.  I'l
 #+END_SRC
 
 
+
 * Git
 #+BEGIN_SRC emacs-lisp
 
@@ -649,8 +650,8 @@ Completions
 Line numbers
 
 #+BEGIN_SRC emacs-lisp
-(add-hook 'prog-mode-hook 'linum-mode)
-(setq linum-format "%4d \u2502 ")
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+; (setq linum-format "%4d \u2502 ")
 #+END_SRC
 
 Get rid of visual line mode just in case I switched in from markdown.

@@ -29,7 +29,7 @@ I don't like trailing hashes
 (setq markdown-asymmetric-header t)
 #+END_SRC
 
-De-uglify the line breaks and such
+De-uglify the line breaks and such.  Also, light mode, visual line mode, wide margins, and rainbow parens for the footnotes and references
 
 #+BEGIN_SRC emacs-lisp
 
@@ -47,6 +47,8 @@ De-uglify the line breaks and such
   (setq left-margin-width 16)
   (setq right-margin-width 16))
 (add-hook 'text-mode-hook 'text-margins)
+
+(add-hook 'markdown-mode-hook #'rainbow-delimiters-mode)
 
 #+END_SRC
 
