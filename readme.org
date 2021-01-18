@@ -354,17 +354,32 @@ Make clicking in margins bring point to visual line.  Sometimes misses a bit
 
 #+BEGIN_SRC emacs-lisp
 
-  (defun set-point-to-margin-click ()
-    (interactive)
-    (let* ((position (cddr (mouse-position)))
-           (topline (car (cdr (window-body-edges))))
-           (window-position (- position topline)))  ;; this is needed to have correct behavior in bottom window splits
-    (print position)
-      (goto-char (point-min))
-      (line-move-visual position)))
+  ;;   (defun set-point-to-margin-click ()
+  ;;     (interactive)
+  ;;     (let* ((mp (mouse-position))
+  ;;            (position (cddr mp))
+  ;;            (topline (car (cdr (window-body-edges))))
+  ;;            (window-position (- position topline))
+  ;;            (clickedin-window (window-at (cadr mp)
+  ;;                              (cddr mp)
+  ;;                              (car mp))))  
+  ;;       (select-window clickedin-window)
+  ;;       (goto-char (point-min))
+  ;;       (line-move-visual position)
+  ;; (print position)
+  ;; ))
 
-  (global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
-  (global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
+
+(defun set-point-to-margin-click () 
+(interactive)
+      (let ((position (cddr (mouse-position))))
+        (move-to-window-line 0)
+        (line-move-visual position))
+)
+
+
+    (global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
+    (global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
 
 #+END_SRC
 
@@ -377,6 +392,10 @@ Let's get scrolling working in the margins too.  It's imperfect: it moves too fa
   (global-set-key (kbd "<left-margin> <wheel-up>") 'mwheel-scroll)
 
 (window-body-edges)
+
+(window-at (cadr (mouse-position))
+           (cddr (mouse-position))
+           (car (mouse-position)))
 
 #+END_SRC
 
