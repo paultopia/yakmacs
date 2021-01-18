@@ -383,22 +383,10 @@ Make clicking in margins bring point to visual line.  Sometimes misses a bit
   (defun set-point-to-margin-click (event) 
     (interactive "e")
     (let ((position (cddr (mouse-position)))
-         (clicked-window (posn-window (event-start event)))
-)
+         (clicked-window (posn-window (event-start event))))
       (select-window clicked-window)
-
       (let ((topline (car (cdr (window-body-edges)))))
-
-      (move-to-click-helper position)
-      (if (equal topline 0)
-          (print "top window")
-          (print "not top window")
-      )
-
-)
-
-
-))
+        (move-to-click-helper (- position topline)))))
       
 	(global-set-key (kbd "<left-margin> <mouse-1>") 'set-point-to-margin-click)
 	(global-set-key (kbd "<right-margin> <mouse-1>") 'set-point-to-margin-click)
