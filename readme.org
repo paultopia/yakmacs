@@ -350,7 +350,7 @@ Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsc
 
 #+END_SRC
 
-Make clicking in margins bring point to visual line.  Sometimes misses a bit
+Make clicking in margins bring point to visual line.  
 
 #+BEGIN_SRC emacs-lisp
 
@@ -368,20 +368,22 @@ Make clicking in margins bring point to visual line.  Sometimes misses a bit
 
 #+END_SRC
 
-Let's get scrolling working in the margins too.  It's imperfect: it moves too fast, but it's better than just getting a damned error.
+Let's get scrolling working in the margins too. I think this might be specific to the macport build I'm using; may break on office computer.
 
+If it breaks on office computer, I can just try mwheel-scroll without the modifier. 
 
 #+BEGIN_SRC emacs-lisp
 
 
-  (global-set-key (kbd "<left-margin> <wheel-down>") 'mwheel-scroll)
-  (global-set-key (kbd "<left-margin> <wheel-up>") 'mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-down>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-up>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-left>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<left-margin> <wheel-right>") 'mac-mwheel-scroll)
 
-(window-body-edges)
-
-(window-at (cadr (mouse-position))
-           (cddr (mouse-position))
-           (car (mouse-position)))
+  (global-set-key (kbd "<right-margin> <wheel-down>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-up>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-left>") 'mac-mwheel-scroll)
+  (global-set-key (kbd "<right-margin> <wheel-right>") 'mac-mwheel-scroll)
 
 #+END_SRC
 
