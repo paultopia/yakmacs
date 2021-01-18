@@ -350,6 +350,8 @@ Find non-ascii text (swiped from [[https://www.emacswiki.org/emacs/FindingNonAsc
 
 #+END_SRC
 
+* Fix Margin Clicks and Scrolls
+
 Make clicking in margins bring point to visual line.  
 
 #+BEGIN_SRC emacs-lisp
