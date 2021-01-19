@@ -3,9 +3,9 @@
 
 "27.1"
 
-#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2021-01-18 14:09:49" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2021-01-18 14:09:49" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2021-01-18 13:57:18" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2021-01-18 13:54:11" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2021-01-18 13:54:11" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "gcmh" ("2020-12-27 14:47:04" ("emacs") (:type git :flavor melpa :host gitlab :repo "koral/gcmh" :package "gcmh" :local-repo "gcmh")) "exec-path-from-shell" ("2021-01-18 13:54:11" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "osx-trash" ("2021-01-18 13:54:12" ("emacs") (:type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash" :package "osx-trash" :local-repo "osx-trash")) "undo-fu" ("2021-01-18 13:54:12" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "restart-emacs" ("2021-01-18 13:54:12" nil (:type git :flavor melpa :host github :repo "iqbalansari/restart-emacs" :package "restart-emacs" :local-repo "restart-emacs")) "dash" ("2021-01-18 13:54:12" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "s" ("2021-01-18 13:54:12" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "helpful" ("2021-01-18 13:54:12" ("emacs" "dash" "dash-functional" "s" "f" "elisp-refs") (:type git :flavor melpa :host github :repo "Wilfred/helpful" :package "helpful" :local-repo "helpful")) "dash-functional" ("2021-01-18 13:54:12" ("dash" "emacs") (:flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :package "dash-functional" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "f" ("2021-01-18 13:54:12" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "elisp-refs" ("2021-01-18 13:54:12" ("dash" "s") (:type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs" :package "elisp-refs" :local-repo "elisp-refs")) "zone-nyan" ("2020-12-28 11:17:15" ("esxml") (:type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git" :package "zone-nyan" :local-repo "zone-nyan")) "esxml" ("2020-12-28 11:17:15" nil (:type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml" :package "esxml" :local-repo "esxml")) "counsel" ("2021-01-18 13:54:12" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2021-01-18 13:54:12" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2021-01-18 13:54:12" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "projectile" ("2021-01-18 13:54:12" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "pkg-info" ("2021-01-18 13:54:12" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2021-01-18 13:54:12" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "which-key" ("2021-01-18 13:54:12" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2021-01-18 13:54:12" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "avy-menu" ("2021-01-18 13:54:12" ("emacs" "avy") (:type git :flavor melpa :host github :repo "mrkkrp/avy-menu" :package "avy-menu" :local-repo "avy-menu")) "evil" ("2021-01-18 13:54:12" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2021-01-18 13:54:12" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2021-01-18 13:54:12" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2021-01-18 13:54:12" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2021-01-18 13:54:12" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2021-01-18 13:54:12" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2021-01-18 13:54:12" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "dashboard" ("2021-01-18 13:54:12" ("emacs" "page-break-lines") (:type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "page-break-lines" ("2021-01-18 13:54:12" ("emacs") (:type git :flavor melpa :host github :repo "purcell/page-break-lines" :package "page-break-lines" :local-repo "page-break-lines")) "leuven-theme" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2021-01-18 13:54:13" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "nyan-mode" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "golden-ratio" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "magit" ("2021-01-18 13:54:13" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2021-01-18 13:54:13" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "git-commit" ("2021-01-18 13:54:13" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2021-01-18 13:54:13" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2021-01-18 13:54:13" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2021-01-18 13:54:13" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2021-01-18 13:54:13" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2021-01-18 13:54:13" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2021-01-18 13:54:13" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2021-01-18 13:54:14" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "let-alist" ("2021-01-18 13:54:14" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2021-01-18 13:54:14" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2021-01-18 13:54:14" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "markdown-mode" ("2021-01-18 13:54:14" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "flyspell-correct" ("2021-01-18 13:54:14" ("emacs") (:type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct" :package "flyspell-correct" :local-repo "flyspell-correct")) "flyspell-correct-avy-menu" ("2021-01-18 13:54:14" ("flyspell-correct" "avy-menu" "emacs") (:flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :package "flyspell-correct-avy-menu" :local-repo "flyspell-correct" :type git :repo "d12frosted/flyspell-correct" :host github)) "origami" ("2021-01-18 13:54:14" ("s" "dash" "emacs" "cl-lib") (:type git :flavor melpa :host github :repo "gregsexton/origami.el" :package "origami" :local-repo "origami.el")) "yaml-mode" ("2021-01-18 13:54:14" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "general" ("2021-01-18 13:54:14" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "counsel-jq" ("2021-01-18 13:54:14" nil (:type git :flavor melpa :host github :repo "200ok-ch/counsel-jq" :package "counsel-jq" :local-repo "counsel-jq")) "pyvenv" ("2021-01-18 13:54:14" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "poetry" ("2021-01-18 13:54:14" ("transient" "pyvenv" "emacs") (:type git :flavor melpa :host github :repo "galaunay/poetry.el" :package "poetry" :local-repo "poetry.el")) "company-anaconda" ("2021-01-18 13:54:14" ("company" "anaconda-mode" "cl-lib" "dash" "s") (:type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda" :package "company-anaconda" :local-repo "company-anaconda")) "linum-relative" ("2021-01-18 13:54:13" nil (:type git :flavor melpa :host github :repo "coldnew/linum-relative" :package "linum-relative" :local-repo "linum-relative")) "minimap" ("2021-01-18 13:57:18" nil (:type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git")) :package "minimap" :local-repo "minimap")) "sublimity" ("2021-01-18 14:09:50" ("emacs") (:type git :flavor melpa :host github :repo "zk-phi/sublimity" :package "sublimity" :local-repo "sublimity"))))
+#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2021-01-18 19:50:16" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2021-01-18 19:50:17" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2021-01-18 19:50:17" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2021-01-18 19:50:17" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2021-01-18 19:50:17" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "gcmh" ("2020-12-27 14:47:04" ("emacs") (:type git :flavor melpa :host gitlab :repo "koral/gcmh" :package "gcmh" :local-repo "gcmh")) "exec-path-from-shell" ("2021-01-18 19:50:17" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "osx-trash" ("2021-01-18 19:50:19" ("emacs") (:type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash" :package "osx-trash" :local-repo "osx-trash")) "undo-fu" ("2021-01-18 19:50:19" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "restart-emacs" ("2021-01-18 19:50:19" nil (:type git :flavor melpa :host github :repo "iqbalansari/restart-emacs" :package "restart-emacs" :local-repo "restart-emacs")) "dash" ("2021-01-18 19:50:19" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "s" ("2021-01-18 19:50:19" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "helpful" ("2021-01-18 19:50:19" ("emacs" "dash" "dash-functional" "s" "f" "elisp-refs") (:type git :flavor melpa :host github :repo "Wilfred/helpful" :package "helpful" :local-repo "helpful")) "dash-functional" ("2021-01-18 19:50:19" ("dash" "emacs") (:flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :package "dash-functional" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "f" ("2021-01-18 19:50:19" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "elisp-refs" ("2021-01-18 19:50:19" ("dash" "s") (:type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs" :package "elisp-refs" :local-repo "elisp-refs")) "zone-nyan" ("2020-12-28 11:17:15" ("esxml") (:type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git" :package "zone-nyan" :local-repo "zone-nyan")) "esxml" ("2020-12-28 11:17:15" nil (:type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml" :package "esxml" :local-repo "esxml")) "counsel" ("2021-01-18 19:50:19" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2021-01-18 19:50:19" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2021-01-18 19:50:19" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "projectile" ("2021-01-18 19:50:19" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "pkg-info" ("2021-01-18 19:50:19" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2021-01-18 19:50:19" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "which-key" ("2021-01-18 19:50:19" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2021-01-18 19:50:19" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "avy-menu" ("2021-01-18 19:50:19" ("emacs" "avy") (:type git :flavor melpa :host github :repo "mrkkrp/avy-menu" :package "avy-menu" :local-repo "avy-menu")) "evil" ("2021-01-18 19:50:19" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2021-01-18 19:50:19" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2021-01-18 19:50:19" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2021-01-18 19:50:19" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2021-01-18 19:50:19" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2021-01-18 19:50:19" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2021-01-18 19:50:19" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "dashboard" ("2021-01-18 19:50:19" ("emacs" "page-break-lines") (:type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "page-break-lines" ("2021-01-18 19:50:19" ("emacs") (:type git :flavor melpa :host github :repo "purcell/page-break-lines" :package "page-break-lines" :local-repo "page-break-lines")) "leuven-theme" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2021-01-18 19:50:20" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "nyan-mode" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "golden-ratio" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "magit" ("2021-01-18 19:50:20" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2021-01-18 19:50:20" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "git-commit" ("2021-01-18 19:50:20" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2021-01-18 19:50:20" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2021-01-18 19:50:20" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2021-01-18 19:50:20" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2021-01-18 19:50:20" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2021-01-18 19:50:20" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2021-01-18 19:50:20" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2021-01-18 19:50:20" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "let-alist" ("2021-01-18 19:50:20" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2021-01-18 19:50:20" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2021-01-18 19:50:20" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "markdown-mode" ("2021-01-18 19:50:22" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "flyspell-correct" ("2021-01-18 19:50:22" ("emacs") (:type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct" :package "flyspell-correct" :local-repo "flyspell-correct")) "flyspell-correct-avy-menu" ("2021-01-18 19:50:22" ("flyspell-correct" "avy-menu" "emacs") (:flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :package "flyspell-correct-avy-menu" :local-repo "flyspell-correct" :type git :repo "d12frosted/flyspell-correct" :host github)) "origami" ("2021-01-18 19:50:22" ("s" "dash" "emacs" "cl-lib") (:type git :flavor melpa :host github :repo "gregsexton/origami.el" :package "origami" :local-repo "origami.el")) "yaml-mode" ("2021-01-18 19:50:22" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "general" ("2021-01-18 19:50:22" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "counsel-jq" ("2021-01-18 19:50:22" nil (:type git :flavor melpa :host github :repo "200ok-ch/counsel-jq" :package "counsel-jq" :local-repo "counsel-jq")) "pyvenv" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "poetry" ("2021-01-18 19:50:20" ("transient" "pyvenv" "emacs") (:type git :flavor melpa :host github :repo "galaunay/poetry.el" :package "poetry" :local-repo "poetry.el")) "company-anaconda" ("2021-01-18 19:50:20" ("company" "anaconda-mode" "cl-lib" "dash" "s") (:type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda" :package "company-anaconda" :local-repo "company-anaconda")) "linum-relative" ("2021-01-18 19:50:20" nil (:type git :flavor melpa :host github :repo "coldnew/linum-relative" :package "linum-relative" :local-repo "linum-relative")) "minimap" ("2021-01-18 13:57:18" nil (:type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git")) :package "minimap" :local-repo "minimap")) "sublimity" ("2021-01-18 14:09:50" ("emacs") (:type git :flavor melpa :host github :repo "zk-phi/sublimity" :package "sublimity" :local-repo "sublimity")) "org-roam" ("2021-01-18 19:50:22" ("emacs" "dash" "f" "s" "org" "emacsql" "emacsql-sqlite3") (:type git :flavor melpa :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2021-01-18 19:50:22" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :package "org")) "emacsql" ("2021-01-18 19:50:22" ("emacs") (:type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql" :package "emacsql" :local-repo "emacsql")) "emacsql-sqlite3" ("2021-01-18 19:50:22" ("emacs" "emacsql") (:type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3" :package "emacsql-sqlite3" :local-repo "emacsql-sqlite3"))))
 
-#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-autoloads straight) (autoload 'straight-get-recipe "straight" "Interactively select a recipe from one of the recipe repositories.
+#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-autoloads straight) (autoload 'straight-get-recipe "straight" "Interactively select a recipe from one of the recipe repositories.
 All recipe repositories in `straight-recipe-repositories' will
 first be cloned. After the recipe is selected, it will be copied
 to the kill ring. With a prefix argument, first prompt for a
@@ -4153,10 +4153,500 @@ positive, and disable it if ARG is zero or negative.  If called
 from Lisp, also enable the mode if ARG is omitted or nil, and
 toggle it if ARG is `toggle'; disable the mode otherwise.
 
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity" '("sublimity-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-attractive" '("split-window" "sublimity-attractive-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-map" '("sublimity-map-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-scroll" '("sublimity-scroll-"))) (provide 'sublimity-autoloads))))
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity" '("sublimity-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-attractive" '("split-window" "sublimity-attractive-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-map" '("sublimity-map-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-scroll" '("sublimity-scroll-"))) (provide 'sublimity-autoloads)) "org" ((ob-comint org-ctags ox-texinfo org-refile org-num ol-mhe ob-shell org-attach ob-C org-entities ob-dot ob-sql ol-eww org-datetree org-macro ob-eval ob-abc ob-groovy ob-shen ox-icalendar org-mobile ob-processing ob-picolisp ob-octave org-table ox-html ol ob-plantuml ol-docview ob-exp ob-ditaa ob-scheme ol-gnus org-mouse org-inlinetask ob-fortran ob-haskell org-id ob-vala ob-css org-compat ob-coq org-autoloads org-element ob ob-calc ob-python org-agenda ob-ocaml org-tempo ob-ref ob-tangle ob-lilypond ob-clojure org-lint ol-eshell ox-latex org-pcomplete org-duration ox-beamer ol-info ob-ebnf ob-table ol-rmail ox-odt org-protocol ob-latex org-archive ol-w3m ob-sed ob-perl ob-eshell org-plot org-clock ob-awk ob-stan org-list ob-sqlite org-macs ox-man ol-bbdb org-loaddefs ol-irc org ob-J ob-ledger org-capture ob-asymptote org-colview org-goto ob-R ob-ruby ob-sass ob-matlab ox ob-core ob-makefile org-timer ob-org ob-forth ob-io ob-lob ob-gnuplot org-faces org-habit ob-js ob-screen org-footnote ob-mscgen ol-bibtex ob-hledger ob-java ob-lua ox-md org-install ox-ascii org-keys ob-lisp org-attach-git ob-emacs-lisp ob-maxima org-crypt org-feed org-src ox-org org-indent ox-publish) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-C" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-J" '("obj-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-R" '("ob-R-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-abc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-asymptote" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-awk" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-calc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-clojure" '("ob-clojure-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-comint" '("org-babel-comint-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("coq-program-name" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-core" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-css" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ditaa" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-dot" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ebnf" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-emacs-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eshell" '("ob-eshell-session-live-p" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eval" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-exp" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-forth" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-fortran" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("*org-babel-gnuplot-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-groovy" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-haskell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-hledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-io" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-java" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-js" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-latex" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("lilypond-mode" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lob" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lua" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-makefile" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-maxima" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-mscgen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ocaml" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-octave" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-org" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-perl" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-picolisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-plantuml" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-processing" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-python" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ref" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ruby" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sass" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-scheme" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-screen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sed" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sql" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sqlite" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-stan" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-table" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-tangle" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-vala" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bbdb" '("org-bbdb-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bibtex" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-docview" '("org-docview-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eshell" '("org-eshell-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eww" '("org-eww-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-gnus" '("org-gnus-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-info" '("org-info-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-irc" '("org-irc-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-mhe" '("org-mhe-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-rmail" '("org-rmail-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-w3m" '("org-w3m-"))) (autoload 'org-babel-do-load-languages "org" "Load the languages defined in `org-babel-load-languages'.
 
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" nil "exec-path-from-shell" nil "cl-lib" nil "osx-trash" nil "undo-fu" nil "restart-emacs" nil "dash" nil "s" nil "helpful" nil "dash-functional" nil "f" nil "elisp-refs" nil "zone-nyan" nil "esxml" nil "counsel" nil "swiper" nil "ivy" nil "projectile" nil "pkg-info" nil "epl" nil "which-key" nil "avy" nil "avy-menu" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "dashboard" nil "page-break-lines" nil "leuven-theme" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "nyan-mode" nil "golden-ratio" nil "magit" nil "async" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "markdown-mode" nil "flyspell-correct" nil "flyspell-correct-avy-menu" nil "origami" nil "yaml-mode" nil "general" nil "counsel-jq" nil "pyvenv" nil "poetry" nil "company-anaconda" nil "linum-relative" nil "minimap" nil "sublimity" nil)) melpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" (gcmh :type git :flavor melpa :host gitlab :repo "koral/gcmh") "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "osx-trash" (osx-trash :type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu") "restart-emacs" (restart-emacs :type git :flavor melpa :host github :repo "iqbalansari/restart-emacs") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "helpful" (helpful :type git :flavor melpa :host github :repo "Wilfred/helpful") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "elisp-refs" (elisp-refs :type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs") "zone-nyan" (zone-nyan :type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git") "esxml" (esxml :type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml") "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "avy-menu" (avy-menu :type git :flavor melpa :host github :repo "mrkkrp/avy-menu") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "dashboard" (dashboard :type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "page-break-lines" (page-break-lines :type git :flavor melpa :host github :repo "purcell/page-break-lines") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "flyspell-correct" (flyspell-correct :type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct") "flyspell-correct-avy-menu" (flyspell-correct-avy-menu :type git :flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :host github :repo "d12frosted/flyspell-correct") "origami" (origami :type git :flavor melpa :host github :repo "gregsexton/origami.el") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "counsel-jq" (counsel-jq :type git :flavor melpa :host github :repo "200ok-ch/counsel-jq") "pyvenv" (pyvenv :type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv") "poetry" (poetry :type git :flavor melpa :host github :repo "galaunay/poetry.el") "company-anaconda" (company-anaconda :type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda") "linum-relative" (linum-relative :type git :flavor melpa :host github :repo "coldnew/linum-relative") "minimap" nil "sublimity" (sublimity :type git :flavor melpa :host github :repo "zk-phi/sublimity"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))) "minimap" (minimap :type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
+(fn SYM VALUE)" nil nil) (autoload 'org-babel-load-file "org" "Load Emacs Lisp source code blocks in the Org FILE.
+This function exports the source code using `org-babel-tangle'
+and then loads the resulting file using `load-file'.  With
+optional prefix argument COMPILE, the tangled Emacs Lisp file is
+byte-compiled before it is loaded.
 
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "osx-trash" "undo-fu" "restart-emacs" "dash" "s" "helpful" "dash-functional" "f" "elisp-refs" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "which-key" "avy" "avy-menu" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "dashboard" "page-break-lines" "leuven-theme" "linum-relative" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "nyan-mode" "golden-ratio" "magit" "async" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "company-anaconda" "pyvenv" "poetry" "markdown-mode" "flyspell-correct" "flyspell-correct-avy-menu" "origami" "counsel-jq" "yaml-mode" "general" "minimap" "sublimity")
+(fn FILE &optional COMPILE)" t nil) (autoload 'org-version "org" "Show the Org version.
+Interactively, or when MESSAGE is non-nil, show it in echo area.
+With prefix argument, or when HERE is non-nil, insert it at point.
+In non-interactive uses, a reduced version string is output unless
+FULL is given.
+
+(fn &optional HERE FULL MESSAGE)" t nil) (autoload 'org-load-modules-maybe "org" "Load all extensions listed in `org-modules'.
+
+(fn &optional FORCE)" nil nil) (autoload 'org-clock-persistence-insinuate "org" "Set up hooks for clock persistence." nil nil) (autoload 'org-mode "org" "Outline-based notes management and organizer, alias
+\"Carsten's outline-mode for keeping track of everything.\"
+
+Org mode develops organizational tasks around a NOTES file which
+contains information about projects as plain text.  Org mode is
+implemented on top of Outline mode, which is ideal to keep the content
+of large files well structured.  It supports ToDo items, deadlines and
+time stamps, which magically appear in the diary listing of the Emacs
+calendar.  Tables are easily created with a built-in table editor.
+Plain text URL-like links connect to websites, emails (VM), Usenet
+messages (Gnus), BBDB entries, and any files related to the project.
+For printing and sharing of notes, an Org file (or a part of it)
+can be exported as a structured ASCII or HTML file.
+
+The following commands are available:
+
+\\{org-mode-map}
+
+(fn)" t nil) (autoload 'org-cycle "org" "TAB-action and visibility cycling for Org mode.
+
+This is the command invoked in Org mode by the `TAB' key.  Its main
+purpose is outline visibility cycling, but it also invokes other actions
+in special contexts.
+
+When this function is called with a `\\[universal-argument]' prefix, rotate the entire
+buffer through 3 states (global cycling)
+  1. OVERVIEW: Show only top-level headlines.
+  2. CONTENTS: Show all headlines of all levels, but no body text.
+  3. SHOW ALL: Show everything.
+
+With a `\\[universal-argument] \\[universal-argument]' prefix argument, switch to the startup visibility,
+determined by the variable `org-startup-folded', and by any VISIBILITY
+properties in the buffer.
+
+With a `\\[universal-argument] \\[universal-argument] \\[universal-argument]' prefix argument, show the entire buffer, including
+any drawers.
+
+When inside a table, re-align the table and move to the next field.
+
+When point is at the beginning of a headline, rotate the subtree started
+by this line through 3 different states (local cycling)
+  1. FOLDED:   Only the main headline is shown.
+  2. CHILDREN: The main headline and the direct children are shown.
+               From this state, you can move to one of the children
+               and zoom in further.
+  3. SUBTREE:  Show the entire subtree, including body text.
+If there is no subtree, switch directly from CHILDREN to FOLDED.
+
+When point is at the beginning of an empty headline and the variable
+`org-cycle-level-after-item/entry-creation' is set, cycle the level
+of the headline by demoting and promoting it to likely levels.  This
+speeds up creation document structure by pressing `TAB' once or several
+times right after creating a new headline.
+
+When there is a numeric prefix, go up to a heading with level ARG, do
+a `show-subtree' and return to the previous cursor position.  If ARG
+is negative, go up that many levels.
+
+When point is not at the beginning of a headline, execute the global
+binding for `TAB', which is re-indenting the line.  See the option
+`org-cycle-emulate-tab' for details.
+
+As a special case, if point is at the very beginning of the buffer, if
+there is no headline there, and if the variable `org-cycle-global-at-bob'
+is non-nil, this function acts as if called with prefix argument (`\\[universal-argument] TAB',
+same as `S-TAB') also when called without prefix argument.
+
+(fn &optional ARG)" t nil) (autoload 'org-global-cycle "org" "Cycle the global visibility.  For details see `org-cycle'.
+With `\\[universal-argument]' prefix ARG, switch to startup visibility.
+With a numeric prefix, show all headlines up to that level.
+
+(fn &optional ARG)" t nil) (autoload 'org-run-like-in-org-mode "org" "Run a command, pretending that the current buffer is in Org mode.
+This will temporarily bind local variables that are typically bound in
+Org mode to the values they have in Org mode, and then interactively
+call CMD.
+
+(fn CMD)" nil nil) (autoload 'org-open-file "org" "Open the file at PATH.
+First, this expands any special file name abbreviations.  Then the
+configuration variable `org-file-apps' is checked if it contains an
+entry for this file type, and if yes, the corresponding command is launched.
+
+If no application is found, Emacs simply visits the file.
+
+With optional prefix argument IN-EMACS, Emacs will visit the file.
+With a double \\[universal-argument] \\[universal-argument] prefix arg, Org tries to avoid opening in Emacs
+and to use an external application to visit the file.
+
+Optional LINE specifies a line to go to, optional SEARCH a string
+to search for.  If LINE or SEARCH is given, the file will be
+opened in Emacs, unless an entry from `org-file-apps' that makes
+use of groups in a regexp matches.
+
+If you want to change the way frames are used when following a
+link, please customize `org-link-frame-setup'.
+
+If the file does not exist, throw an error.
+
+(fn PATH &optional IN-EMACS LINE SEARCH)" nil nil) (autoload 'org-open-at-point-global "org" "Follow a link or a time-stamp like Org mode does.
+Also follow links and emails as seen by `thing-at-point'.
+This command can be called in any mode to follow an external
+link or a time-stamp that has Org mode syntax.  Its behavior
+is undefined when called on internal links like fuzzy links.
+Raise a user error when there is nothing to follow." t nil) (autoload 'org-offer-links-in-entry "org" "Offer links in the current entry and return the selected link.
+If there is only one link, return it.
+If NTH is an integer, return the NTH link found.
+If ZERO is a string, check also this string for a link, and if
+there is one, return it.
+
+(fn BUFFER MARKER &optional NTH ZERO)" nil nil) (autoload 'org-switchb "org" "Switch between Org buffers.
+
+With `\\[universal-argument]' prefix, restrict available buffers to files.
+
+With `\\[universal-argument] \\[universal-argument]' prefix, restrict available buffers to agenda files.
+
+(fn &optional ARG)" t nil) (autoload 'org-cycle-agenda-files "org" "Cycle through the files in `org-agenda-files'.
+If the current buffer visits an agenda file, find the next one in the list.
+If the current buffer does not, find the first agenda file." t nil) (autoload 'org-submit-bug-report "org" "Submit a bug report on Org via mail.
+
+Don't hesitate to report any problems or inaccurate documentation.
+
+If you don't have setup sending mail from (X)Emacs, please copy the
+output buffer into your mail program, as it gives us important
+information about your Org version and configuration." t nil) (autoload 'org-reload "org" "Reload all Org Lisp files.
+With prefix arg UNCOMPILED, load the uncompiled versions.
+
+(fn &optional UNCOMPILED)" t nil) (autoload 'org-customize "org" "Call the customize function with org as argument." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org" '("org-" "turn-on-org-cdlatex"))) (autoload 'org-toggle-sticky-agenda "org-agenda" "Toggle `org-agenda-sticky'.
+
+(fn &optional ARG)" t nil) (autoload 'org-agenda "org-agenda" "Dispatch agenda commands to collect entries to the agenda buffer.
+Prompts for a command to execute.  Any prefix arg will be passed
+on to the selected command.  The default selections are:
+
+a     Call `org-agenda-list' to display the agenda for current day or week.
+t     Call `org-todo-list' to display the global todo list.
+T     Call `org-todo-list' to display the global todo list, select only
+      entries with a specific TODO keyword (the user gets a prompt).
+m     Call `org-tags-view' to display headlines with tags matching
+      a condition  (the user is prompted for the condition).
+M     Like `m', but select only TODO entries, no ordinary headlines.
+e     Export views to associated files.
+s     Search entries for keywords.
+S     Search entries for keywords, only with TODO keywords.
+/     Multi occur across all agenda files and also files listed
+      in `org-agenda-text-search-extra-files'.
+<     Restrict agenda commands to buffer, subtree, or region.
+      Press several times to get the desired effect.
+>     Remove a previous restriction.
+#     List \"stuck\" projects.
+!     Configure what \"stuck\" means.
+C     Configure custom agenda commands.
+
+More commands can be added by configuring the variable
+`org-agenda-custom-commands'.  In particular, specific tags and TODO keyword
+searches can be pre-defined in this way.
+
+If the current buffer is in Org mode and visiting a file, you can also
+first press `<' once to indicate that the agenda should be temporarily
+(until the next use of `\\[org-agenda]') restricted to the current file.
+Pressing `<' twice means to restrict to the current subtree or region
+(if active).
+
+(fn &optional ARG ORG-KEYS RESTRICTION)" t nil) (autoload 'org-batch-agenda "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
+If CMD-KEY is a string of length 1, it is used as a key in
+`org-agenda-custom-commands' and triggers this command.  If it is a
+longer string it is used as a tags/todo match string.
+Parameters are alternating variable names and values that will be bound
+before running the agenda command.
+
+(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload 'org-batch-agenda-csv "org-agenda" "Run an agenda command in batch mode and send the result to STDOUT.
+If CMD-KEY is a string of length 1, it is used as a key in
+`org-agenda-custom-commands' and triggers this command.  If it is a
+longer string it is used as a tags/todo match string.
+Parameters are alternating variable names and values that will be bound
+before running the agenda command.
+
+The output gives a line for each selected agenda item.  Each
+item is a list of comma-separated values, like this:
+
+category,head,type,todo,tags,date,time,extra,priority-l,priority-n
+
+category     The category of the item
+head         The headline, without TODO kwd, TAGS and PRIORITY
+type         The type of the agenda entry, can be
+                todo               selected in TODO match
+                tagsmatch          selected in tags match
+                diary              imported from diary
+                deadline           a deadline on given date
+                scheduled          scheduled on given date
+                timestamp          entry has timestamp on given date
+                closed             entry was closed on given date
+                upcoming-deadline  warning about deadline
+                past-scheduled     forwarded scheduled item
+                block              entry has date block including g. date
+todo         The todo keyword, if any
+tags         All tags including inherited ones, separated by colons
+date         The relevant date, like 2007-2-14
+time         The time, like 15:00-16:50
+extra        String with extra planning info
+priority-l   The priority letter if any was given
+priority-n   The computed numerical priority
+agenda-day   The day in the agenda where this is listed
+
+(fn CMD-KEY &rest PARAMETERS)" nil t) (autoload 'org-store-agenda-views "org-agenda" "Store agenda views.
+
+(fn &rest PARAMETERS)" t nil) (autoload 'org-batch-store-agenda-views "org-agenda" "Run all custom agenda commands that have a file argument.
+
+(fn &rest PARAMETERS)" nil t) (autoload 'org-agenda-list "org-agenda" "Produce a daily/weekly view from all files in variable `org-agenda-files'.
+The view will be for the current day or week, but from the overview buffer
+you will be able to go to other days/weeks.
+
+With a numeric prefix argument in an interactive call, the agenda will
+span ARG days.  Lisp programs should instead specify SPAN to change
+the number of days.  SPAN defaults to `org-agenda-span'.
+
+START-DAY defaults to TODAY, or to the most recent match for the weekday
+given in `org-agenda-start-on-weekday'.
+
+When WITH-HOUR is non-nil, only include scheduled and deadline
+items if they have an hour specification like [h]h:mm.
+
+(fn &optional ARG START-DAY SPAN WITH-HOUR)" t nil) (autoload 'org-search-view "org-agenda" "Show all entries that contain a phrase or words or regular expressions.
+
+With optional prefix argument TODO-ONLY, only consider entries that are
+TODO entries.  The argument STRING can be used to pass a default search
+string into this function.  If EDIT-AT is non-nil, it means that the
+user should get a chance to edit this string, with cursor at position
+EDIT-AT.
+
+The search string can be viewed either as a phrase that should be found as
+is, or it can be broken into a number of snippets, each of which must match
+in a Boolean way to select an entry.  The default depends on the variable
+`org-agenda-search-view-always-boolean'.
+Even if this is turned off (the default) you can always switch to
+Boolean search dynamically by preceding the first word with  \"+\" or \"-\".
+
+The default is a direct search of the whole phrase, where each space in
+the search string can expand to an arbitrary amount of whitespace,
+including newlines.
+
+If using a Boolean search, the search string is split on whitespace and
+each snippet is searched separately, with logical AND to select an entry.
+Words prefixed with a minus must *not* occur in the entry.  Words without
+a prefix or prefixed with a plus must occur in the entry.  Matching is
+case-insensitive.  Words are enclosed by word delimiters (i.e. they must
+match whole words, not parts of a word) if
+`org-agenda-search-view-force-full-words' is set (default is nil).
+
+Boolean search snippets enclosed by curly braces are interpreted as
+regular expressions that must or (when preceded with \"-\") must not
+match in the entry.  Snippets enclosed into double quotes will be taken
+as a whole, to include whitespace.
+
+- If the search string starts with an asterisk, search only in headlines.
+- If (possibly after the leading star) the search string starts with an
+  exclamation mark, this also means to look at TODO entries only, an effect
+  that can also be achieved with a prefix argument.
+- If (possibly after star and exclamation mark) the search string starts
+  with a colon, this will mean that the (non-regexp) snippets of the
+  Boolean search must match as full words.
+
+This command searches the agenda files, and in addition the files
+listed in `org-agenda-text-search-extra-files' unless a restriction lock
+is active.
+
+(fn &optional TODO-ONLY STRING EDIT-AT)" t nil) (autoload 'org-todo-list "org-agenda" "Show all (not done) TODO entries from all agenda file in a single list.
+The prefix arg can be used to select a specific TODO keyword and limit
+the list to these.  When using `\\[universal-argument]', you will be prompted
+for a keyword.  A numeric prefix directly selects the Nth keyword in
+`org-todo-keywords-1'.
+
+(fn &optional ARG)" t nil) (autoload 'org-tags-view "org-agenda" "Show all headlines for all `org-agenda-files' matching a TAGS criterion.
+The prefix arg TODO-ONLY limits the search to TODO entries.
+
+(fn &optional TODO-ONLY MATCH)" t nil) (autoload 'org-agenda-list-stuck-projects "org-agenda" "Create agenda view for projects that are stuck.
+Stuck projects are project that have no next actions.  For the definitions
+of what a project is and how to check if it stuck, customize the variable
+`org-stuck-projects'.
+
+(fn &rest IGNORE)" t nil) (autoload 'org-diary "org-agenda" "Return diary information from org files.
+This function can be used in a \"sexp\" diary entry in the Emacs calendar.
+It accesses org files and extracts information from those files to be
+listed in the diary.  The function accepts arguments specifying what
+items should be listed.  For a list of arguments allowed here, see the
+variable `org-agenda-entry-types'.
+
+The call in the diary file should look like this:
+
+   &%%(org-diary) ~/path/to/some/orgfile.org
+
+Use a separate line for each org file to check.  Or, if you omit the file name,
+all files listed in `org-agenda-files' will be checked automatically:
+
+   &%%(org-diary)
+
+If you don't give any arguments (as in the example above), the default value
+of `org-agenda-entry-types' is used: (:deadline :scheduled :timestamp :sexp).
+So the example above may also be written as
+
+   &%%(org-diary :deadline :timestamp :sexp :scheduled)
+
+The function expects the lisp variables `entry' and `date' to be provided
+by the caller, because this is how the calendar works.  Don't use this
+function from a program - use `org-agenda-get-day-entries' instead.
+
+(fn &rest ARGS)" nil nil) (autoload 'org-agenda-check-for-timestamp-as-reason-to-ignore-todo-item "org-agenda" "Do we have a reason to ignore this TODO entry because it has a time stamp?
+
+(fn &optional END)" nil nil) (autoload 'org-agenda-set-restriction-lock "org-agenda" "Set restriction lock for agenda to current subtree or file.
+When in a restricted subtree, remove it.
+
+The restriction will span over the entire file if TYPE is `file',
+or if type is '(4), or if the cursor is before the first headline
+in the file. Otherwise, only apply the restriction to the current
+subtree.
+
+(fn &optional TYPE)" t nil) (autoload 'org-calendar-goto-agenda "org-agenda" "Compute the Org agenda for the calendar date displayed at the cursor.
+This is a command that has to be installed in `calendar-mode-map'." t nil) (autoload 'org-agenda-to-appt "org-agenda" "Activate appointments found in `org-agenda-files'.
+
+With a `\\[universal-argument]' prefix, refresh the list of appointments.
+
+If FILTER is t, interactively prompt the user for a regular
+expression, and filter out entries that don't match it.
+
+If FILTER is a string, use this string as a regular expression
+for filtering entries out.
+
+If FILTER is a function, filter out entries against which
+calling the function returns nil.  This function takes one
+argument: an entry from `org-agenda-get-day-entries'.
+
+FILTER can also be an alist with the car of each cell being
+either `headline' or `category'.  For example:
+
+  \\='((headline \"IMPORTANT\")
+    (category \"Work\"))
+
+will only add headlines containing IMPORTANT or headlines
+belonging to the \"Work\" category.
+
+ARGS are symbols indicating what kind of entries to consider.
+By default `org-agenda-to-appt' will use :deadline*, :scheduled*
+(i.e., deadlines and scheduled items with a hh:mm specification)
+and :timestamp entries.  See the docstring of `org-diary' for
+details and examples.
+
+If an entry has a APPT_WARNTIME property, its value will be used
+to override `appt-message-warning-time'.
+
+(fn &optional REFRESH FILTER &rest ARGS)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-agenda" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-archive" '("org-a"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-attach" '("org-attach-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-attach-git" '("org-attach-git-"))) (autoload 'org-capture-string "org-capture" "Capture STRING with the template selected by KEYS.
+
+(fn STRING &optional KEYS)" t nil) (autoload 'org-capture "org-capture" "Capture something.
+\\<org-capture-mode-map>
+This will let you select a template from `org-capture-templates', and
+then file the newly captured information.  The text is immediately
+inserted at the target location, and an indirect buffer is shown where
+you can edit it.  Pressing `\\[org-capture-finalize]' brings you back to the previous
+state of Emacs, so that you can continue your work.
+
+When called interactively with a `\\[universal-argument]' prefix argument GOTO, don't
+capture anything, just go to the file/headline where the selected
+template stores its notes.
+
+With a `\\[universal-argument] \\[universal-argument]' prefix argument, go to the last note stored.
+
+When called with a `C-0' (zero) prefix, insert a template at point.
+
+When called with a `C-1' (one) prefix, force prompting for a date when
+a datetree entry is made.
+
+ELisp programs can set KEYS to a string associated with a template
+in `org-capture-templates'.  In this case, interactive selection
+will be bypassed.
+
+If `org-capture-use-agenda-date' is non-nil, capturing from the
+agenda will use the date at point as the default date.  Then, a
+`C-1' prefix will tell the capture process to use the HH:MM time
+of the day at point (if any) or the current HH:MM time.
+
+(fn &optional GOTO KEYS)" t nil) (autoload 'org-capture-import-remember-templates "org-capture" "Set `org-capture-templates' to be similar to `org-remember-templates'." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-capture" '("org-capture-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-clock" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-colview" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-compat" '("org-"))) (autoload 'org-encrypt-entry "org-crypt" "Encrypt the content of the current headline." t nil) (autoload 'org-decrypt-entry "org-crypt" "Decrypt the content of the current headline." t nil) (autoload 'org-encrypt-entries "org-crypt" "Encrypt all top-level entries in the current buffer." t nil) (autoload 'org-decrypt-entries "org-crypt" "Decrypt all entries in the current buffer." t nil) (autoload 'org-crypt-use-before-save-magic "org-crypt" "Add a hook to automatically encrypt entries before a file is saved to disk." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-crypt" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-ctags" '("org-ctags-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-datetree" '("org-datetree-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-duration" '("org-duration-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-element" '("org-element-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-entities" '("org-entit"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-faces" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-feed" '("org-feed-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-footnote" '("org-footnote-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-goto" '("org-goto-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-habit" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-id" '("org-id-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-indent" '("org-indent-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-inlinetask" '("org-inlinetask-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-keys" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-lint" '("org-lint-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-list" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-macro" '("org-macro-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-macs" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mobile" '("org-mobile-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-mouse" '("org-mouse-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-num" '("org-num-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-pcomplete" '("org-" "pcomplete/org-mode/"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-plot" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-protocol" '("org-protocol-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-refile" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-src" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-table" '("org"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-tempo" '("org-tempo-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-timer" '("org-timer-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox" '("org-export-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-ascii" '("org-ascii-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-beamer" '("org-beamer-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-html" '("org-html-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-icalendar" '("org-icalendar-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-latex" '("org-latex-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-man" '("org-man-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-md" '("org-md-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-odt" '("org-odt-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-org" '("org-org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-publish" '("org-publish-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ox-texinfo" '("org-texinfo-"))) (provide 'org-autoloads)) "emacsql" ((emacsql-compiler emacsql emacsql-autoloads) (autoload 'emacsql-show-last-sql "emacsql" "Display the compiled SQL of the s-expression SQL expression before point.
+A prefix argument causes the SQL to be printed into the current buffer.
+
+(fn &optional PREFIX)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emacsql" '("emacsql-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emacsql-compiler" '("emacsql-"))) (provide 'emacsql-autoloads)) "emacsql-sqlite3" ((emacsql-sqlite3 emacsql-sqlite3-autoloads) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "emacsql-sqlite3" '("emacsql-sqlite3-"))) (provide 'emacsql-sqlite3-autoloads)) "org-roam" ((org-roam-doctor org-roam-db org-roam-capture org-roam-link org-roam-buffer org-roam-dailies org-roam-macs org-roam-faces org-roam org-roam-completion org-roam-autoloads org-roam-dev org-roam-protocol org-roam-compat org-roam-graph) (defvar org-roam-mode nil "Non-nil if Org-Roam mode is enabled.
+See the `org-roam-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `org-roam-mode'.") (custom-autoload 'org-roam-mode "org-roam" nil) (autoload 'org-roam-mode "org-roam" "Minor mode for Org-roam.
+
+This mode sets up several hooks, to ensure that the cache is updated on file
+changes, renames and deletes. It is also in charge of graceful termination of
+the database connection.
+
+When called interactively, toggle `org-roam-mode'. with prefix
+ARG, enable `org-roam-mode' if ARG is positive, otherwise disable
+it.
+
+When called from Lisp, enable `org-roam-mode' if ARG is omitted,
+nil, or positive. If ARG is `toggle', toggle `org-roam-mode'.
+Otherwise, behave as if called interactively.
+
+(fn &optional ARG)" t nil) (defalias 'org-roam 'org-roam-buffer-toggle-display) (autoload 'org-roam-diagnostics "org-roam" "Collect and print info for `org-roam' issues." t nil) (autoload 'org-roam-find-file "org-roam" "Find and open an Org-roam file.
+INITIAL-PROMPT is the initial title prompt.
+COMPLETIONS is a list of completions to be used instead of
+`org-roam--get-title-path-completions`.
+FILTER-FN is the name of a function to apply on the candidates
+which takes as its argument an alist of path-completions.  See
+`org-roam--get-title-path-completions' for details.
+If NO-CONFIRM, assume that the user does not want to modify the initial prompt.
+
+(fn &optional INITIAL-PROMPT COMPLETIONS FILTER-FN NO-CONFIRM)" t nil) (autoload 'org-roam-find-directory "org-roam" "Find and open `org-roam-directory'." t nil) (autoload 'org-roam-find-ref "org-roam" "Find and open an Org-roam file from a ref.
+ARG is used to forward interactive calls to
+`org-roam--get-ref-path-completions'
+FILTER can either be a string or a function:
+- If it is a string, it should be the type of refs to include as
+candidates (e.g. \"cite\" ,\"website\" ,etc.)
+- If it is a function, it should be the name of a function that
+takes three arguments: the type, the ref, and the file of the
+current candidate.  It should return t if that candidate is to be
+included as a candidate.
+
+(fn ARG &optional FILTER)" t nil) (autoload 'org-roam-random-note "org-roam" "Find a random Org-roam file." t nil) (autoload 'org-roam-insert "org-roam" "Find an Org-roam file, and insert a relative org link to it at point.
+Return selected file if it exists.
+If LOWERCASE is non-nil, downcase the link description.
+LINK-TYPE is the type of link to be created. It defaults to \"file\".
+COMPLETIONS is a list of completions to be used instead of
+`org-roam--get-title-path-completions`.
+FILTER-FN is the name of a function to apply on the candidates
+which takes as its argument an alist of path-completions.
+If DESCRIPTION is provided, use this as the link label.  See
+`org-roam--get-title-path-completions' for details.
+
+(fn &optional LOWERCASE COMPLETIONS FILTER-FN DESCRIPTION LINK-TYPE)" t nil) (autoload 'org-roam-insert-immediate "org-roam" "Find an Org-roam file, and insert a relative org link to it at point.
+This variant of `org-roam-insert' inserts the link immediately by
+using the template in `org-roam-capture-immediate-template'. The
+interactive ARG and ARGS are passed to `org-roam-insert'.
+See `org-roam-insert' for details.
+
+(fn ARG &rest ARGS)" t nil) (autoload 'org-roam-find-file-immediate "org-roam" "Find and open an Org-roam file.
+This variant of `org-roam-find-file' uses the template in
+`org-roam-capture-immediate-template', avoiding the capture
+process. The interactive ARG and ARGS are passed to
+`org-roam-find-file'. See `org-roam-find-file' for details.
+
+(fn ARG &rest ARGS)" t nil) (autoload 'org-roam-jump-to-index "org-roam" "Find the index file in `org-roam-directory'.
+The path to the index can be defined in `org-roam-index-file'.
+Otherwise, the function will look in your `org-roam-directory'
+for a note whose title is 'Index'.  If it does not exist, the
+command will offer you to create one." t nil) (autoload 'org-roam-alias-add "org-roam" "Add an alias to Org-roam file.
+
+Return added alias." t nil) (autoload 'org-roam-alias-delete "org-roam" "Delete an alias from Org-roam file." t nil) (autoload 'org-roam-switch-to-buffer "org-roam" "Switch to an existing Org-roam buffer." t nil) (autoload 'org-roam-version "org-roam" "Return `org-roam' version.
+Interactively, or when MESSAGE is non-nil, show in the echo area.
+
+(fn &optional MESSAGE)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam" '("org-roam-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-buffer" '("org-roam-buffer"))) (autoload 'org-roam-capture "org-roam-capture" "Launches an `org-capture' process for a new or existing note.
+This uses the templates defined at `org-roam-capture-templates'.
+Arguments GOTO and KEYS see `org-capture'.
+
+(fn &optional GOTO KEYS)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-capture" '("org-roam-capture-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-completion" '("org-roam-completion-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-dailies" '("org-roam-dailies-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-db" '("org-roam-db"))) (autoload 'org-roam-dev-mode "org-roam-dev" "Minor mode for setting the dev environment of Org-roam.
+
+If called interactively, enable Org-Roam-Dev mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
+
+(fn &optional ARG)" t nil) (autoload 'org-roam-doctor "org-roam-doctor" "Perform a check on the current buffer to ensure cleanliness.
+If CHECKALL, run the check for all Org-roam files.
+
+(fn &optional CHECKALL)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-doctor" '("org-roam-doctor-"))) (autoload 'org-roam-graph "org-roam-graph" "Build and possibly display a graph for FILE from NODE-QUERY.
+If FILE is nil, default to current buffer's file name.
+ARG may be any of the following values:
+  - nil       show the graph.
+  - `\\[universal-argument]'     show the graph for FILE.
+  - `\\[universal-argument]' N   show the graph for FILE limiting nodes to N steps.
+  - `\\[universal-argument] \\[universal-argument]' build the graph.
+  - `\\[universal-argument]' -   build the graph for FILE.
+  - `\\[universal-argument]' -N  build the graph for FILE limiting nodes to N steps.
+
+(fn &optional ARG FILE NODE-QUERY)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-graph" '("org-roam-graph-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-link" '("org-roam-link-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-macs" '("org-roam-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-protocol" '("org-roam-protocol-"))) (provide 'org-roam-autoloads))))
+
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" nil "exec-path-from-shell" nil "cl-lib" nil "osx-trash" nil "undo-fu" nil "restart-emacs" nil "dash" nil "s" nil "helpful" nil "dash-functional" nil "f" nil "elisp-refs" nil "zone-nyan" nil "esxml" nil "counsel" nil "swiper" nil "ivy" nil "projectile" nil "pkg-info" nil "epl" nil "which-key" nil "avy" nil "avy-menu" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "dashboard" nil "page-break-lines" nil "leuven-theme" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "nyan-mode" nil "golden-ratio" nil "magit" nil "async" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "markdown-mode" nil "flyspell-correct" nil "flyspell-correct-avy-menu" nil "origami" nil "yaml-mode" nil "general" nil "counsel-jq" nil "pyvenv" nil "poetry" nil "company-anaconda" nil "linum-relative" nil "minimap" nil "sublimity" nil "org-roam" nil "org" (org :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org") "emacsql" nil "emacsql-sqlite3" nil)) melpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" (gcmh :type git :flavor melpa :host gitlab :repo "koral/gcmh") "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "osx-trash" (osx-trash :type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu") "restart-emacs" (restart-emacs :type git :flavor melpa :host github :repo "iqbalansari/restart-emacs") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "helpful" (helpful :type git :flavor melpa :host github :repo "Wilfred/helpful") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "elisp-refs" (elisp-refs :type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs") "zone-nyan" (zone-nyan :type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git") "esxml" (esxml :type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml") "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "avy-menu" (avy-menu :type git :flavor melpa :host github :repo "mrkkrp/avy-menu") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "dashboard" (dashboard :type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "page-break-lines" (page-break-lines :type git :flavor melpa :host github :repo "purcell/page-break-lines") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "flyspell-correct" (flyspell-correct :type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct") "flyspell-correct-avy-menu" (flyspell-correct-avy-menu :type git :flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :host github :repo "d12frosted/flyspell-correct") "origami" (origami :type git :flavor melpa :host github :repo "gregsexton/origami.el") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "counsel-jq" (counsel-jq :type git :flavor melpa :host github :repo "200ok-ch/counsel-jq") "pyvenv" (pyvenv :type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv") "poetry" (poetry :type git :flavor melpa :host github :repo "galaunay/poetry.el") "company-anaconda" (company-anaconda :type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda") "linum-relative" (linum-relative :type git :flavor melpa :host github :repo "coldnew/linum-relative") "minimap" nil "sublimity" (sublimity :type git :flavor melpa :host github :repo "zk-phi/sublimity") "org-roam" (org-roam :type git :flavor melpa :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql") "emacsql-sqlite3" (emacsql-sqlite3 :type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))) "minimap" (minimap :type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
+
+("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "osx-trash" "undo-fu" "restart-emacs" "dash" "s" "helpful" "dash-functional" "f" "elisp-refs" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "which-key" "avy" "avy-menu" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "dashboard" "page-break-lines" "leuven-theme" "linum-relative" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "nyan-mode" "golden-ratio" "magit" "async" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "company-anaconda" "pyvenv" "poetry" "org-roam" "org" "emacsql" "emacsql-sqlite3" "markdown-mode" "flyspell-correct" "flyspell-correct-avy-menu" "origami" "counsel-jq" "yaml-mode" "general")
 
 t

@@ -17,3 +17,9 @@ recentf
 markdown/markdown-main.el
 markdown/markdown-keybindings.el
 anaconda-mode/
+org-roam.db
+org/capture.el.db
+org/capture.el
+org/roam.el
+*.elc
+python/python.el

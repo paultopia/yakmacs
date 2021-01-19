@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Dropbox/org/inbox.org")
- (front-context-string . "* TODO try to bi")
- (rear-context-string . "bindings work.\n\n")
- (position . 762))
+ (filename . "~/OneDrive - Northwestern University/research_notes/20210118150419-another_test.org")
+ (front-context-string . "#+title: another")
+ (rear-context-string)
+ (position . 1))
 )

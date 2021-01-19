@@ -8,7 +8,7 @@ I think I'm going to try to make at least minimal use of org-capture. Doing it i
 
 
 #+BEGIN_SRC emacs-lisp
-  (setq org-default-notes-file "~/Dropbox/org/inbox.org")
+  (setq org-default-notes-file "~/OneDrive - Northwestern University/tasks/task_inbox.org")
   (setq org-capture-templates 
     '(("t" "Unfiled Task"  entry
       (file org-default-notes-file)
@@ -20,7 +20,7 @@ Let's see if I can get org-agenda working too
 
 #+BEGIN_SRC emacs-lisp
 
-(setq org-agenda-files '("~/Dropbox/org/inbox.org"))
+(setq org-agenda-files '("~/OneDrive - Northwestern University/tasks/task_inbox.org"))
 
 #+END_SRC
 

@@ -1,0 +1,18 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Org Roam (experimental)
+
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'org-roam)
+(setq org-roam-directory "~/OneDrive - Northwestern University/research_notes")
+(setq org-roam-db-location "~/OneDrive - Northwestern University/research_notes/org-roam.db")
+(add-hook 'after-init-hook 'org-roam-mode)
+
+#+END_SRC
+
+
+#+BEGIN_SRC emacs-lisp
+
+#+END_SRC

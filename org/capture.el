@@ -1,10 +1,10 @@
-(setq org-default-notes-file "~/Dropbox/org/inbox.org")
+(setq org-default-notes-file "~/OneDrive - Northwestern University/tasks/task_inbox.org")
 (setq org-capture-templates 
   '(("t" "Unfiled Task"  entry
     (file org-default-notes-file)
       "* TODO %?" :empty-lines 1)))
 
-(setq org-agenda-files '("~/Dropbox/org/inbox.org"))
+(setq org-agenda-files '("~/OneDrive - Northwestern University/tasks/task_inbox.org"))
 
 (setq rolusa_tasks "~/OneDrive - Northwestern University/tasks/rolusa_tasks.org")
 (setq netlev_tasks "~/OneDrive - Northwestern University/tasks/netlev_tasks.org")
