@@ -36,6 +36,7 @@ will get keybindings for org roam in this namespace too when I implement it.
 "t" '(:ignore t :which-key "[T]odo/notes")
 "tn" 'org-capture
 "tv" 'org-todo-list
+"tr" 'org-roam-capture
 )
 #+END_SRC
 
