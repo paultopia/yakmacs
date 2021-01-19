@@ -224,6 +224,17 @@ Spacemacs uses helm, but lots of people who start with helm seem to love Ivy
 (ivy-mode 1)
 #+END_SRC
 
+
+I think projectile will be useful for things like project-wide find
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'projectile)
+(require 'projectile)
+(projectile-mode +1)
+(setq projectile-completion-system 'ivy)
+#+END_SRC
+
+
 Ivy rich looks nice in the screenshots on the repo.  But does it do anything?  I don't see a difference, but let's see. 
 
 #+BEGIN_SRC emacs-lisp
@@ -233,15 +244,6 @@ Ivy rich looks nice in the screenshots on the repo.  But does it do anything?  I
 (ivy-rich-mode 1)
 (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
 
-#+END_SRC
-
-I think projectile will be useful for things like project-wide find
-
-#+BEGIN_SRC emacs-lisp
-(straight-use-package 'projectile)
-(require 'projectile)
-(projectile-mode +1)
-(setq projectile-completion-system 'ivy)
 #+END_SRC
 
 
