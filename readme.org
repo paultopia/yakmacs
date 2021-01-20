@@ -522,6 +522,8 @@ Let's get scrolling working in the margins too. I think this might be specific t
 
 If it breaks on office computer, I can just try mwheel-scroll without the modifier. 
 
+*Currently broken on office computer* but what I really ought to do is reinstall a better version of emacs. 
+
 #+BEGIN_SRC emacs-lisp
 
 
