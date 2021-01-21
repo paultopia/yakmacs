@@ -12,7 +12,7 @@ I think I'm going to try to make at least minimal use of org-capture. Doing it i
   (setq org-capture-templates 
     '(("t" "Unfiled Task"  entry
       (file org-default-notes-file)
-	"* TODO %?" :empty-lines 1)))
+	"* TODO  %?" :empty-lines 1)))
 
 #+END_SRC
 
@@ -45,7 +45,7 @@ Rule of Law in US
   (add-to-list 'org-capture-templates
     '("r" "Rule of Law in USA Task"  entry
       (file rolusa_tasks)
-	"* TODO %?" :empty-lines 1))
+	"* TODO  %?" :empty-lines 1))
 
 (add-to-list 'org-agenda-files rolusa_tasks 'append)
 
@@ -57,7 +57,7 @@ Networked Leviathan
   (add-to-list 'org-capture-templates
     '("n" "Networked Leviathan Task"  entry
       (file netlev_tasks)
-	"* TODO %?" :empty-lines 1))
+	"* TODO  %?" :empty-lines 1))
 (add-to-list 'org-agenda-files netlev_tasks 'append)
 #+END_SRC
 
