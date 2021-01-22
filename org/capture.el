@@ -2,7 +2,7 @@
 (setq org-capture-templates 
   '(("t" "Unfiled Task"  entry
     (file org-default-notes-file)
-      "* TODO %?" :empty-lines 1)))
+      "* TODO  %?" :empty-lines 1)))
 
 (setq org-agenda-files '("~/OneDrive - Northwestern University/tasks/task_inbox.org"))
 
@@ -12,12 +12,12 @@
 (add-to-list 'org-capture-templates
     '("r" "Rule of Law in USA Task"  entry
       (file rolusa_tasks)
-	"* TODO %?" :empty-lines 1))
+	"* TODO  %?" :empty-lines 1))
 
 (add-to-list 'org-agenda-files rolusa_tasks 'append)
 
 (add-to-list 'org-capture-templates
     '("n" "Networked Leviathan Task"  entry
       (file netlev_tasks)
-	"* TODO %?" :empty-lines 1))
+	"* TODO  %?" :empty-lines 1))
 (add-to-list 'org-agenda-files netlev_tasks 'append)

@@ -141,15 +141,6 @@ I'm over the backup files. Borrowing code from [[https://www.emacswiki.org/emacs
 
 #+END_SRC
 
-Undo-redo is impossibly confusing and I can never redo anything and I hate it to death.  Let's try a lib.
-Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems normal.  keybindings down below per usual, but also suggested keybindings [[https://gitlab.com/ideasman42/emacs-undo-fu][in here]] for evil.
-
-(actually I take that back.  I'm going to define them down below in general, but I'm going to use C-u and C-r for it globally, including in insert mode, because fuck that noise.
-
-#+BEGIN_SRC emacs-lisp
-(straight-use-package 'undo-fu)
-#+END_SRC
-
 Let's see if I can get a restart in
 
 #+BEGIN_SRC emacs-lisp
@@ -198,6 +189,30 @@ that's the functionality I'm used to.
 #+BEGIN_SRC emacs-lisp
 (delete-selection-mode 1)
 #+END_SRC
+
+
+** Undo-redo 
+
+Undo-redo is impossibly confusing and I can never redo anything and I hate it to death.  Let's try a lib.
+Using [[https://gitlab.com/ideasman42/emacs-undo-fu][undo-fu]] because it seems normal.  keybindings down below per usual, but also suggested keybindings [[https://gitlab.com/ideasman42/emacs-undo-fu][in here]] for evil.
+
+(actually I take that back.  I'm going to define them down below in general, but I'm going to use C-u and C-r for it globally, including in insert mode, because fuck that noise.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'undo-fu)
+#+END_SRC
+
+While I'm here, I also want to fix evil undo some more.  These are [[https://evil.readthedocs.io/en/latest/settings.html][apparently supposed to happen before evil is loaded]]. 
+
+#+BEGIN_SRC emacs-lisp
+
+(setq evil-undo-system 'undo-fu)
+
+
+(setq evil-want-fine-undo t)
+#+END_SRC
+
+
 
 * Frivolity
 
@@ -295,6 +310,7 @@ I'm having weird glitches with changes disappearing in big markdown buffers, and
 #+BEGIN_SRC emacs-lisp
 (fset 'evil-visual-update-x-selection 'ignore) 
 #+END_SRC
+
 
 
 ** Add more evil bindings

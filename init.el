@@ -23,7 +23,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(evil-undo-system (quote undo-fu))
  '(package-selected-packages (quote (evil)))
  '(safe-local-variable-values (quote ((in-config-file . t))))
  '(which-key-max-description-length 50))
