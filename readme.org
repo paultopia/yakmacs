@@ -1,4 +1,4 @@
-# -*- in-config-file: t; lexical-binding: t  -*-
+
 
 
 * Wth?
@@ -537,8 +537,6 @@ Make clicking in margins bring point to visual line.
 Let's get scrolling working in the margins too. I think this might be specific to the macport build I'm using; may break on office computer.
 
 If it breaks on office computer, I can just try mwheel-scroll without the modifier. 
-
-*Currently broken on office computer* but what I really ought to do is reinstall a better version of emacs. 
 
 #+BEGIN_SRC emacs-lisp
 
