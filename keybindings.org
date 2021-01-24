@@ -2,6 +2,21 @@
 
 * The definitions of all the keybindings
 
+** A quick ivy fix
+
+This is an emergency fix: I've realized that I can't actually create a new file with ivy find-file because of the completions if the filename is too similar.
+
+For some reason, the keybinding given [[https://emacs.stackexchange.com/questions/58020/ivy-counsel-find-file-with-similar-name][here]] doesn't work, it maps to some 
+narrowing function.  Hopefully this will work to give me a binding in the minibuffer --- see [[https://github.com/abo-abo/swiper/issues/327][more ivy keybinding debugging]]
+
+(update: it does work, yay!)
+
+#+BEGIN_SRC emacs-lisp
+
+(define-key ivy-minibuffer-map (kbd "M-d") 'ivy-immediate-done)
+
+#+END_SRC
+
 ** Undo-redo                                                      :key:
 
 Non-leader keybindings
@@ -244,9 +259,14 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 
 All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
 
-exception: control-u and control-r ought (?) to work in insert mode for undo-fu undo and redo.  I think.
+exceptions: 
 
-evil escape key set to ESC ESC
+- control-u and control-r ought (?) to work in insert mode for undo-fu undo and redo.  I think.
+
+- evil escape key set to ESC ESC
+
+- meta-d (option-d) in an ivy minibuffer will immediately send the "current input" --- i.e., now using completions from the minibuffer. 
+(This is for things like creating a new file with counsel-find-file that has a similar name to a previous one).
 
 GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 
