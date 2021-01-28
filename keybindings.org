@@ -231,29 +231,11 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 
 *** Python
 
+again moving to separate file
+
 #+BEGIN_SRC emacs-lisp
-
-(mode-binding 
-:keymaps 'python-mode-map
-"c" 'company-complete
-"s" '(:ignore t :which-key "Talk to Interpreter")
-"ss" '(run-python :which-key "Spawn Interpreter")
-"sr" 'python-shell-send-region
-"sl" 'python-shell-send-statement
-"sb" 'python-shell-send-buffer
-"p" '(:ignore t :which-key "Packets and Environments")
-"pp" 'poetry
-"pa" 'poetry-add-dep
-"pi" 'poetry-install-install
-"pn" 'poetry-new
-"i" '(:ignore t :which-key "Indententation")
-"il" 'python-indent-shift-left
-"ir" 'python-indent-shift-right
-)
-
-
+(org-babel-load-file "~/.emacs.d/python/python-keybindings.org")
 #+END_SRC
-
 
 * All the Keybindings I've defined, listed.
 
@@ -416,38 +398,46 @@ MARKDOWN
 | , o u                         | Up to parent item                                                  |
 
 
+
 PYTHON
 
-| command                   | function                          |
-|---------------------------+-----------------------------------|
-| SHELL/INTERPRETER         |                                   |
-|---------------------------+-----------------------------------|
-| ,ss                       | Spawn Interpreter                 |
-| ,sr                       | Send region to shell              |
-| ,sl                       | Send line to shell                |
-| ,sb                       | Send entire buffer to shell       |
-|                           |                                   |
-|---------------------------+-----------------------------------|
-| PACKAGES AND ENVIRONMENTS |                                   |
-|---------------------------+-----------------------------------|
-| ,pp                       | Poetry transient mode             |
-| ,pa                       | Add dependency in poetry          |
-| ,pi                       | Install poetry deps               |
-| ,pn                       | New poetry environment            |
-|                           |                                   |
-|---------------------------+-----------------------------------|
-| INDENTATION               |                                   |
-|---------------------------+-----------------------------------|
-| ,il                       | Shift region indentation to left  |
-| ,ir                       | Shift region indentation to right |
-|                           |                                   |
-|---------------------------+-----------------------------------|
-| MISC                      |                                   |
-|---------------------------+-----------------------------------|
-| , c                       | Complete (with company)           |
-|                           |                                   |
-
-
+| command           | function                          |
+|-------------------+-----------------------------------|
+| SHELL/INTERPRETER |                                   |
+|-------------------+-----------------------------------|
+| ,ss               | Spawn Interpreter                 |
+| ,sr               | Send region to shell              |
+| ,sl               | Send line to shell                |
+| ,sb               | Send entire buffer to shell       |
+|                   |                                   |
+|-------------------+-----------------------------------|
+| POETRY            |                                   |
+|-------------------+-----------------------------------|
+| ,op               | Poetry transient mode             |
+| ,oa               | Add dependency in poetry          |
+| ,oi               | Install poetry deps               |
+| ,on               | New poetry environment            |
+|                   |                                   |
+|-------------------+-----------------------------------|
+| Pipenv            |                                   |
+|-------------------+-----------------------------------|
+| ,va               | activate env                      |
+| ,vd               | deactivate env                    |
+| ,vs               | spawn shell                       |
+| ,vi               | install dep                       |
+| ,vv               | fully activate env and launch interpreter |
+|                   |                                   |
+|-------------------+-----------------------------------|
+| INDENTATION       |                                   |
+|-------------------+-----------------------------------|
+| ,il               | Shift region indentation to left  |
+| ,ir               | Shift region indentation to right |
+|                   |                                   |
+|-------------------+-----------------------------------|
+| MISC              |                                   |
+|-------------------+-----------------------------------|
+| , c               | Complete (with company)           |
+|                   |                                   |
 
 
 * Built-in keybindings I always forget

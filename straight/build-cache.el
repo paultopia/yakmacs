@@ -3,11 +3,7 @@
 
 "27.1"
 
-<<<<<<< HEAD
-#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2021-01-22 17:05:35" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2021-01-22 17:05:35" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2021-01-22 17:05:35" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2021-01-22 17:05:35" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2021-01-22 17:05:35" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "gcmh" ("2020-12-27 14:47:04" ("emacs") (:type git :flavor melpa :host gitlab :repo "koral/gcmh" :package "gcmh" :local-repo "gcmh")) "exec-path-from-shell" ("2021-01-22 17:05:35" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "osx-trash" ("2021-01-22 17:05:36" ("emacs") (:type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash" :package "osx-trash" :local-repo "osx-trash")) "undo-fu" ("2021-01-22 17:05:36" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "restart-emacs" ("2021-01-22 17:05:36" nil (:type git :flavor melpa :host github :repo "iqbalansari/restart-emacs" :package "restart-emacs" :local-repo "restart-emacs")) "dash" ("2021-01-22 17:05:36" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "s" ("2021-01-22 17:05:36" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "helpful" ("2021-01-22 17:05:36" ("emacs" "dash" "dash-functional" "s" "f" "elisp-refs") (:type git :flavor melpa :host github :repo "Wilfred/helpful" :package "helpful" :local-repo "helpful")) "dash-functional" ("2021-01-22 17:05:36" ("dash" "emacs") (:flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :package "dash-functional" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "f" ("2021-01-22 17:05:36" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "elisp-refs" ("2021-01-22 17:05:36" ("dash" "s") (:type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs" :package "elisp-refs" :local-repo "elisp-refs")) "zone-nyan" ("2020-12-28 11:17:15" ("esxml") (:type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git" :package "zone-nyan" :local-repo "zone-nyan")) "esxml" ("2020-12-28 11:17:15" nil (:type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml" :package "esxml" :local-repo "esxml")) "counsel" ("2021-01-22 17:05:36" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2021-01-22 17:05:36" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2021-01-22 17:05:36" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "projectile" ("2021-01-22 17:05:36" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "pkg-info" ("2021-01-22 17:05:36" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2021-01-22 17:05:36" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "which-key" ("2021-01-22 17:05:37" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2021-01-22 17:05:37" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "avy-menu" ("2021-01-22 17:05:37" ("emacs" "avy") (:type git :flavor melpa :host github :repo "mrkkrp/avy-menu" :package "avy-menu" :local-repo "avy-menu")) "evil" ("2021-01-22 17:05:37" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2021-01-22 17:05:37" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2021-01-22 17:05:37" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2021-01-22 17:05:37" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2021-01-22 17:05:37" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2021-01-22 17:05:37" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2021-01-22 17:05:37" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "dashboard" ("2021-01-22 17:05:37" ("emacs" "page-break-lines") (:type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "page-break-lines" ("2021-01-22 17:05:37" ("emacs") (:type git :flavor melpa :host github :repo "purcell/page-break-lines" :package "page-break-lines" :local-repo "page-break-lines")) "leuven-theme" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2021-01-22 17:05:38" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "nyan-mode" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "golden-ratio" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "magit" ("2021-01-22 17:05:38" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "git-commit" ("2021-01-22 17:05:38" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2021-01-22 17:05:38" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2021-01-22 17:05:38" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2021-01-22 17:05:38" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2021-01-22 17:05:38" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2021-01-22 17:05:38" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "let-alist" ("2021-01-22 17:05:38" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2021-01-22 17:05:38" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2021-01-22 17:05:38" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "markdown-mode" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "flyspell-correct" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct" :package "flyspell-correct" :local-repo "flyspell-correct")) "flyspell-correct-avy-menu" ("2021-01-22 17:05:38" ("flyspell-correct" "avy-menu" "emacs") (:flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :package "flyspell-correct-avy-menu" :local-repo "flyspell-correct" :type git :repo "d12frosted/flyspell-correct" :host github)) "origami" ("2021-01-22 17:05:38" ("s" "dash" "emacs" "cl-lib") (:type git :flavor melpa :host github :repo "gregsexton/origami.el" :package "origami" :local-repo "origami.el")) "yaml-mode" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "general" ("2021-01-22 17:05:38" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "counsel-jq" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "200ok-ch/counsel-jq" :package "counsel-jq" :local-repo "counsel-jq")) "pyvenv" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "poetry" ("2021-01-22 17:05:38" ("transient" "pyvenv" "emacs") (:type git :flavor melpa :host github :repo "galaunay/poetry.el" :package "poetry" :local-repo "poetry.el")) "company-anaconda" ("2021-01-22 17:05:38" ("company" "anaconda-mode" "cl-lib" "dash" "s") (:type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda" :package "company-anaconda" :local-repo "company-anaconda")) "linum-relative" ("2021-01-22 17:05:38" nil (:type git :flavor melpa :host github :repo "coldnew/linum-relative" :package "linum-relative" :local-repo "linum-relative")) "minimap" ("2021-01-18 13:57:18" nil (:type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git")) :package "minimap" :local-repo "minimap")) "sublimity" ("2021-01-18 14:09:50" ("emacs") (:type git :flavor melpa :host github :repo "zk-phi/sublimity" :package "sublimity" :local-repo "sublimity")) "org-roam" ("2021-01-22 17:05:38" ("emacs" "dash" "f" "s" "org" "emacsql" "emacsql-sqlite3") (:type git :flavor melpa :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2021-01-22 17:05:38" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :package "org")) "emacsql" ("2021-01-22 17:05:38" ("emacs") (:type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql" :package "emacsql" :local-repo "emacsql")) "emacsql-sqlite3" ("2021-01-22 17:05:38" ("emacs" "emacsql") (:type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3" :package "emacsql-sqlite3" :local-repo "emacsql-sqlite3")) "ivy-rich" ("2021-01-22 17:05:36" ("emacs" "ivy") (:type git :flavor melpa :files ("*.el" "ivy-rich-pkg.el") :host github :repo "Yevgnen/ivy-rich" :package "ivy-rich" :local-repo "ivy-rich"))))
-=======
-#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2021-01-20 11:29:14" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2021-01-20 11:29:15" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2021-01-20 11:29:15" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2021-01-20 11:29:15" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2021-01-20 11:29:15" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "gcmh" ("2020-12-27 14:47:04" ("emacs") (:type git :flavor melpa :host gitlab :repo "koral/gcmh" :package "gcmh" :local-repo "gcmh")) "exec-path-from-shell" ("2021-01-20 11:29:15" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "osx-trash" ("2021-01-20 11:29:15" ("emacs") (:type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash" :package "osx-trash" :local-repo "osx-trash")) "undo-fu" ("2021-01-20 11:29:15" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "restart-emacs" ("2021-01-20 11:29:15" nil (:type git :flavor melpa :host github :repo "iqbalansari/restart-emacs" :package "restart-emacs" :local-repo "restart-emacs")) "dash" ("2021-01-20 11:29:15" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "s" ("2021-01-20 11:29:15" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "helpful" ("2021-01-20 11:29:15" ("emacs" "dash" "dash-functional" "s" "f" "elisp-refs") (:type git :flavor melpa :host github :repo "Wilfred/helpful" :package "helpful" :local-repo "helpful")) "dash-functional" ("2021-01-20 11:29:15" ("dash" "emacs") (:flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :package "dash-functional" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "f" ("2021-01-20 11:29:15" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "elisp-refs" ("2021-01-20 11:29:15" ("dash" "s") (:type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs" :package "elisp-refs" :local-repo "elisp-refs")) "zone-nyan" ("2020-12-28 11:17:15" ("esxml") (:type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git" :package "zone-nyan" :local-repo "zone-nyan")) "esxml" ("2020-12-28 11:17:15" nil (:type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml" :package "esxml" :local-repo "esxml")) "counsel" ("2021-01-20 11:29:15" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2021-01-20 11:29:15" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2021-01-20 11:29:15" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "projectile" ("2021-01-20 11:29:15" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "pkg-info" ("2021-01-20 11:29:15" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2021-01-20 11:29:15" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "which-key" ("2021-01-20 11:29:16" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2021-01-20 11:29:16" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "avy-menu" ("2021-01-20 11:29:16" ("emacs" "avy") (:type git :flavor melpa :host github :repo "mrkkrp/avy-menu" :package "avy-menu" :local-repo "avy-menu")) "evil" ("2021-01-20 11:29:16" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2021-01-20 11:29:16" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2021-01-20 11:29:16" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2021-01-20 11:29:16" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2021-01-20 11:29:16" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2021-01-20 11:29:16" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2021-01-20 11:29:16" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "dashboard" ("2021-01-20 11:29:16" ("emacs" "page-break-lines") (:type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "page-break-lines" ("2021-01-20 11:29:16" ("emacs") (:type git :flavor melpa :host github :repo "purcell/page-break-lines" :package "page-break-lines" :local-repo "page-break-lines")) "leuven-theme" ("2021-01-20 11:29:16" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "rainbow-delimiters" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2021-01-20 11:29:17" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "nyan-mode" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "golden-ratio" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "magit" ("2021-01-20 11:29:17" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2021-01-20 11:29:17" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "git-commit" ("2021-01-20 11:29:17" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2021-01-20 11:29:17" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2021-01-20 11:29:17" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2021-01-20 11:29:17" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2021-01-20 11:29:17" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2021-01-20 11:29:17" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2021-01-20 11:29:17" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2021-01-20 11:29:17" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "let-alist" ("2021-01-20 11:29:17" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2021-01-20 11:29:17" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2021-01-20 11:29:17" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "markdown-mode" ("2021-01-20 11:29:50" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "flyspell-correct" ("2021-01-20 11:29:50" ("emacs") (:type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct" :package "flyspell-correct" :local-repo "flyspell-correct")) "flyspell-correct-avy-menu" ("2021-01-20 11:29:50" ("flyspell-correct" "avy-menu" "emacs") (:flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :package "flyspell-correct-avy-menu" :local-repo "flyspell-correct" :type git :repo "d12frosted/flyspell-correct" :host github)) "origami" ("2021-01-20 11:29:50" ("s" "dash" "emacs" "cl-lib") (:type git :flavor melpa :host github :repo "gregsexton/origami.el" :package "origami" :local-repo "origami.el")) "yaml-mode" ("2021-01-20 11:29:51" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "general" ("2021-01-20 11:29:51" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "counsel-jq" ("2021-01-20 11:29:51" nil (:type git :flavor melpa :host github :repo "200ok-ch/counsel-jq" :package "counsel-jq" :local-repo "counsel-jq")) "pyvenv" ("2021-01-20 11:29:18" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "poetry" ("2021-01-20 11:29:19" ("transient" "pyvenv" "emacs") (:type git :flavor melpa :host github :repo "galaunay/poetry.el" :package "poetry" :local-repo "poetry.el")) "company-anaconda" ("2021-01-20 11:29:18" ("company" "anaconda-mode" "cl-lib" "dash" "s") (:type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda" :package "company-anaconda" :local-repo "company-anaconda")) "linum-relative" ("2021-01-20 11:29:17" nil (:type git :flavor melpa :host github :repo "coldnew/linum-relative" :package "linum-relative" :local-repo "linum-relative")) "minimap" ("2021-01-18 13:57:18" nil (:type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git")) :package "minimap" :local-repo "minimap")) "sublimity" ("2021-01-18 14:09:50" ("emacs") (:type git :flavor melpa :host github :repo "zk-phi/sublimity" :package "sublimity" :local-repo "sublimity")) "org-roam" ("2021-01-20 11:29:49" ("emacs" "dash" "f" "s" "org" "emacsql" "emacsql-sqlite3") (:type git :flavor melpa :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2021-01-20 11:29:48" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :package "org")) "emacsql" ("2021-01-20 11:29:49" ("emacs") (:type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql" :package "emacsql" :local-repo "emacsql")) "emacsql-sqlite3" ("2021-01-20 11:29:49" ("emacs" "emacsql") (:type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3" :package "emacsql-sqlite3" :local-repo "emacsql-sqlite3")) "ivy-rich" ("2021-01-20 11:29:16" ("emacs" "ivy") (:type git :flavor melpa :files ("*.el" "ivy-rich-pkg.el") :host github :repo "Yevgnen/ivy-rich" :package "ivy-rich" :local-repo "ivy-rich"))))
->>>>>>> e8395862c993f771045defe16ecc6f3d1935b52a
+#s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("org-elpa" ("2021-01-28 11:44:32" nil (:local-repo nil :package "org-elpa" :type git)) "melpa" ("2021-01-28 11:44:32" nil (:type git :host github :repo "melpa/melpa" :no-build t :package "melpa" :local-repo "melpa")) "gnu-elpa-mirror" ("2021-01-28 11:44:27" nil (:type git :host github :repo "emacs-straight/gnu-elpa-mirror" :no-build t :package "gnu-elpa-mirror" :local-repo "gnu-elpa-mirror")) "emacsmirror-mirror" ("2021-01-28 11:44:27" nil (:type git :host github :repo "emacs-straight/emacsmirror-mirror" :no-build t :package "emacsmirror-mirror" :local-repo "emacsmirror-mirror")) "straight" ("2021-01-28 11:44:27" ("emacs") (:type git :host github :repo "raxod502/straight.el" :files ("straight*.el") :branch "master" :package "straight" :local-repo "straight.el")) "exec-path-from-shell" ("2021-01-28 11:44:27" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "purcell/exec-path-from-shell" :package "exec-path-from-shell" :local-repo "exec-path-from-shell")) "osx-trash" ("2021-01-28 11:44:29" ("emacs") (:type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash" :package "osx-trash" :local-repo "osx-trash")) "restart-emacs" ("2021-01-28 11:44:29" nil (:type git :flavor melpa :host github :repo "iqbalansari/restart-emacs" :package "restart-emacs" :local-repo "restart-emacs")) "dash" ("2021-01-28 11:44:29" nil (:type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el" :package "dash" :local-repo "dash.el")) "s" ("2021-01-28 11:44:29" nil (:type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el" :package "s" :local-repo "s.el")) "helpful" ("2021-01-28 11:44:29" ("emacs" "dash" "dash-functional" "s" "f" "elisp-refs") (:type git :flavor melpa :host github :repo "Wilfred/helpful" :package "helpful" :local-repo "helpful")) "dash-functional" ("2021-01-28 11:44:29" ("dash" "emacs") (:flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :package "dash-functional" :local-repo "dash.el" :type git :repo "magnars/dash.el" :host github)) "f" ("2021-01-28 11:44:29" ("s" "dash") (:type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el" :package "f" :local-repo "f.el")) "elisp-refs" ("2021-01-28 11:44:29" ("dash" "s") (:type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs" :package "elisp-refs" :local-repo "elisp-refs")) "undo-fu" ("2021-01-28 11:44:29" ("emacs") (:type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu" :package "undo-fu" :local-repo "emacs-undo-fu")) "counsel" ("2021-01-28 11:44:29" ("emacs" "swiper") (:type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper" :package "counsel" :local-repo "swiper")) "swiper" ("2021-01-28 11:44:29" ("emacs" "ivy") (:flavor melpa :files ("swiper.el" "swiper-pkg.el") :package "swiper" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "ivy" ("2021-01-28 11:44:29" ("emacs") (:flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :package "ivy" :local-repo "swiper" :type git :repo "abo-abo/swiper" :host github)) "projectile" ("2021-01-28 11:44:29" ("emacs" "pkg-info") (:type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile" :package "projectile" :local-repo "projectile")) "pkg-info" ("2021-01-28 11:44:29" ("epl") (:type git :flavor melpa :host github :repo "emacsorphanage/pkg-info" :package "pkg-info" :local-repo "pkg-info")) "epl" ("2021-01-28 11:44:29" ("cl-lib") (:type git :flavor melpa :host github :repo "cask/epl" :package "epl" :local-repo "epl")) "ivy-rich" ("2021-01-28 11:44:29" ("emacs" "ivy") (:type git :flavor melpa :files ("*.el" "ivy-rich-pkg.el") :host github :repo "Yevgnen/ivy-rich" :package "ivy-rich" :local-repo "ivy-rich")) "which-key" ("2021-01-28 11:44:29" ("emacs") (:type git :flavor melpa :host github :repo "justbur/emacs-which-key" :package "which-key" :local-repo "emacs-which-key")) "avy" ("2021-01-28 11:44:29" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "abo-abo/avy" :package "avy" :local-repo "avy")) "avy-menu" ("2021-01-28 11:44:29" ("emacs" "avy") (:type git :flavor melpa :host github :repo "mrkkrp/avy-menu" :package "avy-menu" :local-repo "avy-menu")) "evil" ("2021-01-28 11:44:29" ("emacs" "goto-chg" "cl-lib") (:type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil" :package "evil" :local-repo "evil")) "goto-chg" ("2021-01-28 11:44:29" nil (:type git :flavor melpa :host github :repo "emacs-evil/goto-chg" :package "goto-chg" :local-repo "goto-chg")) "evil-commentary" ("2021-01-28 11:44:30" ("evil") (:type git :flavor melpa :host github :repo "linktohack/evil-commentary" :package "evil-commentary" :local-repo "evil-commentary")) "evil-collection" ("2021-01-28 11:44:30" ("emacs" "evil" "annalist") (:type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection" :package "evil-collection" :local-repo "evil-collection")) "annalist" ("2021-01-28 11:44:30" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/annalist.el" :package "annalist" :local-repo "annalist.el")) "evil-org" ("2021-01-28 11:44:30" ("emacs" "evil") (:type git :flavor melpa :host github :repo "Somelauw/evil-org-mode" :package "evil-org" :local-repo "evil-org-mode")) "evil-escape" ("2021-01-28 11:44:30" ("emacs" "evil" "cl-lib") (:type git :flavor melpa :host github :repo "syl20bnr/evil-escape" :package "evil-escape" :local-repo "evil-escape")) "dashboard" ("2021-01-28 11:44:30" ("emacs" "page-break-lines") (:type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard" :package "dashboard" :local-repo "emacs-dashboard")) "page-break-lines" ("2021-01-28 11:44:30" ("emacs") (:type git :flavor melpa :host github :repo "purcell/page-break-lines" :package "page-break-lines" :local-repo "page-break-lines")) "leuven-theme" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme" :package "leuven-theme" :local-repo "emacs-leuven-theme")) "linum-relative" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :host github :repo "coldnew/linum-relative" :package "linum-relative" :local-repo "linum-relative")) "rainbow-delimiters" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters" :package "rainbow-delimiters" :local-repo "rainbow-delimiters")) "telephone-line" ("2021-01-28 11:44:31" ("emacs" "cl-lib" "cl-generic" "seq") (:type git :flavor melpa :host github :repo "dbordak/telephone-line" :package "telephone-line" :local-repo "telephone-line")) "nyan-mode" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode" :package "nyan-mode" :local-repo "nyan-mode")) "golden-ratio" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :host github :repo "roman/golden-ratio.el" :package "golden-ratio" :local-repo "golden-ratio.el")) "magit" ("2021-01-28 11:44:31" ("emacs" "async" "dash" "git-commit" "transient" "with-editor") (:type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit" :package "magit" :local-repo "magit")) "async" ("2021-01-28 11:44:31" ("emacs") (:type git :flavor melpa :host github :repo "jwiegley/emacs-async" :package "async" :local-repo "emacs-async")) "git-commit" ("2021-01-28 11:44:31" ("emacs" "dash" "transient" "with-editor") (:flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :package "git-commit" :local-repo "magit" :type git :repo "magit/magit" :host github)) "transient" ("2021-01-28 11:44:31" ("emacs") (:type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient" :package "transient" :local-repo "transient")) "with-editor" ("2021-01-28 11:44:31" ("emacs" "async") (:type git :flavor melpa :host github :repo "magit/with-editor" :package "with-editor" :local-repo "with-editor")) "company" ("2021-01-28 11:44:31" ("emacs") (:type git :flavor melpa :host github :repo "company-mode/company-mode" :package "company" :local-repo "company-mode")) "company-quickhelp" ("2021-01-28 11:44:31" ("emacs" "company" "pos-tip") (:type git :flavor melpa :host github :repo "company-mode/company-quickhelp" :package "company-quickhelp" :local-repo "company-quickhelp")) "pos-tip" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :host github :repo "pitkali/pos-tip" :package "pos-tip" :local-repo "pos-tip")) "smartparens" ("2021-01-28 11:44:31" ("dash" "cl-lib") (:type git :flavor melpa :host github :repo "Fuco1/smartparens" :package "smartparens" :local-repo "smartparens")) "evil-cleverparens" ("2021-01-28 11:44:31" ("evil" "paredit" "smartparens" "emacs" "dash") (:type git :flavor melpa :host github :repo "luxbock/evil-cleverparens" :package "evil-cleverparens" :local-repo "evil-cleverparens")) "paredit" ("2021-01-28 11:44:31" nil (:type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git" :package "paredit" :local-repo "paredit")) "flycheck" ("2021-01-28 11:44:31" ("dash" "pkg-info" "let-alist" "seq" "emacs") (:type git :flavor melpa :host github :repo "flycheck/flycheck" :package "flycheck" :local-repo "flycheck")) "let-alist" ("2021-01-28 11:44:31" ("emacs") (:type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git")) :package "let-alist" :local-repo "let-alist")) "anaconda-mode" ("2021-01-28 11:44:32" ("emacs" "pythonic" "dash" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode" :package "anaconda-mode" :local-repo "anaconda-mode")) "pythonic" ("2021-01-28 11:44:32" ("emacs" "s" "f") (:type git :flavor melpa :host github :repo "pythonic-emacs/pythonic" :package "pythonic" :local-repo "pythonic")) "company-anaconda" ("2021-01-28 11:44:32" ("company" "anaconda-mode" "cl-lib" "dash" "s") (:type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda" :package "company-anaconda" :local-repo "company-anaconda")) "pyvenv" ("2021-01-28 11:44:32" nil (:type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv" :package "pyvenv" :local-repo "pyvenv")) "poetry" ("2021-01-28 11:44:32" ("transient" "pyvenv" "emacs") (:type git :flavor melpa :host github :repo "galaunay/poetry.el" :package "poetry" :local-repo "poetry.el")) "org-roam" ("2021-01-28 11:44:33" ("emacs" "dash" "f" "s" "org" "emacsql" "emacsql-sqlite3") (:type git :flavor melpa :host github :repo "org-roam/org-roam" :package "org-roam" :local-repo "org-roam")) "org" ("2021-01-28 11:44:33" nil (:type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org" :package "org")) "emacsql" ("2021-01-28 11:44:33" ("emacs") (:type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql" :package "emacsql" :local-repo "emacsql")) "emacsql-sqlite3" ("2021-01-28 11:44:33" ("emacs" "emacsql") (:type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3" :package "emacsql-sqlite3" :local-repo "emacsql-sqlite3")) "markdown-mode" ("2021-01-28 11:44:33" ("emacs") (:type git :flavor melpa :host github :repo "jrblevin/markdown-mode" :package "markdown-mode" :local-repo "markdown-mode")) "flyspell-correct" ("2021-01-28 11:44:33" ("emacs") (:type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct" :package "flyspell-correct" :local-repo "flyspell-correct")) "flyspell-correct-avy-menu" ("2021-01-28 11:44:33" ("flyspell-correct" "avy-menu" "emacs") (:flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :package "flyspell-correct-avy-menu" :local-repo "flyspell-correct" :type git :repo "d12frosted/flyspell-correct" :host github)) "origami" ("2021-01-28 11:44:33" ("s" "dash" "emacs" "cl-lib") (:type git :flavor melpa :host github :repo "gregsexton/origami.el" :package "origami" :local-repo "origami.el")) "counsel-jq" ("2021-01-28 11:44:33" nil (:type git :flavor melpa :host github :repo "200ok-ch/counsel-jq" :package "counsel-jq" :local-repo "counsel-jq")) "yaml-mode" ("2021-01-28 11:44:33" ("emacs") (:type git :flavor melpa :host github :repo "yoshiki/yaml-mode" :package "yaml-mode" :local-repo "yaml-mode")) "general" ("2021-01-28 11:44:33" ("emacs" "cl-lib") (:type git :flavor melpa :host github :repo "noctuid/general.el" :package "general" :local-repo "general.el")) "pipenv" ("2021-01-28 11:44:33" ("emacs" "s" "pyvenv") (:type git :flavor melpa :host github :repo "pwalsh/pipenv.el" :package "pipenv" :local-repo "pipenv.el"))))
 
 #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data ("straight" ((straight-x straight-autoloads straight) (autoload 'straight-get-recipe "straight" "Interactively select a recipe from one of the recipe repositories.
 All recipe repositories in `straight-recipe-repositories' will
@@ -250,19 +246,7 @@ be removed in the future.
 Multiple lockfiles may be written (one for each profile),
 according to the value of `straight-profiles'.
 
-(fn &optional FORCE)" t nil) (autoload 'straight-thaw-versions "straight" "Read version lockfiles and restore package versions to those listed." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-"))) (defvar straight-x-pinned-packages nil "List of pinned packages.") (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight-x" '("straight-x-"))) (provide 'straight-autoloads)) "gcmh" ((gcmh gcmh-autoloads) (defvar gcmh-mode nil "Non-nil if Gcmh mode is enabled.
-See the `gcmh-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `gcmh-mode'.") (custom-autoload 'gcmh-mode "gcmh" nil) (autoload 'gcmh-mode "gcmh" "Minor mode to tweak Garbage Collection strategy.
-
-If called interactively, enable Gcmh mode if ARG is positive, and
-disable it if ARG is zero or negative.  If called from Lisp, also
-enable the mode if ARG is omitted or nil, and toggle it if ARG is
-`toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "gcmh" '("gcmh-"))) (provide 'gcmh-autoloads)) "exec-path-from-shell" ((exec-path-from-shell exec-path-from-shell-autoloads) (autoload 'exec-path-from-shell-copy-envs "exec-path-from-shell" "Set the environment variables with NAMES from the user's shell.
+(fn &optional FORCE)" t nil) (autoload 'straight-thaw-versions "straight" "Read version lockfiles and restore package versions to those listed." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight" '("straight-"))) (defvar straight-x-pinned-packages nil "List of pinned packages.") (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "straight-x" '("straight-x-"))) (provide 'straight-autoloads)) "exec-path-from-shell" ((exec-path-from-shell exec-path-from-shell-autoloads) (autoload 'exec-path-from-shell-copy-envs "exec-path-from-shell" "Set the environment variables with NAMES from the user's shell.
 
 As a special case, if the variable is $PATH, then the variables
 `exec-path' and `eshell-path-env' are also set appropriately.
@@ -285,25 +269,7 @@ Provide `system-move-file-to-trash' as an alias for
 `osx-trash-move-file-to-trash'.
 
 Note that you still need to set `delete-by-moving-to-trash' to a
-non-nil value to enable trashing for file operations." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "osx-trash" '("osx-trash-"))) (provide 'osx-trash-autoloads)) "undo-fu" ((undo-fu-autoloads undo-fu) (autoload 'undo-fu-disable-checkpoint "undo-fu" "Remove the undo-fu checkpoint, making all future actions unconstrained.
-
-This command is needed when `undo-fu-ignore-keyboard-quit' is t,
-since in this case `keyboard-quit' cannot be used
-to perform unconstrained undo/redo actions." t nil) (autoload 'undo-fu-only-redo-all "undo-fu" "Redo all actions until the initial undo step.
-
-wraps the `undo' function." t nil) (autoload 'undo-fu-only-redo "undo-fu" "Redo an action until the initial undo action.
-
-wraps the `undo' function.
-
-Optional argument ARG The number of steps to redo.
-
-(fn &optional ARG)" t nil) (autoload 'undo-fu-only-undo "undo-fu" "Undo the last action.
-
-wraps the `undo-only' function.
-
-Optional argument ARG the number of steps to undo.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "undo-fu" '("undo-fu-"))) (provide 'undo-fu-autoloads)) "restart-emacs" ((restart-emacs restart-emacs-autoloads) (autoload 'restart-emacs-handle-command-line-args "restart-emacs" "Handle the --restart-emacs-desktop command line argument.
+non-nil value to enable trashing for file operations." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "osx-trash" '("osx-trash-"))) (provide 'osx-trash-autoloads)) "restart-emacs" ((restart-emacs restart-emacs-autoloads) (autoload 'restart-emacs-handle-command-line-args "restart-emacs" "Handle the --restart-emacs-desktop command line argument.
 
 The value of the argument is the desktop file from which the frames should be
 restored.  IGNORED are ignored.
@@ -389,7 +355,25 @@ See also `helpful-callable' and `helpful-variable'.
 
 (fn SYMBOL)" t nil) (autoload 'helpful-variable "helpful" "Show help for variable named SYMBOL.
 
-(fn SYMBOL)" t nil) (autoload 'helpful-at-point "helpful" "Show help for the symbol at point." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helpful" '("helpful-"))) (provide 'helpful-autoloads)) "esxml" ((esxml esxml-autoloads esxml-pkg esxml-query) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "esxml" '("attr" "esxml-" "pp-esxml-to-xml" "string-trim-whitespace" "sxml-to-" "xml-to-esxml"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "esxml-query" '("esxml-"))) (provide 'esxml-autoloads)) "zone-nyan" ((zone-nyan zone-nyan-autoloads) (autoload 'zone-nyan "zone-nyan" "Zone out with nyan cat!" nil nil) (autoload 'zone-nyan-preview "zone-nyan" "Preview the `zone-nyan' zone program." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "zone-nyan" '("zone-nyan-"))) (provide 'zone-nyan-autoloads)) "ivy" ((ivy elpa ivy-autoloads ivy-overlay ivy-faces colir) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "colir" '("colir-"))) (autoload 'ivy-resume "ivy" "Resume the last completion session, or SESSION if non-nil.
+(fn SYMBOL)" t nil) (autoload 'helpful-at-point "helpful" "Show help for the symbol at point." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "helpful" '("helpful-"))) (provide 'helpful-autoloads)) "undo-fu" ((undo-fu-autoloads undo-fu) (autoload 'undo-fu-disable-checkpoint "undo-fu" "Remove the undo-fu checkpoint, making all future actions unconstrained.
+
+This command is needed when `undo-fu-ignore-keyboard-quit' is t,
+since in this case `keyboard-quit' cannot be used
+to perform unconstrained undo/redo actions." t nil) (autoload 'undo-fu-only-redo-all "undo-fu" "Redo all actions until the initial undo step.
+
+wraps the `undo' function." t nil) (autoload 'undo-fu-only-redo "undo-fu" "Redo an action until the initial undo action.
+
+wraps the `undo' function.
+
+Optional argument ARG The number of steps to redo.
+
+(fn &optional ARG)" t nil) (autoload 'undo-fu-only-undo "undo-fu" "Undo the last action.
+
+wraps the `undo-only' function.
+
+Optional argument ARG the number of steps to undo.
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "undo-fu" '("undo-fu-"))) (provide 'undo-fu-autoloads)) "ivy" ((ivy elpa ivy-autoloads ivy-overlay ivy-faces colir) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "colir" '("colir-"))) (autoload 'ivy-resume "ivy" "Resume the last completion session, or SESSION if non-nil.
 With a prefix arg, try to restore a recorded completion session,
 if one exists.
 
@@ -1117,7 +1101,32 @@ Otherwise behave as if called interactively.
 
 \\{projectile-mode-map}
 
-(fn &optional ARG)" t nil) (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0") (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("??" "compilation-find-file-projectile-find-compilation-buffer" "def-projectile-commander-method" "delete-file-projectile-remove-from-cache" "projectile-"))) (provide 'projectile-autoloads)) "which-key" ((which-key which-key-autoloads) (defvar which-key-mode nil "Non-nil if Which-Key mode is enabled.
+(fn &optional ARG)" t nil) (define-obsolete-function-alias 'projectile-global-mode 'projectile-mode "1.0") (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "projectile" '("??" "compilation-find-file-projectile-find-compilation-buffer" "def-projectile-commander-method" "delete-file-projectile-remove-from-cache" "projectile-"))) (provide 'projectile-autoloads)) "ivy-rich" ((ivy-rich-autoloads ivy-rich) (defvar ivy-rich-mode nil "Non-nil if Ivy-Rich mode is enabled.
+See the `ivy-rich-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `ivy-rich-mode'.") (custom-autoload 'ivy-rich-mode "ivy-rich" nil) (autoload 'ivy-rich-mode "ivy-rich" "Toggle ivy-rich mode globally.
+
+If called interactively, enable Ivy-Rich mode if ARG is positive,
+and disable it if ARG is zero or negative.  If called from Lisp,
+also enable the mode if ARG is omitted or nil, and toggle it if
+ARG is `toggle'; disable the mode otherwise.
+
+(fn &optional ARG)" t nil) (autoload 'ivy-rich-reload "ivy-rich" nil nil nil) (defvar ivy-rich-project-root-cache-mode nil "Non-nil if Ivy-Rich-Project-Root-Cache mode is enabled.
+See the `ivy-rich-project-root-cache-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `ivy-rich-project-root-cache-mode'.") (custom-autoload 'ivy-rich-project-root-cache-mode "ivy-rich" nil) (autoload 'ivy-rich-project-root-cache-mode "ivy-rich" "Toggle ivy-rich-root-cache-mode globally.
+
+If called interactively, enable Ivy-Rich-Project-Root-Cache mode
+if ARG is positive, and disable it if ARG is zero or negative.
+If called from Lisp, also enable the mode if ARG is omitted or
+nil, and toggle it if ARG is `toggle'; disable the mode
+otherwise.
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ivy-rich" '("ivy-rich-"))) (provide 'ivy-rich-autoloads)) "which-key" ((which-key which-key-autoloads) (defvar which-key-mode nil "Non-nil if Which-Key mode is enabled.
 See the `which-key-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
@@ -1546,7 +1555,35 @@ See `page-break-lines-mode' for more information on Page-Break-Lines mode.
 
 (fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "page-break-lines" '("page-break-lines-"))) (provide 'page-break-lines-autoloads)) "dashboard" ((dashboard dashboard-widgets dashboard-autoloads) (autoload 'dashboard-setup-startup-hook "dashboard" "Setup post initialization hooks.
 If a command line argument is provided,
-assume a filename and skip displaying Dashboard." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dashboard" '("dashboard-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dashboard-widgets" '("dashboard-" "recentf-list"))) (provide 'dashboard-autoloads)) "leuven-theme" ((leuven-theme leuven-dark-theme leuven-theme-autoloads) (when (and (boundp 'custom-theme-load-path) load-file-name) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "leuven-dark-theme" '("leuven-dark"))) (when (and (boundp 'custom-theme-load-path) load-file-name) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "leuven-theme" '("leuven"))) (provide 'leuven-theme-autoloads)) "rainbow-delimiters" ((rainbow-delimiters rainbow-delimiters-autoloads) (autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
+assume a filename and skip displaying Dashboard." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dashboard" '("dashboard-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "dashboard-widgets" '("dashboard-" "recentf-list"))) (provide 'dashboard-autoloads)) "leuven-theme" ((leuven-theme leuven-dark-theme leuven-theme-autoloads) (when (and (boundp 'custom-theme-load-path) load-file-name) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "leuven-dark-theme" '("leuven-dark"))) (when (and (boundp 'custom-theme-load-path) load-file-name) (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name)))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "leuven-theme" '("leuven"))) (provide 'leuven-theme-autoloads)) "linum-relative" ((linum-relative linum-relative-autoloads) (autoload 'linum-relative-toggle "linum-relative" "Toggle between linum-relative and linum." t nil) (autoload 'linum-relative-mode "linum-relative" "Display relative line numbers for current buffer.
+
+If called interactively, enable Linum-Relative mode if ARG is
+positive, and disable it if ARG is zero or negative.  If called
+from Lisp, also enable the mode if ARG is omitted or nil, and
+toggle it if ARG is `toggle'; disable the mode otherwise.
+
+(fn &optional ARG)" t nil) (put 'linum-relative-global-mode 'globalized-minor-mode t) (defvar linum-relative-global-mode nil "Non-nil if Linum-Relative-Global mode is enabled.
+See the `linum-relative-global-mode' command
+for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `linum-relative-global-mode'.") (custom-autoload 'linum-relative-global-mode "linum-relative" nil) (autoload 'linum-relative-global-mode "linum-relative" "Toggle Linum-Relative mode in all buffers.
+With prefix ARG, enable Linum-Relative-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Linum-Relative mode is enabled in all buffers where
+`(lambda nil (unless (linum-relative-in-helm-p) (linum-relative-mode 1)))' would do it.
+See `linum-relative-mode' for more information on Linum-Relative mode.
+
+(fn &optional ARG)" t nil) (autoload 'helm-linum-relative-mode "linum-relative" "Turn on `linum-relative-mode' in helm.
+
+If called interactively, enable Helm-Linum-Relative mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "linum-relative" '("helm--turn-on-linum-relative" "linum-relative"))) (provide 'linum-relative-autoloads)) "rainbow-delimiters" ((rainbow-delimiters rainbow-delimiters-autoloads) (autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Highlight nested parentheses, brackets, and braces according to their depth.
 
 If called interactively, enable Rainbow-Delimiters mode if ARG is
 positive, and disable it if ARG is zero or negative.  If called
@@ -3607,418 +3644,10 @@ positive, and disable it if ARG is zero or negative.  If called
 from Lisp, also enable the mode if ARG is omitted or nil, and
 toggle it if ARG is `toggle'; disable the mode otherwise.
 
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "anaconda-mode" '("anaconda-" "turn-o"))) (provide 'anaconda-mode-autoloads)) "markdown-mode" ((markdown-mode markdown-mode-autoloads) (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files.
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "anaconda-mode" '("anaconda-" "turn-o"))) (provide 'anaconda-mode-autoloads)) "company-anaconda" ((company-anaconda-autoloads company-anaconda) (autoload 'company-anaconda "company-anaconda" "Anaconda backend for company-mode.
+See `company-backends' for more info about COMMAND and ARG.
 
-(fn)" t nil) (add-to-list 'auto-mode-alist '("\\.\\(?:md\\|markdown\\|mkd\\|mdown\\|mkdn\\|mdwn\\)\\'" . markdown-mode)) (autoload 'gfm-mode "markdown-mode" "Major mode for editing GitHub Flavored Markdown files.
-
-(fn)" t nil) (autoload 'markdown-view-mode "markdown-mode" "Major mode for viewing Markdown content.
-
-(fn)" t nil) (autoload 'gfm-view-mode "markdown-mode" "Major mode for viewing GitHub Flavored Markdown content.
-
-(fn)" t nil) (autoload 'markdown-live-preview-mode "markdown-mode" "Toggle native previewing on save for a specific markdown file.
-
-If called interactively, enable Markdown-Live-Preview mode if ARG
-is positive, and disable it if ARG is zero or negative.  If
-called from Lisp, also enable the mode if ARG is omitted or nil,
-and toggle it if ARG is `toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "markdown-mode" '("defun-markdown-" "gfm-" "markdown"))) (provide 'markdown-mode-autoloads)) "flyspell-correct" ((flyspell-correct-ido flyspell-correct flyspell-correct-autoloads) (autoload 'flyspell-correct-at-point "flyspell-correct" "Correct word before point using `flyspell-correct-interface'.
-Adapted from `flyspell-correct-word-before-point'." t nil) (autoload 'flyspell-correct-previous "flyspell-correct" "Correct the first misspelled word that occurs before POSITION.
-But don't look beyond what's visible on the screen.
-
-Uses `flyspell-correct-at-point' function for correction.
-
-With a prefix argument, automatically continues to all prior misspelled words in the buffer.
-
-(fn POSITION)" t nil) (autoload 'flyspell-correct-next "flyspell-correct" "Correct the first misspelled word that occurs after POSITION.
-
-Uses `flyspell-correct-at-point' function for correction.
-
-With a prefix argument, automatically continues to all further
-misspelled words in the buffer.
-
-(fn POSITION)" t nil) (autoload 'flyspell-correct-wrapper "flyspell-correct" "Correct spelling error in a dwim fashion based on universal argument.
-
-- One \\[universal-argument] enables rapid mode.
-- Two \\[universal-argument]'s changes direction of spelling
-  errors search.
-- Three \\[universal-argument]'s changes direction of spelling
-  errors search and enables rapid mode." t nil) (autoload 'flyspell-correct-move "flyspell-correct" "Correct the first misspelled word that occurs before POSITION.
-
-Uses `flyspell-correct-at-point' function for correction.
-
-With FORWARD set non-nil, check forward instead of backward.
-
-With RAPID set non-nil, automatically continues in direction
-until all errors in buffer have been addressed.
-
-(fn POSITION &optional FORWARD RAPID)" t nil) (autoload 'flyspell-correct-auto-mode "flyspell-correct" "Minor mode for automatically correcting word at point.
-
-If called interactively, enable Flyspell-Correct-Auto mode if ARG
-is positive, and disable it if ARG is zero or negative.  If
-called from Lisp, also enable the mode if ARG is omitted or nil,
-and toggle it if ARG is `toggle'; disable the mode otherwise.
-
-Take my advice and don't use this functionality unless you find
-`flyspell-correct-previous' function useless for your purposes.
-Seriously, just try named function for completion. You can find
-more info in comment[1].
-
-[1]:
-https://github.com/syl20bnr/spacemacs/issues/6209#issuecomment-274320376
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flyspell-correct" '("flyspell-correct-"))) (autoload 'flyspell-correct-ido "flyspell-correct-ido" "Run `ido-completing-read' for the given CANDIDATES.
-
-List of CANDIDATES is given by flyspell for the WORD.
-
-Return a selected word to use as a replacement or a tuple
-of (command, word) to be used by `flyspell-do-correct'.
-
-(fn CANDIDATES WORD)" nil nil) (provide 'flyspell-correct-autoloads)) "flyspell-correct-avy-menu" ((flyspell-correct-avy-menu flyspell-correct-avy-menu-autoloads) (autoload 'flyspell-correct-avy-menu "flyspell-correct-avy-menu" "Run `avy-menu' for the given CANDIDATES.
-
-List of CANDIDATES is given by flyspell for the WORD.
-
-Return a selected word to use as a replacement or a tuple
-of (command, word) to be used by `flyspell-do-correct'.
-
-(fn CANDIDATES WORD)" nil nil) (provide 'flyspell-correct-avy-menu-autoloads)) "origami" ((origami-parsers origami origami-autoloads) (autoload 'origami-mode "origami" "Minor mode to selectively hide/show text in the current buffer.
-With a prefix argument ARG, enable the mode if ARG is positive,
-and disable it otherwise.  If called from Lisp, enable the mode
-if ARG is omitted or nil.
-
-Lastly, the normal hook `origami-mode-hook' is run using
-`run-hooks'.
-
-Key bindings:
-\\{origami-mode-map}
-
-(fn &optional ARG)" t nil) (put 'global-origami-mode 'globalized-minor-mode t) (defvar global-origami-mode nil "Non-nil if Global Origami mode is enabled.
-See the `global-origami-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `global-origami-mode'.") (custom-autoload 'global-origami-mode "origami" nil) (autoload 'global-origami-mode "origami" "Toggle Origami mode in all buffers.
-With prefix ARG, enable Global Origami mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Origami mode is enabled in all buffers where
-`(lambda nil (origami-mode 1))' would do it.
-See `origami-mode' for more information on Origami mode.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "origami" '("origami-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "origami-parsers" '("origami-"))) (provide 'origami-autoloads)) "yaml-mode" ((yaml-mode yaml-mode-autoloads) (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode" loads)))) (autoload 'yaml-mode "yaml-mode" "Simple mode to edit YAML.
-
-\\{yaml-mode-map}
-
-(fn)" t nil) (add-to-list 'auto-mode-alist '("\\.\\(e?ya?\\|ra\\)ml\\'" . yaml-mode)) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yaml-mode" '("yaml-"))) (provide 'yaml-mode-autoloads)) "general" ((general \.dirs-local general-autoloads) (autoload 'general-define-key "general" "The primary key definition function provided by general.el.
-
-Define MAPS, optionally using DEFINER, in the keymap(s) corresponding to STATES
-and KEYMAPS.
-
-MAPS consists of paired keys (vectors or strings; also see
-`general-implicit-kbd') and definitions (those mentioned in `define-key''s
-docstring and general.el's \"extended\" definitions). All pairs (when not
-ignored) will be recorded and can be later displayed with
-`general-describe-keybindings'.
-
-If DEFINER is specified, a custom key definer will be used to bind MAPS. See
-general.el's documentation/README for more information.
-
-Unlike with normal key definitions functions, the keymaps in KEYMAPS should be
-quoted (this allows using the keymap name for other purposes, e.g. deferring
-keybindings if the keymap symbol is not bound, optionally inferring the
-corresponding major mode for a symbol by removing \"-map\" for :which-key,
-easily storing the keymap name for use with `general-describe-keybindings',
-etc.). Note that general.el provides other key definer macros that do not
-require quoting keymaps.
-
-STATES corresponds to the evil state(s) to bind the keys in. Non-evil users
-should not set STATES. When STATES is non-nil, `evil-define-key*' will be
-used (the evil auxiliary keymaps corresponding STATES and KEYMAPS will be used);
-otherwise `define-key' will be used (unless DEFINER is specified). KEYMAPS
-defaults to 'global. There is also 'local, which create buffer-local
-keybindings for both evil and non-evil keybindings. There are other special,
-user-alterable \"shorthand\" symbols for keymaps and states (see
-`general-keymap-aliases' and `general-state-aliases').
-
-Note that STATES and KEYMAPS can either be lists or single symbols. If any
-keymap does not exist, those keybindings will be deferred until the keymap does
-exist, so using `eval-after-load' is not necessary with this function.
-
-PREFIX corresponds to a key to prefix keys in MAPS with and defaults to none. To
-bind/unbind a key specified with PREFIX, \"\" can be specified as a key in
-MAPS (e.g. ...:prefix \"SPC\" \"\" nil... will unbind space).
-
-The keywords in this paragraph are only useful for evil users. If
-NON-NORMAL-PREFIX is specified, this prefix will be used instead of PREFIX for
-states in `general-non-normal-states' (e.g. the emacs and insert states). This
-argument will only have an effect if one of these states is in STATES or if
-corresponding global keymap (e.g. `evil-insert-state-map') is in KEYMAPS.
-Alternatively, GLOBAL-PREFIX can be used with PREFIX and/or NON-NORMAL-PREFIX to
-bind keys in all states under the specified prefix. Like with NON-NORMAL-PREFIX,
-GLOBAL-PREFIX will prevent PREFIX from applying to `general-non-normal-states'.
-INFIX can be used to append a string to all of the specified prefixes. This is
-potentially useful when you are using GLOBAL-PREFIX and/or NON-NORMAL-PREFIX so
-that you can sandwich keys in between all the prefixes and the specified keys in
-MAPS. This may be particularly useful if you are using default prefixes in a
-wrapper function/macro so that you can add to them without needing to re-specify
-all of them. If none of the other prefix keyword arguments are specified, INFIX
-will have no effect.
-
-If PREFIX-COMMAND or PREFIX-MAP is specified, a prefix command and/or keymap
-will be created. PREFIX-NAME can be additionally specified to set the keymap
-menu name/prompt. If PREFIX-COMMAND is specified, `define-prefix-command' will
-be used. Otherwise, only a prefix keymap will be created. Previously created
-prefix commands/keymaps will never be redefined/cleared. All prefixes (including
-the INFIX key, if specified) will then be bound to PREFIX-COMMAND or PREFIX-MAP.
-If the user did not specify any PREFIX or manually specify any KEYMAPS, general
-will bind all MAPS in the prefix keymap corresponding to either PREFIX-MAP or
-PREFIX-COMMAND instead of in the default keymap.
-
-PREDICATE corresponds to a predicate to check to determine whether a definition
-should be active (e.g. \":predicate '(eobp)\"). Definitions created with a
-predicate will only be active when the predicate is true. When the predicate is
-false, key lookup will continue to search for a match in lower-precedence
-keymaps.
-
-In addition to the normal definitions supported by `define-key', general.el also
-provides \"extended\" definitions, which are plists containing the normal
-definition as well as other keywords. For example, PREDICATE can be specified
-globally or locally in an extended definition. New global (~general-define-key~)
-and local (extended definition) keywords can be added by the user. See
-`general-extended-def-keywords' and general.el's documentation/README for more
-information.
-
-PACKAGE is the global version of the extended definition keyword that specifies
-the package a keymap is defined in (used for \"autoloading\" keymaps)
-
-PROPERTIES, REPEAT, and JUMP are the global versions of the extended definition
-keywords used for adding evil command properties to commands.
-
-MAJOR-MODES, WK-MATCH-KEYS, WK-MATCH-BINDINGS, and WK-FULL-KEYS are the
-corresponding global versions of which-key extended definition keywords. They
-will only have an effect for extended definitions that specify :which-key or
-:wk. See the section on extended definitions in the general.el
-documentation/README for more information.
-
-LISPY-PLIST and WORF-PLIST are the global versions of extended definition
-keywords that are used for each corresponding custom DEFINER.
-
-(fn &rest MAPS &key DEFINER (STATES general-default-states) (KEYMAPS general-default-keymaps KEYMAPS-SPECIFIED-P) (PREFIX general-default-prefix) (NON-NORMAL-PREFIX general-default-non-normal-prefix) (GLOBAL-PREFIX general-default-global-prefix) INFIX PREFIX-COMMAND PREFIX-MAP PREFIX-NAME PREDICATE PACKAGE PROPERTIES REPEAT JUMP MAJOR-MODES (WK-MATCH-KEYS t) (WK-MATCH-BINDING t) (WK-FULL-KEYS t) LISPY-PLIST WORF-PLIST &allow-other-keys)" nil nil) (autoload 'general-emacs-define-key "general" "A wrapper for `general-define-key' that is similar to `define-key'.
-It has a positional argument for KEYMAPS (that will not be overridden by a later
-:keymaps argument). Besides this, it acts the same as `general-define-key', and
-ARGS can contain keyword arguments in addition to keybindings. This can
-basically act as a drop-in replacement for `define-key', and unlike with
-`general-define-key', KEYMAPS does not need to be quoted.
-
-(fn KEYMAPS &rest ARGS)" nil t) (function-put 'general-emacs-define-key 'lisp-indent-function '1) (autoload 'general-evil-define-key "general" "A wrapper for `general-define-key' that is similar to `evil-define-key'.
-It has positional arguments for STATES and KEYMAPS (that will not be overridden
-by a later :keymaps or :states argument). Besides this, it acts the same as
-`general-define-key', and ARGS can contain keyword arguments in addition to
-keybindings. This can basically act as a drop-in replacement for
-`evil-define-key', and unlike with `general-define-key', KEYMAPS does not need
-to be quoted.
-
-(fn STATES KEYMAPS &rest ARGS)" nil t) (function-put 'general-evil-define-key 'lisp-indent-function '2) (autoload 'general-def "general" "General definer that takes a variable number of positional arguments in ARGS.
-This macro will act as `general-define-key', `general-emacs-define-key', or
-`general-evil-define-key' based on how many of the initial arguments do not
-correspond to keybindings. All quoted and non-quoted lists and symbols before
-the first string, vector, or keyword are considered to be positional arguments.
-This means that you cannot use a function or variable for a key that starts
-immediately after the positional arguments. If you need to do this, you should
-use one of the definers that `general-def' dispatches to or explicitly separate
-the positional arguments from the maps with a bogus keyword pair like
-\":start-maps t\"
-
-(fn &rest ARGS)" nil t) (function-put 'general-def 'lisp-indent-function 'defun) (autoload 'general-create-definer "general" "A helper macro to create wrappers for `general-def'.
-This can be used to create key definers that will use a certain keymap, evil
-state, prefix key, etc. by default. NAME is the wrapper name and DEFAULTS are
-the default arguments. WRAPPING can also be optionally specified to use a
-different definer than `general-def'. It should not be quoted.
-
-(fn NAME &rest DEFAULTS &key WRAPPING &allow-other-keys)" nil t) (function-put 'general-create-definer 'lisp-indent-function 'defun) (autoload 'general-defs "general" "A wrapper that splits into multiple `general-def's.
-Each consecutive grouping of positional argument followed by keyword/argument
-pairs (having only one or the other is fine) marks the start of a new section.
-Each section corresponds to one use of `general-def'. This means that settings
-only apply to the keybindings that directly follow.
-
-Since positional arguments can appear at any point, unqouted symbols are always
-considered to be positional arguments (e.g. a keymap). This means that variables
-can never be used for keys with `general-defs'. Variables can still be used for
-definitions or as arguments to keywords.
-
-(fn &rest ARGS)" nil t) (function-put 'general-defs 'lisp-indent-function 'defun) (autoload 'general-unbind "general" "A wrapper for `general-def' to unbind multiple keys simultaneously.
-Insert after all keys in ARGS before passing ARGS to `general-def.' \":with
- #'func\" can optionally specified to use a custom function instead (e.g.
- `ignore').
-
-(fn &rest ARGS)" nil t) (function-put 'general-unbind 'lisp-indent-function 'defun) (autoload 'general-describe-keybindings "general" "Show all keys that have been bound with general in an org buffer.
-Any local keybindings will be shown first followed by global keybindings.
-With a non-nil prefix ARG only show bindings in active maps.
-
-(fn &optional ARG)" t nil) (autoload 'general-key "general" "Act as KEY's definition in the current context.
-This uses an extended menu item's capability of dynamically computing a
-definition. It is recommended over `general-simulate-key' wherever possible. See
-the docstring of `general-simulate-key' and the readme for information about the
-benefits and downsides of `general-key'.
-
-KEY should be a string given in `kbd' notation and should correspond to a single
-definition (as opposed to a sequence of commands). When STATE is specified, look
-up KEY with STATE as the current evil state. When specified, DOCSTRING will be
-the menu item's name/description.
-
-Let can be used to bind variables around key lookup. For example:
-(general-key \"some key\"
-  :let ((some-var some-val)))
-
-SETUP and TEARDOWN can be used to run certain functions before and after key
-lookup. For example, something similar to using :state 'emacs would be:
-(general-key \"some key\"
-  :setup (evil-local-mode -1)
-  :teardown (evil-local-mode))
-
-ACCEPT-DEFAULT, NO-REMAP, and POSITION are passed to `key-binding'.
-
-(fn KEY &key STATE DOCSTRING LET SETUP TEARDOWN ACCEPT-DEFAULT NO-REMAP POSITION)" nil t) (function-put 'general-key 'lisp-indent-function '1) (autoload 'general-simulate-keys "general" "Deprecated. Please use `general-simulate-key' instead.
-
-(fn KEYS &optional STATE KEYMAP (LOOKUP t) DOCSTRING NAME)" nil t) (autoload 'general-simulate-key "general" "Create and return a command that simulates KEYS in STATE and KEYMAP.
-
-`general-key' should be prefered over this whenever possible as it is simpler
-and has saner functionality in many cases because it does not rely on
-`unread-command-events' (e.g. \"C-h k\" will show the docstring of the command
-to be simulated ; see the readme for more information). The main downsides of
-`general-key' are that it cannot simulate a command followed by keys or
-subsequent commands, and which-key does not currently work well with it when
-simulating a prefix key/incomplete key sequence.
-
-KEYS should be a string given in `kbd' notation. It can also be a list of a
-single command followed by a string of the key(s) to simulate after calling that
-command. STATE should only be specified by evil users and should be a quoted
-evil state. KEYMAP should not be quoted. Both STATE and KEYMAP aliases are
-supported (but they have to be set when the macro is expanded). When neither
-STATE or KEYMAP are specified, the key(s) will be simulated in the current
-context.
-
-If NAME is specified, it will replace the automatically generated function name.
-NAME should not be quoted. If DOCSTRING is specified, it will replace the
-automatically generated docstring.
-
-Normally the generated function will look up KEY in the correct context to try
-to match a command. To prevent this lookup, LOOKUP can be specified as nil.
-Generally, you will want to keep LOOKUP non-nil because this will allow checking
-the evil repeat property of matched commands to determine whether or not they
-should be recorded. See the docstring for `general--simulate-keys' for more
-information about LOOKUP.
-
-When a WHICH-KEY description is specified, it will replace the command name in
-the which-key popup.
-
-When a command name is specified and that command has been remapped (i.e. [remap
-command] is currently bound), the remapped version will be used instead of the
-original command unless REMAP is specified as nil (it is true by default).
-
-The advantages of this over a keyboard macro are as follows:
-- Prefix arguments are supported
-- The user can control the context in which the keys are simulated
-- The user can simulate both a named command and keys
-- The user can simulate an incomplete key sequence (e.g. for a keymap)
-
-(fn KEYS &key STATE KEYMAP NAME DOCSTRING (LOOKUP t) WHICH-KEY (REMAP t))" nil t) (function-put 'general-simulate-key 'lisp-indent-function 'defun) (autoload 'general-key-dispatch "general" "Create and return a command that runs FALLBACK-COMMAND or a command in MAPS.
-MAPS consists of <key> <command> pairs. If a key in MAPS is matched, the
-corresponding command will be run. Otherwise FALLBACK-COMMAND will be run with
-the unmatched keys. So, for example, if \"ab\" was pressed, and \"ab\" is not
-one of the key sequences from MAPS, the FALLBACK-COMMAND will be run followed by
-the simulated keypresses of \"ab\". Prefix arguments will still work regardless
-of which command is run. This is useful for binding under non-prefix keys. For
-example, this can be used to redefine a sequence like \"cw\" or \"cow\" in evil
-but still have \"c\" work as `evil-change'. If TIMEOUT is specified,
-FALLBACK-COMMAND will also be run in the case that the user does not press the
-next key within the TIMEOUT (e.g. 0.5).
-
-NAME and DOCSTRING are optional keyword arguments. They can be used to replace
-the automatically generated name and docstring for the created function. By
-default, `cl-gensym' is used to prevent name clashes (e.g. allows the user to
-create multiple different commands using `self-insert-command' as the
-FALLBACK-COMMAND without explicitly specifying NAME to manually prevent
-clashes).
-
-When INHERIT-KEYMAP is specified, all the keybindings from that keymap will be
-inherited in MAPS.
-
-When a WHICH-KEY description is specified, it will replace the command name in
-the which-key popup.
-
-When command to be executed has been remapped (i.e. [remap command] is currently
-bound), the remapped version will be used instead of the original command unless
-REMAP is specified as nil (it is true by default).
-
-(fn FALLBACK-COMMAND &rest MAPS &key TIMEOUT INHERIT-KEYMAP NAME DOCSTRING WHICH-KEY (REMAP t) &allow-other-keys)" nil t) (function-put 'general-key-dispatch 'lisp-indent-function '1) (autoload 'general-predicate-dispatch "general" "
-
-(fn FALLBACK-DEF &rest DEFS &key DOCSTRING &allow-other-keys)" nil t) (function-put 'general-predicate-dispatch 'lisp-indent-function '1) (autoload 'general-translate-key "general" "Translate keys in the keymap(s) corresponding to STATES and KEYMAPS.
-STATES should be the name of an evil state, a list of states, or nil. KEYMAPS
-should be a symbol corresponding to the keymap to make the translations in or a
-list of keymap names. Keymap and state aliases are supported (as well as 'local
-and 'global for KEYMAPS).
-
-MAPS corresponds to a list of translations (key replacement pairs). For example,
-specifying \"a\" \"b\" will bind \"a\" to \"b\"'s definition in the keymap.
-Specifying nil as a replacement will unbind a key.
-
-If DESTRUCTIVE is non-nil, the keymap will be destructively altered without
-creating a backup. If DESTRUCTIVE is nil, store a backup of the keymap on the
-initial invocation, and for future invocations always look up keys in the
-original/backup keymap. On the other hand, if DESTRUCTIVE is non-nil, calling
-this function multiple times with \"a\" \"b\" \"b\" \"a\", for example, would
-continue to swap and unswap the definitions of these keys. This means that when
-DESTRUCTIVE is non-nil, all related swaps/cycles should be done in the same
-invocation.
-
-If both MAPS and DESCTRUCTIVE are nil, only create the backup keymap.
-
-(fn STATES KEYMAPS &rest MAPS &key DESTRUCTIVE &allow-other-keys)" nil nil) (function-put 'general-translate-key 'lisp-indent-function 'defun) (autoload 'general-swap-key "general" "Wrapper around `general-translate-key' for swapping keys.
-STATES, KEYMAPS, and ARGS are passed to `general-translate-key'. ARGS should
-consist of key swaps (e.g. \"a\" \"b\" is equivalent to \"a\" \"b\" \"b\" \"a\"
-with `general-translate-key') and optionally keyword arguments for
-`general-translate-key'.
-
-(fn STATES KEYMAPS &rest ARGS)" nil t) (function-put 'general-swap-key 'lisp-indent-function 'defun) (autoload 'general-auto-unbind-keys "general" "Advise `define-key' to automatically unbind keys when necessary.
-This will prevent errors when a sub-sequence of a key is already bound (e.g. the
-user attempts to bind \"SPC a\" when \"SPC\" is bound, resulting in a \"Key
-sequnce starts with non-prefix key\" error). When UNDO is non-nil, remove
-advice.
-
-(fn &optional UNDO)" nil nil) (autoload 'general-add-hook "general" "A drop-in replacement for `add-hook'.
-Unlike `add-hook', HOOKS and FUNCTIONS can be single items or lists. APPEND and
-LOCAL are passed directly to `add-hook'. When TRANSIENT is non-nil, each
-function will remove itself from the hook it is in after it is run once. If
-TRANSIENT is a function, call it on the return value in order to determine
-whether to remove a function from the hook. For example, if TRANSIENT is
-#'identity, remove each function only if it returns non-nil. TRANSIENT could
-alternatively check something external and ignore the function's return value.
-
-(fn HOOKS FUNCTIONS &optional APPEND LOCAL TRANSIENT)" nil nil) (autoload 'general-remove-hook "general" "A drop-in replacement for `remove-hook'.
-Unlike `remove-hook', HOOKS and FUNCTIONS can be single items or lists. LOCAL is
-passed directly to `remove-hook'.
-
-(fn HOOKS FUNCTIONS &optional LOCAL)" nil nil) (autoload 'general-advice-add "general" "A drop-in replacement for `advice-add'.
-SYMBOLS, WHERE, FUNCTIONS, and PROPS correspond to the arguments for
-`advice-add'. Unlike `advice-add', SYMBOLS and FUNCTIONS can be single items or
-lists. When TRANSIENT is non-nil, each function will remove itself as advice
-after it is run once. If TRANSIENT is a function, call it on the return value in
-order to determine whether to remove a function as advice. For example, if
-TRANSIENT is #'identity, remove each function only if it returns non-nil.
-TRANSIENT could alternatively check something external and ignore the function's
-return value.
-
-(fn SYMBOLS WHERE FUNCTIONS &optional PROPS TRANSIENT)" nil nil) (autoload 'general-add-advice "general") (autoload 'general-advice-remove "general" "A drop-in replacement for `advice-remove'.
-Unlike `advice-remove', SYMBOLS and FUNCTIONS can be single items or lists.
-
-(fn SYMBOLS FUNCTIONS)" nil nil) (autoload 'general-remove-advice "general") (autoload 'general-evil-setup "general" "Set up some basic equivalents for vim mapping functions.
-This creates global key definition functions for the evil states.
-Specifying SHORT-NAMES as non-nil will create non-prefixed function
-aliases such as `nmap' for `general-nmap'.
-
-(fn &optional SHORT-NAMES _)" nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "general" '("general-"))) (provide 'general-autoloads)) "counsel-jq" ((counsel-jq counsel-jq-autoloads) (autoload 'counsel-jq "counsel-jq" "Counsel interface for dynamically querying jq. Whenever you're happy with the query, hit RET and the results will be displayed to you in the buffer *jq-json*." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "counsel-jq" '("counsel-jq-"))) (provide 'counsel-jq-autoloads)) "pyvenv" ((pyvenv-autoloads pyvenv) (autoload 'pyvenv-activate "pyvenv" "Activate the virtual environment in DIRECTORY.
+(fn COMMAND &optional ARG &rest ARGS)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-anaconda" '("company-anaconda-"))) (provide 'company-anaconda-autoloads)) "pyvenv" ((pyvenv-autoloads pyvenv) (autoload 'pyvenv-activate "pyvenv" "Activate the virtual environment in DIRECTORY.
 
 (fn DIRECTORY)" t nil) (autoload 'pyvenv-deactivate "pyvenv" "Deactivate any current virtual environment." t nil) (autoload 'pyvenv-workon "pyvenv" "Activate a virtual environment from $WORKON_HOME.
 
@@ -4102,62 +3731,7 @@ This minor mode automatically activates the relevant Poetry virtualenv when visi
 
 It ensures that your python scripts are always executed in the right environment.
 
-(fn &optional ARG)" t nil) (autoload 'poetry-find-project-root "poetry" "Return the poetry project root if any." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poetry" '("poetry"))) (provide 'poetry-autoloads)) "company-anaconda" ((company-anaconda-autoloads company-anaconda) (autoload 'company-anaconda "company-anaconda" "Anaconda backend for company-mode.
-See `company-backends' for more info about COMMAND and ARG.
-
-(fn COMMAND &optional ARG &rest ARGS)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "company-anaconda" '("company-anaconda-"))) (provide 'company-anaconda-autoloads)) "linum-relative" ((linum-relative linum-relative-autoloads) (autoload 'linum-relative-toggle "linum-relative" "Toggle between linum-relative and linum." t nil) (autoload 'linum-relative-mode "linum-relative" "Display relative line numbers for current buffer.
-
-If called interactively, enable Linum-Relative mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (put 'linum-relative-global-mode 'globalized-minor-mode t) (defvar linum-relative-global-mode nil "Non-nil if Linum-Relative-Global mode is enabled.
-See the `linum-relative-global-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `linum-relative-global-mode'.") (custom-autoload 'linum-relative-global-mode "linum-relative" nil) (autoload 'linum-relative-global-mode "linum-relative" "Toggle Linum-Relative mode in all buffers.
-With prefix ARG, enable Linum-Relative-Global mode if ARG is positive;
-otherwise, disable it.  If called from Lisp, enable the mode if
-ARG is omitted or nil.
-
-Linum-Relative mode is enabled in all buffers where
-`(lambda nil (unless (linum-relative-in-helm-p) (linum-relative-mode 1)))' would do it.
-See `linum-relative-mode' for more information on Linum-Relative mode.
-
-(fn &optional ARG)" t nil) (autoload 'helm-linum-relative-mode "linum-relative" "Turn on `linum-relative-mode' in helm.
-
-If called interactively, enable Helm-Linum-Relative mode if ARG
-is positive, and disable it if ARG is zero or negative.  If
-called from Lisp, also enable the mode if ARG is omitted or nil,
-and toggle it if ARG is `toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "linum-relative" '("helm--turn-on-linum-relative" "linum-relative"))) (provide 'linum-relative-autoloads)) "minimap" ((minimap minimap-autoloads) (defvar minimap-mode nil "Non-nil if Minimap mode is enabled.
-See the `minimap-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `minimap-mode'.") (custom-autoload 'minimap-mode "minimap" nil) (autoload 'minimap-mode "minimap" "Toggle minimap mode.
-
-If called interactively, enable Minimap mode if ARG is positive,
-and disable it if ARG is zero or negative.  If called from Lisp,
-also enable the mode if ARG is omitted or nil, and toggle it if
-ARG is `toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "minimap" '("minimap-"))) (provide 'minimap-autoloads)) "sublimity" ((sublimity-autoloads sublimity-map sublimity sublimity-scroll sublimity-attractive) (defvar sublimity-mode nil "Non-nil if Sublimity mode is enabled.
-See the `sublimity-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `sublimity-mode'.") (custom-autoload 'sublimity-mode "sublimity" nil) (autoload 'sublimity-mode "sublimity" "smooth-scrolling and minimap, like sublime editor
-
-If called interactively, enable Sublimity mode if ARG is
-positive, and disable it if ARG is zero or negative.  If called
-from Lisp, also enable the mode if ARG is omitted or nil, and
-toggle it if ARG is `toggle'; disable the mode otherwise.
-
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity" '("sublimity-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-attractive" '("split-window" "sublimity-attractive-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-map" '("sublimity-map-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sublimity-scroll" '("sublimity-scroll-"))) (provide 'sublimity-autoloads)) "org" ((ob-comint org-ctags ox-texinfo org-refile org-num ol-mhe ob-shell org-attach ob-C org-entities ob-dot ob-sql ol-eww org-datetree org-macro ob-eval ob-abc ob-groovy ob-shen ox-icalendar org-mobile ob-processing ob-picolisp ob-octave org-table ox-html ol ob-plantuml ol-docview ob-exp ob-ditaa ob-scheme ol-gnus org-mouse org-inlinetask ob-fortran ob-haskell org-id ob-vala ob-css org-compat ob-coq org-autoloads org-element ob ob-calc ob-python org-agenda ob-ocaml org-tempo ob-ref ob-tangle ob-lilypond ob-clojure org-lint ol-eshell ox-latex org-pcomplete org-duration ox-beamer ol-info ob-ebnf ob-table ol-rmail ox-odt org-protocol ob-latex org-archive ol-w3m ob-sed ob-perl ob-eshell org-plot org-clock ob-awk ob-stan org-list ob-sqlite org-macs ox-man ol-bbdb org-loaddefs ol-irc org ob-J ob-ledger org-capture ob-asymptote org-colview org-goto ob-R ob-ruby ob-sass ob-matlab ox ob-core ob-makefile org-timer ob-org ob-forth ob-io ob-lob ob-gnuplot org-faces org-habit ob-js ob-screen org-footnote ob-mscgen ol-bibtex ob-hledger ob-java ob-lua ox-md org-install ox-ascii org-keys ob-lisp org-attach-git ob-emacs-lisp ob-maxima org-crypt org-feed org-src ox-org org-indent ox-publish) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-C" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-J" '("obj-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-R" '("ob-R-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-abc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-asymptote" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-awk" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-calc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-clojure" '("ob-clojure-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-comint" '("org-babel-comint-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("coq-program-name" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-core" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-css" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ditaa" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-dot" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ebnf" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-emacs-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eshell" '("ob-eshell-session-live-p" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eval" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-exp" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-forth" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-fortran" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("*org-babel-gnuplot-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-groovy" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-haskell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-hledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-io" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-java" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-js" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-latex" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("lilypond-mode" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lob" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lua" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-makefile" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-maxima" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-mscgen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ocaml" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-octave" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-org" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-perl" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-picolisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-plantuml" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-processing" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-python" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ref" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ruby" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sass" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-scheme" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-screen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sed" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sql" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sqlite" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-stan" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-table" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-tangle" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-vala" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bbdb" '("org-bbdb-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bibtex" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-docview" '("org-docview-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eshell" '("org-eshell-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eww" '("org-eww-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-gnus" '("org-gnus-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-info" '("org-info-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-irc" '("org-irc-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-mhe" '("org-mhe-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-rmail" '("org-rmail-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-w3m" '("org-w3m-"))) (autoload 'org-babel-do-load-languages "org" "Load the languages defined in `org-babel-load-languages'.
+(fn &optional ARG)" t nil) (autoload 'poetry-find-project-root "poetry" "Return the poetry project root if any." nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "poetry" '("poetry"))) (provide 'poetry-autoloads)) "org" ((ob-comint org-ctags ox-texinfo org-refile org-num ol-mhe ob-shell org-attach ob-C org-entities ob-dot ob-sql ol-eww org-datetree org-macro ob-eval ob-abc ob-groovy ob-shen ox-icalendar org-mobile ob-processing ob-picolisp ob-octave org-table ox-html ol ob-plantuml ol-docview ob-exp ob-ditaa ob-scheme ol-gnus org-mouse org-inlinetask ob-fortran ob-haskell org-id ob-vala ob-css org-compat ob-coq org-autoloads org-element ob ob-calc ob-python org-agenda ob-ocaml org-tempo ob-ref ob-tangle ob-lilypond ob-clojure org-lint ol-eshell ox-latex org-pcomplete org-duration ox-beamer ol-info ob-ebnf ob-table ol-rmail ox-odt org-protocol ob-latex org-archive ol-w3m ob-sed ob-perl ob-eshell org-plot org-clock ob-awk ob-stan org-list ob-sqlite org-macs ox-man ol-bbdb org-loaddefs ol-irc org ob-J ob-ledger org-capture ob-asymptote org-colview org-goto ob-R ob-ruby ob-sass ob-matlab ox ob-core ob-makefile org-timer ob-org ob-forth ob-io ob-lob ob-gnuplot org-faces org-habit ob-js ob-screen org-footnote ob-mscgen ol-bibtex ob-hledger ob-java ob-lua ox-md org-install ox-ascii org-keys ob-lisp org-attach-git ob-emacs-lisp ob-maxima org-crypt org-feed org-src ox-org org-indent ox-publish) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-C" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-J" '("obj-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-R" '("ob-R-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-abc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-asymptote" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-awk" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-calc" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-clojure" '("ob-clojure-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-comint" '("org-babel-comint-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-coq" '("coq-program-name" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-core" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-css" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ditaa" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-dot" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ebnf" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-emacs-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eshell" '("ob-eshell-session-live-p" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-eval" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-exp" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-forth" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-fortran" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-gnuplot" '("*org-babel-gnuplot-" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-groovy" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-haskell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-hledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-io" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-java" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-js" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-latex" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ledger" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lilypond" '("lilypond-mode" "org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lob" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-lua" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-makefile" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-maxima" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-mscgen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ocaml" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-octave" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-org" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-perl" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-picolisp" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-plantuml" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-processing" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-python" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ref" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-ruby" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sass" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-scheme" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-screen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sed" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shell" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-shen" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sql" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-sqlite" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-stan" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-table" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-tangle" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ob-vala" '("org-babel-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bbdb" '("org-bbdb-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-bibtex" '("org-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-docview" '("org-docview-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eshell" '("org-eshell-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-eww" '("org-eww-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-gnus" '("org-gnus-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-info" '("org-info-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-irc" '("org-irc-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-mhe" '("org-mhe-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-rmail" '("org-rmail-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ol-w3m" '("org-w3m-"))) (autoload 'org-babel-do-load-languages "org" "Load the languages defined in `org-babel-load-languages'.
 
 (fn SYM VALUE)" nil nil) (autoload 'org-babel-load-file "org" "Load Emacs Lisp source code blocks in the Org FILE.
 This function exports the source code using `org-babel-tangle'
@@ -4647,39 +4221,428 @@ ARG may be any of the following values:
   - `\\[universal-argument]' -   build the graph for FILE.
   - `\\[universal-argument]' -N  build the graph for FILE limiting nodes to N steps.
 
-(fn &optional ARG FILE NODE-QUERY)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-graph" '("org-roam-graph-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-link" '("org-roam-link-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-macs" '("org-roam-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-protocol" '("org-roam-protocol-"))) (provide 'org-roam-autoloads)) "ivy-rich" ((ivy-rich-autoloads ivy-rich) (defvar ivy-rich-mode nil "Non-nil if Ivy-Rich mode is enabled.
-See the `ivy-rich-mode' command
+(fn &optional ARG FILE NODE-QUERY)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-graph" '("org-roam-graph-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-link" '("org-roam-link-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-macs" '("org-roam-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "org-roam-protocol" '("org-roam-protocol-"))) (provide 'org-roam-autoloads)) "markdown-mode" ((markdown-mode markdown-mode-autoloads) (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files.
+
+(fn)" t nil) (add-to-list 'auto-mode-alist '("\\.\\(?:md\\|markdown\\|mkd\\|mdown\\|mkdn\\|mdwn\\)\\'" . markdown-mode)) (autoload 'gfm-mode "markdown-mode" "Major mode for editing GitHub Flavored Markdown files.
+
+(fn)" t nil) (autoload 'markdown-view-mode "markdown-mode" "Major mode for viewing Markdown content.
+
+(fn)" t nil) (autoload 'gfm-view-mode "markdown-mode" "Major mode for viewing GitHub Flavored Markdown content.
+
+(fn)" t nil) (autoload 'markdown-live-preview-mode "markdown-mode" "Toggle native previewing on save for a specific markdown file.
+
+If called interactively, enable Markdown-Live-Preview mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "markdown-mode" '("defun-markdown-" "gfm-" "markdown"))) (provide 'markdown-mode-autoloads)) "flyspell-correct" ((flyspell-correct-ido flyspell-correct flyspell-correct-autoloads) (autoload 'flyspell-correct-at-point "flyspell-correct" "Correct word before point using `flyspell-correct-interface'.
+Adapted from `flyspell-correct-word-before-point'." t nil) (autoload 'flyspell-correct-previous "flyspell-correct" "Correct the first misspelled word that occurs before POSITION.
+But don't look beyond what's visible on the screen.
+
+Uses `flyspell-correct-at-point' function for correction.
+
+With a prefix argument, automatically continues to all prior misspelled words in the buffer.
+
+(fn POSITION)" t nil) (autoload 'flyspell-correct-next "flyspell-correct" "Correct the first misspelled word that occurs after POSITION.
+
+Uses `flyspell-correct-at-point' function for correction.
+
+With a prefix argument, automatically continues to all further
+misspelled words in the buffer.
+
+(fn POSITION)" t nil) (autoload 'flyspell-correct-wrapper "flyspell-correct" "Correct spelling error in a dwim fashion based on universal argument.
+
+- One \\[universal-argument] enables rapid mode.
+- Two \\[universal-argument]'s changes direction of spelling
+  errors search.
+- Three \\[universal-argument]'s changes direction of spelling
+  errors search and enables rapid mode." t nil) (autoload 'flyspell-correct-move "flyspell-correct" "Correct the first misspelled word that occurs before POSITION.
+
+Uses `flyspell-correct-at-point' function for correction.
+
+With FORWARD set non-nil, check forward instead of backward.
+
+With RAPID set non-nil, automatically continues in direction
+until all errors in buffer have been addressed.
+
+(fn POSITION &optional FORWARD RAPID)" t nil) (autoload 'flyspell-correct-auto-mode "flyspell-correct" "Minor mode for automatically correcting word at point.
+
+If called interactively, enable Flyspell-Correct-Auto mode if ARG
+is positive, and disable it if ARG is zero or negative.  If
+called from Lisp, also enable the mode if ARG is omitted or nil,
+and toggle it if ARG is `toggle'; disable the mode otherwise.
+
+Take my advice and don't use this functionality unless you find
+`flyspell-correct-previous' function useless for your purposes.
+Seriously, just try named function for completion. You can find
+more info in comment[1].
+
+[1]:
+https://github.com/syl20bnr/spacemacs/issues/6209#issuecomment-274320376
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "flyspell-correct" '("flyspell-correct-"))) (autoload 'flyspell-correct-ido "flyspell-correct-ido" "Run `ido-completing-read' for the given CANDIDATES.
+
+List of CANDIDATES is given by flyspell for the WORD.
+
+Return a selected word to use as a replacement or a tuple
+of (command, word) to be used by `flyspell-do-correct'.
+
+(fn CANDIDATES WORD)" nil nil) (provide 'flyspell-correct-autoloads)) "flyspell-correct-avy-menu" ((flyspell-correct-avy-menu flyspell-correct-avy-menu-autoloads) (autoload 'flyspell-correct-avy-menu "flyspell-correct-avy-menu" "Run `avy-menu' for the given CANDIDATES.
+
+List of CANDIDATES is given by flyspell for the WORD.
+
+Return a selected word to use as a replacement or a tuple
+of (command, word) to be used by `flyspell-do-correct'.
+
+(fn CANDIDATES WORD)" nil nil) (provide 'flyspell-correct-avy-menu-autoloads)) "origami" ((origami-parsers origami origami-autoloads) (autoload 'origami-mode "origami" "Minor mode to selectively hide/show text in the current buffer.
+With a prefix argument ARG, enable the mode if ARG is positive,
+and disable it otherwise.  If called from Lisp, enable the mode
+if ARG is omitted or nil.
+
+Lastly, the normal hook `origami-mode-hook' is run using
+`run-hooks'.
+
+Key bindings:
+\\{origami-mode-map}
+
+(fn &optional ARG)" t nil) (put 'global-origami-mode 'globalized-minor-mode t) (defvar global-origami-mode nil "Non-nil if Global Origami mode is enabled.
+See the `global-origami-mode' command
 for a description of this minor mode.
 Setting this variable directly does not take effect;
 either customize it (see the info node `Easy Customization')
-or call the function `ivy-rich-mode'.") (custom-autoload 'ivy-rich-mode "ivy-rich" nil) (autoload 'ivy-rich-mode "ivy-rich" "Toggle ivy-rich mode globally.
+or call the function `global-origami-mode'.") (custom-autoload 'global-origami-mode "origami" nil) (autoload 'global-origami-mode "origami" "Toggle Origami mode in all buffers.
+With prefix ARG, enable Global Origami mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
 
-If called interactively, enable Ivy-Rich mode if ARG is positive,
+Origami mode is enabled in all buffers where
+`(lambda nil (origami-mode 1))' would do it.
+See `origami-mode' for more information on Origami mode.
+
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "origami" '("origami-"))) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "origami-parsers" '("origami-"))) (provide 'origami-autoloads)) "counsel-jq" ((counsel-jq counsel-jq-autoloads) (autoload 'counsel-jq "counsel-jq" "Counsel interface for dynamically querying jq. Whenever you're happy with the query, hit RET and the results will be displayed to you in the buffer *jq-json*." t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "counsel-jq" '("counsel-jq-"))) (provide 'counsel-jq-autoloads)) "yaml-mode" ((yaml-mode yaml-mode-autoloads) (let ((loads (get 'yaml 'custom-loads))) (if (member '"yaml-mode" loads) nil (put 'yaml 'custom-loads (cons '"yaml-mode" loads)))) (autoload 'yaml-mode "yaml-mode" "Simple mode to edit YAML.
+
+\\{yaml-mode-map}
+
+(fn)" t nil) (add-to-list 'auto-mode-alist '("\\.\\(e?ya?\\|ra\\)ml\\'" . yaml-mode)) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "yaml-mode" '("yaml-"))) (provide 'yaml-mode-autoloads)) "general" ((general \.dirs-local general-autoloads) (autoload 'general-define-key "general" "The primary key definition function provided by general.el.
+
+Define MAPS, optionally using DEFINER, in the keymap(s) corresponding to STATES
+and KEYMAPS.
+
+MAPS consists of paired keys (vectors or strings; also see
+`general-implicit-kbd') and definitions (those mentioned in `define-key''s
+docstring and general.el's \"extended\" definitions). All pairs (when not
+ignored) will be recorded and can be later displayed with
+`general-describe-keybindings'.
+
+If DEFINER is specified, a custom key definer will be used to bind MAPS. See
+general.el's documentation/README for more information.
+
+Unlike with normal key definitions functions, the keymaps in KEYMAPS should be
+quoted (this allows using the keymap name for other purposes, e.g. deferring
+keybindings if the keymap symbol is not bound, optionally inferring the
+corresponding major mode for a symbol by removing \"-map\" for :which-key,
+easily storing the keymap name for use with `general-describe-keybindings',
+etc.). Note that general.el provides other key definer macros that do not
+require quoting keymaps.
+
+STATES corresponds to the evil state(s) to bind the keys in. Non-evil users
+should not set STATES. When STATES is non-nil, `evil-define-key*' will be
+used (the evil auxiliary keymaps corresponding STATES and KEYMAPS will be used);
+otherwise `define-key' will be used (unless DEFINER is specified). KEYMAPS
+defaults to 'global. There is also 'local, which create buffer-local
+keybindings for both evil and non-evil keybindings. There are other special,
+user-alterable \"shorthand\" symbols for keymaps and states (see
+`general-keymap-aliases' and `general-state-aliases').
+
+Note that STATES and KEYMAPS can either be lists or single symbols. If any
+keymap does not exist, those keybindings will be deferred until the keymap does
+exist, so using `eval-after-load' is not necessary with this function.
+
+PREFIX corresponds to a key to prefix keys in MAPS with and defaults to none. To
+bind/unbind a key specified with PREFIX, \"\" can be specified as a key in
+MAPS (e.g. ...:prefix \"SPC\" \"\" nil... will unbind space).
+
+The keywords in this paragraph are only useful for evil users. If
+NON-NORMAL-PREFIX is specified, this prefix will be used instead of PREFIX for
+states in `general-non-normal-states' (e.g. the emacs and insert states). This
+argument will only have an effect if one of these states is in STATES or if
+corresponding global keymap (e.g. `evil-insert-state-map') is in KEYMAPS.
+Alternatively, GLOBAL-PREFIX can be used with PREFIX and/or NON-NORMAL-PREFIX to
+bind keys in all states under the specified prefix. Like with NON-NORMAL-PREFIX,
+GLOBAL-PREFIX will prevent PREFIX from applying to `general-non-normal-states'.
+INFIX can be used to append a string to all of the specified prefixes. This is
+potentially useful when you are using GLOBAL-PREFIX and/or NON-NORMAL-PREFIX so
+that you can sandwich keys in between all the prefixes and the specified keys in
+MAPS. This may be particularly useful if you are using default prefixes in a
+wrapper function/macro so that you can add to them without needing to re-specify
+all of them. If none of the other prefix keyword arguments are specified, INFIX
+will have no effect.
+
+If PREFIX-COMMAND or PREFIX-MAP is specified, a prefix command and/or keymap
+will be created. PREFIX-NAME can be additionally specified to set the keymap
+menu name/prompt. If PREFIX-COMMAND is specified, `define-prefix-command' will
+be used. Otherwise, only a prefix keymap will be created. Previously created
+prefix commands/keymaps will never be redefined/cleared. All prefixes (including
+the INFIX key, if specified) will then be bound to PREFIX-COMMAND or PREFIX-MAP.
+If the user did not specify any PREFIX or manually specify any KEYMAPS, general
+will bind all MAPS in the prefix keymap corresponding to either PREFIX-MAP or
+PREFIX-COMMAND instead of in the default keymap.
+
+PREDICATE corresponds to a predicate to check to determine whether a definition
+should be active (e.g. \":predicate '(eobp)\"). Definitions created with a
+predicate will only be active when the predicate is true. When the predicate is
+false, key lookup will continue to search for a match in lower-precedence
+keymaps.
+
+In addition to the normal definitions supported by `define-key', general.el also
+provides \"extended\" definitions, which are plists containing the normal
+definition as well as other keywords. For example, PREDICATE can be specified
+globally or locally in an extended definition. New global (~general-define-key~)
+and local (extended definition) keywords can be added by the user. See
+`general-extended-def-keywords' and general.el's documentation/README for more
+information.
+
+PACKAGE is the global version of the extended definition keyword that specifies
+the package a keymap is defined in (used for \"autoloading\" keymaps)
+
+PROPERTIES, REPEAT, and JUMP are the global versions of the extended definition
+keywords used for adding evil command properties to commands.
+
+MAJOR-MODES, WK-MATCH-KEYS, WK-MATCH-BINDINGS, and WK-FULL-KEYS are the
+corresponding global versions of which-key extended definition keywords. They
+will only have an effect for extended definitions that specify :which-key or
+:wk. See the section on extended definitions in the general.el
+documentation/README for more information.
+
+LISPY-PLIST and WORF-PLIST are the global versions of extended definition
+keywords that are used for each corresponding custom DEFINER.
+
+(fn &rest MAPS &key DEFINER (STATES general-default-states) (KEYMAPS general-default-keymaps KEYMAPS-SPECIFIED-P) (PREFIX general-default-prefix) (NON-NORMAL-PREFIX general-default-non-normal-prefix) (GLOBAL-PREFIX general-default-global-prefix) INFIX PREFIX-COMMAND PREFIX-MAP PREFIX-NAME PREDICATE PACKAGE PROPERTIES REPEAT JUMP MAJOR-MODES (WK-MATCH-KEYS t) (WK-MATCH-BINDING t) (WK-FULL-KEYS t) LISPY-PLIST WORF-PLIST &allow-other-keys)" nil nil) (autoload 'general-emacs-define-key "general" "A wrapper for `general-define-key' that is similar to `define-key'.
+It has a positional argument for KEYMAPS (that will not be overridden by a later
+:keymaps argument). Besides this, it acts the same as `general-define-key', and
+ARGS can contain keyword arguments in addition to keybindings. This can
+basically act as a drop-in replacement for `define-key', and unlike with
+`general-define-key', KEYMAPS does not need to be quoted.
+
+(fn KEYMAPS &rest ARGS)" nil t) (function-put 'general-emacs-define-key 'lisp-indent-function '1) (autoload 'general-evil-define-key "general" "A wrapper for `general-define-key' that is similar to `evil-define-key'.
+It has positional arguments for STATES and KEYMAPS (that will not be overridden
+by a later :keymaps or :states argument). Besides this, it acts the same as
+`general-define-key', and ARGS can contain keyword arguments in addition to
+keybindings. This can basically act as a drop-in replacement for
+`evil-define-key', and unlike with `general-define-key', KEYMAPS does not need
+to be quoted.
+
+(fn STATES KEYMAPS &rest ARGS)" nil t) (function-put 'general-evil-define-key 'lisp-indent-function '2) (autoload 'general-def "general" "General definer that takes a variable number of positional arguments in ARGS.
+This macro will act as `general-define-key', `general-emacs-define-key', or
+`general-evil-define-key' based on how many of the initial arguments do not
+correspond to keybindings. All quoted and non-quoted lists and symbols before
+the first string, vector, or keyword are considered to be positional arguments.
+This means that you cannot use a function or variable for a key that starts
+immediately after the positional arguments. If you need to do this, you should
+use one of the definers that `general-def' dispatches to or explicitly separate
+the positional arguments from the maps with a bogus keyword pair like
+\":start-maps t\"
+
+(fn &rest ARGS)" nil t) (function-put 'general-def 'lisp-indent-function 'defun) (autoload 'general-create-definer "general" "A helper macro to create wrappers for `general-def'.
+This can be used to create key definers that will use a certain keymap, evil
+state, prefix key, etc. by default. NAME is the wrapper name and DEFAULTS are
+the default arguments. WRAPPING can also be optionally specified to use a
+different definer than `general-def'. It should not be quoted.
+
+(fn NAME &rest DEFAULTS &key WRAPPING &allow-other-keys)" nil t) (function-put 'general-create-definer 'lisp-indent-function 'defun) (autoload 'general-defs "general" "A wrapper that splits into multiple `general-def's.
+Each consecutive grouping of positional argument followed by keyword/argument
+pairs (having only one or the other is fine) marks the start of a new section.
+Each section corresponds to one use of `general-def'. This means that settings
+only apply to the keybindings that directly follow.
+
+Since positional arguments can appear at any point, unqouted symbols are always
+considered to be positional arguments (e.g. a keymap). This means that variables
+can never be used for keys with `general-defs'. Variables can still be used for
+definitions or as arguments to keywords.
+
+(fn &rest ARGS)" nil t) (function-put 'general-defs 'lisp-indent-function 'defun) (autoload 'general-unbind "general" "A wrapper for `general-def' to unbind multiple keys simultaneously.
+Insert after all keys in ARGS before passing ARGS to `general-def.' \":with
+ #'func\" can optionally specified to use a custom function instead (e.g.
+ `ignore').
+
+(fn &rest ARGS)" nil t) (function-put 'general-unbind 'lisp-indent-function 'defun) (autoload 'general-describe-keybindings "general" "Show all keys that have been bound with general in an org buffer.
+Any local keybindings will be shown first followed by global keybindings.
+With a non-nil prefix ARG only show bindings in active maps.
+
+(fn &optional ARG)" t nil) (autoload 'general-key "general" "Act as KEY's definition in the current context.
+This uses an extended menu item's capability of dynamically computing a
+definition. It is recommended over `general-simulate-key' wherever possible. See
+the docstring of `general-simulate-key' and the readme for information about the
+benefits and downsides of `general-key'.
+
+KEY should be a string given in `kbd' notation and should correspond to a single
+definition (as opposed to a sequence of commands). When STATE is specified, look
+up KEY with STATE as the current evil state. When specified, DOCSTRING will be
+the menu item's name/description.
+
+Let can be used to bind variables around key lookup. For example:
+(general-key \"some key\"
+  :let ((some-var some-val)))
+
+SETUP and TEARDOWN can be used to run certain functions before and after key
+lookup. For example, something similar to using :state 'emacs would be:
+(general-key \"some key\"
+  :setup (evil-local-mode -1)
+  :teardown (evil-local-mode))
+
+ACCEPT-DEFAULT, NO-REMAP, and POSITION are passed to `key-binding'.
+
+(fn KEY &key STATE DOCSTRING LET SETUP TEARDOWN ACCEPT-DEFAULT NO-REMAP POSITION)" nil t) (function-put 'general-key 'lisp-indent-function '1) (autoload 'general-simulate-keys "general" "Deprecated. Please use `general-simulate-key' instead.
+
+(fn KEYS &optional STATE KEYMAP (LOOKUP t) DOCSTRING NAME)" nil t) (autoload 'general-simulate-key "general" "Create and return a command that simulates KEYS in STATE and KEYMAP.
+
+`general-key' should be prefered over this whenever possible as it is simpler
+and has saner functionality in many cases because it does not rely on
+`unread-command-events' (e.g. \"C-h k\" will show the docstring of the command
+to be simulated ; see the readme for more information). The main downsides of
+`general-key' are that it cannot simulate a command followed by keys or
+subsequent commands, and which-key does not currently work well with it when
+simulating a prefix key/incomplete key sequence.
+
+KEYS should be a string given in `kbd' notation. It can also be a list of a
+single command followed by a string of the key(s) to simulate after calling that
+command. STATE should only be specified by evil users and should be a quoted
+evil state. KEYMAP should not be quoted. Both STATE and KEYMAP aliases are
+supported (but they have to be set when the macro is expanded). When neither
+STATE or KEYMAP are specified, the key(s) will be simulated in the current
+context.
+
+If NAME is specified, it will replace the automatically generated function name.
+NAME should not be quoted. If DOCSTRING is specified, it will replace the
+automatically generated docstring.
+
+Normally the generated function will look up KEY in the correct context to try
+to match a command. To prevent this lookup, LOOKUP can be specified as nil.
+Generally, you will want to keep LOOKUP non-nil because this will allow checking
+the evil repeat property of matched commands to determine whether or not they
+should be recorded. See the docstring for `general--simulate-keys' for more
+information about LOOKUP.
+
+When a WHICH-KEY description is specified, it will replace the command name in
+the which-key popup.
+
+When a command name is specified and that command has been remapped (i.e. [remap
+command] is currently bound), the remapped version will be used instead of the
+original command unless REMAP is specified as nil (it is true by default).
+
+The advantages of this over a keyboard macro are as follows:
+- Prefix arguments are supported
+- The user can control the context in which the keys are simulated
+- The user can simulate both a named command and keys
+- The user can simulate an incomplete key sequence (e.g. for a keymap)
+
+(fn KEYS &key STATE KEYMAP NAME DOCSTRING (LOOKUP t) WHICH-KEY (REMAP t))" nil t) (function-put 'general-simulate-key 'lisp-indent-function 'defun) (autoload 'general-key-dispatch "general" "Create and return a command that runs FALLBACK-COMMAND or a command in MAPS.
+MAPS consists of <key> <command> pairs. If a key in MAPS is matched, the
+corresponding command will be run. Otherwise FALLBACK-COMMAND will be run with
+the unmatched keys. So, for example, if \"ab\" was pressed, and \"ab\" is not
+one of the key sequences from MAPS, the FALLBACK-COMMAND will be run followed by
+the simulated keypresses of \"ab\". Prefix arguments will still work regardless
+of which command is run. This is useful for binding under non-prefix keys. For
+example, this can be used to redefine a sequence like \"cw\" or \"cow\" in evil
+but still have \"c\" work as `evil-change'. If TIMEOUT is specified,
+FALLBACK-COMMAND will also be run in the case that the user does not press the
+next key within the TIMEOUT (e.g. 0.5).
+
+NAME and DOCSTRING are optional keyword arguments. They can be used to replace
+the automatically generated name and docstring for the created function. By
+default, `cl-gensym' is used to prevent name clashes (e.g. allows the user to
+create multiple different commands using `self-insert-command' as the
+FALLBACK-COMMAND without explicitly specifying NAME to manually prevent
+clashes).
+
+When INHERIT-KEYMAP is specified, all the keybindings from that keymap will be
+inherited in MAPS.
+
+When a WHICH-KEY description is specified, it will replace the command name in
+the which-key popup.
+
+When command to be executed has been remapped (i.e. [remap command] is currently
+bound), the remapped version will be used instead of the original command unless
+REMAP is specified as nil (it is true by default).
+
+(fn FALLBACK-COMMAND &rest MAPS &key TIMEOUT INHERIT-KEYMAP NAME DOCSTRING WHICH-KEY (REMAP t) &allow-other-keys)" nil t) (function-put 'general-key-dispatch 'lisp-indent-function '1) (autoload 'general-predicate-dispatch "general" "
+
+(fn FALLBACK-DEF &rest DEFS &key DOCSTRING &allow-other-keys)" nil t) (function-put 'general-predicate-dispatch 'lisp-indent-function '1) (autoload 'general-translate-key "general" "Translate keys in the keymap(s) corresponding to STATES and KEYMAPS.
+STATES should be the name of an evil state, a list of states, or nil. KEYMAPS
+should be a symbol corresponding to the keymap to make the translations in or a
+list of keymap names. Keymap and state aliases are supported (as well as 'local
+and 'global for KEYMAPS).
+
+MAPS corresponds to a list of translations (key replacement pairs). For example,
+specifying \"a\" \"b\" will bind \"a\" to \"b\"'s definition in the keymap.
+Specifying nil as a replacement will unbind a key.
+
+If DESTRUCTIVE is non-nil, the keymap will be destructively altered without
+creating a backup. If DESTRUCTIVE is nil, store a backup of the keymap on the
+initial invocation, and for future invocations always look up keys in the
+original/backup keymap. On the other hand, if DESTRUCTIVE is non-nil, calling
+this function multiple times with \"a\" \"b\" \"b\" \"a\", for example, would
+continue to swap and unswap the definitions of these keys. This means that when
+DESTRUCTIVE is non-nil, all related swaps/cycles should be done in the same
+invocation.
+
+If both MAPS and DESCTRUCTIVE are nil, only create the backup keymap.
+
+(fn STATES KEYMAPS &rest MAPS &key DESTRUCTIVE &allow-other-keys)" nil nil) (function-put 'general-translate-key 'lisp-indent-function 'defun) (autoload 'general-swap-key "general" "Wrapper around `general-translate-key' for swapping keys.
+STATES, KEYMAPS, and ARGS are passed to `general-translate-key'. ARGS should
+consist of key swaps (e.g. \"a\" \"b\" is equivalent to \"a\" \"b\" \"b\" \"a\"
+with `general-translate-key') and optionally keyword arguments for
+`general-translate-key'.
+
+(fn STATES KEYMAPS &rest ARGS)" nil t) (function-put 'general-swap-key 'lisp-indent-function 'defun) (autoload 'general-auto-unbind-keys "general" "Advise `define-key' to automatically unbind keys when necessary.
+This will prevent errors when a sub-sequence of a key is already bound (e.g. the
+user attempts to bind \"SPC a\" when \"SPC\" is bound, resulting in a \"Key
+sequnce starts with non-prefix key\" error). When UNDO is non-nil, remove
+advice.
+
+(fn &optional UNDO)" nil nil) (autoload 'general-add-hook "general" "A drop-in replacement for `add-hook'.
+Unlike `add-hook', HOOKS and FUNCTIONS can be single items or lists. APPEND and
+LOCAL are passed directly to `add-hook'. When TRANSIENT is non-nil, each
+function will remove itself from the hook it is in after it is run once. If
+TRANSIENT is a function, call it on the return value in order to determine
+whether to remove a function from the hook. For example, if TRANSIENT is
+#'identity, remove each function only if it returns non-nil. TRANSIENT could
+alternatively check something external and ignore the function's return value.
+
+(fn HOOKS FUNCTIONS &optional APPEND LOCAL TRANSIENT)" nil nil) (autoload 'general-remove-hook "general" "A drop-in replacement for `remove-hook'.
+Unlike `remove-hook', HOOKS and FUNCTIONS can be single items or lists. LOCAL is
+passed directly to `remove-hook'.
+
+(fn HOOKS FUNCTIONS &optional LOCAL)" nil nil) (autoload 'general-advice-add "general" "A drop-in replacement for `advice-add'.
+SYMBOLS, WHERE, FUNCTIONS, and PROPS correspond to the arguments for
+`advice-add'. Unlike `advice-add', SYMBOLS and FUNCTIONS can be single items or
+lists. When TRANSIENT is non-nil, each function will remove itself as advice
+after it is run once. If TRANSIENT is a function, call it on the return value in
+order to determine whether to remove a function as advice. For example, if
+TRANSIENT is #'identity, remove each function only if it returns non-nil.
+TRANSIENT could alternatively check something external and ignore the function's
+return value.
+
+(fn SYMBOLS WHERE FUNCTIONS &optional PROPS TRANSIENT)" nil nil) (autoload 'general-add-advice "general") (autoload 'general-advice-remove "general" "A drop-in replacement for `advice-remove'.
+Unlike `advice-remove', SYMBOLS and FUNCTIONS can be single items or lists.
+
+(fn SYMBOLS FUNCTIONS)" nil nil) (autoload 'general-remove-advice "general") (autoload 'general-evil-setup "general" "Set up some basic equivalents for vim mapping functions.
+This creates global key definition functions for the evil states.
+Specifying SHORT-NAMES as non-nil will create non-prefixed function
+aliases such as `nmap' for `general-nmap'.
+
+(fn &optional SHORT-NAMES _)" nil nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "general" '("general-"))) (provide 'general-autoloads)) "pipenv" ((pipenv-autoloads pipenv) (autoload 'pipenv-mode "pipenv" "Minor mode for Pipenv.
+
+If called interactively, enable Pipenv mode if ARG is positive,
 and disable it if ARG is zero or negative.  If called from Lisp,
 also enable the mode if ARG is omitted or nil, and toggle it if
 ARG is `toggle'; disable the mode otherwise.
 
-(fn &optional ARG)" t nil) (autoload 'ivy-rich-reload "ivy-rich" nil nil nil) (defvar ivy-rich-project-root-cache-mode nil "Non-nil if Ivy-Rich-Project-Root-Cache mode is enabled.
-See the `ivy-rich-project-root-cache-mode' command
-for a description of this minor mode.
-Setting this variable directly does not take effect;
-either customize it (see the info node `Easy Customization')
-or call the function `ivy-rich-project-root-cache-mode'.") (custom-autoload 'ivy-rich-project-root-cache-mode "ivy-rich" nil) (autoload 'ivy-rich-project-root-cache-mode "ivy-rich" "Toggle ivy-rich-root-cache-mode globally.
+(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "pipenv" '("pipenv-"))) (provide 'pipenv-autoloads))))
 
-If called interactively, enable Ivy-Rich-Project-Root-Cache mode
-if ARG is positive, and disable it if ARG is zero or negative.
-If called from Lisp, also enable the mode if ARG is omitted or
-nil, and toggle it if ARG is `toggle'; disable the mode
-otherwise.
+#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" nil "cl-lib" nil "osx-trash" nil "restart-emacs" nil "dash" nil "s" nil "helpful" nil "dash-functional" nil "f" nil "elisp-refs" nil "undo-fu" nil "counsel" nil "swiper" nil "ivy" nil "projectile" nil "pkg-info" nil "epl" nil "ivy-rich" nil "which-key" nil "avy" nil "avy-menu" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "dashboard" nil "page-break-lines" nil "leuven-theme" nil "linum-relative" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "nyan-mode" nil "golden-ratio" nil "magit" nil "async" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "company-anaconda" nil "pyvenv" nil "poetry" nil "org-roam" nil "org" (org :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org") "emacsql" nil "emacsql-sqlite3" nil "markdown-mode" nil "flyspell-correct" nil "flyspell-correct-avy-menu" nil "origami" nil "counsel-jq" nil "yaml-mode" nil "general" nil "pipenv" nil)) melpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "osx-trash" (osx-trash :type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash") "restart-emacs" (restart-emacs :type git :flavor melpa :host github :repo "iqbalansari/restart-emacs") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "helpful" (helpful :type git :flavor melpa :host github :repo "Wilfred/helpful") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "elisp-refs" (elisp-refs :type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu") "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "ivy-rich" (ivy-rich :type git :flavor melpa :files ("*.el" "ivy-rich-pkg.el") :host github :repo "Yevgnen/ivy-rich") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "avy-menu" (avy-menu :type git :flavor melpa :host github :repo "mrkkrp/avy-menu") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "dashboard" (dashboard :type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "page-break-lines" (page-break-lines :type git :flavor melpa :host github :repo "purcell/page-break-lines") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "linum-relative" (linum-relative :type git :flavor melpa :host github :repo "coldnew/linum-relative") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "company-anaconda" (company-anaconda :type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda") "pyvenv" (pyvenv :type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv") "poetry" (poetry :type git :flavor melpa :host github :repo "galaunay/poetry.el") "org-roam" (org-roam :type git :flavor melpa :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql") "emacsql-sqlite3" (emacsql-sqlite3 :type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "flyspell-correct" (flyspell-correct :type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct") "flyspell-correct-avy-menu" (flyspell-correct-avy-menu :type git :flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :host github :repo "d12frosted/flyspell-correct") "origami" (origami :type git :flavor melpa :host github :repo "gregsexton/origami.el") "counsel-jq" (counsel-jq :type git :flavor melpa :host github :repo "200ok-ch/counsel-jq") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "pipenv" (pipenv :type git :flavor melpa :host github :repo "pwalsh/pipenv.el"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
 
-(fn &optional ARG)" t nil) (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ivy-rich" '("ivy-rich-"))) (provide 'ivy-rich-autoloads))))
-
-#s(hash-table size 65 test eq rehash-size 1.5 rehash-threshold 0.8125 data (org-elpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 1 "melpa" nil "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" nil "exec-path-from-shell" nil "cl-lib" nil "osx-trash" nil "undo-fu" nil "restart-emacs" nil "dash" nil "s" nil "helpful" nil "dash-functional" nil "f" nil "elisp-refs" nil "zone-nyan" nil "esxml" nil "counsel" nil "swiper" nil "ivy" nil "projectile" nil "pkg-info" nil "epl" nil "which-key" nil "avy" nil "avy-menu" nil "evil" nil "goto-chg" nil "evil-commentary" nil "evil-collection" nil "annalist" nil "evil-org" nil "evil-escape" nil "dashboard" nil "page-break-lines" nil "leuven-theme" nil "rainbow-delimiters" nil "telephone-line" nil "cl-generic" nil "seq" nil "nyan-mode" nil "golden-ratio" nil "magit" nil "async" nil "git-commit" nil "transient" nil "with-editor" nil "company" nil "company-quickhelp" nil "pos-tip" nil "smartparens" nil "evil-cleverparens" nil "paredit" nil "flycheck" nil "let-alist" nil "anaconda-mode" nil "pythonic" nil "markdown-mode" nil "flyspell-correct" nil "flyspell-correct-avy-menu" nil "origami" nil "yaml-mode" nil "general" nil "counsel-jq" nil "pyvenv" nil "poetry" nil "company-anaconda" nil "linum-relative" nil "minimap" nil "sublimity" nil "org-roam" nil "org" (org :type git :repo "https://code.orgmode.org/bzg/org-mode.git" :local-repo "org") "emacsql" nil "emacsql-sqlite3" nil "ivy-rich" nil)) melpa #s(hash-table size 97 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "gnu-elpa-mirror" nil "emacsmirror-mirror" nil "straight" nil "gcmh" (gcmh :type git :flavor melpa :host gitlab :repo "koral/gcmh") "exec-path-from-shell" (exec-path-from-shell :type git :flavor melpa :host github :repo "purcell/exec-path-from-shell") "cl-lib" nil "osx-trash" (osx-trash :type git :flavor melpa :files (:defaults "*.AppleScript" "osx-trash-pkg.el") :host github :repo "emacsorphanage/osx-trash") "undo-fu" (undo-fu :type git :flavor melpa :host gitlab :repo "ideasman42/emacs-undo-fu") "restart-emacs" (restart-emacs :type git :flavor melpa :host github :repo "iqbalansari/restart-emacs") "dash" (dash :type git :flavor melpa :files ("dash.el" "dash.texi" "dash-pkg.el") :host github :repo "magnars/dash.el") "s" (s :type git :flavor melpa :files ("s.el" "s-pkg.el") :host github :repo "magnars/s.el") "helpful" (helpful :type git :flavor melpa :host github :repo "Wilfred/helpful") "dash-functional" (dash-functional :type git :flavor melpa :files ("dash-functional.el" "dash-functional-pkg.el") :host github :repo "magnars/dash.el") "f" (f :type git :flavor melpa :files ("f.el" "f-pkg.el") :host github :repo "rejeep/f.el") "elisp-refs" (elisp-refs :type git :flavor melpa :files (:defaults (:exclude "elisp-refs-bench.el") "elisp-refs-pkg.el") :host github :repo "Wilfred/elisp-refs") "zone-nyan" (zone-nyan :type git :flavor melpa :repo "https://depp.brause.cc/zone-nyan.git") "esxml" (esxml :type git :flavor melpa :files ("esxml.el" "esxml-query.el" "esxml-pkg.el") :host github :repo "tali713/esxml") "counsel" (counsel :type git :flavor melpa :files ("counsel.el" "counsel-pkg.el") :host github :repo "abo-abo/swiper") "swiper" (swiper :type git :flavor melpa :files ("swiper.el" "swiper-pkg.el") :host github :repo "abo-abo/swiper") "ivy" (ivy :type git :flavor melpa :files (:defaults (:exclude "swiper.el" "counsel.el" "ivy-hydra.el" "ivy-avy.el") "doc/ivy-help.org" "ivy-pkg.el") :host github :repo "abo-abo/swiper") "projectile" (projectile :type git :flavor melpa :files ("projectile.el" "projectile-pkg.el") :host github :repo "bbatsov/projectile") "pkg-info" (pkg-info :type git :flavor melpa :host github :repo "emacsorphanage/pkg-info") "epl" (epl :type git :flavor melpa :host github :repo "cask/epl") "which-key" (which-key :type git :flavor melpa :host github :repo "justbur/emacs-which-key") "avy" (avy :type git :flavor melpa :host github :repo "abo-abo/avy") "avy-menu" (avy-menu :type git :flavor melpa :host github :repo "mrkkrp/avy-menu") "evil" (evil :type git :flavor melpa :files (:defaults "doc/build/texinfo/evil.texi" (:exclude "evil-test-helpers.el") "evil-pkg.el") :host github :repo "emacs-evil/evil") "goto-chg" (goto-chg :type git :flavor melpa :host github :repo "emacs-evil/goto-chg") "evil-commentary" (evil-commentary :type git :flavor melpa :host github :repo "linktohack/evil-commentary") "evil-collection" (evil-collection :type git :flavor melpa :files (:defaults "modes" "evil-collection-pkg.el") :host github :repo "emacs-evil/evil-collection") "annalist" (annalist :type git :flavor melpa :host github :repo "noctuid/annalist.el") "evil-org" (evil-org :type git :flavor melpa :host github :repo "Somelauw/evil-org-mode") "evil-escape" (evil-escape :type git :flavor melpa :host github :repo "syl20bnr/evil-escape") "dashboard" (dashboard :type git :flavor melpa :files (:defaults "banners" "dashboard-pkg.el") :host github :repo "emacs-dashboard/emacs-dashboard") "page-break-lines" (page-break-lines :type git :flavor melpa :host github :repo "purcell/page-break-lines") "leuven-theme" (leuven-theme :type git :flavor melpa :host github :repo "fniessen/emacs-leuven-theme") "rainbow-delimiters" (rainbow-delimiters :type git :flavor melpa :host github :repo "Fanael/rainbow-delimiters") "telephone-line" (telephone-line :type git :flavor melpa :host github :repo "dbordak/telephone-line") "cl-generic" nil "seq" nil "nyan-mode" (nyan-mode :type git :flavor melpa :files ("nyan-mode.el" "img" "mus" "nyan-mode-pkg.el") :host github :repo "TeMPOraL/nyan-mode") "golden-ratio" (golden-ratio :type git :flavor melpa :host github :repo "roman/golden-ratio.el") "magit" (magit :type git :flavor melpa :files ("lisp/magit" "lisp/magit*.el" "lisp/git-rebase.el" "Documentation/magit.texi" "Documentation/AUTHORS.md" "LICENSE" (:exclude "lisp/magit-libgit.el") "magit-pkg.el") :host github :repo "magit/magit") "async" (async :type git :flavor melpa :host github :repo "jwiegley/emacs-async") "git-commit" (git-commit :type git :flavor melpa :files ("lisp/git-commit.el" "git-commit-pkg.el") :host github :repo "magit/magit") "transient" (transient :type git :flavor melpa :files ("lisp/*.el" "docs/transient.texi" "transient-pkg.el") :host github :repo "magit/transient") "with-editor" (with-editor :type git :flavor melpa :host github :repo "magit/with-editor") "company" (company :type git :flavor melpa :host github :repo "company-mode/company-mode") "company-quickhelp" (company-quickhelp :type git :flavor melpa :host github :repo "company-mode/company-quickhelp") "pos-tip" (pos-tip :type git :flavor melpa :host github :repo "pitkali/pos-tip") "smartparens" (smartparens :type git :flavor melpa :host github :repo "Fuco1/smartparens") "evil-cleverparens" (evil-cleverparens :type git :flavor melpa :host github :repo "luxbock/evil-cleverparens") "paredit" (paredit :type git :flavor melpa :files ("paredit.el" "paredit-pkg.el") :repo "https://mumble.net/~campbell/git/paredit.git") "flycheck" (flycheck :type git :flavor melpa :host github :repo "flycheck/flycheck") "let-alist" nil "anaconda-mode" (anaconda-mode :type git :flavor melpa :host github :repo "pythonic-emacs/anaconda-mode") "pythonic" (pythonic :type git :flavor melpa :host github :repo "pythonic-emacs/pythonic") "markdown-mode" (markdown-mode :type git :flavor melpa :host github :repo "jrblevin/markdown-mode") "flyspell-correct" (flyspell-correct :type git :flavor melpa :files ("flyspell-correct.el" "flyspell-correct-ido.el" "flyspell-correct-pkg.el") :host github :repo "d12frosted/flyspell-correct") "flyspell-correct-avy-menu" (flyspell-correct-avy-menu :type git :flavor melpa :files ("flyspell-correct-avy-menu.el" "flyspell-correct-avy-menu-pkg.el") :host github :repo "d12frosted/flyspell-correct") "origami" (origami :type git :flavor melpa :host github :repo "gregsexton/origami.el") "yaml-mode" (yaml-mode :type git :flavor melpa :host github :repo "yoshiki/yaml-mode") "general" (general :type git :flavor melpa :host github :repo "noctuid/general.el") "counsel-jq" (counsel-jq :type git :flavor melpa :host github :repo "200ok-ch/counsel-jq") "pyvenv" (pyvenv :type git :flavor melpa :host github :repo "jorgenschaefer/pyvenv") "poetry" (poetry :type git :flavor melpa :host github :repo "galaunay/poetry.el") "company-anaconda" (company-anaconda :type git :flavor melpa :host github :repo "pythonic-emacs/company-anaconda") "linum-relative" (linum-relative :type git :flavor melpa :host github :repo "coldnew/linum-relative") "minimap" nil "sublimity" (sublimity :type git :flavor melpa :host github :repo "zk-phi/sublimity") "org-roam" (org-roam :type git :flavor melpa :host github :repo "org-roam/org-roam") "emacsql" (emacsql :type git :flavor melpa :files ("emacsql.el" "emacsql-compiler.el" "emacsql-system.el" "README.md" "emacsql-pkg.el") :host github :repo "skeeto/emacsql") "emacsql-sqlite3" (emacsql-sqlite3 :type git :flavor melpa :host github :repo "cireu/emacsql-sqlite3") "ivy-rich" (ivy-rich :type git :flavor melpa :files ("*.el" "ivy-rich-pkg.el") :host github :repo "Yevgnen/ivy-rich"))) gnu-elpa-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 3 "emacsmirror-mirror" nil "straight" nil "cl-lib" nil "cl-generic" nil "seq" nil "let-alist" (let-alist :type git :host github :repo "emacs-straight/let-alist" :files ("*" (:exclude ".git"))) "minimap" (minimap :type git :host github :repo "emacs-straight/minimap" :files ("*" (:exclude ".git"))))) emacsmirror-mirror #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8125 data (version 2 "straight" (straight :type git :host github :repo "emacsmirror/straight") "cl-lib" nil "cl-generic" nil "seq" nil))))
-
-<<<<<<< HEAD
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "osx-trash" "restart-emacs" "dash" "s" "helpful" "dash-functional" "f" "elisp-refs" "undo-fu" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "ivy-rich" "which-key" "avy" "avy-menu" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "dashboard" "page-break-lines" "leuven-theme" "linum-relative" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "nyan-mode" "golden-ratio" "magit" "async" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "company-anaconda" "pyvenv" "poetry" "org-roam" "org" "emacsql" "emacsql-sqlite3" "markdown-mode" "flyspell-correct" "flyspell-correct-avy-menu" "origami" "counsel-jq" "yaml-mode" "general")
-=======
-("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "osx-trash" "undo-fu" "restart-emacs" "dash" "s" "helpful" "dash-functional" "f" "elisp-refs" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "ivy-rich" "which-key" "avy" "avy-menu" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "dashboard" "page-break-lines" "leuven-theme" "linum-relative" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "nyan-mode" "golden-ratio" "magit" "async" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "company-anaconda" "pyvenv" "poetry" "org-roam" "org" "emacsql" "emacsql-sqlite3" "markdown-mode" "flyspell-correct" "flyspell-correct-avy-menu" "origami" "counsel-jq" "yaml-mode" "general")
->>>>>>> e8395862c993f771045defe16ecc6f3d1935b52a
+("org-elpa" "melpa" "gnu-elpa-mirror" "emacsmirror-mirror" "straight" "emacs" "exec-path-from-shell" "cl-lib" "osx-trash" "restart-emacs" "dash" "s" "helpful" "dash-functional" "f" "elisp-refs" "undo-fu" "counsel" "swiper" "ivy" "projectile" "pkg-info" "epl" "ivy-rich" "which-key" "avy" "avy-menu" "evil" "goto-chg" "evil-commentary" "evil-collection" "annalist" "evil-org" "evil-escape" "dashboard" "page-break-lines" "leuven-theme" "linum-relative" "rainbow-delimiters" "telephone-line" "cl-generic" "seq" "nyan-mode" "golden-ratio" "magit" "async" "git-commit" "transient" "with-editor" "company" "company-quickhelp" "pos-tip" "smartparens" "evil-cleverparens" "paredit" "flycheck" "let-alist" "anaconda-mode" "pythonic" "company-anaconda" "pyvenv" "poetry" "pipenv" "org-roam" "org" "emacsql" "emacsql-sqlite3" "markdown-mode" "flyspell-correct" "flyspell-correct-avy-menu" "origami" "counsel-jq" "yaml-mode" "general")
 
 t

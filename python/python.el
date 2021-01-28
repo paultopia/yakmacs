@@ -9,3 +9,7 @@
 (straight-use-package 'poetry)
 (require 'poetry)
 (add-hook 'python-mode-hook 'poetry-tracking-mode)
+
+(straight-use-package 'pipenv)
+(require 'pipenv)
+(add-hook 'python-mode-hook 'pipenv-mode)

@@ -12,17 +12,21 @@ Currently working:
 
 - sending code out for execution in an interpreter
 
-- linting and such even in a virtualenv
+- linting and such even in a poetry virtualenv
 
-- completion (also including in virtualenv)
+- completion (also including in poetry virtualenv)
+
+- pipenv (and sending code to a shell works, first spawning shell then using run-python to spawn interpreter)
 
 Not yet implemented: 
 - forced code reformatting with [[https://github.com/pythonic-emacs/blacken][blacken]] (do I really want it?); 
 - test runner integration 
-- pipenv
 
 In progress
 - keybindings
+
+Not working
+- sending code out to a shell in a poetry virtual environment (why the hell not?)
 
 
 
@@ -45,6 +49,30 @@ Let's try to get poetry integration going.  Apparently that also requires transi
 (add-hook 'python-mode-hook 'poetry-tracking-mode)
 
 #+END_SRC
+
+I'm kind of hating how poetry behaves re sending projects to shells.  Let's try to get pipenv to do it instead.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'pipenv)
+(require 'pipenv)
+(add-hook 'python-mode-hook 'pipenv-mode)
+#+END_SRC
+
+Convenience function to immediately launch into functionality
+
+(untested)
+
+#+BEGIN_SRC emacs-lisp
+
+(defun pipenv-full-activate ()
+  "clean any previous pipenv environment, activate new one, span a shell, then spawn a python"
+  (pipenv-deactivate)
+  (pipenv-activate)
+  (pipenv-shell)
+  (run-python))
+
+#+END_SRC
+
 
 
 *Notes on virtualenvs* 
