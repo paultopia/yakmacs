@@ -360,44 +360,50 @@ tab also works here to fold/unfold headings
 
 *** Markdown
 
-| command                       | function                                                           |
-|-------------------------------+--------------------------------------------------------------------|
-| , v                           | hide markup                                                        |
-|                               |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| HEADERS                       |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| , h f                         | fold/unfold header                                                 |
-| , h a                         | add header at same level                                           |
-| , h p                         | add parent-level header                                            |
-| , h c                         | add child-level header                                             |
-| , h u                         | Upshift (promote) header subtree        (also works on list items) |
-| , h d                         | Downshift (demote) header subtree    (also works on list items)    |
-|                               |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| SPELLING                      |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| , s s                         | Mark and correct buffer (one spellcheck pass)                      |
-| , s b                         | Mark spelling errors currently in buffer                           |
-| , s m                         | Turn on running spell checking (seems slow)                        |
-| , s f                         | Correct marked word at point                                       |
-| , s c                         | Correct all marked errors                                          |
-| , s w                         | Check spelling of word at point                                    |
-|                               |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| FOOTNOTES AND CITES           |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| , n v                         | Toggle visibility of all footnotes and cites                       |
-| , n n                         | Toggle visibility of note at point                                 |
-|                               |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| OUTLINES  (headers and lists) |                                                                    |
-|-------------------------------+--------------------------------------------------------------------|
-| , o n                         | Next item (same leve)                                              |
-| , o p                         | Previous item (same level)                                         |
-| , o f                         | Next item (any level)                                              |
-| , o b                         | Previous item (any level)                                          |
-| , o u                         | Up to parent item                                                  |
+| command                         | function                                                           |
+|---------------------------------+--------------------------------------------------------------------|
+| , v                             | hide markup                                                        |
+|                                 |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| HEADERS                         |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| , h f                           | fold/unfold header                                                 |
+| , h a                           | add header at same level                                           |
+| , h p                           | add parent-level header                                            |
+| , h c                           | add child-level header                                             |
+| , h u                           | Upshift (promote) header subtree        (also works on list items) |
+| , h d                           | Downshift (demote) header subtree    (also works on list items)    |
+|                                 |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| SPELLING                        |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| , s s                           | Mark and correct buffer (one spellcheck pass)                      |
+| , s b                           | Mark spelling errors currently in buffer                           |
+| , s m                           | Turn on running spell checking (seems slow)                        |
+| , s f                           | Correct marked word at point                                       |
+| , s c                           | Correct all marked errors                                          |
+| , s w                           | Check spelling of word at point                                    |
+|                                 |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| FOOTNOTES AND CITES             |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| , n v                           | Toggle visibility of all footnotes and cites                       |
+| , n n                           | Toggle visibility of note at point                                 |
+|                                 |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| OUTLINES  (headers and lists)   |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| , o n                           | Next item (same leve)                                              |
+| , o p                           | Previous item (same level)                                         |
+| , o f                           | Next item (any level)                                              |
+| , o b                           | Previous item (any level)                                          |
+| , o u                           | Up to parent item                                                  |
+|                                 |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| LETTERHEAD  (my private pandoc setup) |                                                                    |
+|---------------------------------+--------------------------------------------------------------------|
+| , l i                           | Insert dummy address block for letterhead                          |
+| , l c                           | Convert buffer to letterhead (asks for destination file name)      |
 
 
 

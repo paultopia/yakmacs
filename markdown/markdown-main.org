@@ -135,31 +135,31 @@ Helper functions to add parent and child headings
 
 #+BEGIN_SRC emacs-lisp
 
-(setq letterhead-default-address-block 
-"---
-address:
-- 123 Street Rd
-- Unit Placeville2d
-- Chicago, IL
-recipient: \"Dude or Dudette\"
-subject: \"Please send me money.\"
-shortletter: true
----
+  (setq letterhead-default-address-block 
+  "---
+  address:
+  - 123 Street Rd
+  - Unit Placeville2d
+  - Chicago, IL
+  recipient: \"Dude or Dudette\"
+  subject: \"Please send me money.\"
+  shortletter: true
+  ---
 
-")
+  ")
 
-(defun add-letterhead-address-block ()
-(interactive)
-(save-excursion
-(goto-char (point-min))
-(insert letterhead-default-address-block)))
+  (defun add-letterhead-address-block ()
+  (interactive)
+  (save-excursion
+  (goto-char (point-min))
+  (insert letterhead-default-address-block)))
 
-(defun make-letterhead-from-buffer (filename)
-(interactive "F")
+  (defun make-letterhead-from-buffer (filename)
+  (interactive "FOutput File: ")
 
-(shell-command-on-region (point-min) (point-max)
- (format "pandoc -o %s --defaults=letterhead" filename))
-(find-file filename)
-)
+  (shell-command-on-region (point-min) (point-max)
+   (format "pandoc -o %s --defaults=letterhead" filename))
+  (find-file filename)
+  )
 
 #+END_SRC
