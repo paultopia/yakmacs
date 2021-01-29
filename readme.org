@@ -215,19 +215,6 @@ While I'm here, I also want to fix evil undo some more.  These are [[https://evi
 
 
 
-* Frivolity
-
-turning off the nyan cat screensaver reluctantly because it seems
-to leave the region in a weird place and I don't trust it, when 
-I'm randomly getting copy-paste-search-undo quirks.
-
-#+BEGIN_SRC emacs-lisp
-  ;; (straight-use-package 'zone-nyan)
-  ;; (require 'zone)
-  ;; (setq zone-programs [zone-nyan])
-  ;; (zone-when-idle 1200)
-#+END_SRC
-
 
 * Browsing and Finding Things 
 
@@ -300,6 +287,7 @@ Which-key is apparently The Thing
 
 (straight-use-package 'evil)
 (setq evil-want-keybinding nil)  ;; this is apparently required for evil-collection keybindings.
+(setq evil-disable-insert-state-bindings t)  ;; make insert mode behave like emacs mode
 (require 'evil)
 (evil-mode)
 
