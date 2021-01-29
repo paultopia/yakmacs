@@ -664,6 +664,17 @@ I'd like to be able to pull; setting global auto-revert mode to avoid pain like 
 (global-auto-revert-mode t)
 #+END_SRC
 
+I'm going to create a special derived mode for commit messages so that I can try to bail out of it with a normal key binding. 
+See discussion in [[https://emacs.stackexchange.com/questions/63057/bindings-just-for-text-buffers-created-by-magit/63059#63059][this SO]]
+
+#+BEGIN_SRC emacs-lisp
+
+(define-derived-mode magit-commit-message-mode text-mode "Magit-Commit" "Major mode for editing commit messages with magit.")
+
+(setq git-commit-major-mode 'magit-commit-message-mode)
+
+#+END_SRC
+
 
 * General Programming 
 

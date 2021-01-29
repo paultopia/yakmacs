@@ -2,7 +2,8 @@
 
 * The definitions of all the keybindings
 
-** A quick ivy fix
+** Special keybindings (non-leader)
+
 
 This is an emergency fix: I've realized that I can't actually create a new file with ivy find-file because of the completions if the filename is too similar.
 
@@ -17,9 +18,7 @@ narrowing function.  Hopefully this will work to give me a binding in the minibu
 
 #+END_SRC
 
-** Undo-redo                                                      :key:
-
-Non-leader keybindings
+And this is an undo-redo fix.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -211,6 +210,20 @@ Markdown keybindings moved to markdown dir because I'm changing it a lot.
 (org-babel-load-file "~/.emacs.d/markdown/markdown-keybindings.org")
 #+END_SRC
 
+*** Git commit
+
+Here's a fix to magit to give me a bailout from magit with ,q.
+
+#+BEGIN_SRC emacs-lisp
+
+  (mode-binding 
+  :states 'normal 
+  :keymaps 'magit-commit-message-mode-map
+  "q" 'with-editor-cancel)
+
+#+END_SRC
+
+
 
 *** Org
 
@@ -249,6 +262,15 @@ exceptions:
 
 - *meta-d (option-d) in an ivy minibuffer will immediately send the "current input"* --- i.e., now using completions from the minibuffer. 
 (This is for things like creating a new file with counsel-find-file that has a similar name to a previous one).
+
+** Other special bindings
+
+I'm using ,q as a supplemental mode-specific bailout. 
+
+| Key  | Function                 |
+| ---- | ---------                |
+| , q  | Bail out of magit commit |
+|      |                          |
 
 ** Global Keybindings from Leader Key (space)
 
