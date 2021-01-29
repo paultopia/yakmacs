@@ -695,7 +695,7 @@ Line numbers
 ; (setq linum-format "%4d \u2502 ")
 #+END_SRC
 
-Get rid of visual line mode just in case I switched in from markdown.
+Get rid of visual line mode just in case I switched in from text.
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'prog-mode-hook (lambda () (visual-line-mode -1)))
@@ -830,6 +830,9 @@ I'm going to start making use of JQ to try to work with some citeproc-json goodn
 (defun prog-linespacing ()
   (setq line-spacing nil))
 (add-hook 'prog-mode-hook 'prog-linespacing)
+
+(add-hook 'text-mode-hook 'visual-line-mode)
+
 
 #+END_SRC
 

@@ -39,7 +39,6 @@ De-uglify the line breaks and such.  Also, light mode, visual line mode, wide ma
 
 (add-hook 'markdown-mode-hook 'light-mode)
 ; (add-hook 'markdown-mode-hook 'turn-off-fringe)
-(add-hook 'markdown-mode-hook 'visual-line-mode)
 
 (add-hook 'markdown-mode-hook 'prose-font)
 
