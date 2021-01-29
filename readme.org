@@ -407,6 +407,7 @@ Docview is agonizingly slow and I hate it.  Time to replace.
 (straight-use-package 'pdf-tools)
 (pdf-tools-install)
 
+(evil-make-overriding-map pdf-view-mode-map 'normal)
 
 #+END_SRC
 
@@ -866,11 +867,11 @@ Load up general
 
 #+END_SRC
 
-Set up evil collection keybindings
+Set up evil collection keybindings... this rarely seems to work right, and it's starting to piss me off honestly.
 
 #+BEGIN_SRC emacs-lisp
 
-(evil-collection-init '(dashboard magit pdf))
+(evil-collection-init '(dashboard magit))
 
 
 #+END_SRC
