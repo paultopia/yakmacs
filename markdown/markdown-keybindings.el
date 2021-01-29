@@ -24,4 +24,7 @@
 "of" '(markdown-outline-next :which-key "Next item (any level)")
 "ob" '(markdown-outline-previous :which-key "Prev item (any level)")
 "ou" '(markdown-outline-up :which-key "Up to parent item")
+"l" '(:ignore t :which-key "Letterhead")
+"li" '(add-letterhead-address-block :which-key "Dummy Address Block for Letterhead")
+"lc" '(make-letterhead-from-buffer  :which-key "Convert Buffer to Letterhead (Asks for Destination File Name)")
 )
