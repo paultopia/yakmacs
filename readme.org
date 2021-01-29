@@ -1,3 +1,4 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
 
 
 
@@ -360,7 +361,6 @@ I feel like I've seen people actually call functions before defining them in blo
                         (bookmarks . 5)
                         (registers . 5)))
 
-(evil-collection-init 'dashboard)
 
 #+END_SRC
 
@@ -408,6 +408,19 @@ I really want to use an enum for this, but right now it's just a string. So perm
 
 #+END_SRC
 
+
+* PDF Tools
+
+Docview is agonizingly slow and I hate it.  Time to replace. 
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'tablist)
+(straight-use-package 'pdf-tools)
+(pdf-tools-install)
+
+
+#+END_SRC
 
 * Visual 
   
@@ -624,7 +637,6 @@ I've decided this should be off by default.  It's useful but also annoying.  I'l
 
 (straight-use-package 'magit)
 
-(evil-collection-init 'magit)
 #+END_SRC
 
 Trying to create the equivalent of ~git add .~ --- the function ~magit-stage-modified~ is close, but appears to require a prefix argument to make it work.
@@ -863,6 +875,15 @@ Load up general
   :prefix mode-leader
   :states 'normal
   :keymaps 'override)
+
+#+END_SRC
+
+Set up evil collection keybindings
+
+#+BEGIN_SRC emacs-lisp
+
+(evil-collection-init '(dashboard magit pdf))
+
 
 #+END_SRC
 

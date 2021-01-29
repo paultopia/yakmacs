@@ -16,6 +16,7 @@
 "vd" 'pipenv-deactivate
 "vs" 'pipenv-shell
 "vi" 'pipenv-install
+"vv" 'pipenv-full-activate
 "i" '(:ignore t :which-key "Indententation")
 "il" 'python-indent-shift-left
 "ir" 'python-indent-shift-right

@@ -13,3 +13,10 @@
 (straight-use-package 'pipenv)
 (require 'pipenv)
 (add-hook 'python-mode-hook 'pipenv-mode)
+
+(defun pipenv-full-activate ()
+  "clean any previous pipenv environment, activate new one, span a shell, then spawn a python"
+  (pipenv-deactivate)
+  (pipenv-activate)
+  (pipenv-shell)
+  (run-python))
