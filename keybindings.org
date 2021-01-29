@@ -243,14 +243,14 @@ All bindings are from normal state.  I haven't defined anything for insert at al
 
 exceptions: 
 
-- control-u and control-r ought (?) to work in insert mode for undo-fu undo and redo.  I think.
+- *control-u and control-r work in insert mode for undo-fu* undo and redo. 
 
-- evil escape key set to ESC ESC
+- *evil escape key set to ESC ESC*
 
-- meta-d (option-d) in an ivy minibuffer will immediately send the "current input" --- i.e., now using completions from the minibuffer. 
+- *meta-d (option-d) in an ivy minibuffer will immediately send the "current input"* --- i.e., now using completions from the minibuffer. 
 (This is for things like creating a new file with counsel-find-file that has a similar name to a previous one).
 
-GLOBAL KEYBINDINGS FROM LEADER KEY (space)
+** Global Keybindings from Leader Key (space)
 
 
 | command                           | function                                                        |
@@ -342,10 +342,12 @@ GLOBAL KEYBINDINGS FROM LEADER KEY (space)
 | u r                               | redo                                                            |
 |                                   |                                                                 |
 
+** Mode-specific leader commands from mode leader (comma)
 
-Mode leader is comma.
 
-ORG MODE AND ORG-AGENDA
+*** Org Mode  
+
+tab also works here to fold/unfold headings
 
 | command | function             |
 |---------+----------------------|
@@ -356,7 +358,7 @@ ORG MODE AND ORG-AGENDA
 |         |                      |
 
 
-MARKDOWN
+*** Markdown
 
 | command                       | function                                                           |
 |-------------------------------+--------------------------------------------------------------------|
@@ -399,7 +401,7 @@ MARKDOWN
 
 
 
-PYTHON
+*** Python
 
 | command           | function                          |
 |-------------------+-----------------------------------|
