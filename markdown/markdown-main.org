@@ -153,4 +153,13 @@ shortletter: true
 (save-excursion
 (goto-char (point-min))
 (insert letterhead-default-address-block)))
+
+(defun make-letterhead-from-buffer (filename)
+(interactive "F")
+
+(shell-command-on-region (point-min) (point-max)
+ (format "pandoc -o %s --defaults=letterhead" filename))
+(find-file filename)
+)
+
 #+END_SRC
