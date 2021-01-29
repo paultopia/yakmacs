@@ -131,3 +131,26 @@ Helper functions to add parent and child headings
 
 #+END_SRC
 
+** Some letterhead-related functionality
+
+#+BEGIN_SRC emacs-lisp
+
+(setq letterhead-default-address-block 
+"---
+address:
+- 123 Street Rd
+- Unit Placeville2d
+- Chicago, IL
+recipient: \"Dude or Dudette\"
+subject: \"Please send me money.\"
+shortletter: true
+---
+
+")
+
+(defun add-letterhead-address-block ()
+(interactive)
+(save-excursion
+(goto-char (point-min))
+(insert letterhead-default-address-block)))
+#+END_SRC
