@@ -1,0 +1,10 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Clojure
+
+Libraries --- I'm going to start with the basics.  Maybe flycheck support and clj-refactor later.  
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'cider)
+(straight-use-package 'clojure-mode)
+#+END_SRC

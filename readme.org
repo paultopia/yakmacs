@@ -750,6 +750,14 @@ shellcheck (bash, via ~brew install shellcheck~)
 yamllint (yaml, via ~pip install yamllint~)
 stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
 
+
+
+* Clojure
+
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/clojure/clojure.org")
+#+END_SRC
+
 * Python
 
 Moved to its own file.

@@ -23,3 +23,17 @@ org/capture.el
 org/roam.el
 *.elc
 python/python.el
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+testfiles/clotest/lib/
+testfiles/clotest/classes/
+testfiles/clotest/target/
+testfiles/clotest/checkouts/
+.lein-deps-sum
+.lein-repl-history
+.lein-plugins/
+.lein-failures
+.nrepl-port
+.cpcache/
