@@ -19,3 +19,17 @@ what the hell, let's get a linter in here too.  going to use clj-kondo because t
 
 I think I will want to add CLJ-refactor in due course if only because of the [[https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-project-dependency][capacity to hot-swap libs]]
 
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'clj-refactor)
+(require 'clj-refactor)
+
+(defun activate-clj-refactor-h ()
+    (clj-refactor-mode 1)
+    (yas-minor-mode 1))
+
+(add-hook 'clojure-mode-hook #'activate-clj-refactor-h)
+
+#+END_SRC
+
+apparently hot-swapping libs doesn't work.  I can get a dep into my project.clj with ~cljr-add-project-dependency~ but it won't load into repl until a lein deps run. sad. 

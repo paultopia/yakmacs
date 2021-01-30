@@ -7,9 +7,11 @@
 "se" 'cider-eval-last-sexp-to-repl
 "sr" 'cider-eval-region
 "sf" 'cider-eval-defun-at-point
+"sq" 'cider-quit
 "p" '(:ignore t :which-key "Project-wide commands")
 "pl" '(cider-load-all-files :which-key "Load every file in directory")
 "pr" 'cider-ns-refresh
+"px" 'cider-restart
 "h" '(:ignore t :which-key "Help")
 "hl" 'cider-doc
 "hd" 'cider-clojuredocs

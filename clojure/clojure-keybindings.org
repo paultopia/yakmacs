@@ -18,6 +18,7 @@
 |-----------------------+-----------------------------------------------|
 | ,pl                   | Spawn REPL                                    |
 | ,pr                   | Refresh namespace (and hence basically cider) |
+| ,px                   | Restart cider altogether                      |
 |-----------------------+-----------------------------------------------|
 | Help                  |                                               |
 |-----------------------+-----------------------------------------------|
@@ -41,6 +42,7 @@
 "p" '(:ignore t :which-key "Project-wide commands")
 "pl" '(cider-load-all-files :which-key "Load every file in directory")
 "pr" 'cider-ns-refresh
+"px" 'cider-restart
 "h" '(:ignore t :which-key "Help")
 "hl" 'cider-doc
 "hd" 'cider-clojuredocs
