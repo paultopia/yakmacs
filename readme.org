@@ -769,8 +769,10 @@ Moved to its own file.
 
 * Javascript (and vue, html, etc. all the web shit)
 
+All this stuff sucks.  It's making my emacs slow down horribly and I hate it.  Need to clear off the garbage (probably js2 and web-mode).  It's horrible. 
+
 #+BEGIN_SRC emacs-lisp
-(org-babel-load-file "~/.emacs.d/javascript/javascript.org")
+; (org-babel-load-file "~/.emacs.d/javascript/javascript.org")
 #+END_SRC
 
 * Org
@@ -820,6 +822,16 @@ I'm going to start making use of JQ to try to work with some citeproc-json goodn
 (straight-use-package 'counsel-jq)
 
 #+END_SRC
+
+I want JSON enhancements too
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'json-mode)
+#+END_SRC
+
+** TODO add keybindings for json-mode
+
+see functionality [[https://github.com/joshwnj/json-mode/][here]]
 
 * Visual changes between writing and programming
 
@@ -948,26 +960,12 @@ because I don't *think* anything else uses @ ...?
    actually, I really want something that will highlight (a) non utf-8 characters, and (b) characters that look like normal ascii characters but aren't.
    - this might be ok just for markdown mode. the point is for copy-paste quotes that introduce shit characters that blow up latex
 ** swipe-scrolling on the touchpad like with vim
-** Language support
-*** Javascript
-*** HTML
-*** Vue.js
-*** Clojure
-*** shell scripts
-*** makefiles
-*** JSON
-*** YAML
-** better undo-redo 
-   - maybe try [[https://gitlab.com/ideasman42/emacs-undo-fu][this lib?]]
 ** window management
       - some way to pin a buffer to a window, so that I can close the window and reopen w/ same buffer there.
 
-** hotkey to reload this config file like spacemacs has
 ** Markdown enhancements
    - word count in the modeline that just treats markdown punctuation as spaces
-   - some way to hide or dimish in-line footnotes.
    - a nice UI to query a CSL json for citations (built on ivy?)
-   - highlight and overwrite
 ** org enhancements
    - fix the weird thing where these internal lists don't tab-indent to same spot
    - MORE KEYBINDINGS for stuff I actually use.

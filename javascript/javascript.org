@@ -35,9 +35,11 @@ Gonna grab web-mode too
 
 #+END_SRC
 
-flycheck stuff tbd
 
-also should try [[https://indium.readthedocs.io/en/latest/][indium]]
+Tried Indium, can't get it to work without setting up some entire convoluted project, not even remotely worth it, fuck, it. 
+
+Javascript is a shit language, of course the emacs setup would also be shit.  not worth it, at least I have syntax highlighting.  And I'm not installing LSP solely for my least favorite language either.  
+
 
 ** Vue (for my website)
 

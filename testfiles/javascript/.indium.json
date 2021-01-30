@@ -1,0 +1,8 @@
+{
+  "configurations": [
+    {
+      "name": "Test project",
+      "type": "chrome"
+    }
+  ]
+}

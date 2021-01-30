@@ -11,6 +11,10 @@
 
 (straight-use-package 'web-mode)
 
+(straight-use-package 'indium)
+(setq indium-chrome-executable "chrome")
+(require 'indium)
+
 (straight-use-package 'vue-mode)
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 
