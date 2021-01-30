@@ -8,3 +8,11 @@ Libraries --- I'm going to start with the basics.  Maybe flycheck support and cl
 (straight-use-package 'cider)
 (straight-use-package 'clojure-mode)
 #+END_SRC
+
+
+what the hell, let's get a linter in here too.  going to use clj-kondo because the cider people recommend it.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'flycheck-clj-kondo)
+(require 'flycheck-clj-kondo)
+#+END_SRC
