@@ -1,4 +1,5 @@
 (mode-binding 
+:states '(normal motion)
 :keymaps 'python-mode-map
 "c" 'company-complete
 "s" '(:ignore t :which-key "Talk to Interpreter")

@@ -251,6 +251,14 @@ again moving to separate file
 (org-babel-load-file "~/.emacs.d/python/python-keybindings.org")
 #+END_SRC
 
+*** Clojure
+
+
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/clojure/clojure-keybindings.org")
+
+#+END_SRC
+
 * All the Keybindings I've defined, listed.
 
 All bindings are from normal state.  I haven't defined anything for insert at all (yet?)

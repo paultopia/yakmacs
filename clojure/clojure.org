@@ -16,3 +16,6 @@ what the hell, let's get a linter in here too.  going to use clj-kondo because t
 (straight-use-package 'flycheck-clj-kondo)
 (require 'flycheck-clj-kondo)
 #+END_SRC
+
+I think I will want to add CLJ-refactor in due course if only because of the [[https://github.com/clojure-emacs/clj-refactor.el/wiki/cljr-add-project-dependency][capacity to hot-swap libs]]
+
