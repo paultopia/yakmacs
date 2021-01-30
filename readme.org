@@ -767,7 +767,11 @@ Moved to its own file.
 #+END_SRC
 
 
+* Javascript (and vue, html, etc. all the web shit)
 
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/javascript/javascript.org")
+#+END_SRC
 
 * Org
 

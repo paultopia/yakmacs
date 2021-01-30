@@ -1,0 +1,71 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Javascript (and related: vue, etc.)
+
+
+It looks like company-tern got randomly pulled off melpa, so I won't be using that for completions.  Lord.  I might try LSP mode.  See discussion [[https://www.reddit.com/r/emacs/comments/cosddh/does_anyone_have_javascript_autocomplete_working/][here]] and [[https://www.reddit.com/r/emacs/comments/g8i10n/companytern_on_melpa_pulled/][here]]
+
+and someone has an lsp config [[https://www.reddit.com/r/emacs/comments/b9oxbm/lspmode_javascript/][here]]
+
+at least I can get basics together.  More or less working from [[https://emacs.cafe/emacs/javascript/setup/2017/04/23/emacs-setup-javascript.html][here]]
+
+and another ref [[http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html][here]]
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'js2-mode)
+(require 'js2-mode)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+#+END_SRC
+
+add some refactoring support
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'js2-refactor)
+(straight-use-package 'xref-js2)
+(require 'js2-refactor)
+(require 'xref-js2)
+
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+#+END_SRC
+
+Gonna grab web-mode too 
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'web-mode)
+
+#+END_SRC
+
+flycheck stuff tbd
+
+also should try [[https://indium.readthedocs.io/en/latest/][indium]]
+
+** Vue (for my website)
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'vue-mode)
+(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
+#+END_SRC
+
+Apparently there's some [[https://github.com/AdamNiederer/vue-mode#qa][janky background thing]] which I will disable sight-unseen.
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'mmm-mode-hook
+          (lambda ()
+            (set-face-background 'mmm-default-submode-face nil)))
+#+END_SRC
+
+
+** Log
+
+Currently working:
+- syntax highlighting for both JS and vue
+
+Not set up:
+- completions (LSP?)
+- flycheck
+
+Not working:
+- getting rid of ugly background in vue mode
+- for some bizarre reason neither of these seem to have dark mode activated---maybe they don't inherit from prog-mode?? That's an easy fix though.  
+- js and vue feel like the UI is really slow.  
+
