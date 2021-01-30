@@ -772,7 +772,7 @@ Moved to its own file.
 All this stuff sucks.  It's making my emacs slow down horribly and I hate it.  Need to clear off the garbage (probably js2 and web-mode).  It's horrible. 
 
 #+BEGIN_SRC emacs-lisp
-; (org-babel-load-file "~/.emacs.d/javascript/javascript.org")
+  (org-babel-load-file "~/.emacs.d/javascript/javascript.org")
 #+END_SRC
 
 * Org

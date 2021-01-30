@@ -2,6 +2,9 @@
 
 * Javascript (and related: vue, etc.)
 
+** Core javascript and web stufF: all turned off.
+
+Nothing here works right, plus it slows down my emacs like crazy.  Fuck it, I'm lighting it all on fire except vue mode and when I *have* to use javascript for something I'll rely on whatever emacs has built in.  
 
 It looks like company-tern got randomly pulled off melpa, so I won't be using that for completions.  Lord.  I might try LSP mode.  See discussion [[https://www.reddit.com/r/emacs/comments/cosddh/does_anyone_have_javascript_autocomplete_working/][here]] and [[https://www.reddit.com/r/emacs/comments/g8i10n/companytern_on_melpa_pulled/][here]]
 
@@ -12,26 +15,26 @@ at least I can get basics together.  More or less working from [[https://emacs.c
 and another ref [[http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html][here]]
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'js2-mode)
-(require 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+  ;; (straight-use-package 'js2-mode)
+  ;; (require 'js2-mode)
+  ;; (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 #+END_SRC
 
 add some refactoring support
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'js2-refactor)
-(straight-use-package 'xref-js2)
-(require 'js2-refactor)
-(require 'xref-js2)
+  ;; (straight-use-package 'js2-refactor)
+  ;; (straight-use-package 'xref-js2)
+  ;; (require 'js2-refactor)
+  ;; (require 'xref-js2)
 
-(add-hook 'js2-mode-hook #'js2-refactor-mode)
+  ;; (add-hook 'js2-mode-hook #'js2-refactor-mode)
 #+END_SRC
 
 Gonna grab web-mode too 
 
 #+BEGIN_SRC emacs-lisp
-(straight-use-package 'web-mode)
+  ;; (straight-use-package 'web-mode)
 
 #+END_SRC
 
