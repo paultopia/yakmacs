@@ -1,0 +1,14 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Swift keybindings
+
+just the one for now
+
+
+#+BEGIN_SRC emacs-lisp
+(mode-binding 
+:states '(normal motion)
+:keymaps 'clojure-mode-map
+"s" '(:ignore t :which-key "Talk to REPL")
+"ss" '(run-swift :which-key "Spawn REPL"))
+#+END_SRC

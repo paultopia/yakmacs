@@ -256,9 +256,13 @@ again moving to separate file
 
 #+BEGIN_SRC emacs-lisp
 (org-babel-load-file "~/.emacs.d/clojure/clojure-keybindings.org")
-
 #+END_SRC
 
+*** Swift
+
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/swift/swift-keybindings.org")
+#+END_SRC
 
 *** JSON
 
@@ -519,6 +523,15 @@ tab also works here to fold/unfold headings
 | ,hd                   | Clojuredocs documentation for symbol          |
 |                       |                                               |
 
+
+
+*** Swift
+
+| command               | function                                      |
+|-----------------------+-----------------------------------------------|
+| REPL                  |                                               |
+|-----------------------+-----------------------------------------------|
+| ,ss                   | Spawn REPL                                    |
 
 *** JSON
 
