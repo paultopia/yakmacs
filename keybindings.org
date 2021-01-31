@@ -259,6 +259,21 @@ again moving to separate file
 
 #+END_SRC
 
+
+*** JSON
+
+
+
+#+BEGIN_SRC emacs-lisp
+
+(mode-binding 
+:states '(normal motion)
+:keymaps '(json-mode-map)
+"r" 'json-mode-beautify
+"p" 'json-mode-show-path
+"P" 'json-mode-kill-path)
+#+END_SRC
+
 * All the Keybindings I've defined, listed.
 
 All bindings are from normal state.  I haven't defined anything for insert at all (yet?)
@@ -478,6 +493,40 @@ tab also works here to fold/unfold headings
 |-------------------+-----------------------------------|
 | , c               | Complete (with company)           |
 |                   |                                   |
+
+*** Clojure
+
+| command               | function                                      |
+|-----------------------+-----------------------------------------------|
+| REPL                  |                                               |
+|-----------------------+-----------------------------------------------|
+| ,ss                   | Spawn REPL                                    |
+| ,sb                   | Send entire buffer to shell (run first)       |
+| ,se                   | Evaluate sexp before point in REPL            |
+| ,sr                   | Evaluate Region                               |
+| ,sf                   | Eval defun at point                           |
+| ,sq                   | Quit repl                                     |
+|-----------------------+-----------------------------------------------|
+| Project/namespace/etc |                                               |
+|-----------------------+-----------------------------------------------|
+| ,pl                   | Spawn REPL                                    |
+| ,pr                   | Refresh namespace (and hence basically cider) |
+| ,px                   | Restart cider altogether                      |
+|-----------------------+-----------------------------------------------|
+| Help                  |                                               |
+|-----------------------+-----------------------------------------------|
+| ,hl                   | Local documentation for symbol                |
+| ,hd                   | Clojuredocs documentation for symbol          |
+|                       |                                               |
+
+
+*** JSON
+
+| command | function                           |
+|---------+------------------------------------|
+| , r     | reformat buffer (or region) pretty |
+| , p     | print path to object at point      |
+| , P     | copy path to object at point       |
 
 
 * Built-in keybindings I always forget

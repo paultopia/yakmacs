@@ -829,9 +829,6 @@ I want JSON enhancements too
 (straight-use-package 'json-mode)
 #+END_SRC
 
-** TODO add keybindings for json-mode
-
-see functionality [[https://github.com/joshwnj/json-mode/][here]]
 
 * Visual changes between writing and programming
 
