@@ -1,0 +1,20 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* Swift
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'swift-mode)
+(straight-use-package 'lsp-sourcekit)
+(eval-after-load 'lsp-mode
+  (progn
+    (require 'lsp-sourcekit)
+    (setq lsp-sourcekit-executable
+          "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp")))
+(add-hook 'swift-mode-hook #'lsp)
+(straight-use-package 'flycheck-swift)
+(eval-after-load 'flycheck '(flycheck-swift-setup))
+(straight-use-package 'swift-helpful)
+#+END_SRC
+
+
+Playgrounds don't seem to want to work.  I was going to add LSP-sourcekit on my own, but it seems like helpful loads it anyway, so I'm just going to run with it.  Adding LSP to the main oomph.

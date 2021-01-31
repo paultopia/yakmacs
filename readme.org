@@ -449,22 +449,17 @@ Convenience functions
 
 Dark mode for programming 
 
-I'm not going to use prog-mode-hook on this because it seems to fire it off on org?  but I want org to be light...
-
 #+BEGIN_SRC emacs-lisp
-(add-hook 'python-mode-hook 'dark-mode)
+(add-hook 'prog-mode-hook 'dark-mode)
 #+END_SRC
 
 Light mode for writing
 
-gonna fire this up for markdown mode too.  Maybe it would make sense to define a writing mode hook encompassing org mode and markdown mode?
 
 #+BEGIN_SRC emacs-lisp
-(add-hook 'org-mode-hook 'light-mode)
+(add-hook 'text-mode-hook 'light-mode)
 #+END_SRC
 
-This doesn't seem to work perfectly: if I start in an org buffer then open the python buffer, the hook fires and I go dark.  but then if I close the python buffer even though the 
-org mode buffer is back on the screen it doesn't go light again.  It does go light if I close the org buffer and reopen it though.  Hmm.  For now I think I'll just toss in a quick keybinding to fix it. 
 
 Start out in light mode
 
@@ -678,6 +673,14 @@ See discussion in [[https://emacs.stackexchange.com/questions/63057/bindings-jus
 
 * General Programming 
 
+LSP
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'lsp-mode)
+(straight-use-package 'lsp-ui)
+(require 'lsp-mode)
+#+END_SRC
 
 Completions
 
@@ -752,24 +755,23 @@ stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
 
 
 
-* Clojure
+* Languages in separate files (clojure, python, swift, javascript)
 
 #+BEGIN_SRC emacs-lisp
 (org-babel-load-file "~/.emacs.d/clojure/clojure.org")
 #+END_SRC
 
-* Python
-
-Moved to its own file.
 
 #+BEGIN_SRC emacs-lisp
 (org-babel-load-file "~/.emacs.d/python/python.org")
 #+END_SRC
 
 
-* Javascript (and vue, html, etc. all the web shit)
+#+BEGIN_SRC emacs-lisp
+(org-babel-load-file "~/.emacs.d/swift/swift.org")
+#+END_SRC
 
-All this stuff sucks.  It's making my emacs slow down horribly and I hate it.  Need to clear off the garbage (probably js2 and web-mode).  It's horrible. 
+Javascript includes vue, html, etc. all the web shit.  Most of it sucks and I got rid of it, so all that's left right now is really vue mode.  The rest made my emacs slow down horribly and I hate it.  I feel like probably all the JS stuff is abandoned because every js dev uses vscode. Whev. 
 
 #+BEGIN_SRC emacs-lisp
   (org-babel-load-file "~/.emacs.d/javascript/javascript.org")
