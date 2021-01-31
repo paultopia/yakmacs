@@ -457,14 +457,14 @@ Light mode for writing
 
 
 #+BEGIN_SRC emacs-lisp
-(add-hook 'text-mode-hook 'light-mode)
+  (add-hook 'text-mode-hook 'light-mode)
 #+END_SRC
 
 
 Start out in light mode
 
 #+BEGIN_SRC emacs-lisp
-(light-mode)
+(add-hook 'dashboard-mode-hook 'light-mode)
 #+END_SRC
 
 
