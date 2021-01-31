@@ -1,0 +1,8 @@
+# -*- in-config-file: t; lexical-binding: t  -*-
+
+* R
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'ess)
+(require 'ess-r-mode)
+#+END_SRC
