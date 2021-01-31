@@ -4,7 +4,6 @@
 
 just the one for now
 
-
 #+BEGIN_SRC emacs-lisp
 (mode-binding 
 :states '(normal motion)
