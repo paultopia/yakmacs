@@ -3,12 +3,19 @@
 * R
 
 
-just the one for now
 
 #+BEGIN_SRC emacs-lisp
 (mode-binding 
 :states '(normal motion)
 :keymaps 'ess-r-mode-map
 "s" '(:ignore t :which-key "Talk to REPL")
-"ss" '(R :which-key "Spawn REPL"))
+"ss" '(R :which-key "Spawn REPL")
+"sl" 'ess-eval-line
+"sf" 'ess-eval-function
+"sr" 'ess-eval-region
+"sb" 'ess-eval-buffer
+"p" '(:ignore t :which-key "Project-wide commands")
+"pf" '(ess-load-file :which-key "Load a source file")
+"h" 'ess-display-help-on-object
+)
 #+END_SRC
