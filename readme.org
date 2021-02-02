@@ -804,6 +804,12 @@ experimental: org roam
 #+END_SRC
 
 
+For reasons that are completely mysterious to me, running org-reload seems to be necessary to get PDF export to work.  So I'm just going to run it in my init and see if that fixes the problem. 
+
+#+BEGIN_SRC emacs-lisp
+(org-reload)
+#+END_SRC
+
 * Markdown
 
 
@@ -895,11 +901,13 @@ Load up general
 (general-create-definer leader-binding
   :prefix leader
   :states 'normal
+  :major-modes t
   :keymaps 'override) 
 
 (general-create-definer mode-binding
   :prefix mode-leader
   :states 'normal
+  :major-modes t
   :keymaps 'override)
 
 #+END_SRC

@@ -236,8 +236,9 @@ Here's a fix to magit to give me a bailout from magit with ,q.
 "t" 'org-todo
 "f" 'org-cycle 
 "g" 'org-global-cycle
-"l" 'org-insert-link
-"s" 'org-save-all-org-buffers)
+"l" '(org-insert-link :which-key "Insert Link")
+"s" 'org-save-all-org-buffers
+"p" 'org-latex-export-to-pdf)
 
 #+END_SRC
 
