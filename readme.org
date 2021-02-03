@@ -901,7 +901,6 @@ Load up general
 (general-create-definer leader-binding
   :prefix leader
   :states 'normal
-  :major-modes t
   :keymaps 'override) 
 
 (general-create-definer mode-binding
