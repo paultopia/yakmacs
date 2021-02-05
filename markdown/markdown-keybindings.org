@@ -31,9 +31,14 @@
 "of" '(markdown-outline-next :which-key "Next item (any level)")
 "ob" '(markdown-outline-previous :which-key "Prev item (any level)")
 "ou" '(markdown-outline-up :which-key "Up to parent item")
-"l" '(:ignore t :which-key "Letterhead")
-"li" '(add-letterhead-address-block :which-key "Dummy Address Block for Letterhead")
-"lc" '(make-letterhead-from-buffer  :which-key "Convert Buffer to Letterhead (Asks for Destination File Name)")
+"p" '(:ignore t :which-key "Pandoc conversions")
+"pa" '(add-letterhead-address-block :which-key "Dummy Address Block for Letterhead")
+"pl" '(pandoc-make-letterhead-from-buffer  :which-key "Convert Buffer to Letterhead")
+"pi" '(add-default-pandoc-block :which-key "Add Pandoc Metadata")
+"pb" '(pandoc-base  :which-key "Convert Buffer to Pandoc Basic (Non-Research)")
+"pr" '(pandoc-research  :which-key "Convert Buffer With Pandoc for Research")
 )
 
 #+END_SRC
+
+

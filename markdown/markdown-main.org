@@ -130,8 +130,27 @@ Helper functions to add parent and child headings
 
 #+END_SRC
 
-** Some letterhead-related functionality
+** Some pandoc-related functionality
 
+A quick helper function to reduce code repetition for a bunch of pandoc commands
+   
+#+BEGIN_SRC emacs-lisp
+
+(defun pandoc-to-file (filename defaults)
+  (shell-command-on-region (point-min) (point-max)
+   (format "pandoc -o %s --defaults=%s" filename defaults))
+)
+
+(defun insert-at-start (metadata)
+(save-excursion
+  (goto-char (point-min))
+  (insert metadata))
+)
+
+#+END_SRC
+   
+Letterhead
+   
 #+BEGIN_SRC emacs-lisp
 
   (setq letterhead-default-address-block 
@@ -149,16 +168,47 @@ Helper functions to add parent and child headings
 
   (defun add-letterhead-address-block ()
   (interactive)
-  (save-excursion
-  (goto-char (point-min))
-  (insert letterhead-default-address-block)))
+  (insert-at-start letterhead-default-address-block))
 
-  (defun make-letterhead-from-buffer (filename)
+  (defun pandoc-make-letterhead-from-buffer (filename)
   (interactive "FOutput File: ")
-
-  (shell-command-on-region (point-min) (point-max)
-   (format "pandoc -o %s --defaults=letterhead" filename))
+  (pandoc-to-file filename "letterhead")
   (find-file filename)
   )
+
+#+END_SRC
+
+More pandoc commands: basic and research, with output simply defined by filename.
+
+#+BEGIN_SRC emacs-lisp
+
+(defun dateline ()
+  (calendar-date-string (calendar-current-date) nil t))
+
+(defun pandoc-default-metadata-block () 
+(format 
+"---
+title: \"Here is a title\"
+author: Paul Gowder
+bibliography: foo.json
+date: %s
+---
+
+" (dateline)))
+
+  (defun add-default-pandoc-block ()
+  (interactive)
+  (insert-at-start (pandoc-default-metadata-block)))
+
+
+(defun pandoc-base (filename)
+  (interactive "FOutput File: ")
+  (pandoc-to-file filename "base")
+)
+
+(defun pandoc-research (filename)
+  (interactive "FOutput File: ")
+  (pandoc-to-file filename "research")
+)
 
 #+END_SRC
