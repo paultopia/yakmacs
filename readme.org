@@ -722,9 +722,10 @@ evil cleverparens doesn't appear to work though, at least not in this file. It s
     (add-hook 'smartparens-enabled-hook #'evil-cleverparens-mode)
     (require 'smartparens-config)
     (add-hook 'prog-mode-hook #'smartparens-mode)
-    
+
   ; just to make it easier to work on lisp
-    (sp-pair "'" "'" :actions :rem)
+    (sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+    (sp-local-pair 'org-mode "'" nil :actions nil)
 
 #+END_SRC
 
@@ -820,6 +821,19 @@ Moved to its own file
 #+END_SRC
 
 
+
+* Latex
+
+Where the hell is auctex?  Can straight handle it?  Let's see.
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'auctex)
+(setq TeX-auto-save t)
+(setq TeX-parse-self t) 	
+(setq-default TeX-master nil)
+
+#+END_SRC
 
 * JSON
 
