@@ -571,3 +571,5 @@ tab also works here to fold/unfold headings
 * Built-in keybindings I always forget
 
 Standard evil search: forward slash to begin.  hit enter and then n moves forward and N moves backward 
+
+Dired (bindings only work in insert mode): ~m~ to mark, on marked files; ~R~ to rename or move; ~D~ to delete; ~u~ to unmark file; ~U~ to unmark all files. Marking and unmarking takes a region or it'll take a vim-style number to do multiple lines. Apparently hitting ~return~ will also open a file, and ~o~ will do so in a new window. 
