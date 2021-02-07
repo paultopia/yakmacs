@@ -35,8 +35,9 @@
 "pa" '(add-letterhead-address-block :which-key "Dummy Address Block for Letterhead")
 "pl" '(pandoc-make-letterhead-from-buffer  :which-key "Convert Buffer to Letterhead")
 "pi" '(add-default-pandoc-block :which-key "Add Pandoc Metadata")
-"pb" '(pandoc-base  :which-key "Convert Buffer to Pandoc Basic (Non-Research)")
+"pp" '(pandoc-base  :which-key "Convert Buffer to Pandoc Basic (Non-Research)")
 "pr" '(pandoc-research  :which-key "Convert Buffer With Pandoc for Research")
+"pp" '(pandoc-bluebook :which-key "Convert Buffer to Pandoc Bluebook")
 )
 
 #+END_SRC

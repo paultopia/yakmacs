@@ -211,4 +211,9 @@ date: %s
   (pandoc-to-file filename "research")
 )
 
+(defun pandoc-bluebook (filename)
+  (interactive "FOutput File: ")
+  (pandoc-to-file filename "bluebook")
+)
+
 #+END_SRC

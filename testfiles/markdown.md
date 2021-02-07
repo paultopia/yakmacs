@@ -2,7 +2,6 @@
 title: "Here is a title"
 author: Paul Gowder
 bibliography: testcites.json
-csl: ~/.csl/chicago-author-date.csl
 date: February 5, 2021
 ---
 

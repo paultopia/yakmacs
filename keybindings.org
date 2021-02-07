@@ -457,8 +457,9 @@ tab also works here to fold/unfold headings
 | , p a                         | Insert dummy address block for letterhead                          |
 | , p l                         | Convert buffer to letterhead                                       |
 | , p i                         | Insert standard pandoc block for documents                         |
-| , p b                         | Convert with base defaults (no citeproc/research stuff)            |
-| , p r                         | Convert with research defaults (citeproc)                          |
+| , p p                         | Convert with base defaults (no citeproc/research stuff)            |
+| , p r                         | Convert with research defaults (citeproc) in chicago style         |
+| , p b                         | Convert with reseach defaults in bluebook style                    |
 
 
 
