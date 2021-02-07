@@ -190,7 +190,7 @@ Same with f e r and restart emacs.
 "gp" 'magit-push-current-to-upstream
 "gg" 'git-quick-commit
 "gu" 'magit-pull-from-upstream
-"gb" 'magit-unstage-all
+"gx" 'magit-unstage-all
 "gi" 'magit-init
 "gd" '(:ignore t :which-key "Diffing")
 "gdf" '(magit-diff-buffer-file :which-key "Diff current file (use q to exit magit buffer)")
@@ -381,7 +381,7 @@ I'm using ,q as a supplemental mode-specific bailout.
 | g c                               | git commit                                                      |
 | g p                               | git push                                                        |
 | g u                               | git pull                                                        |
-| g b                               | unstage all                                                     |
+| g x                               | unstage all                                                     |
 | g i                               | git init                                                        |
 | g r a                             | add remote                                                      |
 | g d f                             | diff file in buffer                                             |
