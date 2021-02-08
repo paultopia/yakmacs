@@ -511,7 +511,7 @@ Get rid of menubar, toolbar, scrollbar
 Start full-sized
 
 #+BEGIN_SRC emacs-lisp
-(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(add-to-list 'initial-frame-alist '(fullscreen . fullboth))
 #+END_SRC
 
 Make clicking in margins bring point to visual line.  
