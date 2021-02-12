@@ -413,6 +413,13 @@ Docview is agonizingly slow and I hate it.  Time to replace.
 #+END_SRC
 
 * Visual 
+
+It's too hard to see which window is active.
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'auto-dim-other-buffers)
+(auto-dim-other-buffers-mode t)
+#+END_SRC
   
 ** Theme
 
