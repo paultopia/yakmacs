@@ -62,6 +62,7 @@ do I want a "see all" function that makes every folded header in org and markdow
 (leader-binding 
 "v" '(:ignore t :which-key "[V]isual")
 "vg" 'golden-ratio-mode
+"vs" 'toggle-frame-fullscreen
 "vl" '(:ignore t :which-key "[L]ines")
 "vln" 'display-line-numbers-mode
 "vlr" 'linum-relative-toggle
@@ -318,6 +319,7 @@ I'm using ,q as a supplemental mode-specific bailout.
 | VISUAL                            |                                                                                                            |
 |-----------------------------------+------------------------------------------------------------------------------------------------------------|
 | v g                               | Golden ratio mode                                                                                          |
+| v s                               | toggle fullscreen                                                                                          |
 | v l n                             | Toggle line numbers (display-line-numbers-mode)                                                            |
 | v l r                             | Toggle relative line numbers                                                                               |
 | v l w                             | Toggle word wrap (visual-line-mode)                                                                        |
