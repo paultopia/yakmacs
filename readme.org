@@ -761,7 +761,7 @@ jq (json, via ~brew install jq~)
 shellcheck (bash, via ~brew install shellcheck~)
 yamllint (yaml, via ~pip install yamllint~)
 stylelint (css, via ~npm install -g stylelint stylelint-config-standard~)
-
+luacheck (lua, via ~luarocks install luacheck~)
 
 
 * Languages in separate files (clojure, python, swift, javascript)
@@ -859,6 +859,13 @@ I want JSON enhancements too
 (straight-use-package 'json-mode)
 #+END_SRC
 
+
+* Lua
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'lua-mode)
+
+#+END_SRC
 
 * Visual changes between writing and programming
 
