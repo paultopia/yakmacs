@@ -986,6 +986,12 @@ because I don't *think* anything else uses @ ...?
 
 
 
+* Start a server
+
+#+BEGIN_SRC emacs-lisp
+(server-start)
+#+END_SRC
+
 * TODO enhancements to make
 ** Fancier modeline with mode and git enhancements
    - I'm happy with [[https://github.com/dbordak/telephone-line/][telephone-line]] for now, except I'd like to be able to have three color chunks, one reflecting mode, 1 reflecting file save status, and 1 reflecting git status.
