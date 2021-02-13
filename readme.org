@@ -986,11 +986,22 @@ because I don't *think* anything else uses @ ...?
 
 
 
-* Start a server
+* Talk to other applications
+
+Start a server for commandline client use
 
 #+BEGIN_SRC emacs-lisp
 (server-start)
 #+END_SRC
+
+Start a server to edit browser textareas
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'atomic-chrome)
+(require 'atomic-chrome)
+(atomic-chrome-start-server)
+#+END_SRC
+
 
 * TODO enhancements to make
 ** Fancier modeline with mode and git enhancements
