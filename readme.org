@@ -1000,6 +1000,7 @@ Start a server to edit browser textareas
 (straight-use-package 'atomic-chrome)
 (require 'atomic-chrome)
 (atomic-chrome-start-server)
+(setq atomic-chrome-buffer-open-style 'frame)
 #+END_SRC
 
 
