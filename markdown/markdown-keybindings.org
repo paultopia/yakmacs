@@ -32,12 +32,14 @@
 "ob" '(markdown-outline-previous :which-key "Prev item (any level)")
 "ou" '(markdown-outline-up :which-key "Up to parent item")
 "p" '(:ignore t :which-key "Pandoc conversions")
-"pa" '(add-letterhead-address-block :which-key "Letterhead Address Block")
-"pl" '(pandoc-make-letterhead-from-buffer  :which-key "Convert Letterhead")
 "pi" '(add-default-pandoc-block :which-key "Metadata Block")
 "pp" '(pandoc-base  :which-key "Basic Conversion")
-"pr" '(pandoc-research  :which-key "Research Conversion")
-"pp" '(pandoc-bluebook :which-key "Bluebook Conversion")
+"pr" '(:ignore t :which-key "Research conversions")
+"prc" 'pandoc-research
+"prb" 'pandoc-bluebook
+"pl" '(:ignore t :which-key "Letters")
+"pla" 'add-letterhead-address-block
+"plc" 'pandoc-make-letterhead-from-buffer
 )
 
 #+END_SRC
