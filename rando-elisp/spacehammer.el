@@ -84,6 +84,7 @@ TITLE is a title of the window (the caller is responsible to set that right)"
   (select-frame-by-name "edit")
   (set-frame-position nil 400 400)
   (set-frame-size nil 800 600 t)
+  
   (let* ((buf-name (concat "*edit-with-emacs " title " *"))
          (buffer (get-buffer-create buf-name)))
     (unless (bound-and-true-p global-edit-with-emacs-mode)
@@ -113,14 +114,9 @@ TITLE is a title of the window (the caller is responsible to set that right)"
 (defvar systemwide-edit-previous-app-pid nil
   "Last app that invokes `spacehammer/edit-with-emacs'.")
 
-(defun copy-buffer-to-clipboard ()
-  (interactive)
-  (save-excursion
-    (copy-region-as-kill (point-min) (point-max))))
-
 (defun spacehammer/finish-edit-with-emacs ()
   (interactive)
-  (copy-buffer-to-clipboard)
+  (clipboard-kill-ring-save (point-min) (point-max))
   (kill-buffer)
   (delete-frame)
   (call-process (executable-find "hs") nil 0 nil "-c"
