@@ -53,6 +53,14 @@ Given that emacs packages seem to just /love/ generating side effects, this seem
 #+END_SRC
 
 
+I'm also going to add a directory for totally random elisp, such as the integration code provided by [[https://github.com/agzam/spacehammer/blob/master/docs/emacs.org][spacehammer]].
+
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/rando-elisp/")
+#+END_SRC
+
+
+
 * Make things involving the commandline work on mac.
 
 #+BEGIN_SRC emacs-lisp
@@ -860,11 +868,11 @@ I want JSON enhancements too
 #+END_SRC
 
 
-* Lua
+* Lua and fennel
 
 #+BEGIN_SRC emacs-lisp
 (straight-use-package 'lua-mode)
-
+(straight-use-package 'fennel-mode)
 #+END_SRC
 
 * Visual changes between writing and programming
@@ -1003,6 +1011,13 @@ Start a server to edit browser textareas
 (setq atomic-chrome-buffer-open-style 'frame)
 #+END_SRC
 
+For spacehammer--- edit from anywhere 
+
+#+BEGIN_SRC emacs-lisp
+(load "spacehammer")
+#+END_SRC
+
+(not currently perfect working. see https://github.com/agzam/spacehammer/issues/76
 
 * TODO enhancements to make
 ** Fancier modeline with mode and git enhancements
