@@ -1,3 +1,5 @@
+straight/build-cache.el
+build-cache.el
 image-dired/
 .lsp-session-v1
 auto-save-list/
@@ -39,3 +41,9 @@ testfiles/clotest/checkouts/
 .lein-failures
 .nrepl-port
 .cpcache/
+clojure/clojure-keybindings.el  
+clojure/clojure.el
+python/python-keybindings.el  
+javascript/javascript.el
+swift/swift-keybindings.el 
+swift/swift.el
