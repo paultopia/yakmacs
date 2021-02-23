@@ -425,6 +425,7 @@ tab also works here to fold/unfold headings
 | command                       | function                                                           |
 |-------------------------------+--------------------------------------------------------------------|
 | , v                           | hide markup                                                        |
+| , w                           | count words                                                        |
 |                               |                                                                    |
 |-------------------------------+--------------------------------------------------------------------|
 | HEADERS                       |                                                                    |
@@ -464,12 +465,14 @@ tab also works here to fold/unfold headings
 |-------------------------------+--------------------------------------------------------------------|
 | PANDOC                        |                                                                    |
 |-------------------------------+--------------------------------------------------------------------|
-| , p a                         | Insert dummy address block for letterhead                          |
-| , p l                         | Convert buffer to letterhead                                       |
 | , p i                         | Insert standard pandoc block for documents                         |
-| , p p                         | Convert with base defaults (no citeproc/research stuff)            |
-| , p r                         | Convert with research defaults (citeproc) in chicago style         |
-| , p b                         | Convert with reseach defaults in bluebook style                    |
+| , p p                         | convert with basic (no citeproc etc) defaults                      |
+| Research conversions          |                                                                    |
+| , p r c                       | Convert using  chicago style                                       |
+| , p r b                       | convert using bluebook style                                       |
+| Letter conversions            |                                                                    |
+| , p l a                       | Insert dummy address block for letterhead                          |
+| , p l c                       | Convert buffer to letterhead                                       |
 
 
 
