@@ -8,6 +8,7 @@
 (mode-binding 
 :keymaps 'markdown-mode-map
 "v" 'markdown-toggle-markup-hiding
+"w" 'count-words
 "h" '(:ignore t :which-key "Headers")
 "ha" 'markdown-insert-header-dwim
 "hp" 'pg-add-parent-header
