@@ -821,6 +821,16 @@ experimental: org roam
 #+END_SRC
 
 
+I'm not a big fan of the default return behavior, especially in lists.  So: 
+
+#+BEGIN_SRC emacs-lisp
+
+(straight-use-package 'org-autolist)
+(add-hook 'org-mode-hook 'org-autolist-mode) 
+
+#+END_SRC
+
+
 For reasons that are completely mysterious to me, running org-reload seems to be necessary to get PDF export to work.  So I'm just going to run it in my init and see if that fixes the problem. 
 
 #+BEGIN_SRC emacs-lisp
