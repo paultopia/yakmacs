@@ -138,7 +138,7 @@ A quick helper function to reduce code repetition for a bunch of pandoc commands
 
 (defun pandoc-to-file (filename defaults)
   (shell-command-on-region (point-min) (point-max)
-   (format "pandoc -o %s --defaults=%s" filename defaults))
+   (format "pandoc -o %s -f markdown --verbose --defaults=%s" filename defaults))
 )
 
 (defun insert-at-start (metadata)

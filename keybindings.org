@@ -119,7 +119,10 @@ Same with f e r and restart emacs.
 (leader-binding
 "b" '(:ignore t :which-key "Buffers")
 "bd" 'kill-this-buffer
-"bb" 'ivy-switch-buffer)
+"bb" 'ivy-switch-buffer
+"bp" 'popper-toggle-latest
+"bm" 'popper-toggle-type
+)
 
 #+END_SRC
 
@@ -355,6 +358,8 @@ I'm using ,q as a supplemental mode-specific bailout.
 |                                   |                                                                                                            |
 | b d                               | kill buffer                                                                                                |
 | b b                               | buffer menu                                                                                                |
+| b p                               | show/hide popup buffer                                                                                     |
+| b m                               | mark/unmark buffer as popup                                                                                |
 |                                   |                                                                                                            |
 |-----------------------------------+------------------------------------------------------------------------------------------------------------|
 | ELISP/EXECUTE COMMANDS AND SHELLS |                                                                                                            |

@@ -406,6 +406,20 @@ I really want to use an enum for this, but right now it's just a string. So perm
 #+END_SRC
 
 
+* Popup buffers
+
+#+BEGIN_SRC emacs-lisp
+(straight-use-package 'popper)
+(require 'popper)
+(setq popper-reference-buffers
+      '("\\*Messages\\*"
+        "Output\\*$"
+        help-mode
+        compilation-mode))
+(popper-mode +1)
+
+#+END_SRC
+
 * PDF Tools
 
 Docview is agonizingly slow and I hate it.  Time to replace. 
