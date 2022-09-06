@@ -842,6 +842,9 @@ I'm not a big fan of the default return behavior, especially in lists.  So:
 (straight-use-package 'org-autolist)
 (add-hook 'org-mode-hook 'org-autolist-mode) 
 
+(add-hook 'org-mode-hook
+	  (lambda () (electric-indent-local-mode -1)))
+
 #+END_SRC
 
 
